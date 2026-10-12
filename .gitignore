@@ -1,0 +1,33 @@
+# Python and local tool state
+.venv/
+__pycache__/
+*.py[cod]
+.ruff_cache/
+.vscode/
+.ipynb_checkpoints/
+dist/
+
+# Existing external repositories and supplied raw exports
+/core/
+/commons-io/
+/commons-io-analysis-results/
+
+# Reproducible local datasets
+/data/processed/
+
+# Temporary checkouts used for isolated measurements
+/.worktrees/
+
+# Local JaCoCo rendering; keep the authoritative text counters
+/data/experiments/peekable-input-stream/**/jacoco/*
+!/data/experiments/peekable-input-stream/**/jacoco/jacoco.xml
+!/data/experiments/peekable-input-stream/**/jacoco/jacoco.csv
+
+# Local complete-suite output; retain the dedicated target test reports
+/data/experiments/peekable-input-stream/**/surefire-reports/*
+!/data/experiments/peekable-input-stream/**/surefire-reports/TEST-org.apache.commons.io.input.buffer.PeekableInputStreamTest.xml
+!/data/experiments/peekable-input-stream/**/surefire-reports/org.apache.commons.io.input.buffer.PeekableInputStreamTest.txt
+
+# Local binary evidence retained alongside the versioned hash manifests
+/data/experiments/peekable-input-stream/**/jacoco.exec
+/data/experiments/peekable-input-stream/**/production-classes.zip
