@@ -31,3 +31,6 @@ dist/
 # Local binary evidence retained alongside the versioned hash manifests
 /data/experiments/peekable-input-stream/**/jacoco.exec
 /data/experiments/peekable-input-stream/**/production-classes.zip
+
+# Archived study materials
+/legacy/
