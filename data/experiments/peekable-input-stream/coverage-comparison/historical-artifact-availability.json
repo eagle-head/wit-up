@@ -1,0 +1,42 @@
+[
+  {
+    "label": "Focused test log",
+    "historical_path": "../commons-io/target/coverage/peekable-input-stream-exact-match-tests.log",
+    "original_artifact_available": false
+  },
+  {
+    "label": "Full-suite log",
+    "historical_path": "../commons-io/target/coverage/peekable-input-stream-exact-match-suite.log",
+    "original_artifact_available": false
+  },
+  {
+    "label": "Focused coverage XML",
+    "historical_path": "../commons-io/target/coverage/peekable-input-stream-exact-match-jacoco/jacoco.xml",
+    "original_artifact_available": false
+  },
+  {
+    "label": "Mutation report",
+    "historical_path": "../commons-io/target/pit-reports/peekable-input-stream-exact-match/mutations.xml",
+    "original_artifact_available": false
+  },
+  {
+    "label": "Checkstyle log",
+    "historical_path": "../commons-io/target/coverage/peekable-input-stream-contract-checkstyle.log",
+    "original_artifact_available": false
+  },
+  {
+    "label": "the intermediate failing run",
+    "historical_path": "../commons-io/target/coverage/peekable-input-stream-exact-match-red-tests.log",
+    "original_artifact_available": false
+  },
+  {
+    "label": "final test-source audit",
+    "historical_path": "../commons-io/target/coverage/peekable-input-stream-test-style-validation.log",
+    "original_artifact_available": false
+  },
+  {
+    "label": "post-style focused run",
+    "historical_path": "../commons-io/target/coverage/peekable-input-stream-test-style-tests.log",
+    "original_artifact_available": false
+  }
+]

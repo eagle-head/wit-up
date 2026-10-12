@@ -1,0 +1,45 @@
+{
+  "per_condition": [
+    {
+      "condition": "source-only",
+      "source_byte_identity": "passed",
+      "artifact_hashes": "passed",
+      "artifacts": 1276
+    },
+    {
+      "condition": "json-only",
+      "source_byte_identity": "passed",
+      "artifact_hashes": "passed",
+      "artifacts": 1275
+    },
+    {
+      "condition": "reference-suite",
+      "source_byte_identity": "passed",
+      "artifact_hashes": "passed",
+      "artifacts": 1275
+    }
+  ],
+  "latest_generated_appendix_byte_identity": "passed",
+  "original_files_unchanged": 2790,
+  "updated_report_index_and_study_log_links": "passed",
+  "historical_original_artifacts_still_unavailable": 8,
+  "primary_checkout_clean": true,
+  "original_test_failures_preserved": {
+    "source-only": {
+      "failures": 4,
+      "errors": 1
+    }
+  },
+  "test_fixtures_or_assertions_modified": false,
+  "production_modified": false,
+  "configuration_modified": false,
+  "prompts_modified": false,
+  "temporary_measurement_checkout_removed": true,
+  "measurement_harness": {
+    "executed_source_record": "executed-measurement-script.txt",
+    "executed_source_sha256": "9A9468A5E7E4ACEB836AD87F18808DCEE5AB7B79BFC7AAD236A96E481F0557CE",
+    "formatted_script": "measure_coverage.py",
+    "formatting_changes": "Import order, UTC alias, and formatting only; original executed text is retained.",
+    "formatted_script_ruff_check": "passed"
+  }
+}

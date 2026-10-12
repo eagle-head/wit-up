@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.apache.commons.io.input.buffer.PeekableInputStreamTest" time="0.03" tests="26" errors="1" skipped="0" failures="4">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\Projects\wit-up\commons-io\target\test-classes;D:\Projects\wit-up\commons-io\target\classes;C:\Users\edyko\.m2\repository\org\junit\jupiter\junit-jupiter\5.5.2\junit-jupiter-5.5.2.jar;C:\Users\edyko\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.5.2\junit-jupiter-api-5.5.2.jar;C:\Users\edyko\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\edyko\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\edyko\.m2\repository\org\junit\platform\junit-platform-commons\1.5.2\junit-platform-commons-1.5.2.jar;C:\Users\edyko\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.5.2\junit-jupiter-params-5.5.2.jar;C:\Users\edyko\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.5.2\junit-jupiter-engine-5.5.2.jar;C:\Users\edyko\.m2\repository\org\junit\platform\junit-platform-engine\1.5.2\junit-platform-engine-1.5.2.jar;C:\Users\edyko\.m2\repository\org\junit-pioneer\junit-pioneer\0.3.0\junit-pioneer-0.3.0.jar;C:\Users\edyko\.m2\repository\org\mockito\mockito-core\3.0.0\mockito-core-3.0.0.jar;C:\Users\edyko\.m2\repository\net\bytebuddy\byte-buddy\1.9.10\byte-buddy-1.9.10.jar;C:\Users\edyko\.m2\repository\net\bytebuddy\byte-buddy-agent\1.9.10\byte-buddy-agent-1.9.10.jar;C:\Users\edyko\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Users\edyko\.m2\repository\com\google\jimfs\jimfs\1.1\jimfs-1.1.jar;C:\Users\edyko\.m2\repository\com\google\guava\guava\18.0\guava-18.0.jar;C:\Users\edyko\.m2\repository\org\apache\commons\commons-lang3\3.9\commons-lang3-3.9.jar;"/>
+    <property name="java.vm.vendor" value="Temurin"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Users\edyko\AppData\Local\mise\installs\java\temurin-8.0.504+1\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\edyko\AppData\Local\Temp\surefire4682708732901746070\surefirebooter7751782845173310839.jar C:\Users\edyko\AppData\Local\Temp\surefire4682708732901746070 2026-10-09T17-53-39_962-jvmRun1 surefire7586186411268270019tmp surefire_01194385939482727897tmp"/>
+    <property name="test" value="org.apache.commons.io.input.buffer.PeekableInputStreamTest"/>
+    <property name="surefire.test.class.path" value="D:\Projects\wit-up\commons-io\target\test-classes;D:\Projects\wit-up\commons-io\target\classes;C:\Users\edyko\.m2\repository\org\junit\jupiter\junit-jupiter\5.5.2\junit-jupiter-5.5.2.jar;C:\Users\edyko\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.5.2\junit-jupiter-api-5.5.2.jar;C:\Users\edyko\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\edyko\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\edyko\.m2\repository\org\junit\platform\junit-platform-commons\1.5.2\junit-platform-commons-1.5.2.jar;C:\Users\edyko\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.5.2\junit-jupiter-params-5.5.2.jar;C:\Users\edyko\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.5.2\junit-jupiter-engine-5.5.2.jar;C:\Users\edyko\.m2\repository\org\junit\platform\junit-platform-engine\1.5.2\junit-platform-engine-1.5.2.jar;C:\Users\edyko\.m2\repository\org\junit-pioneer\junit-pioneer\0.3.0\junit-pioneer-0.3.0.jar;C:\Users\edyko\.m2\repository\org\mockito\mockito-core\3.0.0\mockito-core-3.0.0.jar;C:\Users\edyko\.m2\repository\net\bytebuddy\byte-buddy\1.9.10\byte-buddy-1.9.10.jar;C:\Users\edyko\.m2\repository\net\bytebuddy\byte-buddy-agent\1.9.10\byte-buddy-agent-1.9.10.jar;C:\Users\edyko\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Users\edyko\.m2\repository\com\google\jimfs\jimfs\1.1\jimfs-1.1.jar;C:\Users\edyko\.m2\repository\com\google\guava\guava\18.0\guava-18.0.jar;C:\Users\edyko\.m2\repository\org\apache\commons\commons-lang3\3.9\commons-lang3-3.9.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\edyko"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Users\edyko\AppData\Local\mise\installs\java\temurin-8.0.504+1\jre"/>
+    <property name="jacoco.skip" value="true"/>
+    <property name="basedir" value="D:\Projects\wit-up\commons-io"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\edyko\AppData\Local\Temp\surefire4682708732901746070\surefirebooter7751782845173310839.jar"/>
+    <property name="sun.boot.class.path" value="C:\Users\edyko\AppData\Local\mise\installs\java\temurin-8.0.504+1\jre\lib\resources.jar;C:\Users\edyko\AppData\Local\mise\installs\java\temurin-8.0.504+1\jre\lib\rt.jar;C:\Users\edyko\AppData\Local\mise\installs\java\temurin-8.0.504+1\jre\lib\sunrsasign.jar;C:\Users\edyko\AppData\Local\mise\installs\java\temurin-8.0.504+1\jre\lib\jsse.jar;C:\Users\edyko\AppData\Local\mise\installs\java\temurin-8.0.504+1\jre\lib\jce.jar;C:\Users\edyko\AppData\Local\mise\installs\java\temurin-8.0.504+1\jre\lib\charsets.jar;C:\Users\edyko\AppData\Local\mise\installs\java\temurin-8.0.504+1\jre\lib\jfr.jar;C:\Users\edyko\AppData\Local\mise\installs\java\temurin-8.0.504+1\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_504-b01"/>
+    <property name="user.name" value="edyko"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Users\edyko\AppData\Local\mise\installs\java\temurin-8.0.504+1\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\edyko\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\edyko\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_504"/>
+    <property name="user.dir" value="D:\Projects\wit-up\commons-io"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Users\edyko\AppData\Local\mise\installs\java\temurin-8.0.504+1\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\edyko\AppData\Local\mise\installs\java\temurin-8.0.504+1\bin;C:\Users\edyko\AppData\Local\mise\installs\maven\3.9.16\apache-maven-3.9.16/bin;C:\Users\edyko\AppData\Local\mise\installs\node\22.23.2;C:\Users\edyko\AppData\Local\mise\installs\python\3.13.15;C:\Users\edyko\AppData\Local\mise\installs\python\3.13.15\Scripts;C:\Users\edyko\AppData\Local\mise\installs\uv\0.12.23;C:\Users\edyko\AppData\Local\mise\shims;C:\Users\edyko\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell;C:\Users\edyko\.codex\tmp\arg0\codex-arg031WXJE;C:\Users\edyko\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin;C:\Users\edyko\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin;C:\Users\edyko\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin;C:\Users\edyko\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files\dotnet\;C:\Users\edyko\AppData\Local\Android\Sdk\platform-tools;C:\Users\edyko\AppData\Local\Android\Sdk\emulator;C:\Users\edyko\AppData\Local\Android\Sdk\cmdline-tools\latest\bin;C:\Program Files\GitHub CLI\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Users\edyko\AppData\Local\codegraph\current\bin;C:\Users\edyko\AppData\Local\Programs\OpenAI\Codex\bin;C:\Users\edyko\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell;C:\Users\edyko\AppData\Local\Microsoft\WindowsApps;C:\Users\edyko\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\PyCharm 2026.2.1\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2026.2.1\bin;C:\Users\edyko\AppData\Local\Microsoft\WinGet\Packages\jdx.mise_Microsoft.Winget.Source_8wekyb3d8bbwe\mise\bin;C:\Users\edyko\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\fallback;C:\Users\edyko\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin;C:\Users\edyko\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd;C:\Users\edyko\AppData\Local\OpenAI\Codex\bin\9a7ba4b9ea0c44a3;C:\Users\edyko\AppData\Local\OpenAI\Codex\bin\2e5e00daee91c61d;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Temurin"/>
+    <property name="java.vm.version" value="25.504-b01"/>
+    <property name="java.specification.maintenance.version" value="6"/>
+    <property name="java.ext.dirs" value="C:\Users\edyko\AppData\Local\mise\installs\java\temurin-8.0.504+1\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="testPeekMatchesPrefixAlreadyBuffered" classname="org.apache.commons.io.input.buffer.PeekableInputStreamTest" time="0.008">
+    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.apache.commons.io.input.buffer.PeekableInputStreamTest.testPeekMatchesPrefixAlreadyBuffered(PeekableInputStreamTest.java:138)
+]]></failure>
+  </testcase>
+  <testcase name="testConstructorRejectsNullInput" classname="org.apache.commons.io.input.buffer.PeekableInputStreamTest" time="0"/>
+  <testcase name="testPeekInsufficientBytesAtEndPreservesRemainingBytes" classname="org.apache.commons.io.input.buffer.PeekableInputStreamTest" time="0.001"/>
+  <testcase name="testPeekWithOneByteBuffer" classname="org.apache.commons.io.input.buffer.PeekableInputStreamTest" time="0"/>
+  <testcase name="testPeekRefillsAndWrapsWithoutLosingBufferedBytes" classname="org.apache.commons.io.input.buffer.PeekableInputStreamTest" time="0.001"/>
+  <testcase name="testConstructorRejectsNonPositiveBufferSize" classname="org.apache.commons.io.input.buffer.PeekableInputStreamTest" time="0"/>
+  <testcase name="testPeekZeroLengthSliceAtEndOfStream" classname="org.apache.commons.io.input.buffer.PeekableInputStreamTest" time="0"/>
+  <testcase name="testPeekFillsBufferAcrossShortReads" classname="org.apache.commons.io.input.buffer.PeekableInputStreamTest" time="0"/>
+  <testcase name="testPeekPropagatesRefillFailureAndPreservesBufferedByte" classname="org.apache.commons.io.input.buffer.PeekableInputStreamTest" time="0.002"/>
+  <testcase name="testPeekRejectsRequestsLargerThanBufferWithoutReading" classname="org.apache.commons.io.input.buffer.PeekableInputStreamTest" time="0"/>
+  <testcase name="testDefaultBufferSize" classname="org.apache.commons.io.input.buffer.PeekableInputStreamTest" time="0.002"/>
+  <testcase name="testPeekMatchesPrefixOfFullBuffer" classname="org.apache.commons.io.input.buffer.PeekableInputStreamTest" time="0">
+    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.apache.commons.io.input.buffer.PeekableInputStreamTest.testPeekMatchesPrefixOfFullBuffer(PeekableInputStreamTest.java:113)
+]]></failure>
+  </testcase>
+  <testcase name="testPeekPropagatesReadFailure" classname="org.apache.commons.io.input.buffer.PeekableInputStreamTest" time="0.003"/>
+  <testcase name="testCloseDiscardsPeekedBytesAndClosesSource" classname="org.apache.commons.io.input.buffer.PeekableInputStreamTest" time="0"/>
+  <testcase name="testPeekEmptyArray" classname="org.apache.commons.io.input.buffer.PeekableInputStreamTest" time="0.001">
+    <error message="Invalid offset: 0" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Invalid offset: 0
+	at org.apache.commons.io.input.buffer.PeekableInputStreamTest.testPeekEmptyArray(PeekableInputStreamTest.java:285)
+</error>
+  </testcase>
+  <testcase name="testPeekSliceUsesOffsetAndLengthWithoutChangingArray" classname="org.apache.commons.io.input.buffer.PeekableInputStreamTest" time="0"/>
+  <testcase name="testPeekSliceRejectsInvalidLength" classname="org.apache.commons.io.input.buffer.PeekableInputStreamTest" time="0"/>
+  <testcase name="testPeekSliceRejectsInvalidOffset" classname="org.apache.commons.io.input.buffer.PeekableInputStreamTest" time="0.001"/>
+  <testcase name="testPeekRejectsNullArrayWithoutReading" classname="org.apache.commons.io.input.buffer.PeekableInputStreamTest" time="0"/>
+  <testcase name="testPeekZeroLengthSlice" classname="org.apache.commons.io.input.buffer.PeekableInputStreamTest" time="0">
+    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.apache.commons.io.input.buffer.PeekableInputStreamTest.testPeekZeroLengthSlice(PeekableInputStreamTest.java:293)
+]]></failure>
+  </testcase>
+  <testcase name="testPeekEmptyStream" classname="org.apache.commons.io.input.buffer.PeekableInputStreamTest" time="0.002"/>
+  <testcase name="testPeekAtEndOfStream" classname="org.apache.commons.io.input.buffer.PeekableInputStreamTest" time="0"/>
+  <testcase name="testPeekSliceFillsBufferAcrossShortReads" classname="org.apache.commons.io.input.buffer.PeekableInputStreamTest" time="0"/>
+  <testcase name="testPeekSliceMatchesPrefix" classname="org.apache.commons.io.input.buffer.PeekableInputStreamTest" time="0.001">
+    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.apache.commons.io.input.buffer.PeekableInputStreamTest.testPeekSliceMatchesPrefix(PeekableInputStreamTest.java:125)
+]]></failure>
+  </testcase>
+  <testcase name="testPeekRepeatedlyWithoutConsumingOrChangingBytes" classname="org.apache.commons.io.input.buffer.PeekableInputStreamTest" time="0"/>
+  <testcase name="testPeekMismatchAtEachPositionDoesNotConsumeBytes" classname="org.apache.commons.io.input.buffer.PeekableInputStreamTest" time="0"/>
+</testsuite>

@@ -1,0 +1,1620 @@
+{
+  "schema_version": 1,
+  "measurement_kind": "post-generation reconstructed before/after",
+  "baseline_commit": "d7a3c884d07ff5f1829b09087f34dcb8043f0f64",
+  "jacoco_version": "0.8.14",
+  "runs": {
+    "before": {
+      "phase": "before",
+      "baseline_commit": "d7a3c884d07ff5f1829b09087f34dcb8043f0f64",
+      "working_directory": "D:/Projects/wit-up/.worktrees/commons-io-coverage",
+      "target_test_exists": false,
+      "maven_executable": "C:/Users/edyko/AppData/Local/mise/installs/maven/3.9.16/apache-maven-3.9.16/bin/mvn.cmd",
+      "java_home": "C:/Users/edyko/AppData/Local/mise/installs/java/temurin-8.0.504+1",
+      "arguments": [
+        "-B",
+        "-Pjacoco",
+        "-Djacoco.skip=false",
+        "clean",
+        "verify",
+        "jacoco:report"
+      ],
+      "started_at_utc": "2026-10-12T01:45:40.0114298Z",
+      "completed_at_utc": "2026-10-12T01:48:59.5758314Z",
+      "exit_code": 0
+    },
+    "after": {
+      "phase": "after",
+      "baseline_commit": "d7a3c884d07ff5f1829b09087f34dcb8043f0f64",
+      "working_directory": "D:/Projects/wit-up/.worktrees/commons-io-coverage",
+      "target_test_exists": true,
+      "target_test_sha256": "653D136D35FDAC4E556D76C1AD0965E82E05706ADDB91DD549E991FCE06B5221",
+      "maven_executable": "C:/Users/edyko/AppData/Local/mise/installs/maven/3.9.16/apache-maven-3.9.16/bin/mvn.cmd",
+      "java_home": "C:/Users/edyko/AppData/Local/mise/installs/java/temurin-8.0.504+1",
+      "arguments": [
+        "-B",
+        "-Pjacoco",
+        "-Djacoco.skip=false",
+        "clean",
+        "verify",
+        "jacoco:report"
+      ],
+      "started_at_utc": "2026-10-12T01:49:48.1920432Z",
+      "completed_at_utc": "2026-10-12T01:53:08.6395608Z",
+      "exit_code": 0
+    }
+  },
+  "controls": {
+    "same_arguments": true,
+    "same_production_outputs": true,
+    "common_source_files_unchanged": 398,
+    "only_added_source": "test/java/org/apache/commons/io/input/buffer/PeekableInputStreamTest.java",
+    "only_added_cases": [
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStreamTest",
+        "testPeekSliceRejectsNullBuffer",
+        "passed"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStreamTest",
+        "testSizedConstructorRejectsZeroBufferSize",
+        "passed"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStreamTest",
+        "testPeekSliceRejectsLengthLargerThanCapacity",
+        "passed"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStreamTest",
+        "testPeekSliceRejectsBufferLargerThanCapacity",
+        "passed"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStreamTest",
+        "testSizedConstructorRejectsNullInputStream",
+        "passed"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStreamTest",
+        "testPeekSliceThrowsWhenMatchingSliceExceedsArray",
+        "passed"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStreamTest",
+        "testPeekRejectsNullBuffer",
+        "passed"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStreamTest",
+        "testConstructorRejectsNullInputStream",
+        "passed"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStreamTest",
+        "testPeekRejectsBufferLargerThanCapacity",
+        "passed"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStreamTest",
+        "testPeekPropagatesReadFailure",
+        "passed"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStreamTest",
+        "testPeekSlicePropagatesEndOfFileException",
+        "passed"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStreamTest",
+        "testPeekSliceRejectsNegativeLength",
+        "passed"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStreamTest",
+        "testPeekSliceRejectsNegativeOffset",
+        "passed"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStreamTest",
+        "testPeekPropagatesEndOfFileException",
+        "passed"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStreamTest",
+        "testPeekRejectsEmptyBuffer",
+        "passed"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStreamTest",
+        "testPeekSliceRejectsOffsetAtBufferLength",
+        "passed"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStreamTest",
+        "testPeekSlicePropagatesReadFailure",
+        "passed"
+      ]
+    ],
+    "removed_or_changed_cases": [],
+    "original_files_verified_unchanged": 1108
+  },
+  "tests": {
+    "before": {
+      "suite_reports": 136,
+      "reported": 1541,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 6,
+      "passed": 1535
+    },
+    "after": {
+      "suite_reports": 137,
+      "reported": 1558,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 6,
+      "passed": 1552
+    }
+  },
+  "coverage": {
+    "org/apache/commons/io/input/buffer/PeekableInputStream": {
+      "before": {
+        "INSTRUCTION": {
+          "covered": 0,
+          "missed": 98,
+          "total": 98,
+          "percent": 0.0
+        },
+        "BRANCH": {
+          "covered": 0,
+          "missed": 8,
+          "total": 8,
+          "percent": 0.0
+        },
+        "LINE": {
+          "covered": 0,
+          "missed": 16,
+          "total": 16,
+          "percent": 0.0
+        },
+        "COMPLEXITY": {
+          "covered": 0,
+          "missed": 8,
+          "total": 8,
+          "percent": 0.0
+        },
+        "METHOD": {
+          "covered": 0,
+          "missed": 4,
+          "total": 4,
+          "percent": 0.0
+        },
+        "CLASS": {
+          "covered": 0,
+          "missed": 1,
+          "total": 1,
+          "percent": 0.0
+        }
+      },
+      "after": {
+        "INSTRUCTION": {
+          "covered": 87,
+          "missed": 11,
+          "total": 98,
+          "percent": 88.77551
+        },
+        "BRANCH": {
+          "covered": 8,
+          "missed": 0,
+          "total": 8,
+          "percent": 100.0
+        },
+        "LINE": {
+          "covered": 13,
+          "missed": 3,
+          "total": 16,
+          "percent": 81.25
+        },
+        "COMPLEXITY": {
+          "covered": 7,
+          "missed": 1,
+          "total": 8,
+          "percent": 87.5
+        },
+        "METHOD": {
+          "covered": 3,
+          "missed": 1,
+          "total": 4,
+          "percent": 75.0
+        },
+        "CLASS": {
+          "covered": 1,
+          "missed": 0,
+          "total": 1,
+          "percent": 100.0
+        }
+      },
+      "delta": {
+        "INSTRUCTION": {
+          "covered": 87,
+          "percentage_points": 88.77551
+        },
+        "BRANCH": {
+          "covered": 8,
+          "percentage_points": 100.0
+        },
+        "LINE": {
+          "covered": 13,
+          "percentage_points": 81.25
+        },
+        "COMPLEXITY": {
+          "covered": 7,
+          "percentage_points": 87.5
+        },
+        "METHOD": {
+          "covered": 3,
+          "percentage_points": 75.0
+        },
+        "CLASS": {
+          "covered": 1,
+          "percentage_points": 100.0
+        }
+      }
+    },
+    "org/apache/commons/io/input/buffer/CircularBufferInputStream": {
+      "before": {
+        "INSTRUCTION": {
+          "covered": 118,
+          "missed": 49,
+          "total": 167,
+          "percent": 70.658683
+        },
+        "BRANCH": {
+          "covered": 15,
+          "missed": 7,
+          "total": 22,
+          "percent": 68.181818
+        },
+        "LINE": {
+          "covered": 34,
+          "missed": 13,
+          "total": 47,
+          "percent": 72.340426
+        },
+        "COMPLEXITY": {
+          "covered": 9,
+          "missed": 10,
+          "total": 19,
+          "percent": 47.368421
+        },
+        "METHOD": {
+          "covered": 5,
+          "missed": 3,
+          "total": 8,
+          "percent": 62.5
+        },
+        "CLASS": {
+          "covered": 1,
+          "missed": 0,
+          "total": 1,
+          "percent": 100.0
+        }
+      },
+      "after": {
+        "INSTRUCTION": {
+          "covered": 130,
+          "missed": 37,
+          "total": 167,
+          "percent": 77.844311
+        },
+        "BRANCH": {
+          "covered": 16,
+          "missed": 6,
+          "total": 22,
+          "percent": 72.727273
+        },
+        "LINE": {
+          "covered": 35,
+          "missed": 12,
+          "total": 47,
+          "percent": 74.468085
+        },
+        "COMPLEXITY": {
+          "covered": 10,
+          "missed": 9,
+          "total": 19,
+          "percent": 52.631579
+        },
+        "METHOD": {
+          "covered": 5,
+          "missed": 3,
+          "total": 8,
+          "percent": 62.5
+        },
+        "CLASS": {
+          "covered": 1,
+          "missed": 0,
+          "total": 1,
+          "percent": 100.0
+        }
+      },
+      "delta": {
+        "INSTRUCTION": {
+          "covered": 12,
+          "percentage_points": 7.185628
+        },
+        "BRANCH": {
+          "covered": 1,
+          "percentage_points": 4.545455
+        },
+        "LINE": {
+          "covered": 1,
+          "percentage_points": 2.127659
+        },
+        "COMPLEXITY": {
+          "covered": 1,
+          "percentage_points": 5.263158
+        },
+        "METHOD": {
+          "covered": 0,
+          "percentage_points": 0.0
+        },
+        "CLASS": {
+          "covered": 0,
+          "percentage_points": 0.0
+        }
+      }
+    },
+    "org/apache/commons/io/input/buffer/CircularByteBuffer": {
+      "before": {
+        "INSTRUCTION": {
+          "covered": 121,
+          "missed": 315,
+          "total": 436,
+          "percent": 27.752294
+        },
+        "BRANCH": {
+          "covered": 12,
+          "missed": 46,
+          "total": 58,
+          "percent": 20.689655
+        },
+        "LINE": {
+          "covered": 25,
+          "missed": 49,
+          "total": 74,
+          "percent": 33.783784
+        },
+        "COMPLEXITY": {
+          "covered": 9,
+          "missed": 33,
+          "total": 42,
+          "percent": 21.428571
+        },
+        "METHOD": {
+          "covered": 6,
+          "missed": 7,
+          "total": 13,
+          "percent": 46.153846
+        },
+        "CLASS": {
+          "covered": 1,
+          "missed": 0,
+          "total": 1,
+          "percent": 100.0
+        }
+      },
+      "after": {
+        "INSTRUCTION": {
+          "covered": 196,
+          "missed": 240,
+          "total": 436,
+          "percent": 44.954128
+        },
+        "BRANCH": {
+          "covered": 26,
+          "missed": 32,
+          "total": 58,
+          "percent": 44.827586
+        },
+        "LINE": {
+          "covered": 37,
+          "missed": 37,
+          "total": 74,
+          "percent": 50.0
+        },
+        "COMPLEXITY": {
+          "covered": 16,
+          "missed": 26,
+          "total": 42,
+          "percent": 38.095238
+        },
+        "METHOD": {
+          "covered": 7,
+          "missed": 6,
+          "total": 13,
+          "percent": 53.846154
+        },
+        "CLASS": {
+          "covered": 1,
+          "missed": 0,
+          "total": 1,
+          "percent": 100.0
+        }
+      },
+      "delta": {
+        "INSTRUCTION": {
+          "covered": 75,
+          "percentage_points": 17.201834
+        },
+        "BRANCH": {
+          "covered": 14,
+          "percentage_points": 24.137931
+        },
+        "LINE": {
+          "covered": 12,
+          "percentage_points": 16.216216
+        },
+        "COMPLEXITY": {
+          "covered": 7,
+          "percentage_points": 16.666667
+        },
+        "METHOD": {
+          "covered": 1,
+          "percentage_points": 7.692308
+        },
+        "CLASS": {
+          "covered": 0,
+          "percentage_points": 0.0
+        }
+      }
+    },
+    "project": {
+      "before": {
+        "INSTRUCTION": {
+          "covered": 23619,
+          "missed": 2813,
+          "total": 26432,
+          "percent": 89.357597
+        },
+        "BRANCH": {
+          "covered": 2507,
+          "missed": 403,
+          "total": 2910,
+          "percent": 86.151203
+        },
+        "LINE": {
+          "covered": 5429,
+          "missed": 658,
+          "total": 6087,
+          "percent": 89.190077
+        },
+        "COMPLEXITY": {
+          "covered": 2487,
+          "missed": 497,
+          "total": 2984,
+          "percent": 83.344504
+        },
+        "METHOD": {
+          "covered": 1358,
+          "missed": 169,
+          "total": 1527,
+          "percent": 88.932547
+        },
+        "CLASS": {
+          "covered": 159,
+          "missed": 2,
+          "total": 161,
+          "percent": 98.757764
+        }
+      },
+      "after": {
+        "INSTRUCTION": {
+          "covered": 23802,
+          "missed": 2630,
+          "total": 26432,
+          "percent": 90.049939
+        },
+        "BRANCH": {
+          "covered": 2534,
+          "missed": 376,
+          "total": 2910,
+          "percent": 87.079038
+        },
+        "LINE": {
+          "covered": 5458,
+          "missed": 629,
+          "total": 6087,
+          "percent": 89.666502
+        },
+        "COMPLEXITY": {
+          "covered": 2507,
+          "missed": 477,
+          "total": 2984,
+          "percent": 84.014745
+        },
+        "METHOD": {
+          "covered": 1363,
+          "missed": 164,
+          "total": 1527,
+          "percent": 89.259987
+        },
+        "CLASS": {
+          "covered": 160,
+          "missed": 1,
+          "total": 161,
+          "percent": 99.378882
+        }
+      },
+      "delta": {
+        "INSTRUCTION": {
+          "covered": 183,
+          "percentage_points": 0.692342
+        },
+        "BRANCH": {
+          "covered": 27,
+          "percentage_points": 0.927835
+        },
+        "LINE": {
+          "covered": 29,
+          "percentage_points": 0.476425
+        },
+        "COMPLEXITY": {
+          "covered": 20,
+          "percentage_points": 0.670241
+        },
+        "METHOD": {
+          "covered": 5,
+          "percentage_points": 0.32744
+        },
+        "CLASS": {
+          "covered": 1,
+          "percentage_points": 0.621118
+        }
+      }
+    }
+  },
+  "target_details": {
+    "before": {
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "(Ljava/io/InputStream;I)V",
+          "line": 39,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 0,
+              "missed": 5,
+              "total": 5,
+              "percent": 0.0
+            },
+            "LINE": {
+              "covered": 0,
+              "missed": 2,
+              "total": 2,
+              "percent": 0.0
+            },
+            "COMPLEXITY": {
+              "covered": 0,
+              "missed": 1,
+              "total": 1,
+              "percent": 0.0
+            },
+            "METHOD": {
+              "covered": 0,
+              "missed": 1,
+              "total": 1,
+              "percent": 0.0
+            }
+          }
+        },
+        {
+          "name": "<init>",
+          "descriptor": "(Ljava/io/InputStream;)V",
+          "line": 49,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 0,
+              "missed": 4,
+              "total": 4,
+              "percent": 0.0
+            },
+            "LINE": {
+              "covered": 0,
+              "missed": 2,
+              "total": 2,
+              "percent": 0.0
+            },
+            "COMPLEXITY": {
+              "covered": 0,
+              "missed": 1,
+              "total": 1,
+              "percent": 0.0
+            },
+            "METHOD": {
+              "covered": 0,
+              "missed": 1,
+              "total": 1,
+              "percent": 0.0
+            }
+          }
+        },
+        {
+          "name": "peek",
+          "descriptor": "([B)Z",
+          "line": 62,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 0,
+              "missed": 45,
+              "total": 45,
+              "percent": 0.0
+            },
+            "BRANCH": {
+              "covered": 0,
+              "missed": 4,
+              "total": 4,
+              "percent": 0.0
+            },
+            "LINE": {
+              "covered": 0,
+              "missed": 6,
+              "total": 6,
+              "percent": 0.0
+            },
+            "COMPLEXITY": {
+              "covered": 0,
+              "missed": 3,
+              "total": 3,
+              "percent": 0.0
+            },
+            "METHOD": {
+              "covered": 0,
+              "missed": 1,
+              "total": 1,
+              "percent": 0.0
+            }
+          }
+        },
+        {
+          "name": "peek",
+          "descriptor": "([BII)Z",
+          "line": 84,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 0,
+              "missed": 44,
+              "total": 44,
+              "percent": 0.0
+            },
+            "BRANCH": {
+              "covered": 0,
+              "missed": 4,
+              "total": 4,
+              "percent": 0.0
+            },
+            "LINE": {
+              "covered": 0,
+              "missed": 6,
+              "total": 6,
+              "percent": 0.0
+            },
+            "COMPLEXITY": {
+              "covered": 0,
+              "missed": 3,
+              "total": 3,
+              "percent": 0.0
+            },
+            "METHOD": {
+              "covered": 0,
+              "missed": 1,
+              "total": 1,
+              "percent": 0.0
+            }
+          }
+        }
+      ],
+      "source_lines": [
+        {
+          "nr": 39,
+          "mi": 4,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0
+        },
+        {
+          "nr": 40,
+          "mi": 1,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0
+        },
+        {
+          "nr": 49,
+          "mi": 3,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0
+        },
+        {
+          "nr": 50,
+          "mi": 1,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0
+        },
+        {
+          "nr": 62,
+          "mi": 4,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0
+        },
+        {
+          "nr": 63,
+          "mi": 5,
+          "ci": 0,
+          "mb": 2,
+          "cb": 0
+        },
+        {
+          "nr": 64,
+          "mi": 20,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0
+        },
+        {
+          "nr": 67,
+          "mi": 6,
+          "ci": 0,
+          "mb": 2,
+          "cb": 0
+        },
+        {
+          "nr": 68,
+          "mi": 2,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0
+        },
+        {
+          "nr": 70,
+          "mi": 8,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0
+        },
+        {
+          "nr": 84,
+          "mi": 4,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0
+        },
+        {
+          "nr": 85,
+          "mi": 5,
+          "ci": 0,
+          "mb": 2,
+          "cb": 0
+        },
+        {
+          "nr": 86,
+          "mi": 20,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0
+        },
+        {
+          "nr": 89,
+          "mi": 6,
+          "ci": 0,
+          "mb": 2,
+          "cb": 0
+        },
+        {
+          "nr": 90,
+          "mi": 2,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0
+        },
+        {
+          "nr": 92,
+          "mi": 7,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0
+        }
+      ]
+    },
+    "after": {
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "(Ljava/io/InputStream;I)V",
+          "line": 39,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 5,
+              "missed": 0,
+              "total": 5,
+              "percent": 100.0
+            },
+            "LINE": {
+              "covered": 2,
+              "missed": 0,
+              "total": 2,
+              "percent": 100.0
+            },
+            "COMPLEXITY": {
+              "covered": 1,
+              "missed": 0,
+              "total": 1,
+              "percent": 100.0
+            },
+            "METHOD": {
+              "covered": 1,
+              "missed": 0,
+              "total": 1,
+              "percent": 100.0
+            }
+          }
+        },
+        {
+          "name": "<init>",
+          "descriptor": "(Ljava/io/InputStream;)V",
+          "line": 49,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 0,
+              "missed": 4,
+              "total": 4,
+              "percent": 0.0
+            },
+            "LINE": {
+              "covered": 0,
+              "missed": 2,
+              "total": 2,
+              "percent": 0.0
+            },
+            "COMPLEXITY": {
+              "covered": 0,
+              "missed": 1,
+              "total": 1,
+              "percent": 0.0
+            },
+            "METHOD": {
+              "covered": 0,
+              "missed": 1,
+              "total": 1,
+              "percent": 0.0
+            }
+          }
+        },
+        {
+          "name": "peek",
+          "descriptor": "([B)Z",
+          "line": 62,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 45,
+              "missed": 0,
+              "total": 45,
+              "percent": 100.0
+            },
+            "BRANCH": {
+              "covered": 4,
+              "missed": 0,
+              "total": 4,
+              "percent": 100.0
+            },
+            "LINE": {
+              "covered": 6,
+              "missed": 0,
+              "total": 6,
+              "percent": 100.0
+            },
+            "COMPLEXITY": {
+              "covered": 3,
+              "missed": 0,
+              "total": 3,
+              "percent": 100.0
+            },
+            "METHOD": {
+              "covered": 1,
+              "missed": 0,
+              "total": 1,
+              "percent": 100.0
+            }
+          }
+        },
+        {
+          "name": "peek",
+          "descriptor": "([BII)Z",
+          "line": 84,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 37,
+              "missed": 7,
+              "total": 44,
+              "percent": 84.090909
+            },
+            "BRANCH": {
+              "covered": 4,
+              "missed": 0,
+              "total": 4,
+              "percent": 100.0
+            },
+            "LINE": {
+              "covered": 5,
+              "missed": 1,
+              "total": 6,
+              "percent": 83.333333
+            },
+            "COMPLEXITY": {
+              "covered": 3,
+              "missed": 0,
+              "total": 3,
+              "percent": 100.0
+            },
+            "METHOD": {
+              "covered": 1,
+              "missed": 0,
+              "total": 1,
+              "percent": 100.0
+            }
+          }
+        }
+      ],
+      "source_lines": [
+        {
+          "nr": 39,
+          "mi": 0,
+          "ci": 4,
+          "mb": 0,
+          "cb": 0
+        },
+        {
+          "nr": 40,
+          "mi": 0,
+          "ci": 1,
+          "mb": 0,
+          "cb": 0
+        },
+        {
+          "nr": 49,
+          "mi": 3,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0
+        },
+        {
+          "nr": 50,
+          "mi": 1,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0
+        },
+        {
+          "nr": 62,
+          "mi": 0,
+          "ci": 4,
+          "mb": 0,
+          "cb": 0
+        },
+        {
+          "nr": 63,
+          "mi": 0,
+          "ci": 5,
+          "mb": 0,
+          "cb": 2
+        },
+        {
+          "nr": 64,
+          "mi": 0,
+          "ci": 20,
+          "mb": 0,
+          "cb": 0
+        },
+        {
+          "nr": 67,
+          "mi": 0,
+          "ci": 6,
+          "mb": 0,
+          "cb": 2
+        },
+        {
+          "nr": 68,
+          "mi": 0,
+          "ci": 2,
+          "mb": 0,
+          "cb": 0
+        },
+        {
+          "nr": 70,
+          "mi": 0,
+          "ci": 8,
+          "mb": 0,
+          "cb": 0
+        },
+        {
+          "nr": 84,
+          "mi": 0,
+          "ci": 4,
+          "mb": 0,
+          "cb": 0
+        },
+        {
+          "nr": 85,
+          "mi": 0,
+          "ci": 5,
+          "mb": 0,
+          "cb": 2
+        },
+        {
+          "nr": 86,
+          "mi": 0,
+          "ci": 20,
+          "mb": 0,
+          "cb": 0
+        },
+        {
+          "nr": 89,
+          "mi": 0,
+          "ci": 6,
+          "mb": 0,
+          "cb": 2
+        },
+        {
+          "nr": 90,
+          "mi": 0,
+          "ci": 2,
+          "mb": 0,
+          "cb": 0
+        },
+        {
+          "nr": 92,
+          "mi": 7,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0
+        }
+      ]
+    }
+  },
+  "class_coverage_changes": [
+    {
+      "class": "org/apache/commons/io/monitor/FileEntry",
+      "before": {
+        "INSTRUCTION": {
+          "covered": 123,
+          "missed": 50,
+          "total": 173,
+          "percent": 71.098266
+        },
+        "BRANCH": {
+          "covered": 15,
+          "missed": 9,
+          "total": 24,
+          "percent": 62.5
+        },
+        "LINE": {
+          "covered": 26,
+          "missed": 16,
+          "total": 42,
+          "percent": 61.904762
+        },
+        "COMPLEXITY": {
+          "covered": 14,
+          "missed": 18,
+          "total": 32,
+          "percent": 43.75
+        },
+        "METHOD": {
+          "covered": 10,
+          "missed": 10,
+          "total": 20,
+          "percent": 50.0
+        },
+        "CLASS": {
+          "covered": 1,
+          "missed": 0,
+          "total": 1,
+          "percent": 100.0
+        }
+      },
+      "after": {
+        "INSTRUCTION": {
+          "covered": 124,
+          "missed": 49,
+          "total": 173,
+          "percent": 71.676301
+        },
+        "BRANCH": {
+          "covered": 18,
+          "missed": 6,
+          "total": 24,
+          "percent": 75.0
+        },
+        "LINE": {
+          "covered": 26,
+          "missed": 16,
+          "total": 42,
+          "percent": 61.904762
+        },
+        "COMPLEXITY": {
+          "covered": 17,
+          "missed": 15,
+          "total": 32,
+          "percent": 53.125
+        },
+        "METHOD": {
+          "covered": 10,
+          "missed": 10,
+          "total": 20,
+          "percent": 50.0
+        },
+        "CLASS": {
+          "covered": 1,
+          "missed": 0,
+          "total": 1,
+          "percent": 100.0
+        }
+      },
+      "covered_delta": {
+        "INSTRUCTION": 1,
+        "BRANCH": 3,
+        "LINE": 0,
+        "COMPLEXITY": 3,
+        "METHOD": 0,
+        "CLASS": 0
+      }
+    },
+    {
+      "class": "org/apache/commons/io/monitor/FileAlterationMonitor",
+      "before": {
+        "INSTRUCTION": {
+          "covered": 184,
+          "missed": 4,
+          "total": 188,
+          "percent": 97.87234
+        },
+        "BRANCH": {
+          "covered": 25,
+          "missed": 1,
+          "total": 26,
+          "percent": 96.153846
+        },
+        "LINE": {
+          "covered": 55,
+          "missed": 3,
+          "total": 58,
+          "percent": 94.827586
+        },
+        "COMPLEXITY": {
+          "covered": 24,
+          "missed": 1,
+          "total": 25,
+          "percent": 96.0
+        },
+        "METHOD": {
+          "covered": 12,
+          "missed": 0,
+          "total": 12,
+          "percent": 100.0
+        },
+        "CLASS": {
+          "covered": 1,
+          "missed": 0,
+          "total": 1,
+          "percent": 100.0
+        }
+      },
+      "after": {
+        "INSTRUCTION": {
+          "covered": 185,
+          "missed": 3,
+          "total": 188,
+          "percent": 98.404255
+        },
+        "BRANCH": {
+          "covered": 26,
+          "missed": 0,
+          "total": 26,
+          "percent": 100.0
+        },
+        "LINE": {
+          "covered": 56,
+          "missed": 2,
+          "total": 58,
+          "percent": 96.551724
+        },
+        "COMPLEXITY": {
+          "covered": 25,
+          "missed": 0,
+          "total": 25,
+          "percent": 100.0
+        },
+        "METHOD": {
+          "covered": 12,
+          "missed": 0,
+          "total": 12,
+          "percent": 100.0
+        },
+        "CLASS": {
+          "covered": 1,
+          "missed": 0,
+          "total": 1,
+          "percent": 100.0
+        }
+      },
+      "covered_delta": {
+        "INSTRUCTION": 1,
+        "BRANCH": 1,
+        "LINE": 1,
+        "COMPLEXITY": 1,
+        "METHOD": 0,
+        "CLASS": 0
+      }
+    },
+    {
+      "class": "org/apache/commons/io/input/BrokenInputStream",
+      "before": {
+        "INSTRUCTION": {
+          "covered": 21,
+          "missed": 7,
+          "total": 28,
+          "percent": 75.0
+        },
+        "LINE": {
+          "covered": 8,
+          "missed": 2,
+          "total": 10,
+          "percent": 80.0
+        },
+        "COMPLEXITY": {
+          "covered": 6,
+          "missed": 1,
+          "total": 7,
+          "percent": 85.714286
+        },
+        "METHOD": {
+          "covered": 6,
+          "missed": 1,
+          "total": 7,
+          "percent": 85.714286
+        },
+        "CLASS": {
+          "covered": 1,
+          "missed": 0,
+          "total": 1,
+          "percent": 100.0
+        }
+      },
+      "after": {
+        "INSTRUCTION": {
+          "covered": 28,
+          "missed": 0,
+          "total": 28,
+          "percent": 100.0
+        },
+        "LINE": {
+          "covered": 10,
+          "missed": 0,
+          "total": 10,
+          "percent": 100.0
+        },
+        "COMPLEXITY": {
+          "covered": 7,
+          "missed": 0,
+          "total": 7,
+          "percent": 100.0
+        },
+        "METHOD": {
+          "covered": 7,
+          "missed": 0,
+          "total": 7,
+          "percent": 100.0
+        },
+        "CLASS": {
+          "covered": 1,
+          "missed": 0,
+          "total": 1,
+          "percent": 100.0
+        }
+      },
+      "covered_delta": {
+        "INSTRUCTION": 7,
+        "LINE": 2,
+        "COMPLEXITY": 1,
+        "METHOD": 1,
+        "CLASS": 0
+      }
+    },
+    {
+      "class": "org/apache/commons/io/input/buffer/PeekableInputStream",
+      "before": {
+        "INSTRUCTION": {
+          "covered": 0,
+          "missed": 98,
+          "total": 98,
+          "percent": 0.0
+        },
+        "BRANCH": {
+          "covered": 0,
+          "missed": 8,
+          "total": 8,
+          "percent": 0.0
+        },
+        "LINE": {
+          "covered": 0,
+          "missed": 16,
+          "total": 16,
+          "percent": 0.0
+        },
+        "COMPLEXITY": {
+          "covered": 0,
+          "missed": 8,
+          "total": 8,
+          "percent": 0.0
+        },
+        "METHOD": {
+          "covered": 0,
+          "missed": 4,
+          "total": 4,
+          "percent": 0.0
+        },
+        "CLASS": {
+          "covered": 0,
+          "missed": 1,
+          "total": 1,
+          "percent": 0.0
+        }
+      },
+      "after": {
+        "INSTRUCTION": {
+          "covered": 87,
+          "missed": 11,
+          "total": 98,
+          "percent": 88.77551
+        },
+        "BRANCH": {
+          "covered": 8,
+          "missed": 0,
+          "total": 8,
+          "percent": 100.0
+        },
+        "LINE": {
+          "covered": 13,
+          "missed": 3,
+          "total": 16,
+          "percent": 81.25
+        },
+        "COMPLEXITY": {
+          "covered": 7,
+          "missed": 1,
+          "total": 8,
+          "percent": 87.5
+        },
+        "METHOD": {
+          "covered": 3,
+          "missed": 1,
+          "total": 4,
+          "percent": 75.0
+        },
+        "CLASS": {
+          "covered": 1,
+          "missed": 0,
+          "total": 1,
+          "percent": 100.0
+        }
+      },
+      "covered_delta": {
+        "INSTRUCTION": 87,
+        "BRANCH": 8,
+        "LINE": 13,
+        "COMPLEXITY": 7,
+        "METHOD": 3,
+        "CLASS": 1
+      }
+    },
+    {
+      "class": "org/apache/commons/io/input/buffer/CircularByteBuffer",
+      "before": {
+        "INSTRUCTION": {
+          "covered": 121,
+          "missed": 315,
+          "total": 436,
+          "percent": 27.752294
+        },
+        "BRANCH": {
+          "covered": 12,
+          "missed": 46,
+          "total": 58,
+          "percent": 20.689655
+        },
+        "LINE": {
+          "covered": 25,
+          "missed": 49,
+          "total": 74,
+          "percent": 33.783784
+        },
+        "COMPLEXITY": {
+          "covered": 9,
+          "missed": 33,
+          "total": 42,
+          "percent": 21.428571
+        },
+        "METHOD": {
+          "covered": 6,
+          "missed": 7,
+          "total": 13,
+          "percent": 46.153846
+        },
+        "CLASS": {
+          "covered": 1,
+          "missed": 0,
+          "total": 1,
+          "percent": 100.0
+        }
+      },
+      "after": {
+        "INSTRUCTION": {
+          "covered": 196,
+          "missed": 240,
+          "total": 436,
+          "percent": 44.954128
+        },
+        "BRANCH": {
+          "covered": 26,
+          "missed": 32,
+          "total": 58,
+          "percent": 44.827586
+        },
+        "LINE": {
+          "covered": 37,
+          "missed": 37,
+          "total": 74,
+          "percent": 50.0
+        },
+        "COMPLEXITY": {
+          "covered": 16,
+          "missed": 26,
+          "total": 42,
+          "percent": 38.095238
+        },
+        "METHOD": {
+          "covered": 7,
+          "missed": 6,
+          "total": 13,
+          "percent": 53.846154
+        },
+        "CLASS": {
+          "covered": 1,
+          "missed": 0,
+          "total": 1,
+          "percent": 100.0
+        }
+      },
+      "covered_delta": {
+        "INSTRUCTION": 75,
+        "BRANCH": 14,
+        "LINE": 12,
+        "COMPLEXITY": 7,
+        "METHOD": 1,
+        "CLASS": 0
+      }
+    },
+    {
+      "class": "org/apache/commons/io/input/buffer/CircularBufferInputStream",
+      "before": {
+        "INSTRUCTION": {
+          "covered": 118,
+          "missed": 49,
+          "total": 167,
+          "percent": 70.658683
+        },
+        "BRANCH": {
+          "covered": 15,
+          "missed": 7,
+          "total": 22,
+          "percent": 68.181818
+        },
+        "LINE": {
+          "covered": 34,
+          "missed": 13,
+          "total": 47,
+          "percent": 72.340426
+        },
+        "COMPLEXITY": {
+          "covered": 9,
+          "missed": 10,
+          "total": 19,
+          "percent": 47.368421
+        },
+        "METHOD": {
+          "covered": 5,
+          "missed": 3,
+          "total": 8,
+          "percent": 62.5
+        },
+        "CLASS": {
+          "covered": 1,
+          "missed": 0,
+          "total": 1,
+          "percent": 100.0
+        }
+      },
+      "after": {
+        "INSTRUCTION": {
+          "covered": 130,
+          "missed": 37,
+          "total": 167,
+          "percent": 77.844311
+        },
+        "BRANCH": {
+          "covered": 16,
+          "missed": 6,
+          "total": 22,
+          "percent": 72.727273
+        },
+        "LINE": {
+          "covered": 35,
+          "missed": 12,
+          "total": 47,
+          "percent": 74.468085
+        },
+        "COMPLEXITY": {
+          "covered": 10,
+          "missed": 9,
+          "total": 19,
+          "percent": 52.631579
+        },
+        "METHOD": {
+          "covered": 5,
+          "missed": 3,
+          "total": 8,
+          "percent": 62.5
+        },
+        "CLASS": {
+          "covered": 1,
+          "missed": 0,
+          "total": 1,
+          "percent": 100.0
+        }
+      },
+      "covered_delta": {
+        "INSTRUCTION": 12,
+        "BRANCH": 1,
+        "LINE": 1,
+        "COMPLEXITY": 1,
+        "METHOD": 0,
+        "CLASS": 0
+      }
+    }
+  ],
+  "coverage_rule_violations": {
+    "before": [
+      "[WARNING] Rule violated for bundle commons-io: classes covered ratio is 0.98, but expected minimum is 1.00",
+      "[WARNING] Rule violated for bundle commons-io: instructions covered ratio is 0.89, but expected minimum is 0.90",
+      "[WARNING] Rule violated for bundle commons-io: methods covered ratio is 0.88, but expected minimum is 0.95",
+      "[WARNING] Rule violated for bundle commons-io: lines covered ratio is 0.89, but expected minimum is 0.90",
+      "[WARNING] Rule violated for bundle commons-io: complexity covered ratio is 0.83, but expected minimum is 0.85"
+    ],
+    "after": [
+      "[WARNING] Rule violated for bundle commons-io: classes covered ratio is 0.99, but expected minimum is 1.00",
+      "[WARNING] Rule violated for bundle commons-io: methods covered ratio is 0.89, but expected minimum is 0.95",
+      "[WARNING] Rule violated for bundle commons-io: lines covered ratio is 0.89, but expected minimum is 0.90",
+      "[WARNING] Rule violated for bundle commons-io: complexity covered ratio is 0.84, but expected minimum is 0.85"
+    ]
+  },
+  "limits": [
+    "One paired measurement; repeated-run stability was not measured.",
+    "Branch coverage is not exception-path coverage.",
+    "No assertion sensitivity or mutation result is inferred.",
+    "Project coverage also changed in FileEntry and FileAlterationMonitor outside the generated fixtures; the full project delta is not attributed to the added tests."
+  ]
+}

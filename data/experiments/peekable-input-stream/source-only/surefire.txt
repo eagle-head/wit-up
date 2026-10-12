@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.io.input.buffer.PeekableInputStreamTest
+-------------------------------------------------------------------------------
+Tests run: 26, Failures: 4, Errors: 1, Skipped: 0, Time elapsed: 0.03 s <<< FAILURE! - in org.apache.commons.io.input.buffer.PeekableInputStreamTest
+testPeekMatchesPrefixAlreadyBuffered  Time elapsed: 0.008 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.apache.commons.io.input.buffer.PeekableInputStreamTest.testPeekMatchesPrefixAlreadyBuffered(PeekableInputStreamTest.java:138)
+
+testPeekMatchesPrefixOfFullBuffer  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.apache.commons.io.input.buffer.PeekableInputStreamTest.testPeekMatchesPrefixOfFullBuffer(PeekableInputStreamTest.java:113)
+
+testPeekEmptyArray  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid offset: 0
+	at org.apache.commons.io.input.buffer.PeekableInputStreamTest.testPeekEmptyArray(PeekableInputStreamTest.java:285)
+
+testPeekZeroLengthSlice  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.apache.commons.io.input.buffer.PeekableInputStreamTest.testPeekZeroLengthSlice(PeekableInputStreamTest.java:293)
+
+testPeekSliceMatchesPrefix  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.apache.commons.io.input.buffer.PeekableInputStreamTest.testPeekSliceMatchesPrefix(PeekableInputStreamTest.java:125)
+

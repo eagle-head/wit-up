@@ -1,0 +1,9 @@
+{
+  "scope": "org.apache.commons.io.input.buffer.PeekableInputStream",
+  "conditions_checked": 5,
+  "all_target_counters_match_original_xml": true,
+  "earlier_four_conditions_unchanged": true,
+  "latest_condition": "json-exceptions",
+  "latest_verification": "data/experiments/peekable-input-stream/json-exceptions/verification.json",
+  "previous_verification_preserved_at": "data/experiments/peekable-input-stream/json-exceptions/coverage/target-verification-before-extension.json"
+}

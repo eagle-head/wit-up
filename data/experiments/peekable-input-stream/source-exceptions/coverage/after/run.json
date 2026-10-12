@@ -1,0 +1,20 @@
+{
+  "phase": "after",
+  "baseline_commit": "d7a3c884d07ff5f1829b09087f34dcb8043f0f64",
+  "working_directory": "D:/Projects/wit-up/.worktrees/commons-io-coverage",
+  "target_test_exists": true,
+  "target_test_sha256": "653D136D35FDAC4E556D76C1AD0965E82E05706ADDB91DD549E991FCE06B5221",
+  "maven_executable": "C:/Users/edyko/AppData/Local/mise/installs/maven/3.9.16/apache-maven-3.9.16/bin/mvn.cmd",
+  "java_home": "C:/Users/edyko/AppData/Local/mise/installs/java/temurin-8.0.504+1",
+  "arguments": [
+    "-B",
+    "-Pjacoco",
+    "-Djacoco.skip=false",
+    "clean",
+    "verify",
+    "jacoco:report"
+  ],
+  "started_at_utc": "2026-10-12T01:49:48.1920432Z",
+  "completed_at_utc": "2026-10-12T01:53:08.6395608Z",
+  "exit_code": 0
+}

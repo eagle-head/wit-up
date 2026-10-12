@@ -1,0 +1,610 @@
+{
+  "scope": "org.apache.commons.io.input.buffer.PeekableInputStream",
+  "test_class": "org.apache.commons.io.input.buffer.PeekableInputStreamTest",
+  "measurement": "Existing reconstructed before/after runs; no new execution",
+  "reporting_scope": "Target class counters and dedicated target test outcomes only",
+  "cases": [
+    {
+      "condition": "source-only",
+      "baseline_commit": "d7a3c884d07ff5f1829b09087f34dcb8043f0f64",
+      "before": {
+        "counters": {
+          "INSTRUCTION": {
+            "covered": 0,
+            "missed": 98,
+            "total": 98,
+            "percent": 0.0
+          },
+          "BRANCH": {
+            "covered": 0,
+            "missed": 8,
+            "total": 8,
+            "percent": 0.0
+          },
+          "LINE": {
+            "covered": 0,
+            "missed": 16,
+            "total": 16,
+            "percent": 0.0
+          },
+          "COMPLEXITY": {
+            "covered": 0,
+            "missed": 8,
+            "total": 8,
+            "percent": 0.0
+          },
+          "METHOD": {
+            "covered": 0,
+            "missed": 4,
+            "total": 4,
+            "percent": 0.0
+          },
+          "CLASS": {
+            "covered": 0,
+            "missed": 1,
+            "total": 1,
+            "percent": 0.0
+          }
+        },
+        "target_test_results": {
+          "test_file_present": false,
+          "cases": 0,
+          "passed": 0,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "source_xml": "data/experiments/peekable-input-stream/source-only/coverage/before/jacoco/jacoco.xml",
+        "target_html": "data/experiments/peekable-input-stream/source-only/coverage/before/jacoco/org.apache.commons.io.input.buffer/PeekableInputStream.html",
+        "build_exit_code": 0,
+        "run_metadata": "data/experiments/peekable-input-stream/source-only/coverage/before/run.json"
+      },
+      "after": {
+        "counters": {
+          "INSTRUCTION": {
+            "covered": 98,
+            "missed": 0,
+            "total": 98,
+            "percent": 100.0
+          },
+          "BRANCH": {
+            "covered": 8,
+            "missed": 0,
+            "total": 8,
+            "percent": 100.0
+          },
+          "LINE": {
+            "covered": 16,
+            "missed": 0,
+            "total": 16,
+            "percent": 100.0
+          },
+          "COMPLEXITY": {
+            "covered": 8,
+            "missed": 0,
+            "total": 8,
+            "percent": 100.0
+          },
+          "METHOD": {
+            "covered": 4,
+            "missed": 0,
+            "total": 4,
+            "percent": 100.0
+          },
+          "CLASS": {
+            "covered": 1,
+            "missed": 0,
+            "total": 1,
+            "percent": 100.0
+          }
+        },
+        "target_test_results": {
+          "test_file_present": true,
+          "failures": 4,
+          "errors": 1,
+          "skipped": 0,
+          "cases": 26,
+          "passed": 21
+        },
+        "source_xml": "data/experiments/peekable-input-stream/source-only/coverage/after/jacoco/jacoco.xml",
+        "target_html": "data/experiments/peekable-input-stream/source-only/coverage/after/jacoco/org.apache.commons.io.input.buffer/PeekableInputStream.html",
+        "build_exit_code": 1,
+        "run_metadata": "data/experiments/peekable-input-stream/source-only/coverage/after/run.json"
+      }
+    },
+    {
+      "condition": "json-only",
+      "baseline_commit": "d7a3c884d07ff5f1829b09087f34dcb8043f0f64",
+      "before": {
+        "counters": {
+          "INSTRUCTION": {
+            "covered": 0,
+            "missed": 98,
+            "total": 98,
+            "percent": 0.0
+          },
+          "BRANCH": {
+            "covered": 0,
+            "missed": 8,
+            "total": 8,
+            "percent": 0.0
+          },
+          "LINE": {
+            "covered": 0,
+            "missed": 16,
+            "total": 16,
+            "percent": 0.0
+          },
+          "COMPLEXITY": {
+            "covered": 0,
+            "missed": 8,
+            "total": 8,
+            "percent": 0.0
+          },
+          "METHOD": {
+            "covered": 0,
+            "missed": 4,
+            "total": 4,
+            "percent": 0.0
+          },
+          "CLASS": {
+            "covered": 0,
+            "missed": 1,
+            "total": 1,
+            "percent": 0.0
+          }
+        },
+        "target_test_results": {
+          "test_file_present": false,
+          "cases": 0,
+          "passed": 0,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "source_xml": "data/experiments/peekable-input-stream/json-only/coverage/before/jacoco/jacoco.xml",
+        "target_html": "data/experiments/peekable-input-stream/json-only/coverage/before/jacoco/org.apache.commons.io.input.buffer/PeekableInputStream.html",
+        "build_exit_code": 0,
+        "run_metadata": "data/experiments/peekable-input-stream/json-only/coverage/before/run.json"
+      },
+      "after": {
+        "counters": {
+          "INSTRUCTION": {
+            "covered": 77,
+            "missed": 21,
+            "total": 98,
+            "percent": 78.571429
+          },
+          "BRANCH": {
+            "covered": 7,
+            "missed": 1,
+            "total": 8,
+            "percent": 87.5
+          },
+          "LINE": {
+            "covered": 11,
+            "missed": 5,
+            "total": 16,
+            "percent": 68.75
+          },
+          "COMPLEXITY": {
+            "covered": 6,
+            "missed": 2,
+            "total": 8,
+            "percent": 75.0
+          },
+          "METHOD": {
+            "covered": 3,
+            "missed": 1,
+            "total": 4,
+            "percent": 75.0
+          },
+          "CLASS": {
+            "covered": 1,
+            "missed": 0,
+            "total": 1,
+            "percent": 100.0
+          }
+        },
+        "target_test_results": {
+          "test_file_present": true,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "cases": 12,
+          "passed": 12
+        },
+        "source_xml": "data/experiments/peekable-input-stream/json-only/coverage/after/jacoco/jacoco.xml",
+        "target_html": "data/experiments/peekable-input-stream/json-only/coverage/after/jacoco/org.apache.commons.io.input.buffer/PeekableInputStream.html",
+        "build_exit_code": 0,
+        "run_metadata": "data/experiments/peekable-input-stream/json-only/coverage/after/run.json"
+      }
+    },
+    {
+      "condition": "source-exceptions",
+      "baseline_commit": "d7a3c884d07ff5f1829b09087f34dcb8043f0f64",
+      "before": {
+        "counters": {
+          "INSTRUCTION": {
+            "covered": 0,
+            "missed": 98,
+            "total": 98,
+            "percent": 0.0
+          },
+          "BRANCH": {
+            "covered": 0,
+            "missed": 8,
+            "total": 8,
+            "percent": 0.0
+          },
+          "LINE": {
+            "covered": 0,
+            "missed": 16,
+            "total": 16,
+            "percent": 0.0
+          },
+          "COMPLEXITY": {
+            "covered": 0,
+            "missed": 8,
+            "total": 8,
+            "percent": 0.0
+          },
+          "METHOD": {
+            "covered": 0,
+            "missed": 4,
+            "total": 4,
+            "percent": 0.0
+          },
+          "CLASS": {
+            "covered": 0,
+            "missed": 1,
+            "total": 1,
+            "percent": 0.0
+          }
+        },
+        "target_test_results": {
+          "test_file_present": false,
+          "cases": 0,
+          "passed": 0,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "source_xml": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/jacoco/jacoco.xml",
+        "target_html": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/jacoco/org.apache.commons.io.input.buffer/PeekableInputStream.html",
+        "build_exit_code": 0,
+        "run_metadata": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/run.json"
+      },
+      "after": {
+        "counters": {
+          "INSTRUCTION": {
+            "covered": 87,
+            "missed": 11,
+            "total": 98,
+            "percent": 88.77551
+          },
+          "BRANCH": {
+            "covered": 8,
+            "missed": 0,
+            "total": 8,
+            "percent": 100.0
+          },
+          "LINE": {
+            "covered": 13,
+            "missed": 3,
+            "total": 16,
+            "percent": 81.25
+          },
+          "COMPLEXITY": {
+            "covered": 7,
+            "missed": 1,
+            "total": 8,
+            "percent": 87.5
+          },
+          "METHOD": {
+            "covered": 3,
+            "missed": 1,
+            "total": 4,
+            "percent": 75.0
+          },
+          "CLASS": {
+            "covered": 1,
+            "missed": 0,
+            "total": 1,
+            "percent": 100.0
+          }
+        },
+        "target_test_results": {
+          "test_file_present": true,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "cases": 17,
+          "passed": 17
+        },
+        "source_xml": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/jacoco/jacoco.xml",
+        "target_html": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/jacoco/org.apache.commons.io.input.buffer/PeekableInputStream.html",
+        "build_exit_code": 0,
+        "run_metadata": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/run.json"
+      }
+    },
+    {
+      "condition": "reference-suite",
+      "baseline_commit": "d7a3c884d07ff5f1829b09087f34dcb8043f0f64",
+      "before": {
+        "counters": {
+          "INSTRUCTION": {
+            "covered": 0,
+            "missed": 98,
+            "total": 98,
+            "percent": 0.0
+          },
+          "BRANCH": {
+            "covered": 0,
+            "missed": 8,
+            "total": 8,
+            "percent": 0.0
+          },
+          "LINE": {
+            "covered": 0,
+            "missed": 16,
+            "total": 16,
+            "percent": 0.0
+          },
+          "COMPLEXITY": {
+            "covered": 0,
+            "missed": 8,
+            "total": 8,
+            "percent": 0.0
+          },
+          "METHOD": {
+            "covered": 0,
+            "missed": 4,
+            "total": 4,
+            "percent": 0.0
+          },
+          "CLASS": {
+            "covered": 0,
+            "missed": 1,
+            "total": 1,
+            "percent": 0.0
+          }
+        },
+        "target_test_results": {
+          "test_file_present": false,
+          "cases": 0,
+          "passed": 0,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "source_xml": "data/experiments/peekable-input-stream/reference-suite/coverage/before/jacoco/jacoco.xml",
+        "target_html": "data/experiments/peekable-input-stream/reference-suite/coverage/before/jacoco/org.apache.commons.io.input.buffer/PeekableInputStream.html",
+        "build_exit_code": 0,
+        "run_metadata": "data/experiments/peekable-input-stream/reference-suite/coverage/before/run.json"
+      },
+      "after": {
+        "counters": {
+          "INSTRUCTION": {
+            "covered": 98,
+            "missed": 0,
+            "total": 98,
+            "percent": 100.0
+          },
+          "BRANCH": {
+            "covered": 8,
+            "missed": 0,
+            "total": 8,
+            "percent": 100.0
+          },
+          "LINE": {
+            "covered": 16,
+            "missed": 0,
+            "total": 16,
+            "percent": 100.0
+          },
+          "COMPLEXITY": {
+            "covered": 8,
+            "missed": 0,
+            "total": 8,
+            "percent": 100.0
+          },
+          "METHOD": {
+            "covered": 4,
+            "missed": 0,
+            "total": 4,
+            "percent": 100.0
+          },
+          "CLASS": {
+            "covered": 1,
+            "missed": 0,
+            "total": 1,
+            "percent": 100.0
+          }
+        },
+        "target_test_results": {
+          "test_file_present": true,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "cases": 34,
+          "passed": 34
+        },
+        "source_xml": "data/experiments/peekable-input-stream/reference-suite/coverage/after/jacoco/jacoco.xml",
+        "target_html": "data/experiments/peekable-input-stream/reference-suite/coverage/after/jacoco/org.apache.commons.io.input.buffer/PeekableInputStream.html",
+        "build_exit_code": 0,
+        "run_metadata": "data/experiments/peekable-input-stream/reference-suite/coverage/after/run.json"
+      }
+    },
+    {
+      "condition": "json-exceptions",
+      "baseline_commit": "d7a3c884d07ff5f1829b09087f34dcb8043f0f64",
+      "original_generation": {
+        "target_build_exit": 1,
+        "compiled": false,
+        "executed_cases": 0,
+        "failures": null,
+        "errors": null,
+        "skipped": null,
+        "blocker": ".ruff_cache/CACHEDIR.TAG rejected by Apache RAT"
+      },
+      "before": {
+        "counters": {
+          "INSTRUCTION": {
+            "covered": 0,
+            "missed": 98,
+            "total": 98,
+            "percent": 0.0
+          },
+          "BRANCH": {
+            "covered": 0,
+            "missed": 8,
+            "total": 8,
+            "percent": 0.0
+          },
+          "LINE": {
+            "covered": 0,
+            "missed": 16,
+            "total": 16,
+            "percent": 0.0
+          },
+          "COMPLEXITY": {
+            "covered": 0,
+            "missed": 8,
+            "total": 8,
+            "percent": 0.0
+          },
+          "METHOD": {
+            "covered": 0,
+            "missed": 4,
+            "total": 4,
+            "percent": 0.0
+          },
+          "CLASS": {
+            "covered": 0,
+            "missed": 1,
+            "total": 1,
+            "percent": 0.0
+          }
+        },
+        "target_test_results": {
+          "test_file_present": false,
+          "cases": 0,
+          "passed": 0,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "build_exit_code": 0,
+        "run_metadata": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/run.json",
+        "source_xml": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/jacoco/jacoco.xml",
+        "target_html": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/jacoco/org.apache.commons.io.input.buffer/PeekableInputStream.html"
+      },
+      "after": {
+        "counters": {
+          "INSTRUCTION": {
+            "covered": 85,
+            "missed": 13,
+            "total": 98,
+            "percent": 86.734694
+          },
+          "BRANCH": {
+            "covered": 7,
+            "missed": 1,
+            "total": 8,
+            "percent": 87.5
+          },
+          "LINE": {
+            "covered": 12,
+            "missed": 4,
+            "total": 16,
+            "percent": 75.0
+          },
+          "COMPLEXITY": {
+            "covered": 6,
+            "missed": 2,
+            "total": 8,
+            "percent": 75.0
+          },
+          "METHOD": {
+            "covered": 3,
+            "missed": 1,
+            "total": 4,
+            "percent": 75.0
+          },
+          "CLASS": {
+            "covered": 1,
+            "missed": 0,
+            "total": 1,
+            "percent": 100.0
+          }
+        },
+        "target_test_results": {
+          "test_file_present": true,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "cases": 11,
+          "passed": 11,
+          "case_outcomes": [
+            {
+              "name": "testPeekSliceRejectsNullBuffer",
+              "status": "passed"
+            },
+            {
+              "name": "testPeekSliceRejectsLengthLargerThanCapacity",
+              "status": "passed"
+            },
+            {
+              "name": "testPeekSliceRejectsBufferLargerThanCapacity",
+              "status": "passed"
+            },
+            {
+              "name": "testPeekSliceFailsWhenMatchingPrefixExceedsArrayBounds",
+              "status": "passed"
+            },
+            {
+              "name": "testPeekArrayRejectsBufferLargerThanCapacity",
+              "status": "passed"
+            },
+            {
+              "name": "testPeekArrayRejectsEmptyBuffer",
+              "status": "passed"
+            },
+            {
+              "name": "testPeekSliceRejectsNegativeLength",
+              "status": "passed"
+            },
+            {
+              "name": "testPeekSliceRejectsNegativeOffset",
+              "status": "passed"
+            },
+            {
+              "name": "testPeekArrayRejectsNullBuffer",
+              "status": "passed"
+            },
+            {
+              "name": "testPeekSliceRejectsEmptyBuffer",
+              "status": "passed"
+            },
+            {
+              "name": "testConstructorRejectsZeroBufferSize",
+              "status": "passed"
+            }
+          ]
+        },
+        "build_exit_code": 0,
+        "run_metadata": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/run.json",
+        "source_xml": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/jacoco/jacoco.xml",
+        "target_html": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/jacoco/org.apache.commons.io.input.buffer/PeekableInputStream.html"
+      }
+    }
+  ],
+  "limits": [
+    "Coverage records execution, not assertion correctness or complete exception paths.",
+    "Failing tests contribute coverage; source-only retains four failures and one error.",
+    "Complete original logs and raw reports are preserved unchanged.",
+    "The earlier prompts differ, so these results do not isolate the causal effect of input source.",
+    "The exception-only JSON generation build was blocked before compilation; its passing outcomes are from a later clean-checkout measurement."
+  ]
+}

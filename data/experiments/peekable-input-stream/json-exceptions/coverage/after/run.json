@@ -1,0 +1,24 @@
+{
+  "condition": "json-exceptions",
+  "phase": "after",
+  "baseline_commit": "d7a3c884d07ff5f1829b09087f34dcb8043f0f64",
+  "working_directory": "D:/Projects/wit-up/.worktrees/commons-io-coverage",
+  "maven_executable": "C:/Users/edyko/AppData/Local/mise/installs/maven/3.9.16/apache-maven-3.9.16/bin/mvn.cmd",
+  "java_home": "C:/Users/edyko/AppData/Local/mise/installs/java/temurin-8.0.504+1",
+  "arguments": [
+    "-B",
+    "-Pjacoco",
+    "-Djacoco.skip=false",
+    "clean",
+    "verify",
+    "jacoco:report"
+  ],
+  "started_at_utc": "2026-10-12T03:29:14.233940+00:00",
+  "target_test_exists": true,
+  "original_generation_build_status": "Failed before compilation at Apache RAT",
+  "isolated_measurement": true,
+  "local_ruff_cache_present": false,
+  "target_test_sha256": "C8FCE4484A2B0A8620DB781029F9BDC698FB69ED5AD15F015F2BED1ED98A5536",
+  "exit_code": 0,
+  "completed_at_utc": "2026-10-12T03:32:35.043779+00:00"
+}

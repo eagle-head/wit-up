@@ -1,0 +1,134 @@
+"""Capture preserved suites without editing their source or hiding build failures."""
+
+from datetime import datetime, timezone
+import hashlib
+import json
+import os
+from pathlib import Path
+import shutil
+import subprocess
+import xml.etree.ElementTree as ET
+import zipfile
+
+
+ROOT = Path("D:/Projects/wit-up")
+REPO = ROOT / ".worktrees/commons-io-coverage"
+CONTROL = Path(__file__).resolve().parent
+BASE = "d7a3c884d07ff5f1829b09087f34dcb8043f0f64"
+TARGET = Path("src/test/java/org/apache/commons/io/input/buffer/PeekableInputStreamTest.java")
+MAVEN = "C:/Users/edyko/AppData/Local/mise/installs/maven/3.9.16/apache-maven-3.9.16/bin/mvn.cmd"
+JAVA = "C:/Users/edyko/AppData/Local/mise/installs/java/temurin-8.0.504+1"
+ARGS = ["-B", "-Pjacoco", "-Djacoco.skip=false", "clean", "verify", "jacoco:report"]
+
+
+def now():
+    return datetime.now(timezone.utc).isoformat()
+
+
+def digest(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest().upper()
+
+
+def write_json(path, value):
+    path.write_text(json.dumps(value, indent=2) + "\n", encoding="utf-8")
+
+
+def manifest(directory):
+    return {p.relative_to(directory).as_posix(): digest(p)
+            for p in sorted(directory.rglob("*")) if p.is_file()}
+
+
+def maven(arguments, log):
+    env = os.environ.copy()
+    env["JAVA_HOME"] = JAVA
+    with log.open("wb") as output:
+        result = subprocess.run([MAVEN, *arguments], cwd=REPO, env=env,
+                                stdout=output, stderr=subprocess.STDOUT, check=False)
+    return result.returncode
+
+
+def capture(run):
+    shutil.copy2(REPO / "target/jacoco.exec", run / "jacoco.exec")
+    shutil.copytree(REPO / "target/site/jacoco", run / "jacoco")
+    shutil.copytree(REPO / "target/surefire-reports", run / "surefire-reports")
+    write_json(run / "source-manifest.json", manifest(REPO / "src"))
+    write_json(run / "production-classes-manifest.json", manifest(REPO / "target/classes"))
+    with zipfile.ZipFile(run / "production-classes.zip", "w", zipfile.ZIP_DEFLATED) as archive:
+        for path in sorted((REPO / "target/classes").rglob("*")):
+            if path.is_file():
+                archive.write(path, path.relative_to(REPO / "target/classes").as_posix())
+    (run / "git-status.txt").write_bytes(subprocess.check_output(["git", "status", "--short"], cwd=REPO))
+    subprocess.run(["git", "diff", "--exit-code", BASE], cwd=REPO, check=True)
+    summary = {"suite_reports": 0, "reported": 0, "failures": 0, "errors": 0, "skipped": 0, "cases": []}
+    for path in sorted((run / "surefire-reports").glob("TEST-*.xml")):
+        suite = ET.parse(path).getroot()
+        summary["suite_reports"] += 1
+        for key, attr in (("reported", "tests"), ("failures", "failures"), ("errors", "errors"), ("skipped", "skipped")):
+            summary[key] += int(suite.get(attr))
+        for case in suite.findall("testcase"):
+            status = next((s for s in ("failure", "error", "skipped") if case.find(s) is not None), "passed")
+            summary["cases"].append({"class": case.get("classname"), "name": case.get("name"), "status": status})
+    summary["passed"] = summary["reported"] - summary["failures"] - summary["errors"] - summary["skipped"]
+    assert len(summary["cases"]) == summary["reported"]
+    write_json(run / "suite-summary.json", summary)
+    return {k: v for k, v in summary.items() if k != "cases"}
+
+
+def main():
+    conditions = json.loads((CONTROL / "conditions.json").read_text())
+    assert subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=REPO, text=True).strip() == BASE
+    assert not subprocess.check_output(["git", "status", "--porcelain"], cwd=REPO).strip()
+    for spec in conditions.values():
+        folder = ROOT / spec["coverage_directory"]
+        assert not any((folder / phase).exists() for phase in ("before", "after"))
+        assert digest(folder / "PeekableInputStreamTest.java") == spec["source_sha256"]
+    results = []
+    for condition, spec in conditions.items():
+        folder = ROOT / spec["coverage_directory"]
+        assert not (REPO / TARGET).exists()
+        for phase in ("before", "after"):
+            if phase == "after":
+                shutil.copy2(folder / "PeekableInputStreamTest.java", REPO / TARGET)
+                assert digest(REPO / TARGET) == spec["source_sha256"]
+            run = folder / phase
+            run.mkdir()
+            metadata = {"condition": condition, "phase": phase, "baseline_commit": BASE,
+                        "working_directory": REPO.as_posix(), "maven_executable": MAVEN,
+                        "java_home": JAVA, "arguments": ARGS, "started_at_utc": now(),
+                        "target_test_exists": (REPO / TARGET).exists()}
+            if phase == "after":
+                metadata["target_test_sha256"] = digest(REPO / TARGET)
+            write_json(run / "run.json", metadata)
+            environment_exit = maven(["--version"], run / "environment.log")
+            if environment_exit:
+                raise RuntimeError(f"Maven environment command failed: {environment_exit}")
+            print(f"{now()} Starting {condition}: {phase}", flush=True)
+            metadata["exit_code"] = maven(ARGS, run / "maven.log")
+            metadata["completed_at_utc"] = now()
+            write_json(run / "run.json", metadata)
+            print(f"{now()} Build exit {metadata['exit_code']}: {condition} {phase}", flush=True)
+            if not (REPO / "target/site/jacoco/jacoco.xml").exists():
+                if not (REPO / "target/jacoco.exec").is_file():
+                    raise RuntimeError("No execution data; inspect the preserved failed-build log.")
+                report_args = ["-B", "-Pjacoco", "-Djacoco.skip=false", "jacoco:report"]
+                command = {"arguments": report_args, "started_at_utc": now()}
+                command["exit_code"] = maven(report_args, run / "report-only.log")
+                command["completed_at_utc"] = now()
+                metadata["report_only_command"] = command
+                write_json(run / "run.json", metadata)
+                if command["exit_code"]:
+                    raise RuntimeError("Coverage reporting failed; both exit codes are preserved.")
+            summary = capture(run)
+            results.append({"condition": condition, "phase": phase, "build_exit_code": metadata["exit_code"], "tests": summary})
+            write_json(CONTROL / "execution-summary.json", results)
+            print(json.dumps(results[-1]), flush=True)
+        # Remove only the verified copy in the disposable checkout, after archival.
+        assert digest(REPO / TARGET) == spec["source_sha256"]
+        (REPO / TARGET).unlink()
+    failures = [r for r in results if r["build_exit_code"] != 0]
+    print(f"Captured all six measurements; unsuccessful Maven builds: {len(failures)}", flush=True)
+    return 1 if failures else 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

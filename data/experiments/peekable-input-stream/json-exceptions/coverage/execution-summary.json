@@ -1,0 +1,10 @@
+[
+  {
+    "phase": "before",
+    "build_exit_code": 0
+  },
+  {
+    "phase": "after",
+    "build_exit_code": 0
+  }
+]

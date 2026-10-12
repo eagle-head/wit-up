@@ -1,0 +1,746 @@
+{
+  "scope": "org.apache.commons.io.input.buffer.PeekableInputStream",
+  "condition": "json-exceptions",
+  "baseline_commit": "d7a3c884d07ff5f1829b09087f34dcb8043f0f64",
+  "source_sha256": "C8FCE4484A2B0A8620DB781029F9BDC698FB69ED5AD15F015F2BED1ED98A5536",
+  "measurement_kind": "Reconstructed before/after execution in a clean detached checkout",
+  "original_generation": {
+    "target_build_exit": 1,
+    "compiled": false,
+    "executed_cases": 0,
+    "failures": null,
+    "errors": null,
+    "skipped": null,
+    "blocker": ".ruff_cache/CACHEDIR.TAG rejected by Apache RAT"
+  },
+  "before": {
+    "counters": {
+      "INSTRUCTION": {
+        "covered": 0,
+        "missed": 98,
+        "total": 98,
+        "percent": 0.0
+      },
+      "BRANCH": {
+        "covered": 0,
+        "missed": 8,
+        "total": 8,
+        "percent": 0.0
+      },
+      "LINE": {
+        "covered": 0,
+        "missed": 16,
+        "total": 16,
+        "percent": 0.0
+      },
+      "COMPLEXITY": {
+        "covered": 0,
+        "missed": 8,
+        "total": 8,
+        "percent": 0.0
+      },
+      "METHOD": {
+        "covered": 0,
+        "missed": 4,
+        "total": 4,
+        "percent": 0.0
+      },
+      "CLASS": {
+        "covered": 0,
+        "missed": 1,
+        "total": 1,
+        "percent": 0.0
+      }
+    },
+    "methods": [
+      {
+        "name": "<init>",
+        "descriptor": "(Ljava/io/InputStream;I)V",
+        "counters": {
+          "INSTRUCTION": {
+            "covered": 0,
+            "missed": 5,
+            "total": 5,
+            "percent": 0.0
+          },
+          "LINE": {
+            "covered": 0,
+            "missed": 2,
+            "total": 2,
+            "percent": 0.0
+          },
+          "COMPLEXITY": {
+            "covered": 0,
+            "missed": 1,
+            "total": 1,
+            "percent": 0.0
+          },
+          "METHOD": {
+            "covered": 0,
+            "missed": 1,
+            "total": 1,
+            "percent": 0.0
+          }
+        }
+      },
+      {
+        "name": "<init>",
+        "descriptor": "(Ljava/io/InputStream;)V",
+        "counters": {
+          "INSTRUCTION": {
+            "covered": 0,
+            "missed": 4,
+            "total": 4,
+            "percent": 0.0
+          },
+          "LINE": {
+            "covered": 0,
+            "missed": 2,
+            "total": 2,
+            "percent": 0.0
+          },
+          "COMPLEXITY": {
+            "covered": 0,
+            "missed": 1,
+            "total": 1,
+            "percent": 0.0
+          },
+          "METHOD": {
+            "covered": 0,
+            "missed": 1,
+            "total": 1,
+            "percent": 0.0
+          }
+        }
+      },
+      {
+        "name": "peek",
+        "descriptor": "([B)Z",
+        "counters": {
+          "INSTRUCTION": {
+            "covered": 0,
+            "missed": 45,
+            "total": 45,
+            "percent": 0.0
+          },
+          "BRANCH": {
+            "covered": 0,
+            "missed": 4,
+            "total": 4,
+            "percent": 0.0
+          },
+          "LINE": {
+            "covered": 0,
+            "missed": 6,
+            "total": 6,
+            "percent": 0.0
+          },
+          "COMPLEXITY": {
+            "covered": 0,
+            "missed": 3,
+            "total": 3,
+            "percent": 0.0
+          },
+          "METHOD": {
+            "covered": 0,
+            "missed": 1,
+            "total": 1,
+            "percent": 0.0
+          }
+        }
+      },
+      {
+        "name": "peek",
+        "descriptor": "([BII)Z",
+        "counters": {
+          "INSTRUCTION": {
+            "covered": 0,
+            "missed": 44,
+            "total": 44,
+            "percent": 0.0
+          },
+          "BRANCH": {
+            "covered": 0,
+            "missed": 4,
+            "total": 4,
+            "percent": 0.0
+          },
+          "LINE": {
+            "covered": 0,
+            "missed": 6,
+            "total": 6,
+            "percent": 0.0
+          },
+          "COMPLEXITY": {
+            "covered": 0,
+            "missed": 3,
+            "total": 3,
+            "percent": 0.0
+          },
+          "METHOD": {
+            "covered": 0,
+            "missed": 1,
+            "total": 1,
+            "percent": 0.0
+          }
+        }
+      }
+    ],
+    "source_lines": [
+      {
+        "nr": 39,
+        "mi": 4,
+        "ci": 0,
+        "mb": 0,
+        "cb": 0
+      },
+      {
+        "nr": 40,
+        "mi": 1,
+        "ci": 0,
+        "mb": 0,
+        "cb": 0
+      },
+      {
+        "nr": 49,
+        "mi": 3,
+        "ci": 0,
+        "mb": 0,
+        "cb": 0
+      },
+      {
+        "nr": 50,
+        "mi": 1,
+        "ci": 0,
+        "mb": 0,
+        "cb": 0
+      },
+      {
+        "nr": 62,
+        "mi": 4,
+        "ci": 0,
+        "mb": 0,
+        "cb": 0
+      },
+      {
+        "nr": 63,
+        "mi": 5,
+        "ci": 0,
+        "mb": 2,
+        "cb": 0
+      },
+      {
+        "nr": 64,
+        "mi": 20,
+        "ci": 0,
+        "mb": 0,
+        "cb": 0
+      },
+      {
+        "nr": 67,
+        "mi": 6,
+        "ci": 0,
+        "mb": 2,
+        "cb": 0
+      },
+      {
+        "nr": 68,
+        "mi": 2,
+        "ci": 0,
+        "mb": 0,
+        "cb": 0
+      },
+      {
+        "nr": 70,
+        "mi": 8,
+        "ci": 0,
+        "mb": 0,
+        "cb": 0
+      },
+      {
+        "nr": 84,
+        "mi": 4,
+        "ci": 0,
+        "mb": 0,
+        "cb": 0
+      },
+      {
+        "nr": 85,
+        "mi": 5,
+        "ci": 0,
+        "mb": 2,
+        "cb": 0
+      },
+      {
+        "nr": 86,
+        "mi": 20,
+        "ci": 0,
+        "mb": 0,
+        "cb": 0
+      },
+      {
+        "nr": 89,
+        "mi": 6,
+        "ci": 0,
+        "mb": 2,
+        "cb": 0
+      },
+      {
+        "nr": 90,
+        "mi": 2,
+        "ci": 0,
+        "mb": 0,
+        "cb": 0
+      },
+      {
+        "nr": 92,
+        "mi": 7,
+        "ci": 0,
+        "mb": 0,
+        "cb": 0
+      }
+    ],
+    "missed_lines": [
+      39,
+      40,
+      49,
+      50,
+      62,
+      63,
+      64,
+      67,
+      68,
+      70,
+      84,
+      85,
+      86,
+      89,
+      90,
+      92
+    ],
+    "missed_branch_lines": [
+      {
+        "line": 63,
+        "covered": 0,
+        "missed": 2
+      },
+      {
+        "line": 67,
+        "covered": 0,
+        "missed": 2
+      },
+      {
+        "line": 85,
+        "covered": 0,
+        "missed": 2
+      },
+      {
+        "line": 89,
+        "covered": 0,
+        "missed": 2
+      }
+    ],
+    "target_test_results": {
+      "test_file_present": false,
+      "cases": 0,
+      "passed": 0,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "build_exit_code": 0,
+    "run_metadata": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/run.json",
+    "source_xml": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/jacoco/jacoco.xml",
+    "target_html": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/jacoco/org.apache.commons.io.input.buffer/PeekableInputStream.html"
+  },
+  "after": {
+    "counters": {
+      "INSTRUCTION": {
+        "covered": 85,
+        "missed": 13,
+        "total": 98,
+        "percent": 86.734694
+      },
+      "BRANCH": {
+        "covered": 7,
+        "missed": 1,
+        "total": 8,
+        "percent": 87.5
+      },
+      "LINE": {
+        "covered": 12,
+        "missed": 4,
+        "total": 16,
+        "percent": 75.0
+      },
+      "COMPLEXITY": {
+        "covered": 6,
+        "missed": 2,
+        "total": 8,
+        "percent": 75.0
+      },
+      "METHOD": {
+        "covered": 3,
+        "missed": 1,
+        "total": 4,
+        "percent": 75.0
+      },
+      "CLASS": {
+        "covered": 1,
+        "missed": 0,
+        "total": 1,
+        "percent": 100.0
+      }
+    },
+    "methods": [
+      {
+        "name": "<init>",
+        "descriptor": "(Ljava/io/InputStream;I)V",
+        "counters": {
+          "INSTRUCTION": {
+            "covered": 5,
+            "missed": 0,
+            "total": 5,
+            "percent": 100.0
+          },
+          "LINE": {
+            "covered": 2,
+            "missed": 0,
+            "total": 2,
+            "percent": 100.0
+          },
+          "COMPLEXITY": {
+            "covered": 1,
+            "missed": 0,
+            "total": 1,
+            "percent": 100.0
+          },
+          "METHOD": {
+            "covered": 1,
+            "missed": 0,
+            "total": 1,
+            "percent": 100.0
+          }
+        }
+      },
+      {
+        "name": "<init>",
+        "descriptor": "(Ljava/io/InputStream;)V",
+        "counters": {
+          "INSTRUCTION": {
+            "covered": 0,
+            "missed": 4,
+            "total": 4,
+            "percent": 0.0
+          },
+          "LINE": {
+            "covered": 0,
+            "missed": 2,
+            "total": 2,
+            "percent": 0.0
+          },
+          "COMPLEXITY": {
+            "covered": 0,
+            "missed": 1,
+            "total": 1,
+            "percent": 0.0
+          },
+          "METHOD": {
+            "covered": 0,
+            "missed": 1,
+            "total": 1,
+            "percent": 0.0
+          }
+        }
+      },
+      {
+        "name": "peek",
+        "descriptor": "([B)Z",
+        "counters": {
+          "INSTRUCTION": {
+            "covered": 45,
+            "missed": 0,
+            "total": 45,
+            "percent": 100.0
+          },
+          "BRANCH": {
+            "covered": 4,
+            "missed": 0,
+            "total": 4,
+            "percent": 100.0
+          },
+          "LINE": {
+            "covered": 6,
+            "missed": 0,
+            "total": 6,
+            "percent": 100.0
+          },
+          "COMPLEXITY": {
+            "covered": 3,
+            "missed": 0,
+            "total": 3,
+            "percent": 100.0
+          },
+          "METHOD": {
+            "covered": 1,
+            "missed": 0,
+            "total": 1,
+            "percent": 100.0
+          }
+        }
+      },
+      {
+        "name": "peek",
+        "descriptor": "([BII)Z",
+        "counters": {
+          "INSTRUCTION": {
+            "covered": 35,
+            "missed": 9,
+            "total": 44,
+            "percent": 79.545455
+          },
+          "BRANCH": {
+            "covered": 3,
+            "missed": 1,
+            "total": 4,
+            "percent": 75.0
+          },
+          "LINE": {
+            "covered": 4,
+            "missed": 2,
+            "total": 6,
+            "percent": 66.666667
+          },
+          "COMPLEXITY": {
+            "covered": 2,
+            "missed": 1,
+            "total": 3,
+            "percent": 66.666667
+          },
+          "METHOD": {
+            "covered": 1,
+            "missed": 0,
+            "total": 1,
+            "percent": 100.0
+          }
+        }
+      }
+    ],
+    "source_lines": [
+      {
+        "nr": 39,
+        "mi": 0,
+        "ci": 4,
+        "mb": 0,
+        "cb": 0
+      },
+      {
+        "nr": 40,
+        "mi": 0,
+        "ci": 1,
+        "mb": 0,
+        "cb": 0
+      },
+      {
+        "nr": 49,
+        "mi": 3,
+        "ci": 0,
+        "mb": 0,
+        "cb": 0
+      },
+      {
+        "nr": 50,
+        "mi": 1,
+        "ci": 0,
+        "mb": 0,
+        "cb": 0
+      },
+      {
+        "nr": 62,
+        "mi": 0,
+        "ci": 4,
+        "mb": 0,
+        "cb": 0
+      },
+      {
+        "nr": 63,
+        "mi": 0,
+        "ci": 5,
+        "mb": 0,
+        "cb": 2
+      },
+      {
+        "nr": 64,
+        "mi": 0,
+        "ci": 20,
+        "mb": 0,
+        "cb": 0
+      },
+      {
+        "nr": 67,
+        "mi": 0,
+        "ci": 6,
+        "mb": 0,
+        "cb": 2
+      },
+      {
+        "nr": 68,
+        "mi": 0,
+        "ci": 2,
+        "mb": 0,
+        "cb": 0
+      },
+      {
+        "nr": 70,
+        "mi": 0,
+        "ci": 8,
+        "mb": 0,
+        "cb": 0
+      },
+      {
+        "nr": 84,
+        "mi": 0,
+        "ci": 4,
+        "mb": 0,
+        "cb": 0
+      },
+      {
+        "nr": 85,
+        "mi": 0,
+        "ci": 5,
+        "mb": 0,
+        "cb": 2
+      },
+      {
+        "nr": 86,
+        "mi": 0,
+        "ci": 20,
+        "mb": 0,
+        "cb": 0
+      },
+      {
+        "nr": 89,
+        "mi": 0,
+        "ci": 6,
+        "mb": 1,
+        "cb": 1
+      },
+      {
+        "nr": 90,
+        "mi": 2,
+        "ci": 0,
+        "mb": 0,
+        "cb": 0
+      },
+      {
+        "nr": 92,
+        "mi": 7,
+        "ci": 0,
+        "mb": 0,
+        "cb": 0
+      }
+    ],
+    "missed_lines": [
+      49,
+      50,
+      90,
+      92
+    ],
+    "missed_branch_lines": [
+      {
+        "line": 89,
+        "covered": 1,
+        "missed": 1
+      }
+    ],
+    "target_test_results": {
+      "test_file_present": true,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": 11,
+      "passed": 11,
+      "case_outcomes": [
+        {
+          "name": "testPeekSliceRejectsNullBuffer",
+          "status": "passed"
+        },
+        {
+          "name": "testPeekSliceRejectsLengthLargerThanCapacity",
+          "status": "passed"
+        },
+        {
+          "name": "testPeekSliceRejectsBufferLargerThanCapacity",
+          "status": "passed"
+        },
+        {
+          "name": "testPeekSliceFailsWhenMatchingPrefixExceedsArrayBounds",
+          "status": "passed"
+        },
+        {
+          "name": "testPeekArrayRejectsBufferLargerThanCapacity",
+          "status": "passed"
+        },
+        {
+          "name": "testPeekArrayRejectsEmptyBuffer",
+          "status": "passed"
+        },
+        {
+          "name": "testPeekSliceRejectsNegativeLength",
+          "status": "passed"
+        },
+        {
+          "name": "testPeekSliceRejectsNegativeOffset",
+          "status": "passed"
+        },
+        {
+          "name": "testPeekArrayRejectsNullBuffer",
+          "status": "passed"
+        },
+        {
+          "name": "testPeekSliceRejectsEmptyBuffer",
+          "status": "passed"
+        },
+        {
+          "name": "testConstructorRejectsZeroBufferSize",
+          "status": "passed"
+        }
+      ]
+    },
+    "build_exit_code": 0,
+    "run_metadata": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/run.json",
+    "source_xml": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/jacoco/jacoco.xml",
+    "target_html": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/jacoco/org.apache.commons.io.input.buffer/PeekableInputStream.html"
+  },
+  "controls": {
+    "common_source_bytes_identical": true,
+    "only_added_source": "test/java/org/apache/commons/io/input/buffer/PeekableInputStreamTest.java",
+    "production_class_bytes_identical": true,
+    "existing_case_identities_and_outcomes_unchanged": true,
+    "paired_source_baseline_source_bytes_identical": true,
+    "paired_source_baseline_compiled_production_identical": true,
+    "paired_source_baseline_existing_cases_identical": true,
+    "coverage_csv_matches_xml": true,
+    "original_checkout_modified": false,
+    "cache_present_in_measurement_checkout": false,
+    "coverage_filters_or_gate_changes": false
+  },
+  "delta": {
+    "LINE": {
+      "added_covered_units": 12,
+      "percentage_points": 75.0
+    },
+    "BRANCH": {
+      "added_covered_units": 7,
+      "percentage_points": 87.5
+    },
+    "INSTRUCTION": {
+      "added_covered_units": 85,
+      "percentage_points": 86.734694
+    },
+    "METHOD": {
+      "added_covered_units": 3,
+      "percentage_points": 75.0
+    }
+  }
+}

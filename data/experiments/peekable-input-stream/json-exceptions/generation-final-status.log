@@ -1,0 +1,15 @@
+?? src/test/java/org/apache/commons/io/input/buffer/PeekableInputStreamTest.java
+37:    public void testConstructorRejectsZeroBufferSize() {
+48:    public void testPeekArrayRejectsNullBuffer() throws IOException {
+60:    public void testPeekArrayRejectsBufferLargerThanCapacity() throws IOException {
+73:    public void testPeekArrayRejectsEmptyBuffer() throws IOException {
+86:    public void testPeekSliceRejectsNullBuffer() throws IOException {
+98:    public void testPeekSliceRejectsBufferLargerThanCapacity() throws IOException {
+111:    public void testPeekSliceRejectsEmptyBuffer() throws IOException {
+124:    public void testPeekSliceRejectsNegativeOffset() throws IOException {
+137:    public void testPeekSliceRejectsNegativeLength() throws IOException {
+151:    public void testPeekSliceRejectsLengthLargerThanCapacity() throws IOException {
+165:    public void testPeekSliceFailsWhenMatchingPrefixExceedsArrayBounds() throws IOException {
+TARGET_TEST_EXISTS=True
+SUREFIRE_REPORTS_EXIST=False
+

@@ -1,0 +1,64 @@
+Work in "D:/Projects/wit-up/commons-io" on branch test/peekable-input-stream-json-generation.
+
+Write JUnit tests for
+'org.apache.commons.io.input.buffer.PeekableInputStream' in
+"src/test/java/org/apache/commons/io/input/buffer/PeekableInputStreamTest.java".
+Use the JUnit version and test conventions already present in the checkout.
+
+Use these files as the sole source of target-specific test scenarios,
+input constraints, and expected outcomes:
+
+"D:/Projects/wit-up/commons-io-analysis-results/witup-results-commons-io-11f0abe7a.json"
+"D:/Projects/wit-up/commons-io-analysis-results/witup-summaries-commons-io-11f0abe7a.json"
+
+Process the JSON files programmatically. Select records for the target class
+and associate results with summaries using both "artifact" and "pathId".
+Keep overloaded methods distinct.
+
+Read and follow repository-owned instructions and conventions, including
+applicable "AGENTS.md" files, "CONTRIBUTING.md", "README.md", and configured
+build and quality checks. Repository rules remain applicable; they do not
+authorize prohibited skills or sources.
+
+Only Codex built-in skills are permitted. Do not load, invoke, follow, or use
+guidance from any user-defined, repository-defined, user-installed, or
+plugin-provided skill. Do not install or create skills.
+
+You may inspect build configuration and existing tests for framework,
+formatting, and project conventions only. Do not derive target-specific
+scenarios or expected behavior from those tests.
+
+Do not inspect production source, decompiled code, or behavioral API
+documentation to design or repair the tests. Do not retrieve earlier
+versions of "PeekableInputStreamTest.java" from the current workspace,
+Git history, other branches, backups, generated artifacts, or previous
+conversations. Do not consult study findings, reference suites, coverage
+or mutation reports, compiled test classes, or external test examples.
+
+Use SAT records as candidates, not as proof that a Java fixture is
+constructible. Interpret each constraint together with its "truthValue".
+Do not assume that every model symbol represents a method argument or
+that a serialized reference value is a Java scalar.
+
+Construct fixtures through accessible APIs without reflection or direct
+manipulation of internal state. Make any necessary fixture assumptions
+explicit. Do not silently change exported assignments or claim to reproduce
+a path when its conditions have not been established.
+
+Assert only outcomes supported by the selected records. Ensure that an
+expected exception comes from the target invocation rather than unrelated
+fixture setup. If the records do not support a concrete fixture or assertion,
+report the limitation instead of inventing behavior.
+
+Modify only the target test file. Keep production code, dependencies,
+build configuration, and existing tests unchanged.
+
+Run the target test class and report the exact command, test counts,
+and failures. Do not run coverage or mutation analysis or use their reports
+to guide generation. If a test fails, report the failure without changing
+production code or weakening assertions merely to make it pass.
+
+In the final response, map each generated test to its supporting
+"artifact" and "pathId" values. List any assumptions and the SAT records
+not represented, explaining whether they were redundant or could not
+be reconstructed from the permitted information.

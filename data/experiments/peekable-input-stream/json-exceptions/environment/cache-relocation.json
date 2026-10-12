@@ -1,0 +1,26 @@
+{
+  "purpose": "Preserve the unrelated Python cache outside the Java checkout before revalidating the original target command",
+  "source": "D:/Projects/wit-up/commons-io/.ruff_cache",
+  "destination": "D:/Projects/wit-up/data/experiments/peekable-input-stream/json-exceptions/environment/.ruff_cache",
+  "source_cache_removed_from_java_checkout": true,
+  "original_cache_bytes_preserved": true,
+  "historical_rat_report_preserved": true,
+  "files": [
+    {
+      "relative": ".gitignore",
+      "bytes": 35,
+      "sha256": "9E3A60F1E6EC4AE60215C11D54B171392745EC25E9DDED433D5BD921363AF316"
+    },
+    {
+      "relative": "CACHEDIR.TAG",
+      "bytes": 43,
+      "sha256": "5953156D7E0C564A427251316EAF26F8870E6483AE2197F916B630E4F93E31AE"
+    },
+    {
+      "relative": "0.16.10/4900727619893033187",
+      "bytes": 212,
+      "sha256": "19C36A4EC7A7FB01445D0200C8EEE281F22C30B7A182279A44B74C11112C2FCF"
+    }
+  ],
+  "production_tests_configuration_and_prompts_modified": false
+}

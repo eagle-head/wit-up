@@ -1,0 +1,34 @@
+{
+  "purpose": "Prepare an independent JSON-based exceptional-behavior test generation with the paired prompt",
+  "local_date": "2026-10-11",
+  "timezone": "America/New_York",
+  "repository": "D:/Projects/wit-up/commons-io",
+  "preserved_source_condition": {
+    "branch": "test/peekable-input-stream-exceptions",
+    "commit": "84e58db4515f0df154e288aa402018c91cf9649e",
+    "target_test_path": "src/test/java/org/apache/commons/io/input/buffer/PeekableInputStreamTest.java",
+    "source_sha256": "653D136D35FDAC4E556D76C1AD0965E82E05706ADDB91DD549E991FCE06B5221",
+    "source_archive": "data/experiments/peekable-input-stream/source-exceptions/PeekableInputStreamTest.java",
+    "assessment": "docs/findings/peekable-input-stream-source-exception-generation.md",
+    "working_file_matches_committed_blob_and_java_appendix": true
+  },
+  "prepared_json_condition": {
+    "branch": "test/peekable-input-stream-exception-conditions",
+    "head": "d7a3c884d07ff5f1829b09087f34dcb8043f0f64",
+    "working_tree_clean": true,
+    "target_test_source_present": false,
+    "production_and_configuration_match_baseline": true,
+    "prompt": "docs/prompts/exception-test-generation-json.txt",
+    "prompt_sha256": "945BEA425089EE30FFE3230EF1B104E74D7F8CC58B53354F94D23DB4B5C5246F",
+    "scenario_sources": [
+      "commons-io-analysis-results/witup-results-commons-io-11f0abe7a.json",
+      "commons-io-analysis-results/witup-summaries-commons-io-11f0abe7a.json"
+    ]
+  },
+  "generation_executed": false,
+  "tests_executed": false,
+  "coverage_executed": false,
+  "mutation_executed": false,
+  "push_executed": false,
+  "new_commit_created": false
+}

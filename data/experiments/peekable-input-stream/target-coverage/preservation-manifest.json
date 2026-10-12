@@ -1,0 +1,41 @@
+{
+  "purpose": "Exact report versions before restricting current reporting to the target class",
+  "files": [
+    {
+      "original": "docs/findings/peekable-input-stream-generation.md",
+      "snapshot": "report-snapshots/docs/findings/peekable-input-stream-generation.md",
+      "sha256": "DFF15E06E5A29CE0208D189220EED0C78DB102D69C9CFEBA8495E90F8F125B17",
+      "bytes": 39484
+    },
+    {
+      "original": "docs/findings/peekable-input-stream-json-generation.md",
+      "snapshot": "report-snapshots/docs/findings/peekable-input-stream-json-generation.md",
+      "sha256": "255A0DACF9282FFE0FFBB48B650F051C4E991B7F6810369BB048B8FDF98458E1",
+      "bytes": 33648
+    },
+    {
+      "original": "docs/findings/peekable-input-stream-source-exception-generation.md",
+      "snapshot": "report-snapshots/docs/findings/peekable-input-stream-source-exception-generation.md",
+      "sha256": "76615469F80C432E041027A7654BA85264A958EF41F6932192B336A5BFB252C2",
+      "bytes": 38651
+    },
+    {
+      "original": "docs/findings/unit-test-coverage-baseline.md",
+      "snapshot": "report-snapshots/docs/findings/unit-test-coverage-baseline.md",
+      "sha256": "C9A82A8024249C17D152DD1F78515E6350953281D54E86E5F03D7D622688B17D",
+      "bytes": 15204
+    },
+    {
+      "original": "docs/study-log.md",
+      "snapshot": "report-snapshots/docs/study-log.md",
+      "sha256": "808DF1CD022E27B2137965D09C451CEA0430C74BE89F74AF8D9AD0F1231F2885",
+      "bytes": 37368
+    },
+    {
+      "original": "docs/README.md",
+      "snapshot": "report-snapshots/docs/README.md",
+      "sha256": "4EFA3AB96C12B10F96923A277A794501B1B3278C5CC328AE11A2A92F8D0C0104",
+      "bytes": 4300
+    }
+  ]
+}

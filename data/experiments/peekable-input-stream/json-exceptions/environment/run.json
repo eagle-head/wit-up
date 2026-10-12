@@ -1,0 +1,20 @@
+{
+  "purpose": "Revalidate the original target command after removing the unrelated cache from the Java checkout",
+  "working_directory": "D:/Projects/wit-up/commons-io",
+  "maven_executable": "C:/Users/edyko/AppData/Local/mise/installs/maven/3.9.16/apache-maven-3.9.16/bin/mvn.cmd",
+  "java_home": "C:/Users/edyko/AppData/Local/mise/installs/java/temurin-8.0.504+1",
+  "arguments": [
+    "-P!jacoco,!cobertura,!travis-jacoco,!travis-cobertura",
+    "-Dtest=org.apache.commons.io.input.buffer.PeekableInputStreamTest",
+    "clean",
+    "test"
+  ],
+  "started_at_utc": "2026-10-12T14:42:03.223428+00:00",
+  "generation_repeated": false,
+  "tests_modified": false,
+  "production_modified": false,
+  "configuration_modified": false,
+  "prompts_modified": false,
+  "exit_code": 0,
+  "completed_at_utc": "2026-10-12T14:42:11.744148+00:00"
+}

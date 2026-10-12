@@ -1,0 +1,80 @@
+[
+  {
+    "condition": "source-only",
+    "phase": "before",
+    "build_exit_code": 0,
+    "tests": {
+      "suite_reports": 136,
+      "reported": 1541,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 6,
+      "passed": 1535
+    }
+  },
+  {
+    "condition": "source-only",
+    "phase": "after",
+    "build_exit_code": 1,
+    "tests": {
+      "suite_reports": 137,
+      "reported": 1567,
+      "failures": 4,
+      "errors": 1,
+      "skipped": 6,
+      "passed": 1556
+    }
+  },
+  {
+    "condition": "json-only",
+    "phase": "before",
+    "build_exit_code": 0,
+    "tests": {
+      "suite_reports": 136,
+      "reported": 1541,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 6,
+      "passed": 1535
+    }
+  },
+  {
+    "condition": "json-only",
+    "phase": "after",
+    "build_exit_code": 0,
+    "tests": {
+      "suite_reports": 137,
+      "reported": 1553,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 6,
+      "passed": 1547
+    }
+  },
+  {
+    "condition": "reference-suite",
+    "phase": "before",
+    "build_exit_code": 0,
+    "tests": {
+      "suite_reports": 136,
+      "reported": 1541,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 6,
+      "passed": 1535
+    }
+  },
+  {
+    "condition": "reference-suite",
+    "phase": "after",
+    "build_exit_code": 0,
+    "tests": {
+      "suite_reports": 137,
+      "reported": 1575,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 6,
+      "passed": 1569
+    }
+  }
+]

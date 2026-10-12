@@ -1,0 +1,104 @@
+Use this prompt in a fresh chat for one independent generation attempt.
+Work in "D:/Projects/wit-up/commons-io" using an already prepared checkout.
+
+Before inspecting test source or generating anything, verify that HEAD is
+"d7a3c884d07ff5f1829b09087f34dcb8043f0f64", that tracked production and build
+configuration match that commit, and that
+"src/test/java/org/apache/commons/io/input/buffer/PeekableInputStreamTest.java"
+does not exist. Check existence without reading an earlier test. If these
+conditions are not met, report the preparation required and stop. Do not create
+or switch branches, delete files, or modify the baseline to satisfy this check.
+
+Write JUnit tests for the exceptional behavior of the constructors and declared
+peek overloads of 'org.apache.commons.io.input.buffer.PeekableInputStream' in
+"src/test/java/org/apache/commons/io/input/buffer/PeekableInputStreamTest.java".
+Keep overloaded signatures distinct. Each test case must verify a supported
+exception from a target invocation. Normal calls may establish fixture state,
+but do not add test cases for successful return values or normal behavior.
+Select distinct supported scenarios without targeting a predetermined test count.
+
+BEGIN SCENARIO SOURCE
+Source kind: Java production source.
+Source location: "D:/Projects/wit-up/commons-io/src/main/java".
+END SCENARIO SOURCE
+
+Use the designated source as the sole source of target-specific scenarios,
+input conditions, fixture behavior, and expected outcomes. The following rules
+apply equally regardless of which source is designated:
+
+Read and follow repository-owned instructions and conventions, including
+applicable "AGENTS.md" files, "CONTRIBUTING.md", "README.md", and configured
+build and quality checks. These documents may supply working rules and project
+conventions, not additional target-specific scenarios or behavioral oracles.
+Use the JUnit version and test conventions already present in the checkout.
+
+Only Codex built-in skills are permitted. Do not load, invoke, follow, or use
+guidance from any user-defined, repository-defined, user-installed, or
+plugin-provided skill. Do not install or create skills.
+
+You may inspect build configuration and unrelated existing tests solely for
+framework, formatting, and project conventions. Do not derive target-specific
+scenarios, fixture behavior, or expected outcomes from those tests. Do not
+retrieve earlier versions of "PeekableInputStreamTest.java" from the workspace,
+Git history, other branches, backups, generated artifacts, or previous chats.
+Do not consult previous attempts, other generation prompts, study findings,
+reference suites, coverage or mutation reports, compiled test classes,
+decompiled code, external test examples, or behavioral documentation outside
+the designated source. Do not consult the alternative scenario source.
+
+When the designated source is Java, start with the target class and follow only
+the constructor, delegation, and callee code needed to understand its exceptional
+behavior within the designated source location. Comments embedded in that source
+are part of the input. Treat branch conditions together with their polarity;
+do not assume that a visible throw site proves a constructible public fixture.
+
+When the designated source is JSON, process the files programmatically. Select
+the target class and join results with summaries using both "artifact" and
+"pathId", retaining distinct overloaded signatures. Use SAT records as candidates.
+Interpret constraints together with "truthValue". SAT is not proof that a Java
+fixture can be constructed. Do not interpret every model symbol as an argument
+or a serialized reference identity as a Java scalar.
+
+For either source, construct fixtures through accessible APIs without reflection
+or direct manipulation of internal state. Make assumptions explicit. Disclose
+any fixture values that differ from concrete values in the supporting source.
+Establish the relevant conditions before claiming to reproduce a particular
+path. If the source does not support a concrete fixture or expected exception,
+report that limitation instead of inventing behavior or creating a skipped test.
+Avoid redundant cases that add no distinct supported exceptional behavior.
+
+Assert only exception outcomes supported by the designated source. Keep fixture
+setup outside the exception assertion so a setup failure cannot satisfy it.
+Ensure the assertion invokes the target constructor or method. Assert details
+such as exact subtype, message, or cause only when the source supports them.
+Do not treat a passing exception assertion as proof of an exact internal path
+or as independent proof that the implementation satisfies its intended contract.
+
+If a tool or supplied context exposes prohibited behavioral material, disclose
+the exposure and stop before generating or revising tests. Do not claim that
+ignoring exposed material establishes an isolated generation attempt.
+
+Modify only the target test file. Keep production, dependencies, configuration,
+and existing tests unchanged. Write generated identifiers, comments, and the
+final report in United States English.
+
+Run the target class from "D:/Projects/wit-up/commons-io" with this command:
+
+mvn "-P!jacoco,!cobertura,!travis-jacoco,!travis-cobertura" "-Dtest=org.apache.commons.io.input.buffer.PeekableInputStreamTest" clean test
+
+Preserve the generated test file after this run. Report compilation or test
+failures without repairing tests, changing production, or weakening assertions.
+Do not perform follow-up generation attempts. Perform additional checks only
+when repository instructions require them, and report their scope separately.
+Do not run coverage or mutation analysis or use those reports for generation.
+Do not suppress diagnostics, skip failing tests, or relax quality gates.
+
+In the final response, report the checkout commit, designated input source,
+exact commands, exit statuses, and test counts, including failures, errors,
+and skips. Distinguish checks that ran from checks that were not performed.
+For every generated test, provide its supporting source locator, expected
+exception, fixture assumptions, and any changed input values. For Java, use
+the quoted file path, method signature, and relevant line numbers. For JSON,
+use "artifact" and "pathId". List identified exception candidates that were
+not represented and explain whether they were redundant or lacked a supported
+fixture or assertion. Do not report association counts as measured path coverage.
