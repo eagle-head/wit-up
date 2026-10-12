@@ -1,0 +1,4047 @@
+{
+  "purpose": "Map preserved original Git bytes to the root repository CRLF working representation and LF index representation",
+  "recorded_at_utc": "2026-10-12T15:10:50.031884+00:00",
+  "repository": "D:/Projects/wit-up",
+  "original_commit": "bd38cc700eaad2654736df7d02cab951d0a0cd10",
+  "original_file_count": 247,
+  "working_tree_text_eol": "CRLF",
+  "git_text_eol": "LF",
+  "history_rewritten": false,
+  "global_git_configuration_modified": false,
+  "external_java_checkouts_modified": false,
+  "historical_manifests_retain_original_capture_identities": true,
+  "files": [
+    {
+      "path": ".gitignore",
+      "original_bytes": 1154,
+      "original_sha256": "E46584620F91DDE300A342FA00814B97D537ED6028369B51F2676D4E08FE19F0",
+      "working_crlf_bytes": 1187,
+      "working_crlf_sha256": "AA96CC8786DA0E573D10B99C2E443C731DB30EF867152A1CD28F21FAC5539240",
+      "normalized_lf_bytes": 1154,
+      "normalized_lf_sha256": "E46584620F91DDE300A342FA00814B97D537ED6028369B51F2676D4E08FE19F0",
+      "change": "representation_only"
+    },
+    {
+      "path": ".python-version",
+      "original_bytes": 8,
+      "original_sha256": "861B3DD8083D28F336EF70F6755BC399538DDAD627B1D095820CA34CB953CF14",
+      "working_crlf_bytes": 9,
+      "working_crlf_sha256": "BB43F1441E57D9E313426A0CFCC2EAC2A3D42B6DCF0E3B9C01ADD36258C4CB3A",
+      "normalized_lf_bytes": 8,
+      "normalized_lf_sha256": "861B3DD8083D28F336EF70F6755BC399538DDAD627B1D095820CA34CB953CF14",
+      "change": "representation_only"
+    },
+    {
+      "path": "README.md",
+      "original_bytes": 4406,
+      "original_sha256": "7F18C93C0EF7FD797283C0BBD368174F7C2731153D8241CF899E5236F8273788",
+      "working_crlf_bytes": 4513,
+      "working_crlf_sha256": "7334631C5EFC97FF5AEE2F891735076181893EF3AFDE0687B728F8D7B2CA6B4D",
+      "normalized_lf_bytes": 4406,
+      "normalized_lf_sha256": "7F18C93C0EF7FD797283C0BBD368174F7C2731153D8241CF899E5236F8273788",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/coverage-comparison/README.md",
+      "original_bytes": 4157,
+      "original_sha256": "FF27DD39260E655340400BACBA921E73B26697E8004E1DF5401C8FD5DD429506",
+      "working_crlf_bytes": 4239,
+      "working_crlf_sha256": "833A9C9885F2D4B8AA7F175E6FFCE9B3B0E1B3AF2913E80E6A0B1DF962E4D886",
+      "normalized_lf_bytes": 4157,
+      "normalized_lf_sha256": "FF27DD39260E655340400BACBA921E73B26697E8004E1DF5401C8FD5DD429506",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/coverage-comparison/artifact-manifest.json",
+      "original_bytes": 1691,
+      "original_sha256": "DD414818A1C42A45102C11C9028E565D0CE5E72298E214C55DF88498727C9494",
+      "working_crlf_bytes": 1691,
+      "working_crlf_sha256": "DD414818A1C42A45102C11C9028E565D0CE5E72298E214C55DF88498727C9494",
+      "normalized_lf_bytes": 1641,
+      "normalized_lf_sha256": "A7A0C5D639D713013DB723390DA8485BC519748AB0AB93A42DE1ECC4CE4CDE98",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/coverage-comparison/comparison.json",
+      "original_bytes": 10728,
+      "original_sha256": "9F3DAD2CB2E1A684B1FF8C0A6FE8E885E2878B8C3439D5FA6D8F0C2EDFC50915",
+      "working_crlf_bytes": 10728,
+      "working_crlf_sha256": "9F3DAD2CB2E1A684B1FF8C0A6FE8E885E2878B8C3439D5FA6D8F0C2EDFC50915",
+      "normalized_lf_bytes": 10293,
+      "normalized_lf_sha256": "9D1AAB3CE7F3B3FF3D83D56C6D6F9CC9796D71AD38DA719DDD0539BFD8420473",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/coverage-comparison/conditions.json",
+      "original_bytes": 1023,
+      "original_sha256": "6B86403E257BAE4F89EEC9FE290D0060BB38215C47EAB3E7C64D49051F40EDAB",
+      "working_crlf_bytes": 1023,
+      "working_crlf_sha256": "6B86403E257BAE4F89EEC9FE290D0060BB38215C47EAB3E7C64D49051F40EDAB",
+      "normalized_lf_bytes": 1003,
+      "normalized_lf_sha256": "55F2BA1DBA5E672A4DA959874F764D0BB215A0C41D419B6A8BCA6E5DA7D18071",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/coverage-comparison/executed-measurement-script.txt",
+      "original_bytes": 6872,
+      "original_sha256": "9A9468A5E7E4ACEB836AD87F18808DCEE5AB7B79BFC7AAD236A96E481F0557CE",
+      "working_crlf_bytes": 7006,
+      "working_crlf_sha256": "6F9DB7B3F431B6B0670FC55AAF33B07868B74EFE2C68E7D8CE09031212E59BAD",
+      "normalized_lf_bytes": 6872,
+      "normalized_lf_sha256": "9A9468A5E7E4ACEB836AD87F18808DCEE5AB7B79BFC7AAD236A96E481F0557CE",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/coverage-comparison/execution-summary.json",
+      "original_bytes": 1548,
+      "original_sha256": "5F9B56774BBB3A82D026FC9D3A52C21EA2795C67D119A78EC579F61E32621693",
+      "working_crlf_bytes": 1548,
+      "working_crlf_sha256": "5F9B56774BBB3A82D026FC9D3A52C21EA2795C67D119A78EC579F61E32621693",
+      "normalized_lf_bytes": 1468,
+      "normalized_lf_sha256": "EC5180CD99B9B68D8B095458E916224823356A6EBF1C5707A2DF0742BA493601",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/coverage-comparison/historical-artifact-availability.json",
+      "original_bytes": 1557,
+      "original_sha256": "25EB37C195BE83AC9B0FE896D2B28A45E69BE60A3608AA3BEE3060F126EB762A",
+      "working_crlf_bytes": 1557,
+      "working_crlf_sha256": "25EB37C195BE83AC9B0FE896D2B28A45E69BE60A3608AA3BEE3060F126EB762A",
+      "normalized_lf_bytes": 1515,
+      "normalized_lf_sha256": "8C3A26D9E9F93E62BD7DDF3A860FA7A97F6DB7419F4AB57B97D1F455BEA46124",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/coverage-comparison/measure_coverage.py",
+      "original_bytes": 7876,
+      "original_sha256": "52BF2908480D24CC54394D6B672F7B5272B1BDD5585167E8E87B35EA8C80E6CD",
+      "working_crlf_bytes": 8091,
+      "working_crlf_sha256": "078DE6D9C845A1F9FDB64F693B26F60EC28C112868A032920772971E12ED04A9",
+      "normalized_lf_bytes": 7876,
+      "normalized_lf_sha256": "52BF2908480D24CC54394D6B672F7B5272B1BDD5585167E8E87B35EA8C80E6CD",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/coverage-comparison/peekable-input-stream-source-exception-generation.md",
+      "original_bytes": 37880,
+      "original_sha256": "36676D8BDBB166D21317363C9D3D352ABC964F35ED50C7691D90771ECBF0C9FF",
+      "working_crlf_bytes": 38507,
+      "working_crlf_sha256": "E41F01E806D6A62B1C0652891FE932201559CDAF8519179AE6C5329E73BB4A25",
+      "normalized_lf_bytes": 37880,
+      "normalized_lf_sha256": "36676D8BDBB166D21317363C9D3D352ABC964F35ED50C7691D90771ECBF0C9FF",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/coverage-comparison/preservation-manifest.json",
+      "original_bytes": 509214,
+      "original_sha256": "EA323F88AC2CA3A508D621A3EE953C2BAB65B2E990E0BCCB23959D0847E0849C",
+      "working_crlf_bytes": 509214,
+      "working_crlf_sha256": "EA323F88AC2CA3A508D621A3EE953C2BAB65B2E990E0BCCB23959D0847E0849C",
+      "normalized_lf_bytes": 506422,
+      "normalized_lf_sha256": "24C323702D4CCBCD5DF826AFA4882DF170EB9928EA22151FC597126CB0DE38DD",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/coverage-comparison/preserved-checkout.json",
+      "original_bytes": 757,
+      "original_sha256": "154C6C3E14C3F0C7C7BE921CE6125CBE52C6550803F71510C2CC236D3A741F6D",
+      "working_crlf_bytes": 757,
+      "working_crlf_sha256": "154C6C3E14C3F0C7C7BE921CE6125CBE52C6550803F71510C2CC236D3A741F6D",
+      "normalized_lf_bytes": 744,
+      "normalized_lf_sha256": "670E48EC633DEBCE4164C62262450845F31FA8BCF7A5047F874AF0AF67F4130D",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/coverage-comparison/study-log.md",
+      "original_bytes": 31041,
+      "original_sha256": "5A69DD2E292E4C476DADE93A51AA226600B884B78B3259A330F06D4AAADD0A26",
+      "working_crlf_bytes": 31526,
+      "working_crlf_sha256": "B15386691CD09DFEE0FD30C7748EE78EC01CDF845C53069557E89AB7A0B0D676",
+      "normalized_lf_bytes": 31041,
+      "normalized_lf_sha256": "5A69DD2E292E4C476DADE93A51AA226600B884B78B3259A330F06D4AAADD0A26",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/coverage-comparison/verification.json",
+      "original_bytes": 1453,
+      "original_sha256": "5B71C0E0B6A22E8F7AEC271B15AFB2841DA17B00A2EDA4A31C363B7821C10D9F",
+      "working_crlf_bytes": 1453,
+      "working_crlf_sha256": "5B71C0E0B6A22E8F7AEC271B15AFB2841DA17B00A2EDA4A31C363B7821C10D9F",
+      "normalized_lf_bytes": 1408,
+      "normalized_lf_sha256": "F307E004733052FB1CA6C1843C6EAC340D4CB3E25A408BECBB07DBD256F2DAF9",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/PeekableInputStreamTest.java",
+      "original_bytes": 6706,
+      "original_sha256": "C8FCE4484A2B0A8620DB781029F9BDC698FB69ED5AD15F015F2BED1ED98A5536",
+      "working_crlf_bytes": 6879,
+      "working_crlf_sha256": "DBB1E157F2A1C35A15149FD80C4BAAFC29B3C1CFE9DE2D2C761C5D3F72A60C8C",
+      "normalized_lf_bytes": 6706,
+      "normalized_lf_sha256": "C8FCE4484A2B0A8620DB781029F9BDC698FB69ED5AD15F015F2BED1ED98A5536",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/artifact-manifest.json",
+      "original_bytes": 253961,
+      "original_sha256": "A90C227BFDE3D4525B1898B435A7A706CF1906448771FD36D51B192B1E0DC15D",
+      "working_crlf_bytes": 253961,
+      "working_crlf_sha256": "A90C227BFDE3D4525B1898B435A7A706CF1906448771FD36D51B192B1E0DC15D",
+      "normalized_lf_bytes": 248779,
+      "normalized_lf_sha256": "781A307FB0C9689FEC4EB928C93D4FF7C4BEE80B7034DBF19C9003A3523961EE",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/assessment-data.json",
+      "original_bytes": 9090,
+      "original_sha256": "118F00706735825D5786CB8B81CD319A037B62B49AF8E59FEEEF749DC65F9499",
+      "working_crlf_bytes": 9090,
+      "working_crlf_sha256": "118F00706735825D5786CB8B81CD319A037B62B49AF8E59FEEEF749DC65F9499",
+      "normalized_lf_bytes": 8876,
+      "normalized_lf_sha256": "BC03C1E7AE33C06BA7BC7AB6488B01CCA361FA81FA4C5ACDB0F5B33E500C1BE2",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/environment.log",
+      "original_bytes": 399,
+      "original_sha256": "F68AC8A37583E27BB38AD269578E2BB6D21D634E3AAE96E096F21A18D2E52669",
+      "working_crlf_bytes": 399,
+      "working_crlf_sha256": "F68AC8A37583E27BB38AD269578E2BB6D21D634E3AAE96E096F21A18D2E52669",
+      "normalized_lf_bytes": 394,
+      "normalized_lf_sha256": "50BA6EC04846FFD0C03E121550D1B6F1899D4CE74CB4ED5642DB27DCC3E2EE1D",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/git-status.txt",
+      "original_bytes": 81,
+      "original_sha256": "9411F4A9BC55DF7F4C8239DA5B828074B0745D2CE09647C825562036F836C27D",
+      "working_crlf_bytes": 82,
+      "working_crlf_sha256": "EE23019E4882211F06A1E2FF2952888FD02C7CE3851CBF054386F54EBAAC9C5E",
+      "normalized_lf_bytes": 81,
+      "normalized_lf_sha256": "9411F4A9BC55DF7F4C8239DA5B828074B0745D2CE09647C825562036F836C27D",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/jacoco/jacoco.csv",
+      "original_bytes": 14751,
+      "original_sha256": "A24FFD6ECC7FC0A089E3FEDEA8FB984AE4C28BCBFD207336D14036FE549B762C",
+      "working_crlf_bytes": 14751,
+      "working_crlf_sha256": "A24FFD6ECC7FC0A089E3FEDEA8FB984AE4C28BCBFD207336D14036FE549B762C",
+      "normalized_lf_bytes": 14589,
+      "normalized_lf_sha256": "868E06EC3CC82C709A6F2CE27A0B8DFCD8098D171A8ED8975D245FA733B46318",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/jacoco/jacoco.xml",
+      "original_bytes": 844453,
+      "original_sha256": "60157BE0069A04C9D397F3B75089C93077581D83FB80E82BF9AC005DD0D82FAF",
+      "working_crlf_bytes": 844453,
+      "working_crlf_sha256": "60157BE0069A04C9D397F3B75089C93077581D83FB80E82BF9AC005DD0D82FAF",
+      "normalized_lf_bytes": 844453,
+      "normalized_lf_sha256": "60157BE0069A04C9D397F3B75089C93077581D83FB80E82BF9AC005DD0D82FAF",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/maven.log",
+      "original_bytes": 42175,
+      "original_sha256": "341157F0A0CB407E421D8CEC723F69FF12831EEA1B341881DC5824A6C55946BE",
+      "working_crlf_bytes": 42176,
+      "working_crlf_sha256": "E9E64CA270806012306ACC57F39FD687D0CAA3E6F33BC6CC4EFE114F49245E90",
+      "normalized_lf_bytes": 41712,
+      "normalized_lf_sha256": "01A0AD5B2C399CF0DF98CEEAA53837E457D8EF11BBB5EC9C7A2FB114F70B3867",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/production-classes-manifest.json",
+      "original_bytes": 21935,
+      "original_sha256": "1C353A3723F73B824CA454F004D2EC92BB87AA2502AFD94901BE58AB9C582749",
+      "working_crlf_bytes": 21935,
+      "working_crlf_sha256": "1C353A3723F73B824CA454F004D2EC92BB87AA2502AFD94901BE58AB9C582749",
+      "normalized_lf_bytes": 21761,
+      "normalized_lf_sha256": "879DD9C4D0DB0D451DBA5B736C7778FB92CB68B739EC5F001DE243183BA478B1",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/run.json",
+      "original_bytes": 945,
+      "original_sha256": "6738B30FDFF58A01AE5FC89A6FB4E904F84A2D437A585F03AB1E81820ADF5B6E",
+      "working_crlf_bytes": 945,
+      "working_crlf_sha256": "6738B30FDFF58A01AE5FC89A6FB4E904F84A2D437A585F03AB1E81820ADF5B6E",
+      "normalized_lf_bytes": 921,
+      "normalized_lf_sha256": "D600E360931AF85E42D77B4C4E15878A1485DC437971F63D4A78CEC1219D9E96",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/source-manifest.json",
+      "original_bytes": 54029,
+      "original_sha256": "14B218D58237A0730628E455A2C67C8B8A97E6472796D907A13FE1143FC3D5FF",
+      "working_crlf_bytes": 54029,
+      "working_crlf_sha256": "14B218D58237A0730628E455A2C67C8B8A97E6472796D907A13FE1143FC3D5FF",
+      "normalized_lf_bytes": 53628,
+      "normalized_lf_sha256": "A877AD9128788BC5E6E421380AA9F806EF5BC163452CD209ABA3A5BF0CC1AA7C",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/suite-summary.json",
+      "original_bytes": 242370,
+      "original_sha256": "76249B0BA7D94FF8D46ED14BFADFA180C56CAEBD62F640BF83903D26570204A3",
+      "working_crlf_bytes": 242370,
+      "working_crlf_sha256": "76249B0BA7D94FF8D46ED14BFADFA180C56CAEBD62F640BF83903D26570204A3",
+      "normalized_lf_bytes": 234600,
+      "normalized_lf_sha256": "FD06DAE47605751666A0BAB5EAF64773DD81562AC167136F5C99A659041E8CBA",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/surefire-reports/TEST-org.apache.commons.io.input.buffer.PeekableInputStreamTest.xml",
+      "original_bytes": 12847,
+      "original_sha256": "537B78CD425457903ECD75870D175E2C93C87A7E5E43C59CF9DC079D93A4B3E3",
+      "working_crlf_bytes": 12847,
+      "working_crlf_sha256": "537B78CD425457903ECD75870D175E2C93C87A7E5E43C59CF9DC079D93A4B3E3",
+      "normalized_lf_bytes": 12772,
+      "normalized_lf_sha256": "B774C1528FBC5B9456C74782EC6AC24212FF017C86DD5B22BA49C3476E67EE9A",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/surefire-reports/org.apache.commons.io.input.buffer.PeekableInputStreamTest.txt",
+      "original_bytes": 370,
+      "original_sha256": "D2D3C89492D832C7BB3C5AF48B698F050AF645CF275E9A3CFBAC3DA671984789",
+      "working_crlf_bytes": 370,
+      "working_crlf_sha256": "D2D3C89492D832C7BB3C5AF48B698F050AF645CF275E9A3CFBAC3DA671984789",
+      "normalized_lf_bytes": 366,
+      "normalized_lf_sha256": "DD72DF04AFCE51B545168EFA63290DF6FF37E51BF08A857FE0AA6B3DCE5EB114",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/environment.log",
+      "original_bytes": 399,
+      "original_sha256": "F68AC8A37583E27BB38AD269578E2BB6D21D634E3AAE96E096F21A18D2E52669",
+      "working_crlf_bytes": 399,
+      "working_crlf_sha256": "F68AC8A37583E27BB38AD269578E2BB6D21D634E3AAE96E096F21A18D2E52669",
+      "normalized_lf_bytes": 394,
+      "normalized_lf_sha256": "50BA6EC04846FFD0C03E121550D1B6F1899D4CE74CB4ED5642DB27DCC3E2EE1D",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/git-status.txt",
+      "original_bytes": 0,
+      "original_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "working_crlf_bytes": 0,
+      "working_crlf_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "normalized_lf_bytes": 0,
+      "normalized_lf_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/jacoco/jacoco.csv",
+      "original_bytes": 14750,
+      "original_sha256": "CE3C2B934ED83644F3930B6021260328E551BADD03F9BD42A1CAA9AD176AB12A",
+      "working_crlf_bytes": 14750,
+      "working_crlf_sha256": "CE3C2B934ED83644F3930B6021260328E551BADD03F9BD42A1CAA9AD176AB12A",
+      "normalized_lf_bytes": 14588,
+      "normalized_lf_sha256": "7C2D4A39DBA5793A80D1F1F536DA01897674D3A022F07E9BCEC91A4AF4B93D19",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/jacoco/jacoco.xml",
+      "original_bytes": 844370,
+      "original_sha256": "2380159E15E383205DB30F07F08F8DDBC15456B51B056799B23E7FBDCEB32C02",
+      "working_crlf_bytes": 844370,
+      "working_crlf_sha256": "2380159E15E383205DB30F07F08F8DDBC15456B51B056799B23E7FBDCEB32C02",
+      "normalized_lf_bytes": 844370,
+      "normalized_lf_sha256": "2380159E15E383205DB30F07F08F8DDBC15456B51B056799B23E7FBDCEB32C02",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/maven.log",
+      "original_bytes": 41992,
+      "original_sha256": "86F227A1C4C69338BA33964662EF550DB0ECCC5F33BF6670F900C1A6D3EF9FBC",
+      "working_crlf_bytes": 41993,
+      "working_crlf_sha256": "1600AB4F8642FE4B2E296C24AD5051F1392AD72C1E2DE10E084CFD01CA37E81B",
+      "normalized_lf_bytes": 41531,
+      "normalized_lf_sha256": "CB5E77CF43FD938BBF4159187F05EE17CF5E62666F4C62D95E7170A7F1F95CE4",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/production-classes-manifest.json",
+      "original_bytes": 21935,
+      "original_sha256": "1C353A3723F73B824CA454F004D2EC92BB87AA2502AFD94901BE58AB9C582749",
+      "working_crlf_bytes": 21935,
+      "working_crlf_sha256": "1C353A3723F73B824CA454F004D2EC92BB87AA2502AFD94901BE58AB9C582749",
+      "normalized_lf_bytes": 21761,
+      "normalized_lf_sha256": "879DD9C4D0DB0D451DBA5B736C7778FB92CB68B739EC5F001DE243183BA478B1",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/run.json",
+      "original_bytes": 854,
+      "original_sha256": "762473243AF11A1142602B15F40E29415D749F9EC61BE7E27D85E23B01BF8749",
+      "working_crlf_bytes": 854,
+      "working_crlf_sha256": "762473243AF11A1142602B15F40E29415D749F9EC61BE7E27D85E23B01BF8749",
+      "normalized_lf_bytes": 831,
+      "normalized_lf_sha256": "7F7BAC1BEAFFEBB5FB366EA90896AEC0C1418A9BA06364F830C21864AF67723F",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/source-manifest.json",
+      "original_bytes": 53881,
+      "original_sha256": "B58905E30095F74A504EA69923B93ACAB6DC75D4B4E12A58C5D94267801400C7",
+      "working_crlf_bytes": 53881,
+      "working_crlf_sha256": "B58905E30095F74A504EA69923B93ACAB6DC75D4B4E12A58C5D94267801400C7",
+      "normalized_lf_bytes": 53481,
+      "normalized_lf_sha256": "DBE0523166D201BE441AC85A92CCC44ABEA9EB1551087AFFC0A3F36716AAB9E7",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/suite-summary.json",
+      "original_bytes": 240440,
+      "original_sha256": "31DF403601EA86F06A77CBA6756E97C8242B2AA30DCE35EBD8D21AD80EB5EB6B",
+      "working_crlf_bytes": 240440,
+      "working_crlf_sha256": "31DF403601EA86F06A77CBA6756E97C8242B2AA30DCE35EBD8D21AD80EB5EB6B",
+      "normalized_lf_bytes": 232725,
+      "normalized_lf_sha256": "71428446AC2909CC4E1737D7D6008372B2AC3E549A156CD347B7A3CF009D3368",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/capture-helper.py",
+      "original_bytes": 7876,
+      "original_sha256": "52BF2908480D24CC54394D6B672F7B5272B1BDD5585167E8E87B35EA8C80E6CD",
+      "working_crlf_bytes": 8091,
+      "working_crlf_sha256": "078DE6D9C845A1F9FDB64F693B26F60EC28C112868A032920772971E12ED04A9",
+      "normalized_lf_bytes": 7876,
+      "normalized_lf_sha256": "52BF2908480D24CC54394D6B672F7B5272B1BDD5585167E8E87B35EA8C80E6CD",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/comparison.json",
+      "original_bytes": 16219,
+      "original_sha256": "A0A0277725B3AE4F14E1DBC9E7FEF0498F4C76C1FAAAD63A03E8B60DA972F0C1",
+      "working_crlf_bytes": 16219,
+      "working_crlf_sha256": "A0A0277725B3AE4F14E1DBC9E7FEF0498F4C76C1FAAAD63A03E8B60DA972F0C1",
+      "normalized_lf_bytes": 15473,
+      "normalized_lf_sha256": "B5659687034628DCD8ED4D089687512710842F0ACFD3EDF7ED483E923B10EF89",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/document-snapshots/README.md",
+      "original_bytes": 4769,
+      "original_sha256": "5AA5C2746DF09409C9ED4094375FDA275509448CCC70F1CB672E25C4EBF0670A",
+      "working_crlf_bytes": 4862,
+      "working_crlf_sha256": "B697B352A0C51232D28259A8A555CEFCEA664334C571A0077BCDA020815A6BFA",
+      "normalized_lf_bytes": 4769,
+      "normalized_lf_sha256": "5AA5C2746DF09409C9ED4094375FDA275509448CCC70F1CB672E25C4EBF0670A",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/document-snapshots/study-log.md",
+      "original_bytes": 38091,
+      "original_sha256": "AFFBE97054DB6E71036D9CAEF58B34A7F58A52FFD39300D32F916B7A595ABE84",
+      "working_crlf_bytes": 38678,
+      "working_crlf_sha256": "5C3FEED13424D6142924E734AC32C70A70153FDB713C16AEBB8979F0BB0D55BB",
+      "normalized_lf_bytes": 38091,
+      "normalized_lf_sha256": "AFFBE97054DB6E71036D9CAEF58B34A7F58A52FFD39300D32F916B7A595ABE84",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/execution-summary.json",
+      "original_bytes": 126,
+      "original_sha256": "CAC59B40A616E504B221F5DCD7764E56EB15FC929562AD28A2E84762FBE05947",
+      "working_crlf_bytes": 126,
+      "working_crlf_sha256": "CAC59B40A616E504B221F5DCD7764E56EB15FC929562AD28A2E84762FBE05947",
+      "normalized_lf_bytes": 116,
+      "normalized_lf_sha256": "9142B0C56661F50049BC6C9232866E72C085AA6299236ED30641B54C215B62A6",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/measure_coverage.py",
+      "original_bytes": 4021,
+      "original_sha256": "3BBBFAC0B028DD3558A18228C89B03D7EDDAC931A307F4E83C0A8BAAA5EA3F30",
+      "working_crlf_bytes": 4102,
+      "working_crlf_sha256": "0E591CD61952ECAD52D179FD934F783FFCEF37F3F3D24078E31AC64269C05035",
+      "normalized_lf_bytes": 4021,
+      "normalized_lf_sha256": "3BBBFAC0B028DD3558A18228C89B03D7EDDAC931A307F4E83C0A8BAAA5EA3F30",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/target-comparison-before-extension.json",
+      "original_bytes": 13634,
+      "original_sha256": "F89E379116BBC0C9F8586EEFF0FC4B424F871966FCC9DF8B3CC6F778D045CF04",
+      "working_crlf_bytes": 13634,
+      "working_crlf_sha256": "F89E379116BBC0C9F8586EEFF0FC4B424F871966FCC9DF8B3CC6F778D045CF04",
+      "normalized_lf_bytes": 13188,
+      "normalized_lf_sha256": "6727F1BD23BEAC896D214F92A44F31A6D5E17E8AD1E9AD87D5184F1675EDE76D",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/target-verification-before-extension.json",
+      "original_bytes": 780,
+      "original_sha256": "AE760EC9147F11C7A621CBBC9F0C5F3D4359C440E0CFDABFCF55AD34555CAF1E",
+      "working_crlf_bytes": 780,
+      "working_crlf_sha256": "AE760EC9147F11C7A621CBBC9F0C5F3D4359C440E0CFDABFCF55AD34555CAF1E",
+      "normalized_lf_bytes": 757,
+      "normalized_lf_sha256": "E862587725387D51108E1B843F757F9A8FC7A7E827393984676998AE5AE49B48",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/environment/TEST-org.apache.commons.io.input.buffer.PeekableInputStreamTest.xml",
+      "original_bytes": 12644,
+      "original_sha256": "4BF0D6F531023CFAFFFE25206869BAECBD153A51A19B54A31F78688566BA7FB9",
+      "working_crlf_bytes": 12644,
+      "working_crlf_sha256": "4BF0D6F531023CFAFFFE25206869BAECBD153A51A19B54A31F78688566BA7FB9",
+      "normalized_lf_bytes": 12569,
+      "normalized_lf_sha256": "18ECF5DF9B21B56F0A3B7D8F137898EEAE556D552A4B4C175AC63DA72BAF6FF9",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/environment/artifact-manifest.json",
+      "original_bytes": 1615,
+      "original_sha256": "849D3FDA8B587260E5B86B404199E4FC8641D5DE9A42AD46B4BC49F77DE85C2C",
+      "working_crlf_bytes": 1615,
+      "working_crlf_sha256": "849D3FDA8B587260E5B86B404199E4FC8641D5DE9A42AD46B4BC49F77DE85C2C",
+      "normalized_lf_bytes": 1569,
+      "normalized_lf_sha256": "C16361A2C3C9A00898925B25835ACE68674FCAA550726D79A0CE854A1DB0F256",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/environment/cache-relocation.json",
+      "original_bytes": 1008,
+      "original_sha256": "C9217424D37A8949E04552C45AF53C4F4FCD9FB56BDDA3F79CB0BE94ADF154D8",
+      "working_crlf_bytes": 1008,
+      "working_crlf_sha256": "C9217424D37A8949E04552C45AF53C4F4FCD9FB56BDDA3F79CB0BE94ADF154D8",
+      "normalized_lf_bytes": 982,
+      "normalized_lf_sha256": "FAB12A5616BE449ACA36B50CEC1CDF0A7D6B0F4C62B9BBFEA48E2FF5C6DA2983",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/environment/org.apache.commons.io.input.buffer.PeekableInputStreamTest.txt",
+      "original_bytes": 370,
+      "original_sha256": "28339E00CA5BE9752A811F5843DF2055657FA1395DAB9674BC0F29973F73A90A",
+      "working_crlf_bytes": 370,
+      "working_crlf_sha256": "28339E00CA5BE9752A811F5843DF2055657FA1395DAB9674BC0F29973F73A90A",
+      "normalized_lf_bytes": 366,
+      "normalized_lf_sha256": "D68DA92353EEEEC055CBD2AA94382291D0D5D1924BD254925B55AE645B2CF37D",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/environment/rat-after-correction.txt",
+      "original_bytes": 27196,
+      "original_sha256": "0CDE6431ACDCB2033A4CCA76E3DCDA3B9743B5242F9C7046A4D03227EC2BFA3E",
+      "working_crlf_bytes": 27196,
+      "working_crlf_sha256": "0CDE6431ACDCB2033A4CCA76E3DCDA3B9743B5242F9C7046A4D03227EC2BFA3E",
+      "normalized_lf_bytes": 26801,
+      "normalized_lf_sha256": "BC6D238340EF9407C870AB6B202D23CE7B033DBD3D5D783D91F101152A5E00FF",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/environment/rat-before-correction.txt",
+      "original_bytes": 27721,
+      "original_sha256": "5F4098546191DBD1193890FC06A1552D24A25E55A9A25FADEBFB58D9E7F5CDA9",
+      "working_crlf_bytes": 27721,
+      "working_crlf_sha256": "5F4098546191DBD1193890FC06A1552D24A25E55A9A25FADEBFB58D9E7F5CDA9",
+      "normalized_lf_bytes": 27309,
+      "normalized_lf_sha256": "B6DD6A5312A8AE6498E991B19AFDAE4957D68366BE0838A0998FC26F27A674D8",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/environment/run.json",
+      "original_bytes": 856,
+      "original_sha256": "D00034F13A4585AF023A30BD6AE5F7C3ED4F8FA12351B1766AAC15D6F5B19E57",
+      "working_crlf_bytes": 856,
+      "working_crlf_sha256": "D00034F13A4585AF023A30BD6AE5F7C3ED4F8FA12351B1766AAC15D6F5B19E57",
+      "normalized_lf_bytes": 836,
+      "normalized_lf_sha256": "902728190F293F589F7C789508FEB6BEECEDE1F14F317AA7DE8C8C5B37978353",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/environment/target-test-run.log",
+      "original_bytes": 4675,
+      "original_sha256": "AA3F48C9ED5D1283762EB1B4F3A56E66D74B3B8490418EF9F04C3C05607730A1",
+      "working_crlf_bytes": 4675,
+      "working_crlf_sha256": "AA3F48C9ED5D1283762EB1B4F3A56E66D74B3B8490418EF9F04C3C05607730A1",
+      "normalized_lf_bytes": 4589,
+      "normalized_lf_sha256": "48B3384CCE297480B8DC092B01BA5C84F5854FE583FF825035606F1F68F71B7E",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/environment/verification.json",
+      "original_bytes": 680,
+      "original_sha256": "F1F194BFC7ABEF1418BB164E313D0484A228F0435C8D1C31C687AB0F2FD015E3",
+      "working_crlf_bytes": 680,
+      "working_crlf_sha256": "F1F194BFC7ABEF1418BB164E313D0484A228F0435C8D1C31C687AB0F2FD015E3",
+      "normalized_lf_bytes": 660,
+      "normalized_lf_sha256": "9B5C8BEE919F22B2B212AF3A83CC740BFD652DAFD5A41816B28848AB2719A8F7",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/generation-checkstyle.log",
+      "original_bytes": 2872,
+      "original_sha256": "A6361AA9F2800288C16732F9FEB78CE8011EEB3D9534435181C9589DE943144E",
+      "working_crlf_bytes": 2904,
+      "working_crlf_sha256": "FBBDD33E4A5FA9A6B3E38B24C3633EE26A7226A52188710256B04910F1FB098A",
+      "normalized_lf_bytes": 2872,
+      "normalized_lf_sha256": "A6361AA9F2800288C16732F9FEB78CE8011EEB3D9534435181C9589DE943144E",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/generation-final-status.log",
+      "original_bytes": 1006,
+      "original_sha256": "5F9384059DD9AA37F81663667D7109276A06A79180540D9050EBF194FBB9306B",
+      "working_crlf_bytes": 1021,
+      "working_crlf_sha256": "5156C93F903F32579A50B5EAD36979CF3208CF479EB19B160BD022254F31237E",
+      "normalized_lf_bytes": 1006,
+      "normalized_lf_sha256": "5F9384059DD9AA37F81663667D7109276A06A79180540D9050EBF194FBB9306B",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/generation-rat-diagnosis.log",
+      "original_bytes": 216,
+      "original_sha256": "90B5A9A12F267EB0AD045BD5DED88D26C6A61742EE03FEC0ECDC924DD179F4AB",
+      "working_crlf_bytes": 222,
+      "working_crlf_sha256": "9BB189C629FF2B4B34D24753C0B32704B55E60E0D8117E4EB68EE80E669B3C4E",
+      "normalized_lf_bytes": 216,
+      "normalized_lf_sha256": "90B5A9A12F267EB0AD045BD5DED88D26C6A61742EE03FEC0ECDC924DD179F4AB",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/generation-rat.txt",
+      "original_bytes": 27721,
+      "original_sha256": "5F4098546191DBD1193890FC06A1552D24A25E55A9A25FADEBFB58D9E7F5CDA9",
+      "working_crlf_bytes": 27721,
+      "working_crlf_sha256": "5F4098546191DBD1193890FC06A1552D24A25E55A9A25FADEBFB58D9E7F5CDA9",
+      "normalized_lf_bytes": 27309,
+      "normalized_lf_sha256": "B6DD6A5312A8AE6498E991B19AFDAE4957D68366BE0838A0998FC26F27A674D8",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/generation-record.json",
+      "original_bytes": 148706,
+      "original_sha256": "5623EDFA8F13F54DA060D2A24235F7CC24A979C1F80688D078B1A9F8744ACC31",
+      "working_crlf_bytes": 149061,
+      "working_crlf_sha256": "6398CE04FF7F69D197B52165306863C0C7E3A1662CDA513928949822DB6D251B",
+      "normalized_lf_bytes": 148706,
+      "normalized_lf_sha256": "5623EDFA8F13F54DA060D2A24235F7CC24A979C1F80688D078B1A9F8744ACC31",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/generation-repository-verification.log",
+      "original_bytes": 2168,
+      "original_sha256": "020883126C07BB7B014880FDDC9F955F90784BE9EEF19E5ED42894D9BAF4DA12",
+      "working_crlf_bytes": 2206,
+      "working_crlf_sha256": "58C262499532237187858837255538EE6D92B3B1E5BA624DCC99FF5DBA2ACEA4",
+      "normalized_lf_bytes": 2168,
+      "normalized_lf_sha256": "020883126C07BB7B014880FDDC9F955F90784BE9EEF19E5ED42894D9BAF4DA12",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/generation-target-run.log",
+      "original_bytes": 2061,
+      "original_sha256": "CB62183813656CBA24FF8ABED75CF8E4992507B42496C26A35A34BA69567B5E1",
+      "working_crlf_bytes": 2098,
+      "working_crlf_sha256": "D6AF3276F4DB262CE5E09BB1B20BB7DF1FA2D38E4DC245E59DED2B992BF93250",
+      "normalized_lf_bytes": 2061,
+      "normalized_lf_sha256": "CB62183813656CBA24FF8ABED75CF8E4992507B42496C26A35A34BA69567B5E1",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/generation-whitespace-check.log",
+      "original_bytes": 171,
+      "original_sha256": "500C41C2AD8BF2EF36F1CC82E388A1B95A9975CDFB1AA03BF3A8E6C62E7B2997",
+      "working_crlf_bytes": 173,
+      "working_crlf_sha256": "CCBBA903765818A3F0B282A872B72BEE5A2DD754B15297E53ADF62101F5358D3",
+      "normalized_lf_bytes": 171,
+      "normalized_lf_sha256": "500C41C2AD8BF2EF36F1CC82E388A1B95A9975CDFB1AA03BF3A8E6C62E7B2997",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/original-file-manifest.json",
+      "original_bytes": 79803,
+      "original_sha256": "FBE937DA1722EBDA4F3E78F8A230D4C73025E729EADE55305B2D0D78CB23493D",
+      "working_crlf_bytes": 79803,
+      "working_crlf_sha256": "FBE937DA1722EBDA4F3E78F8A230D4C73025E729EADE55305B2D0D78CB23493D",
+      "normalized_lf_bytes": 78121,
+      "normalized_lf_sha256": "9168C33FF52F1F28DDE428FB935D8192B14B1513C86C09B514E678DB345335D6",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/preparation.json",
+      "original_bytes": 1675,
+      "original_sha256": "0417B0D844A75C9FC677C6E203985D23C66F4C4C243B8100A74D346E65B896F4",
+      "working_crlf_bytes": 1675,
+      "working_crlf_sha256": "0417B0D844A75C9FC677C6E203985D23C66F4C4C243B8100A74D346E65B896F4",
+      "normalized_lf_bytes": 1641,
+      "normalized_lf_sha256": "FB787E1204017E7F3AC264EF2C65ED0B527EA6F18B96F41CB35E5E53ED825917",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/submitted-prompt.txt",
+      "original_bytes": 6734,
+      "original_sha256": "68EE4242856375F87A8FEA4CD5093D30AC9C758698E307F709D2451764209D7E",
+      "working_crlf_bytes": 6734,
+      "working_crlf_sha256": "68EE4242856375F87A8FEA4CD5093D30AC9C758698E307F709D2451764209D7E",
+      "normalized_lf_bytes": 6628,
+      "normalized_lf_sha256": "945BEA425089EE30FFE3230EF1B104E74D7F8CC58B53354F94D23DB4B5C5246F",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/target-json-records.json",
+      "original_bytes": 299123,
+      "original_sha256": "ABD3E4BE2453ACF8AF48E301A6DB1A9DAF9A7454C5530AD7D52FF781E46985B5",
+      "working_crlf_bytes": 299123,
+      "working_crlf_sha256": "ABD3E4BE2453ACF8AF48E301A6DB1A9DAF9A7454C5530AD7D52FF781E46985B5",
+      "normalized_lf_bytes": 290357,
+      "normalized_lf_sha256": "4D57B60585401CBC9B50F4DC09ED249FC073804DA81322CAFF774319342B373D",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-exceptions/verification.json",
+      "original_bytes": 1880,
+      "original_sha256": "E1DEFFEBE4799BD3525CF1A65B995762995968F90A7AC2FDAE6B633FF654F329",
+      "working_crlf_bytes": 1880,
+      "working_crlf_sha256": "E1DEFFEBE4799BD3525CF1A65B995762995968F90A7AC2FDAE6B633FF654F329",
+      "normalized_lf_bytes": 1843,
+      "normalized_lf_sha256": "C6B53DC658DBE50B8CE41E2AD6252893F02E8383B793257B48FC1944E143966E",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-only/checkstyle.xml",
+      "original_bytes": 18677,
+      "original_sha256": "59D2E3D8F470714F0A9C95A323D92C9CDED91637597BD8D338ED14583AC02E46",
+      "working_crlf_bytes": 18677,
+      "working_crlf_sha256": "59D2E3D8F470714F0A9C95A323D92C9CDED91637597BD8D338ED14583AC02E46",
+      "normalized_lf_bytes": 18362,
+      "normalized_lf_sha256": "45365620621BD9F920E4E3534BAFB6008A9966A8629D916F5BE204E8360DC83E",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-only/coverage/PeekableInputStreamTest.java",
+      "original_bytes": 6638,
+      "original_sha256": "5B1F644557EE4597EEA7D9902AA6390C6D8B89AC1F89ABE52BDF8D8CF95765CB",
+      "working_crlf_bytes": 6774,
+      "working_crlf_sha256": "42A45416CD03D18AFDB15EF6A7CB83C13551D529C166F33D395828C62E0315E9",
+      "normalized_lf_bytes": 6638,
+      "normalized_lf_sha256": "5B1F644557EE4597EEA7D9902AA6390C6D8B89AC1F89ABE52BDF8D8CF95765CB",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-only/coverage/after/environment.log",
+      "original_bytes": 399,
+      "original_sha256": "F68AC8A37583E27BB38AD269578E2BB6D21D634E3AAE96E096F21A18D2E52669",
+      "working_crlf_bytes": 399,
+      "working_crlf_sha256": "F68AC8A37583E27BB38AD269578E2BB6D21D634E3AAE96E096F21A18D2E52669",
+      "normalized_lf_bytes": 394,
+      "normalized_lf_sha256": "50BA6EC04846FFD0C03E121550D1B6F1899D4CE74CB4ED5642DB27DCC3E2EE1D",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-only/coverage/after/git-status.txt",
+      "original_bytes": 81,
+      "original_sha256": "9411F4A9BC55DF7F4C8239DA5B828074B0745D2CE09647C825562036F836C27D",
+      "working_crlf_bytes": 82,
+      "working_crlf_sha256": "EE23019E4882211F06A1E2FF2952888FD02C7CE3851CBF054386F54EBAAC9C5E",
+      "normalized_lf_bytes": 81,
+      "normalized_lf_sha256": "9411F4A9BC55DF7F4C8239DA5B828074B0745D2CE09647C825562036F836C27D",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-only/coverage/after/jacoco/jacoco.csv",
+      "original_bytes": 14751,
+      "original_sha256": "9AF112011D7C2EA303C73ABB6319E3500C7CEFD306EE62CB8F09F4EA1AEC762F",
+      "working_crlf_bytes": 14751,
+      "working_crlf_sha256": "9AF112011D7C2EA303C73ABB6319E3500C7CEFD306EE62CB8F09F4EA1AEC762F",
+      "normalized_lf_bytes": 14589,
+      "normalized_lf_sha256": "49F2FB42356BDFDBFBF697CA29881D99C0B28720B8F810E1EE2BB695D6450F73",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-only/coverage/after/jacoco/jacoco.xml",
+      "original_bytes": 844461,
+      "original_sha256": "DDAC701796968F4BB015D667549A8FD5705150BD1B79B2DFCA4DBFF03320D35C",
+      "working_crlf_bytes": 844461,
+      "working_crlf_sha256": "DDAC701796968F4BB015D667549A8FD5705150BD1B79B2DFCA4DBFF03320D35C",
+      "normalized_lf_bytes": 844461,
+      "normalized_lf_sha256": "DDAC701796968F4BB015D667549A8FD5705150BD1B79B2DFCA4DBFF03320D35C",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-only/coverage/after/maven.log",
+      "original_bytes": 42287,
+      "original_sha256": "ADA516CB2F2039E11A0F21FFCCE2BF44A0D90ED30AA12D37AF397650142B94E0",
+      "working_crlf_bytes": 42288,
+      "working_crlf_sha256": "EC4945493673BDB5FE39404C5D7EBFACBA553A1A2AB4AF4B02FF2D0ACD2C4A19",
+      "normalized_lf_bytes": 41823,
+      "normalized_lf_sha256": "CC96A9F13AABD4860FD72E31ED88CB4F8BFC5A6720C8563148E269592E35C9B1",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-only/coverage/after/production-classes-manifest.json",
+      "original_bytes": 21935,
+      "original_sha256": "1C353A3723F73B824CA454F004D2EC92BB87AA2502AFD94901BE58AB9C582749",
+      "working_crlf_bytes": 21935,
+      "working_crlf_sha256": "1C353A3723F73B824CA454F004D2EC92BB87AA2502AFD94901BE58AB9C582749",
+      "normalized_lf_bytes": 21761,
+      "normalized_lf_sha256": "879DD9C4D0DB0D451DBA5B736C7778FB92CB68B739EC5F001DE243183BA478B1",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-only/coverage/after/run.json",
+      "original_bytes": 786,
+      "original_sha256": "13AC233E78E1DA6542F8667B3CB8DDC09C17B388CE5C3C2F71A1859116A4605D",
+      "working_crlf_bytes": 786,
+      "working_crlf_sha256": "13AC233E78E1DA6542F8667B3CB8DDC09C17B388CE5C3C2F71A1859116A4605D",
+      "normalized_lf_bytes": 765,
+      "normalized_lf_sha256": "8DF17F020D53F9590DBDB94D1F90D7069771604737EB0183CE0AC3D4E28F8839",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-only/coverage/after/source-manifest.json",
+      "original_bytes": 54029,
+      "original_sha256": "F2DAC45FD972C82B03539C884B912A0AD77A120B0C062DC000493DE4BB0F0E6D",
+      "working_crlf_bytes": 54029,
+      "working_crlf_sha256": "F2DAC45FD972C82B03539C884B912A0AD77A120B0C062DC000493DE4BB0F0E6D",
+      "normalized_lf_bytes": 53628,
+      "normalized_lf_sha256": "B7EEF024D166F3C743B007CF51E63AB28CC3B6AA5791C4EB6D8AF972463A6552",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-only/coverage/after/suite-summary.json",
+      "original_bytes": 242536,
+      "original_sha256": "A3C02D50B6EC570CF4CA2CE506C5D61AE70D0DC7914C1E86FDE9F741F1C65D69",
+      "working_crlf_bytes": 242536,
+      "working_crlf_sha256": "A3C02D50B6EC570CF4CA2CE506C5D61AE70D0DC7914C1E86FDE9F741F1C65D69",
+      "normalized_lf_bytes": 234761,
+      "normalized_lf_sha256": "772F889BE98378EB66000964749212E6CD6A11B351A016658F6AE94261D1A2DE",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-only/coverage/after/surefire-reports/TEST-org.apache.commons.io.input.buffer.PeekableInputStreamTest.xml",
+      "original_bytes": 12983,
+      "original_sha256": "3CC8E78564BBE4834B664C71E3D9126D4471D32FBEBAF468F05879C6E499B2E5",
+      "working_crlf_bytes": 12983,
+      "working_crlf_sha256": "3CC8E78564BBE4834B664C71E3D9126D4471D32FBEBAF468F05879C6E499B2E5",
+      "normalized_lf_bytes": 12907,
+      "normalized_lf_sha256": "D8142476ACACE38DDAF0843DFCB81EE8742C06995C520D482C8FF4E7A0EA4677",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-only/coverage/after/surefire-reports/org.apache.commons.io.input.buffer.PeekableInputStreamTest.txt",
+      "original_bytes": 370,
+      "original_sha256": "AF2C78156C19D89F6D42D7E4A0C6234A4337601FBC763FB1C69662705259A139",
+      "working_crlf_bytes": 370,
+      "working_crlf_sha256": "AF2C78156C19D89F6D42D7E4A0C6234A4337601FBC763FB1C69662705259A139",
+      "normalized_lf_bytes": 366,
+      "normalized_lf_sha256": "6BC81FCA74C7A8F73675A310AF10FED0BB38683EB0988EB95A879EE1164D268F",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-only/coverage/artifact-manifest.json",
+      "original_bytes": 239592,
+      "original_sha256": "891BA8292F357BC71157936F1BF1B928177247827CBA74EBE076979DCE5738ED",
+      "working_crlf_bytes": 239592,
+      "working_crlf_sha256": "891BA8292F357BC71157936F1BF1B928177247827CBA74EBE076979DCE5738ED",
+      "normalized_lf_bytes": 234490,
+      "normalized_lf_sha256": "B8006B7E53B7608208C4F1544C2635C25C49909926F411DFB4728BF84600517B",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-only/coverage/assessment-before-coverage.md",
+      "original_bytes": 26191,
+      "original_sha256": "BB2137151D8AF2EC28538921DA2D3982E43D7BBE6307909BA21EFF1468FA6EC1",
+      "working_crlf_bytes": 26630,
+      "working_crlf_sha256": "696F4AD518A54F0C7F23FBFBDD4A516F34C7BED62388A9287729BC941A62FDBB",
+      "normalized_lf_bytes": 26191,
+      "normalized_lf_sha256": "BB2137151D8AF2EC28538921DA2D3982E43D7BBE6307909BA21EFF1468FA6EC1",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-only/coverage/before/environment.log",
+      "original_bytes": 399,
+      "original_sha256": "F68AC8A37583E27BB38AD269578E2BB6D21D634E3AAE96E096F21A18D2E52669",
+      "working_crlf_bytes": 399,
+      "working_crlf_sha256": "F68AC8A37583E27BB38AD269578E2BB6D21D634E3AAE96E096F21A18D2E52669",
+      "normalized_lf_bytes": 394,
+      "normalized_lf_sha256": "50BA6EC04846FFD0C03E121550D1B6F1899D4CE74CB4ED5642DB27DCC3E2EE1D",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-only/coverage/before/git-status.txt",
+      "original_bytes": 0,
+      "original_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "working_crlf_bytes": 0,
+      "working_crlf_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "normalized_lf_bytes": 0,
+      "normalized_lf_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-only/coverage/before/jacoco/jacoco.csv",
+      "original_bytes": 14750,
+      "original_sha256": "B64DEAB17E3A1A4969E6767E2EA68C85247251DCBA8260EDF6C5A39E5CA40E28",
+      "working_crlf_bytes": 14750,
+      "working_crlf_sha256": "B64DEAB17E3A1A4969E6767E2EA68C85247251DCBA8260EDF6C5A39E5CA40E28",
+      "normalized_lf_bytes": 14588,
+      "normalized_lf_sha256": "9001D5F77C82D5FD3EE35F16546753D1D970FDD99A716029A2A837F7BB36D8E6",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-only/coverage/before/jacoco/jacoco.xml",
+      "original_bytes": 844369,
+      "original_sha256": "171BEAAAF49E2A7CA5BC13F5FD8F99643EBDE2022868C117D9693CE2B2FCFC52",
+      "working_crlf_bytes": 844369,
+      "working_crlf_sha256": "171BEAAAF49E2A7CA5BC13F5FD8F99643EBDE2022868C117D9693CE2B2FCFC52",
+      "normalized_lf_bytes": 844369,
+      "normalized_lf_sha256": "171BEAAAF49E2A7CA5BC13F5FD8F99643EBDE2022868C117D9693CE2B2FCFC52",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-only/coverage/before/maven.log",
+      "original_bytes": 42065,
+      "original_sha256": "A77482818DB89EF3022B390172BACC980C2819DA50D232529363E70DA324FD47",
+      "working_crlf_bytes": 42066,
+      "working_crlf_sha256": "443CFA84515CB74410DC151575C1C6D523FFCD350DCD2C19916A59AACE00BC69",
+      "normalized_lf_bytes": 41603,
+      "normalized_lf_sha256": "FC45CC9A448AAB94C89751F3B5AF8EEB2EF0834FAEAE897CC32A082E75F80EEB",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-only/coverage/before/production-classes-manifest.json",
+      "original_bytes": 21935,
+      "original_sha256": "1C353A3723F73B824CA454F004D2EC92BB87AA2502AFD94901BE58AB9C582749",
+      "working_crlf_bytes": 21935,
+      "working_crlf_sha256": "1C353A3723F73B824CA454F004D2EC92BB87AA2502AFD94901BE58AB9C582749",
+      "normalized_lf_bytes": 21761,
+      "normalized_lf_sha256": "879DD9C4D0DB0D451DBA5B736C7778FB92CB68B739EC5F001DE243183BA478B1",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-only/coverage/before/run.json",
+      "original_bytes": 695,
+      "original_sha256": "D6B080E18BD2ACBADCFF464A7957D6CA3DD4403B4BC1668CCC7761313781A077",
+      "working_crlf_bytes": 695,
+      "working_crlf_sha256": "D6B080E18BD2ACBADCFF464A7957D6CA3DD4403B4BC1668CCC7761313781A077",
+      "normalized_lf_bytes": 675,
+      "normalized_lf_sha256": "0223FD83534A9A1D28FA7184EAA3661718A14DCECD974D8D65118A916DAB500E",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-only/coverage/before/source-manifest.json",
+      "original_bytes": 53881,
+      "original_sha256": "B58905E30095F74A504EA69923B93ACAB6DC75D4B4E12A58C5D94267801400C7",
+      "working_crlf_bytes": 53881,
+      "working_crlf_sha256": "B58905E30095F74A504EA69923B93ACAB6DC75D4B4E12A58C5D94267801400C7",
+      "normalized_lf_bytes": 53481,
+      "normalized_lf_sha256": "DBE0523166D201BE441AC85A92CCC44ABEA9EB1551087AFFC0A3F36716AAB9E7",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-only/coverage/before/suite-summary.json",
+      "original_bytes": 240440,
+      "original_sha256": "31DF403601EA86F06A77CBA6756E97C8242B2AA30DCE35EBD8D21AD80EB5EB6B",
+      "working_crlf_bytes": 240440,
+      "working_crlf_sha256": "31DF403601EA86F06A77CBA6756E97C8242B2AA30DCE35EBD8D21AD80EB5EB6B",
+      "normalized_lf_bytes": 232725,
+      "normalized_lf_sha256": "71428446AC2909CC4E1737D7D6008372B2AC3E549A156CD347B7A3CF009D3368",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-only/coverage/comparison.json",
+      "original_bytes": 34795,
+      "original_sha256": "B9254D4B36E5C5BA56959F0DF73091034B67BEDC8214619D768FC54BF0C5F62E",
+      "working_crlf_bytes": 34795,
+      "working_crlf_sha256": "B9254D4B36E5C5BA56959F0DF73091034B67BEDC8214619D768FC54BF0C5F62E",
+      "normalized_lf_bytes": 33357,
+      "normalized_lf_sha256": "7FFB70B1D8DBAB8BFFE006151E3AC7590E4477FA4FE52AC4C4613D75E74C8F3B",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-only/suite-summary.json",
+      "original_bytes": 33856,
+      "original_sha256": "3236B61C0DCBF8F87110ED4BB81B21C482160C0B1C8812D4098A937902D3BC84",
+      "working_crlf_bytes": 33856,
+      "working_crlf_sha256": "3236B61C0DCBF8F87110ED4BB81B21C482160C0B1C8812D4098A937902D3BC84",
+      "normalized_lf_bytes": 32747,
+      "normalized_lf_sha256": "C49916F6222D5D1F486EF9A676CF0D69D52B608DC06F2BAF411AC6D2BF0A65A2",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-only/surefire.txt",
+      "original_bytes": 370,
+      "original_sha256": "E6D98A6105BF5C765EF40AFE40E71BAE7673DAE6D164F49D9A781BAC42595953",
+      "working_crlf_bytes": 370,
+      "working_crlf_sha256": "E6D98A6105BF5C765EF40AFE40E71BAE7673DAE6D164F49D9A781BAC42595953",
+      "normalized_lf_bytes": 366,
+      "normalized_lf_sha256": "A02706DAA30E858ADD1866333A6BC515F564F55AF2CCCA78D9F5E2DB1013C331",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/json-only/surefire.xml",
+      "original_bytes": 12675,
+      "original_sha256": "AF8BE78606EB6FDDE0D1C9B03E45DED9A7393DAD68AB834F5641F04AE0FC8172",
+      "working_crlf_bytes": 12675,
+      "working_crlf_sha256": "AF8BE78606EB6FDDE0D1C9B03E45DED9A7393DAD68AB834F5641F04AE0FC8172",
+      "normalized_lf_bytes": 12600,
+      "normalized_lf_sha256": "E2CE512508935607960BB4F05E2F1C750BA67E4F19840F93D724FAA8B4576245",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/reference-suite/coverage/PeekableInputStreamTest.java",
+      "original_bytes": 21548,
+      "original_sha256": "5E6C3A6E1319CBB82F7A845EDF4D5ABF06EA1AEF4D61F7C61179372B03AD0745",
+      "working_crlf_bytes": 22087,
+      "working_crlf_sha256": "0D4DD02B7FAFD18975BE5E955A1A707391E05E2ACE3D628DBF03B4FEDB5B165D",
+      "normalized_lf_bytes": 21548,
+      "normalized_lf_sha256": "5E6C3A6E1319CBB82F7A845EDF4D5ABF06EA1AEF4D61F7C61179372B03AD0745",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/reference-suite/coverage/after/environment.log",
+      "original_bytes": 399,
+      "original_sha256": "F68AC8A37583E27BB38AD269578E2BB6D21D634E3AAE96E096F21A18D2E52669",
+      "working_crlf_bytes": 399,
+      "working_crlf_sha256": "F68AC8A37583E27BB38AD269578E2BB6D21D634E3AAE96E096F21A18D2E52669",
+      "normalized_lf_bytes": 394,
+      "normalized_lf_sha256": "50BA6EC04846FFD0C03E121550D1B6F1899D4CE74CB4ED5642DB27DCC3E2EE1D",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/reference-suite/coverage/after/git-status.txt",
+      "original_bytes": 81,
+      "original_sha256": "9411F4A9BC55DF7F4C8239DA5B828074B0745D2CE09647C825562036F836C27D",
+      "working_crlf_bytes": 82,
+      "working_crlf_sha256": "EE23019E4882211F06A1E2FF2952888FD02C7CE3851CBF054386F54EBAAC9C5E",
+      "normalized_lf_bytes": 81,
+      "normalized_lf_sha256": "9411F4A9BC55DF7F4C8239DA5B828074B0745D2CE09647C825562036F836C27D",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/reference-suite/coverage/after/jacoco/jacoco.csv",
+      "original_bytes": 14750,
+      "original_sha256": "39860E69070A89C1D705819BB14DF359D55DE5F5229CB492004F59CA2B7BBB2D",
+      "working_crlf_bytes": 14750,
+      "working_crlf_sha256": "39860E69070A89C1D705819BB14DF359D55DE5F5229CB492004F59CA2B7BBB2D",
+      "normalized_lf_bytes": 14588,
+      "normalized_lf_sha256": "19F57D51D5A6FB86E4A84E01D304168AB3E4B43F24C12A6A77FC8A3FC61AFCE0",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/reference-suite/coverage/after/jacoco/jacoco.xml",
+      "original_bytes": 844457,
+      "original_sha256": "69504B52D47AB4F58C33E0149EF3AED5BB70A3C43428049D99B0C559B2B2FC74",
+      "working_crlf_bytes": 844457,
+      "working_crlf_sha256": "69504B52D47AB4F58C33E0149EF3AED5BB70A3C43428049D99B0C559B2B2FC74",
+      "normalized_lf_bytes": 844457,
+      "normalized_lf_sha256": "69504B52D47AB4F58C33E0149EF3AED5BB70A3C43428049D99B0C559B2B2FC74",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/reference-suite/coverage/after/maven.log",
+      "original_bytes": 42180,
+      "original_sha256": "38D5E6C47A0AAFAD43EA2E80F7B481B98C6720ADEDDF3065BB1B1B1031B48B76",
+      "working_crlf_bytes": 42181,
+      "working_crlf_sha256": "5CB67189D767FC98DB04141037016FD8DE3E5787E18DFD7F26485643213894C0",
+      "normalized_lf_bytes": 41717,
+      "normalized_lf_sha256": "064452E8D873E247C7487CEE79F0175DB0D77B3425516AF8A159E1403DF3A7A6",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/reference-suite/coverage/after/production-classes-manifest.json",
+      "original_bytes": 21935,
+      "original_sha256": "1C353A3723F73B824CA454F004D2EC92BB87AA2502AFD94901BE58AB9C582749",
+      "working_crlf_bytes": 21935,
+      "working_crlf_sha256": "1C353A3723F73B824CA454F004D2EC92BB87AA2502AFD94901BE58AB9C582749",
+      "normalized_lf_bytes": 21761,
+      "normalized_lf_sha256": "879DD9C4D0DB0D451DBA5B736C7778FB92CB68B739EC5F001DE243183BA478B1",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/reference-suite/coverage/after/run.json",
+      "original_bytes": 792,
+      "original_sha256": "7956E166A3129A8E145166E0F7A8674AB86301F500768EAC7299DA54FCB8D091",
+      "working_crlf_bytes": 792,
+      "working_crlf_sha256": "7956E166A3129A8E145166E0F7A8674AB86301F500768EAC7299DA54FCB8D091",
+      "normalized_lf_bytes": 771,
+      "normalized_lf_sha256": "214AEECB5E84B3B837CF399CF7F55078AED007655F96E34B605C5CCDCD128B30",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/reference-suite/coverage/after/source-manifest.json",
+      "original_bytes": 54029,
+      "original_sha256": "8B1F8AC28B32C016929523B644CCEB6ECC342480458CBD5D6FB38062ED97B348",
+      "working_crlf_bytes": 54029,
+      "working_crlf_sha256": "8B1F8AC28B32C016929523B644CCEB6ECC342480458CBD5D6FB38062ED97B348",
+      "normalized_lf_bytes": 53628,
+      "normalized_lf_sha256": "68D719FBC10E9B21B780EC79A1E9C397C8119034F63691E309EEE496860D5C7D",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/reference-suite/coverage/after/suite-summary.json",
+      "original_bytes": 246663,
+      "original_sha256": "E01F445121467EFE87D3C71C7EA12AB4FCA70E37DE6B91F29025B912B2D3FE15",
+      "working_crlf_bytes": 246663,
+      "working_crlf_sha256": "E01F445121467EFE87D3C71C7EA12AB4FCA70E37DE6B91F29025B912B2D3FE15",
+      "normalized_lf_bytes": 238778,
+      "normalized_lf_sha256": "FE5967B4BA7F19A352885F3368F2A57AAE390BD06AA03400D9B1F309B086BBB2",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/reference-suite/coverage/after/surefire-reports/TEST-org.apache.commons.io.input.buffer.PeekableInputStreamTest.xml",
+      "original_bytes": 16344,
+      "original_sha256": "0D39BB738F910F08AA1FE0BA08084E472D168BE828DBC97A999C86A4470D2CA6",
+      "working_crlf_bytes": 16344,
+      "working_crlf_sha256": "0D39BB738F910F08AA1FE0BA08084E472D168BE828DBC97A999C86A4470D2CA6",
+      "normalized_lf_bytes": 16246,
+      "normalized_lf_sha256": "CFAECFC9B302E4E06F5D5437651E61BB8C70A4EDBCCBDDFB48799C8A8A5AB8E7",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/reference-suite/coverage/after/surefire-reports/org.apache.commons.io.input.buffer.PeekableInputStreamTest.txt",
+      "original_bytes": 370,
+      "original_sha256": "9C7D4DC2F44B03B63D50A89D03764FD515DDC1088D4A0A5600259A6097605F22",
+      "working_crlf_bytes": 370,
+      "working_crlf_sha256": "9C7D4DC2F44B03B63D50A89D03764FD515DDC1088D4A0A5600259A6097605F22",
+      "normalized_lf_bytes": 366,
+      "normalized_lf_sha256": "4D742C6BFC4D4D598016189CAB625467280E9A6F8BC38D519A58A3DC7C899C40",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/reference-suite/coverage/artifact-manifest.json",
+      "original_bytes": 239591,
+      "original_sha256": "66DB99945F384FDCF6A8F80E10B7ECCDE6E82FD85BFA28B2AD1DF9FE166B5A82",
+      "working_crlf_bytes": 239591,
+      "working_crlf_sha256": "66DB99945F384FDCF6A8F80E10B7ECCDE6E82FD85BFA28B2AD1DF9FE166B5A82",
+      "normalized_lf_bytes": 234489,
+      "normalized_lf_sha256": "CAD9CBB543C4F261A845FA8B11069F5F929B639994618F6B8CC282BFA5CA5A36",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/reference-suite/coverage/assessment-before-coverage.md",
+      "original_bytes": 8431,
+      "original_sha256": "649928D66ADB04D8D5B89771E2C2195488F90AF6991DCF31E1862ACDBC2F81F4",
+      "working_crlf_bytes": 8576,
+      "working_crlf_sha256": "D935D4FC6CF02312D39E69C5B083C34E896B0A0C175E2C7A1C949BD649FBEF0D",
+      "normalized_lf_bytes": 8431,
+      "normalized_lf_sha256": "649928D66ADB04D8D5B89771E2C2195488F90AF6991DCF31E1862ACDBC2F81F4",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/reference-suite/coverage/before/environment.log",
+      "original_bytes": 399,
+      "original_sha256": "F68AC8A37583E27BB38AD269578E2BB6D21D634E3AAE96E096F21A18D2E52669",
+      "working_crlf_bytes": 399,
+      "working_crlf_sha256": "F68AC8A37583E27BB38AD269578E2BB6D21D634E3AAE96E096F21A18D2E52669",
+      "normalized_lf_bytes": 394,
+      "normalized_lf_sha256": "50BA6EC04846FFD0C03E121550D1B6F1899D4CE74CB4ED5642DB27DCC3E2EE1D",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/reference-suite/coverage/before/git-status.txt",
+      "original_bytes": 0,
+      "original_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "working_crlf_bytes": 0,
+      "working_crlf_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "normalized_lf_bytes": 0,
+      "normalized_lf_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/reference-suite/coverage/before/jacoco/jacoco.csv",
+      "original_bytes": 14750,
+      "original_sha256": "240BE323A807730F7B827B2FC225FA8C4568F1158140B95E1F8D11DB47A8B34A",
+      "working_crlf_bytes": 14750,
+      "working_crlf_sha256": "240BE323A807730F7B827B2FC225FA8C4568F1158140B95E1F8D11DB47A8B34A",
+      "normalized_lf_bytes": 14588,
+      "normalized_lf_sha256": "C394A9B15E52E253C685478B2BC2C0A9C1444373F7FC282670FA7D99D9776C6E",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/reference-suite/coverage/before/jacoco/jacoco.xml",
+      "original_bytes": 844376,
+      "original_sha256": "54E97AD88C16462F3A1FE62091BB090354B8C63CEF62EB9C9E549A4BB2D2298A",
+      "working_crlf_bytes": 844376,
+      "working_crlf_sha256": "54E97AD88C16462F3A1FE62091BB090354B8C63CEF62EB9C9E549A4BB2D2298A",
+      "normalized_lf_bytes": 844376,
+      "normalized_lf_sha256": "54E97AD88C16462F3A1FE62091BB090354B8C63CEF62EB9C9E549A4BB2D2298A",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/reference-suite/coverage/before/maven.log",
+      "original_bytes": 42070,
+      "original_sha256": "BB13A0CF86F70DDDB01D15416994C9F437D9EF8D5643E1CC6F1D337EBFF4E2DF",
+      "working_crlf_bytes": 42071,
+      "working_crlf_sha256": "F9B92E289340D21A47408329CEF6E5E048C922A65CFAC9291164D23E6FC18827",
+      "normalized_lf_bytes": 41608,
+      "normalized_lf_sha256": "2819454A677F76EF4D21F302D1F8F6496C60ADED35668B14D89C244DADA2A4B9",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/reference-suite/coverage/before/production-classes-manifest.json",
+      "original_bytes": 21935,
+      "original_sha256": "1C353A3723F73B824CA454F004D2EC92BB87AA2502AFD94901BE58AB9C582749",
+      "working_crlf_bytes": 21935,
+      "working_crlf_sha256": "1C353A3723F73B824CA454F004D2EC92BB87AA2502AFD94901BE58AB9C582749",
+      "normalized_lf_bytes": 21761,
+      "normalized_lf_sha256": "879DD9C4D0DB0D451DBA5B736C7778FB92CB68B739EC5F001DE243183BA478B1",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/reference-suite/coverage/before/run.json",
+      "original_bytes": 701,
+      "original_sha256": "91EBE081E8F0B208F79EA8A322564D143EFE5CB100DF0D9463B39AAE88B0E30A",
+      "working_crlf_bytes": 701,
+      "working_crlf_sha256": "91EBE081E8F0B208F79EA8A322564D143EFE5CB100DF0D9463B39AAE88B0E30A",
+      "normalized_lf_bytes": 681,
+      "normalized_lf_sha256": "DD4FEBFBE81D19A8AA8B3C9B075453DC574237B7FA15A3B297EDA851D15A2A19",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/reference-suite/coverage/before/source-manifest.json",
+      "original_bytes": 53881,
+      "original_sha256": "B58905E30095F74A504EA69923B93ACAB6DC75D4B4E12A58C5D94267801400C7",
+      "working_crlf_bytes": 53881,
+      "working_crlf_sha256": "B58905E30095F74A504EA69923B93ACAB6DC75D4B4E12A58C5D94267801400C7",
+      "normalized_lf_bytes": 53481,
+      "normalized_lf_sha256": "DBE0523166D201BE441AC85A92CCC44ABEA9EB1551087AFFC0A3F36716AAB9E7",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/reference-suite/coverage/before/suite-summary.json",
+      "original_bytes": 240440,
+      "original_sha256": "31DF403601EA86F06A77CBA6756E97C8242B2AA30DCE35EBD8D21AD80EB5EB6B",
+      "working_crlf_bytes": 240440,
+      "working_crlf_sha256": "31DF403601EA86F06A77CBA6756E97C8242B2AA30DCE35EBD8D21AD80EB5EB6B",
+      "normalized_lf_bytes": 232725,
+      "normalized_lf_sha256": "71428446AC2909CC4E1737D7D6008372B2AC3E549A156CD347B7A3CF009D3368",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/reference-suite/coverage/comparison.json",
+      "original_bytes": 38430,
+      "original_sha256": "466FAF46FBAAF9EA61C6E18A7D13EB1B7D882B46355D24565DB23E67751B1445",
+      "working_crlf_bytes": 38430,
+      "working_crlf_sha256": "466FAF46FBAAF9EA61C6E18A7D13EB1B7D882B46355D24565DB23E67751B1445",
+      "normalized_lf_bytes": 36883,
+      "normalized_lf_sha256": "0131468E2DA08EDEA5142AF939B95E88BC89690958047D6D2E025A0CE63BEDB7",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-exceptions/PeekableInputStreamTest.java",
+      "original_bytes": 7758,
+      "original_sha256": "653D136D35FDAC4E556D76C1AD0965E82E05706ADDB91DD549E991FCE06B5221",
+      "working_crlf_bytes": 7936,
+      "working_crlf_sha256": "BA7AF7D92880E2595E6CEAD1AF77F7E5A9552DB8DE1AD5E3BC1916F2BC4CF016",
+      "normalized_lf_bytes": 7758,
+      "normalized_lf_sha256": "653D136D35FDAC4E556D76C1AD0965E82E05706ADDB91DD549E991FCE06B5221",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-exceptions/checkstyle.xml",
+      "original_bytes": 18677,
+      "original_sha256": "59D2E3D8F470714F0A9C95A323D92C9CDED91637597BD8D338ED14583AC02E46",
+      "working_crlf_bytes": 18677,
+      "working_crlf_sha256": "59D2E3D8F470714F0A9C95A323D92C9CDED91637597BD8D338ED14583AC02E46",
+      "normalized_lf_bytes": 18362,
+      "normalized_lf_sha256": "45365620621BD9F920E4E3534BAFB6008A9966A8629D916F5BE204E8360DC83E",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/environment.log",
+      "original_bytes": 399,
+      "original_sha256": "F68AC8A37583E27BB38AD269578E2BB6D21D634E3AAE96E096F21A18D2E52669",
+      "working_crlf_bytes": 399,
+      "working_crlf_sha256": "F68AC8A37583E27BB38AD269578E2BB6D21D634E3AAE96E096F21A18D2E52669",
+      "normalized_lf_bytes": 394,
+      "normalized_lf_sha256": "50BA6EC04846FFD0C03E121550D1B6F1899D4CE74CB4ED5642DB27DCC3E2EE1D",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/git-status.txt",
+      "original_bytes": 81,
+      "original_sha256": "9411F4A9BC55DF7F4C8239DA5B828074B0745D2CE09647C825562036F836C27D",
+      "working_crlf_bytes": 82,
+      "working_crlf_sha256": "EE23019E4882211F06A1E2FF2952888FD02C7CE3851CBF054386F54EBAAC9C5E",
+      "normalized_lf_bytes": 81,
+      "normalized_lf_sha256": "9411F4A9BC55DF7F4C8239DA5B828074B0745D2CE09647C825562036F836C27D",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/jacoco/jacoco.csv",
+      "original_bytes": 14753,
+      "original_sha256": "F682FBF3F31E35FB210F042572C4287C1A3F691AE32CCB221557FCA306D13F3C",
+      "working_crlf_bytes": 14753,
+      "working_crlf_sha256": "F682FBF3F31E35FB210F042572C4287C1A3F691AE32CCB221557FCA306D13F3C",
+      "normalized_lf_bytes": 14591,
+      "normalized_lf_sha256": "0E4AE6D6467D8819BDEE93D788984F8C8F2EAD0117257EE01879D3C02BC437DA",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/jacoco/jacoco.xml",
+      "original_bytes": 844458,
+      "original_sha256": "F827FA437E0CB49435DFDCB467C9D17926DFA4B2EB96571EFADFA7FE17293E7C",
+      "working_crlf_bytes": 844458,
+      "working_crlf_sha256": "F827FA437E0CB49435DFDCB467C9D17926DFA4B2EB96571EFADFA7FE17293E7C",
+      "normalized_lf_bytes": 844458,
+      "normalized_lf_sha256": "F827FA437E0CB49435DFDCB467C9D17926DFA4B2EB96571EFADFA7FE17293E7C",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/maven.log",
+      "original_bytes": 42177,
+      "original_sha256": "CFB27DC0A5C1E88FD6A0712D258E368693950C8F37F0DCE9545685AE943EA56F",
+      "working_crlf_bytes": 42177,
+      "working_crlf_sha256": "CFB27DC0A5C1E88FD6A0712D258E368693950C8F37F0DCE9545685AE943EA56F",
+      "normalized_lf_bytes": 41713,
+      "normalized_lf_sha256": "9BC410720B5D2272D6303741E7158A0CA47126EB390F94AF550AD34C32782873",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/production-classes-manifest.json",
+      "original_bytes": 21935,
+      "original_sha256": "1C353A3723F73B824CA454F004D2EC92BB87AA2502AFD94901BE58AB9C582749",
+      "working_crlf_bytes": 21935,
+      "working_crlf_sha256": "1C353A3723F73B824CA454F004D2EC92BB87AA2502AFD94901BE58AB9C582749",
+      "normalized_lf_bytes": 21761,
+      "normalized_lf_sha256": "879DD9C4D0DB0D451DBA5B736C7778FB92CB68B739EC5F001DE243183BA478B1",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/run.json",
+      "original_bytes": 749,
+      "original_sha256": "60BC15E92B437872091A90336DA8F42AC25B6A21F00D073B0BD13B4D527E0526",
+      "working_crlf_bytes": 749,
+      "working_crlf_sha256": "60BC15E92B437872091A90336DA8F42AC25B6A21F00D073B0BD13B4D527E0526",
+      "normalized_lf_bytes": 729,
+      "normalized_lf_sha256": "B0834BD08DDE17B3C857BA060ADDBCC4AC63D360DE906446731AB5BCEF09B7B9",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/source-manifest.json",
+      "original_bytes": 54029,
+      "original_sha256": "D3BFEBF44891F93AEAACAD87DFD08CBC3A915B90702334A8640B440026957079",
+      "working_crlf_bytes": 54029,
+      "working_crlf_sha256": "D3BFEBF44891F93AEAACAD87DFD08CBC3A915B90702334A8640B440026957079",
+      "normalized_lf_bytes": 53628,
+      "normalized_lf_sha256": "E51A1728E1B0F6792D0957CDB61FF3DE0BA08892FC3A0EF1CAF1A03597E84842",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/suite-summary.json",
+      "original_bytes": 243410,
+      "original_sha256": "7A8DC0EAD41ADD36139CAF3875ABA32A2CE8B3F86DFA2FEDA5A15D1A15274B1A",
+      "working_crlf_bytes": 243410,
+      "working_crlf_sha256": "7A8DC0EAD41ADD36139CAF3875ABA32A2CE8B3F86DFA2FEDA5A15D1A15274B1A",
+      "normalized_lf_bytes": 235610,
+      "normalized_lf_sha256": "3132B6A066FF7DE00406D776DAD9E88E1A5314D4F586680BA772A231F74C8F80",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/surefire-reports/TEST-org.apache.commons.io.input.buffer.PeekableInputStreamTest.xml",
+      "original_bytes": 13657,
+      "original_sha256": "1579EE8AA9ACFF0B22830B7DDEEC1ADDB9253954C7F78A6869E761BC72FC2423",
+      "working_crlf_bytes": 13657,
+      "working_crlf_sha256": "1579EE8AA9ACFF0B22830B7DDEEC1ADDB9253954C7F78A6869E761BC72FC2423",
+      "normalized_lf_bytes": 13576,
+      "normalized_lf_sha256": "BF6178891C60F5E85F48AB665875009C17AB99C9E7A7A6E58B84562934990203",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/surefire-reports/org.apache.commons.io.input.buffer.PeekableInputStreamTest.txt",
+      "original_bytes": 370,
+      "original_sha256": "BA7E82AD5FC4CB5691ADD94E737044D1B44D916B8951ED9A938C0F67D3F1153E",
+      "working_crlf_bytes": 370,
+      "working_crlf_sha256": "BA7E82AD5FC4CB5691ADD94E737044D1B44D916B8951ED9A938C0F67D3F1153E",
+      "normalized_lf_bytes": 366,
+      "normalized_lf_sha256": "936EB436E8C2621A4A10F9C9123981CAB74C07A5F2712156FB5D9AAE0E434991",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/artifact-manifest.json",
+      "original_bytes": 239726,
+      "original_sha256": "F720FCC6B2C9F943B279E8422561BDF2105FD3E2E0D8358EF4F60D25C85EBC39",
+      "working_crlf_bytes": 239726,
+      "working_crlf_sha256": "F720FCC6B2C9F943B279E8422561BDF2105FD3E2E0D8358EF4F60D25C85EBC39",
+      "normalized_lf_bytes": 234620,
+      "normalized_lf_sha256": "38DB16A8902750BDF64505ADF7712043E986BB479F63E35FD561212D97B24598",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/assessment-before-coverage.md",
+      "original_bytes": 26624,
+      "original_sha256": "3D4528E93E39494DD710DDB722117E7C249A3288608DBF7F2C03AF4A9F00C56F",
+      "working_crlf_bytes": 27086,
+      "working_crlf_sha256": "DCE7058AF6407EFF0DD32DF6E16F6121CCAB69A1A63975028678C4454E2AE8B7",
+      "normalized_lf_bytes": 26624,
+      "normalized_lf_sha256": "3D4528E93E39494DD710DDB722117E7C249A3288608DBF7F2C03AF4A9F00C56F",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/environment.log",
+      "original_bytes": 399,
+      "original_sha256": "F68AC8A37583E27BB38AD269578E2BB6D21D634E3AAE96E096F21A18D2E52669",
+      "working_crlf_bytes": 399,
+      "working_crlf_sha256": "F68AC8A37583E27BB38AD269578E2BB6D21D634E3AAE96E096F21A18D2E52669",
+      "normalized_lf_bytes": 394,
+      "normalized_lf_sha256": "50BA6EC04846FFD0C03E121550D1B6F1899D4CE74CB4ED5642DB27DCC3E2EE1D",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/git-status.txt",
+      "original_bytes": 0,
+      "original_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "working_crlf_bytes": 0,
+      "working_crlf_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "normalized_lf_bytes": 0,
+      "normalized_lf_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/jacoco/jacoco.csv",
+      "original_bytes": 14750,
+      "original_sha256": "D14152CEA86158BA945A3D7BE53DD07448033BD6BB0F8ECE45D9D603DDA548B1",
+      "working_crlf_bytes": 14750,
+      "working_crlf_sha256": "D14152CEA86158BA945A3D7BE53DD07448033BD6BB0F8ECE45D9D603DDA548B1",
+      "normalized_lf_bytes": 14588,
+      "normalized_lf_sha256": "A7A48C43142B6E1A1A81CA425BEB05E5CBE222EC640CCE76FDE3848CD6EBE46A",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/jacoco/jacoco.xml",
+      "original_bytes": 844367,
+      "original_sha256": "01B4D3FEFFA83939F4397299B39E318708D3A4736476D843EE3ED27EE0278716",
+      "working_crlf_bytes": 844367,
+      "working_crlf_sha256": "01B4D3FEFFA83939F4397299B39E318708D3A4736476D843EE3ED27EE0278716",
+      "normalized_lf_bytes": 844367,
+      "normalized_lf_sha256": "01B4D3FEFFA83939F4397299B39E318708D3A4736476D843EE3ED27EE0278716",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/maven.log",
+      "original_bytes": 41994,
+      "original_sha256": "7806EF2F1518E346E2D41458DF49BB43C1D42EBA13A8AFD183950A5D01EB2DDE",
+      "working_crlf_bytes": 41994,
+      "working_crlf_sha256": "7806EF2F1518E346E2D41458DF49BB43C1D42EBA13A8AFD183950A5D01EB2DDE",
+      "normalized_lf_bytes": 41532,
+      "normalized_lf_sha256": "D1119B2586EE74EFEDEF487FC82089F4F97FFFEF0C3D56F80C9A12107F8EF029",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/production-classes-manifest.json",
+      "original_bytes": 21935,
+      "original_sha256": "1C353A3723F73B824CA454F004D2EC92BB87AA2502AFD94901BE58AB9C582749",
+      "working_crlf_bytes": 21935,
+      "working_crlf_sha256": "1C353A3723F73B824CA454F004D2EC92BB87AA2502AFD94901BE58AB9C582749",
+      "normalized_lf_bytes": 21761,
+      "normalized_lf_sha256": "879DD9C4D0DB0D451DBA5B736C7778FB92CB68B739EC5F001DE243183BA478B1",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/run.json",
+      "original_bytes": 658,
+      "original_sha256": "66A0A9E89EA4E3A2B9B9693902C6E81032ED0FF250E7967FD63640184CCF760B",
+      "working_crlf_bytes": 658,
+      "working_crlf_sha256": "66A0A9E89EA4E3A2B9B9693902C6E81032ED0FF250E7967FD63640184CCF760B",
+      "normalized_lf_bytes": 639,
+      "normalized_lf_sha256": "6AAE104F3C68148C46DC492F5593B6BF1891C255910C533902362BBB166C03F0",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/source-manifest.json",
+      "original_bytes": 53881,
+      "original_sha256": "B58905E30095F74A504EA69923B93ACAB6DC75D4B4E12A58C5D94267801400C7",
+      "working_crlf_bytes": 53881,
+      "working_crlf_sha256": "B58905E30095F74A504EA69923B93ACAB6DC75D4B4E12A58C5D94267801400C7",
+      "normalized_lf_bytes": 53481,
+      "normalized_lf_sha256": "DBE0523166D201BE441AC85A92CCC44ABEA9EB1551087AFFC0A3F36716AAB9E7",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/suite-summary.json",
+      "original_bytes": 240440,
+      "original_sha256": "31DF403601EA86F06A77CBA6756E97C8242B2AA30DCE35EBD8D21AD80EB5EB6B",
+      "working_crlf_bytes": 240440,
+      "working_crlf_sha256": "31DF403601EA86F06A77CBA6756E97C8242B2AA30DCE35EBD8D21AD80EB5EB6B",
+      "normalized_lf_bytes": 232725,
+      "normalized_lf_sha256": "71428446AC2909CC4E1737D7D6008372B2AC3E549A156CD347B7A3CF009D3368",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/comparison.json",
+      "original_bytes": 38934,
+      "original_sha256": "17ED9A80CC480E76172429A38AFE9F08320AE8674C6A07670EB405D00F24E3AC",
+      "working_crlf_bytes": 38934,
+      "working_crlf_sha256": "17ED9A80CC480E76172429A38AFE9F08320AE8674C6A07670EB405D00F24E3AC",
+      "normalized_lf_bytes": 37314,
+      "normalized_lf_sha256": "9A0A708EBE5A9F8D1182A89FF316D955E3E0500BD61BCEF928C6BC6E4BD56304",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/preservation-manifest.json",
+      "original_bytes": 178040,
+      "original_sha256": "C80B140487FEA671E2240F9CAF73C18D544E7B18D5C9CEFE971235A0AFE049DF",
+      "working_crlf_bytes": 178040,
+      "working_crlf_sha256": "C80B140487FEA671E2240F9CAF73C18D544E7B18D5C9CEFE971235A0AFE049DF",
+      "normalized_lf_bytes": 176930,
+      "normalized_lf_sha256": "B7AD3742DE408AF09BDB82CD4448FC7041E344CAA631352A9F4A56599E913EFF",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/verification.json",
+      "original_bytes": 1464,
+      "original_sha256": "ACAC4C4BB571526D191558C67B1890040FC54CB559732A8E420A2E33DD454D12",
+      "working_crlf_bytes": 1464,
+      "working_crlf_sha256": "ACAC4C4BB571526D191558C67B1890040FC54CB559732A8E420A2E33DD454D12",
+      "normalized_lf_bytes": 1426,
+      "normalized_lf_sha256": "6061FD9C7191B9637300E17FA1E45D78BF6223C2E334FEA6FB1908287121B8CA",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-exceptions/generation-record.json",
+      "original_bytes": 9795,
+      "original_sha256": "9234216B1E39F85581809EB4F9C344D2070E69E48C285EF107FEEAE92A0E4B14",
+      "working_crlf_bytes": 9854,
+      "working_crlf_sha256": "163DE38DF08BEE0A4B01016F6ADCB98B5C5AB22D7F5DA16BEA97F85A9BD776D5",
+      "normalized_lf_bytes": 9795,
+      "normalized_lf_sha256": "9234216B1E39F85581809EB4F9C344D2070E69E48C285EF107FEEAE92A0E4B14",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-exceptions/repository-verification.log",
+      "original_bytes": 19772,
+      "original_sha256": "96BE201C5348584B4E8A074071F33E9E024888481D17D8FB9A66C9A2A84B39B8",
+      "working_crlf_bytes": 20002,
+      "working_crlf_sha256": "10B47711ECE23E4479C7BB20A9BCF95A2636C007C147B0468AB4BDA1BF89F9FB",
+      "normalized_lf_bytes": 19772,
+      "normalized_lf_sha256": "96BE201C5348584B4E8A074071F33E9E024888481D17D8FB9A66C9A2A84B39B8",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-exceptions/suite-summary.json",
+      "original_bytes": 32747,
+      "original_sha256": "00F06824482CCD825693ECE941570D7075EEB6F16F31F0D12E25861519A1F783",
+      "working_crlf_bytes": 33856,
+      "working_crlf_sha256": "E0C6EB6628B0ABB765F11CAC0C80782A26BB6ACF2C61EB4E197EC192B26AE35E",
+      "normalized_lf_bytes": 32747,
+      "normalized_lf_sha256": "00F06824482CCD825693ECE941570D7075EEB6F16F31F0D12E25861519A1F783",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-exceptions/surefire.txt",
+      "original_bytes": 370,
+      "original_sha256": "C767C1AE40197DDE7D05D3EBE96EB601388BDFBCA136AA38298BD47A5C1D007E",
+      "working_crlf_bytes": 370,
+      "working_crlf_sha256": "C767C1AE40197DDE7D05D3EBE96EB601388BDFBCA136AA38298BD47A5C1D007E",
+      "normalized_lf_bytes": 366,
+      "normalized_lf_sha256": "CC4D83018C2CABCFCDF28A39B7A85550BF82B33713343044570068232ED9C491",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-exceptions/surefire.xml",
+      "original_bytes": 13378,
+      "original_sha256": "545822033396266720683CF96A94F1F4F4C2CD1DDB0F4875B1FFFAA3DB19E0CC",
+      "working_crlf_bytes": 13378,
+      "working_crlf_sha256": "545822033396266720683CF96A94F1F4F4C2CD1DDB0F4875B1FFFAA3DB19E0CC",
+      "normalized_lf_bytes": 13298,
+      "normalized_lf_sha256": "CD430803AAF333F6E9BDE23E7F0A10FAF8BC25A30AAE55E1481E0DB5599B95A2",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-exceptions/target-test-run.log",
+      "original_bytes": 4580,
+      "original_sha256": "676B718C7A8E663DFD9083FCB9A3DBECACA95E0A97C12A3834F422702CC28D7B",
+      "working_crlf_bytes": 4667,
+      "working_crlf_sha256": "E91B4A7132910E151C88C9DC449397EF142DB66C7980FFFAFFD6761BD6773089",
+      "normalized_lf_bytes": 4580,
+      "normalized_lf_sha256": "676B718C7A8E663DFD9083FCB9A3DBECACA95E0A97C12A3834F422702CC28D7B",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-only/checkstyle.xml",
+      "original_bytes": 18586,
+      "original_sha256": "3A2E3819E016588D4F9CA08DBED06B6FADF5D07FDA45C8FC353D94E1D5B142F3",
+      "working_crlf_bytes": 18586,
+      "working_crlf_sha256": "3A2E3819E016588D4F9CA08DBED06B6FADF5D07FDA45C8FC353D94E1D5B142F3",
+      "normalized_lf_bytes": 18273,
+      "normalized_lf_sha256": "EE74C67A2BB8461E9FCA3C2F5A1F89F8725756F67584AAE3A7F7EEB5D7B9DF84",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-only/coverage/PeekableInputStreamTest.java",
+      "original_bytes": 18136,
+      "original_sha256": "0FED5D696D728439ABE2B68A3D02820BD39556F07CBD84CD02815151D5C14858",
+      "working_crlf_bytes": 18543,
+      "working_crlf_sha256": "8C1F535CD1054E9CF498B62EB2DBA7536348855857E39D6A0107BF4F468B5C09",
+      "normalized_lf_bytes": 18136,
+      "normalized_lf_sha256": "0FED5D696D728439ABE2B68A3D02820BD39556F07CBD84CD02815151D5C14858",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-only/coverage/after/environment.log",
+      "original_bytes": 399,
+      "original_sha256": "F68AC8A37583E27BB38AD269578E2BB6D21D634E3AAE96E096F21A18D2E52669",
+      "working_crlf_bytes": 399,
+      "working_crlf_sha256": "F68AC8A37583E27BB38AD269578E2BB6D21D634E3AAE96E096F21A18D2E52669",
+      "normalized_lf_bytes": 394,
+      "normalized_lf_sha256": "50BA6EC04846FFD0C03E121550D1B6F1899D4CE74CB4ED5642DB27DCC3E2EE1D",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-only/coverage/after/git-status.txt",
+      "original_bytes": 81,
+      "original_sha256": "9411F4A9BC55DF7F4C8239DA5B828074B0745D2CE09647C825562036F836C27D",
+      "working_crlf_bytes": 82,
+      "working_crlf_sha256": "EE23019E4882211F06A1E2FF2952888FD02C7CE3851CBF054386F54EBAAC9C5E",
+      "normalized_lf_bytes": 81,
+      "normalized_lf_sha256": "9411F4A9BC55DF7F4C8239DA5B828074B0745D2CE09647C825562036F836C27D",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-only/coverage/after/jacoco/jacoco.csv",
+      "original_bytes": 14750,
+      "original_sha256": "0B1FA09A0E8F716C0B462900E6FE45E4C9904608884573AE11FCF1A70115B3A8",
+      "working_crlf_bytes": 14750,
+      "working_crlf_sha256": "0B1FA09A0E8F716C0B462900E6FE45E4C9904608884573AE11FCF1A70115B3A8",
+      "normalized_lf_bytes": 14588,
+      "normalized_lf_sha256": "645AAB14C8C292C5882ED4D09E015C7AB741C10C372104E3D2D0B9775E5191A0",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-only/coverage/after/jacoco/jacoco.xml",
+      "original_bytes": 844456,
+      "original_sha256": "1829813C6CFE681AAB0287743739EE480F6C58AE6331C34B82FEDCD198FBC453",
+      "working_crlf_bytes": 844456,
+      "working_crlf_sha256": "1829813C6CFE681AAB0287743739EE480F6C58AE6331C34B82FEDCD198FBC453",
+      "normalized_lf_bytes": 844456,
+      "normalized_lf_sha256": "1829813C6CFE681AAB0287743739EE480F6C58AE6331C34B82FEDCD198FBC453",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-only/coverage/after/maven.log",
+      "original_bytes": 43018,
+      "original_sha256": "7E27BDE2CBEA1385D52B1FED802C68408D4E26477401F59EEE4C781CE518781F",
+      "working_crlf_bytes": 43029,
+      "working_crlf_sha256": "44290F85C2C429B88A42880DE094FC3C90F8DA75DB564B93E1A71D788B749E73",
+      "normalized_lf_bytes": 42554,
+      "normalized_lf_sha256": "C9A9F47DD02D8098FE350D9351DB6649EDAB93B218BAC0416131A7203CAE0EFB",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-only/coverage/after/production-classes-manifest.json",
+      "original_bytes": 21935,
+      "original_sha256": "1C353A3723F73B824CA454F004D2EC92BB87AA2502AFD94901BE58AB9C582749",
+      "working_crlf_bytes": 21935,
+      "working_crlf_sha256": "1C353A3723F73B824CA454F004D2EC92BB87AA2502AFD94901BE58AB9C582749",
+      "normalized_lf_bytes": 21761,
+      "normalized_lf_sha256": "879DD9C4D0DB0D451DBA5B736C7778FB92CB68B739EC5F001DE243183BA478B1",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-only/coverage/after/report-only.log",
+      "original_bytes": 855,
+      "original_sha256": "5C2AF08B5DA96FB444425AD05F05CB3FAB337E1852D9F6C832337B5B155C6C38",
+      "working_crlf_bytes": 855,
+      "working_crlf_sha256": "5C2AF08B5DA96FB444425AD05F05CB3FAB337E1852D9F6C832337B5B155C6C38",
+      "normalized_lf_bytes": 839,
+      "normalized_lf_sha256": "C33DED29ADA7342FE9F09CFA8969B71932C328CE1483CB97D8DA503AEB6C6748",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-only/coverage/after/run.json",
+      "original_bytes": 1075,
+      "original_sha256": "BC9B666895E655C04696B2162F35AEF9E77AF2A0079BC1D77A95A59DBFCFB44A",
+      "working_crlf_bytes": 1075,
+      "working_crlf_sha256": "BC9B666895E655C04696B2162F35AEF9E77AF2A0079BC1D77A95A59DBFCFB44A",
+      "normalized_lf_bytes": 1043,
+      "normalized_lf_sha256": "D3BF6B50D01DD373E8D2D106C98A14217B8372EDBB14FC82BED32400AB25C6C0",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-only/coverage/after/source-manifest.json",
+      "original_bytes": 54029,
+      "original_sha256": "8D9A6CB3B5DA609C4D04D79C61107F673CBE6DDB75BD5E5FD661DFA12D11E363",
+      "working_crlf_bytes": 54029,
+      "working_crlf_sha256": "8D9A6CB3B5DA609C4D04D79C61107F673CBE6DDB75BD5E5FD661DFA12D11E363",
+      "normalized_lf_bytes": 53628,
+      "normalized_lf_sha256": "0489ED42D9F7DB7A566CF9E56F23E346518219FDB400D708CC2DEE2A883B39FA",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-only/coverage/after/suite-summary.json",
+      "original_bytes": 244974,
+      "original_sha256": "E30E1631125D51E75E4E352074659E8DF61BB84FAE19C566F16B1FB58304D3D8",
+      "working_crlf_bytes": 244974,
+      "working_crlf_sha256": "E30E1631125D51E75E4E352074659E8DF61BB84FAE19C566F16B1FB58304D3D8",
+      "normalized_lf_bytes": 237129,
+      "normalized_lf_sha256": "AFA61FEC0D58A9CAB543B59A4550C0603648184B0CD0103FCAF3F4D94B33095D",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-only/coverage/after/surefire-reports/TEST-org.apache.commons.io.input.buffer.PeekableInputStreamTest.xml",
+      "original_bytes": 16596,
+      "original_sha256": "E3139A7F5FE1EF644541D96522B70E7C7B4EDC67D8715D705F078F0E73B5DC78",
+      "working_crlf_bytes": 16606,
+      "working_crlf_sha256": "59AF604B4FC2C2ECDA99902440DF21497A5B100C5DBC09BF1949AB009A3427EB",
+      "normalized_lf_bytes": 16496,
+      "normalized_lf_sha256": "3454F0AB2B9D259B1433EBB17802106321A0E6D40C3413404FE9D5774D92B974",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-only/coverage/after/surefire-reports/org.apache.commons.io.input.buffer.PeekableInputStreamTest.txt",
+      "original_bytes": 1682,
+      "original_sha256": "C33A2F298A85E83AE8AEC83CB3A0814AA37883494E950CC0A338AFC849E2C5F0",
+      "working_crlf_bytes": 1692,
+      "working_crlf_sha256": "5B89AA023592370B7487A1946F37C05A09385819A0777A6634AF17FB27287DA8",
+      "normalized_lf_bytes": 1668,
+      "normalized_lf_sha256": "2A8430CA583C03744D1D464645EA1E77AE3258F2A191A461D8BE6A0C4C005D6B",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-only/coverage/artifact-manifest.json",
+      "original_bytes": 239731,
+      "original_sha256": "E058F598644C941A6EC8CBD84CE52F9CDE311D94EEC5509CB5A9561C59DA104F",
+      "working_crlf_bytes": 239731,
+      "working_crlf_sha256": "E058F598644C941A6EC8CBD84CE52F9CDE311D94EEC5509CB5A9561C59DA104F",
+      "normalized_lf_bytes": 234625,
+      "normalized_lf_sha256": "4A3EB1567CA5507909A164300B1CEB9BAEF7CD2A3F958F97FA00726DCF499907",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-only/coverage/assessment-before-coverage.md",
+      "original_bytes": 32005,
+      "original_sha256": "F559CAB4A7153A3B284FAE8CD7C18369144A1B2B3E03B1F0FD3BA0EF0FA93FCD",
+      "working_crlf_bytes": 32619,
+      "working_crlf_sha256": "7D2B41C5EB8A1EC93C2FEF1E14A09DF73A55DC33F80F2179024795F6AD720C38",
+      "normalized_lf_bytes": 32005,
+      "normalized_lf_sha256": "F559CAB4A7153A3B284FAE8CD7C18369144A1B2B3E03B1F0FD3BA0EF0FA93FCD",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-only/coverage/before/environment.log",
+      "original_bytes": 399,
+      "original_sha256": "F68AC8A37583E27BB38AD269578E2BB6D21D634E3AAE96E096F21A18D2E52669",
+      "working_crlf_bytes": 399,
+      "working_crlf_sha256": "F68AC8A37583E27BB38AD269578E2BB6D21D634E3AAE96E096F21A18D2E52669",
+      "normalized_lf_bytes": 394,
+      "normalized_lf_sha256": "50BA6EC04846FFD0C03E121550D1B6F1899D4CE74CB4ED5642DB27DCC3E2EE1D",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-only/coverage/before/git-status.txt",
+      "original_bytes": 0,
+      "original_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "working_crlf_bytes": 0,
+      "working_crlf_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "normalized_lf_bytes": 0,
+      "normalized_lf_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-only/coverage/before/jacoco/jacoco.csv",
+      "original_bytes": 14750,
+      "original_sha256": "B64DEAB17E3A1A4969E6767E2EA68C85247251DCBA8260EDF6C5A39E5CA40E28",
+      "working_crlf_bytes": 14750,
+      "working_crlf_sha256": "B64DEAB17E3A1A4969E6767E2EA68C85247251DCBA8260EDF6C5A39E5CA40E28",
+      "normalized_lf_bytes": 14588,
+      "normalized_lf_sha256": "9001D5F77C82D5FD3EE35F16546753D1D970FDD99A716029A2A837F7BB36D8E6",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-only/coverage/before/jacoco/jacoco.xml",
+      "original_bytes": 844368,
+      "original_sha256": "99E09FBB21E7F1643135CBC91D0E87D319913487FA731F7AA0B86B0B3638559E",
+      "working_crlf_bytes": 844368,
+      "working_crlf_sha256": "99E09FBB21E7F1643135CBC91D0E87D319913487FA731F7AA0B86B0B3638559E",
+      "normalized_lf_bytes": 844368,
+      "normalized_lf_sha256": "99E09FBB21E7F1643135CBC91D0E87D319913487FA731F7AA0B86B0B3638559E",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-only/coverage/before/maven.log",
+      "original_bytes": 41999,
+      "original_sha256": "CFB1ED1255C7D874FBDB74E221EBD224D97BAB169C0961DBBAA4686BD1A68898",
+      "working_crlf_bytes": 42000,
+      "working_crlf_sha256": "538CD016893243F7F363D005FBEB4EE9131B02700BEFB9CE0C5C1BB55911B44C",
+      "normalized_lf_bytes": 41538,
+      "normalized_lf_sha256": "1183B83C9BEB0CB559F9B79EDEEDC6B94EAA3D6F590470A0570CC60831745FAB",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-only/coverage/before/production-classes-manifest.json",
+      "original_bytes": 21935,
+      "original_sha256": "1C353A3723F73B824CA454F004D2EC92BB87AA2502AFD94901BE58AB9C582749",
+      "working_crlf_bytes": 21935,
+      "working_crlf_sha256": "1C353A3723F73B824CA454F004D2EC92BB87AA2502AFD94901BE58AB9C582749",
+      "normalized_lf_bytes": 21761,
+      "normalized_lf_sha256": "879DD9C4D0DB0D451DBA5B736C7778FB92CB68B739EC5F001DE243183BA478B1",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-only/coverage/before/run.json",
+      "original_bytes": 697,
+      "original_sha256": "BE5E8004107AEE023C40D877A594CD6019FD7917C8F84A278102D09B66520974",
+      "working_crlf_bytes": 697,
+      "working_crlf_sha256": "BE5E8004107AEE023C40D877A594CD6019FD7917C8F84A278102D09B66520974",
+      "normalized_lf_bytes": 677,
+      "normalized_lf_sha256": "981112E6A0B728AEAEECFBA9DB6CCFF2ED25724D083EE91DF4DC73AC3AE3521A",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-only/coverage/before/source-manifest.json",
+      "original_bytes": 53881,
+      "original_sha256": "B58905E30095F74A504EA69923B93ACAB6DC75D4B4E12A58C5D94267801400C7",
+      "working_crlf_bytes": 53881,
+      "working_crlf_sha256": "B58905E30095F74A504EA69923B93ACAB6DC75D4B4E12A58C5D94267801400C7",
+      "normalized_lf_bytes": 53481,
+      "normalized_lf_sha256": "DBE0523166D201BE441AC85A92CCC44ABEA9EB1551087AFFC0A3F36716AAB9E7",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-only/coverage/before/suite-summary.json",
+      "original_bytes": 240440,
+      "original_sha256": "31DF403601EA86F06A77CBA6756E97C8242B2AA30DCE35EBD8D21AD80EB5EB6B",
+      "working_crlf_bytes": 240440,
+      "working_crlf_sha256": "31DF403601EA86F06A77CBA6756E97C8242B2AA30DCE35EBD8D21AD80EB5EB6B",
+      "normalized_lf_bytes": 232725,
+      "normalized_lf_sha256": "71428446AC2909CC4E1737D7D6008372B2AC3E549A156CD347B7A3CF009D3368",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-only/coverage/comparison.json",
+      "original_bytes": 36725,
+      "original_sha256": "D1258D034AF2A38164F74B5D74E335B178C83B6787E771E1C5910C23481482E6",
+      "working_crlf_bytes": 36725,
+      "working_crlf_sha256": "D1258D034AF2A38164F74B5D74E335B178C83B6787E771E1C5910C23481482E6",
+      "normalized_lf_bytes": 35212,
+      "normalized_lf_sha256": "ED9473773166ED4DA3FA7EF5CDF926AD72C93BB8491AB82545298490A66D438B",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-only/surefire.txt",
+      "original_bytes": 1677,
+      "original_sha256": "3064D78A92C602868446054F633832A0415CCEAAB7A4D01CE66FB6187C0C6138",
+      "working_crlf_bytes": 1687,
+      "working_crlf_sha256": "DAD057C6B45346E14DA993036C2CB89A54D928B37BAC527037A33B8A94F0ED92",
+      "normalized_lf_bytes": 1663,
+      "normalized_lf_sha256": "6DA66DA66549BA2C0EC96649850A3D3365AF7979DF4934CE09C59EB2D71C9232",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/source-only/surefire.xml",
+      "original_bytes": 16472,
+      "original_sha256": "01CEA02FE65C982E9CB45B7E7EA0C642AA75BE5E0BBA8270287AFDA318563512",
+      "working_crlf_bytes": 16482,
+      "working_crlf_sha256": "AFE5A6F358DAAB6C27B163A44800C92EFAFED435B46375CCDBE323209D0F159A",
+      "normalized_lf_bytes": 16371,
+      "normalized_lf_sha256": "D832D6F25FECA079747F10F192F5A368CCB69984E6FDE0B85290ECB45AEC5F22",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/target-coverage/comparison.json",
+      "original_bytes": 18772,
+      "original_sha256": "032527D8C35BF92B2C21B8DF5FBF4A80003F11E43CE62A738A082F446F0427F4",
+      "working_crlf_bytes": 18772,
+      "working_crlf_sha256": "032527D8C35BF92B2C21B8DF5FBF4A80003F11E43CE62A738A082F446F0427F4",
+      "normalized_lf_bytes": 18162,
+      "normalized_lf_sha256": "E53E21C193BAA81EA136AA025EA704E3E146A5ED7A55B2F417BD5CEA891F31A9",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/target-coverage/preservation-manifest.json",
+      "original_bytes": 1717,
+      "original_sha256": "A16E559EEFA1B92E1498F3DC74D94C09D5912077D4639BF62C53596DAF7E661A",
+      "working_crlf_bytes": 1717,
+      "working_crlf_sha256": "A16E559EEFA1B92E1498F3DC74D94C09D5912077D4639BF62C53596DAF7E661A",
+      "normalized_lf_bytes": 1676,
+      "normalized_lf_sha256": "3CACDFFE91D3126BE2AED6A40596F38442DB0A2C5DC9B08A722C8D9FD29C8B4A",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/target-coverage/report-snapshots/docs/README.md",
+      "original_bytes": 4300,
+      "original_sha256": "4EFA3AB96C12B10F96923A277A794501B1B3278C5CC328AE11A2A92F8D0C0104",
+      "working_crlf_bytes": 4385,
+      "working_crlf_sha256": "3C5BFE7DD15CE059AB2D076B1C9E0C2472E5F12BB76DEE39251C130EE967B7EA",
+      "normalized_lf_bytes": 4300,
+      "normalized_lf_sha256": "4EFA3AB96C12B10F96923A277A794501B1B3278C5CC328AE11A2A92F8D0C0104",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/target-coverage/report-snapshots/docs/findings/peekable-input-stream-generation.md",
+      "original_bytes": 39484,
+      "original_sha256": "DFF15E06E5A29CE0208D189220EED0C78DB102D69C9CFEBA8495E90F8F125B17",
+      "working_crlf_bytes": 40204,
+      "working_crlf_sha256": "1624F0E46DDA0ABC28CA3FE248AA9F09C8ED545B943C87AAE53FC0AC5AC35BE3",
+      "normalized_lf_bytes": 39484,
+      "normalized_lf_sha256": "DFF15E06E5A29CE0208D189220EED0C78DB102D69C9CFEBA8495E90F8F125B17",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/target-coverage/report-snapshots/docs/findings/peekable-input-stream-json-generation.md",
+      "original_bytes": 33648,
+      "original_sha256": "255A0DACF9282FFE0FFBB48B650F051C4E991B7F6810369BB048B8FDF98458E1",
+      "working_crlf_bytes": 34191,
+      "working_crlf_sha256": "2E9910C506F888539016DA862EA22E2FD3EEE6D8C070863D3FF5BFB00DC0EEBB",
+      "normalized_lf_bytes": 33648,
+      "normalized_lf_sha256": "255A0DACF9282FFE0FFBB48B650F051C4E991B7F6810369BB048B8FDF98458E1",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/target-coverage/report-snapshots/docs/findings/peekable-input-stream-source-exception-generation.md",
+      "original_bytes": 38651,
+      "original_sha256": "76615469F80C432E041027A7654BA85264A958EF41F6932192B336A5BFB252C2",
+      "working_crlf_bytes": 39286,
+      "working_crlf_sha256": "0FFBE1B9FCB991B882AFF65FB1D56FFBECAA8CE43DF48027520C2EDFE89D54D8",
+      "normalized_lf_bytes": 38651,
+      "normalized_lf_sha256": "76615469F80C432E041027A7654BA85264A958EF41F6932192B336A5BFB252C2",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/target-coverage/report-snapshots/docs/findings/unit-test-coverage-baseline.md",
+      "original_bytes": 15204,
+      "original_sha256": "C9A82A8024249C17D152DD1F78515E6350953281D54E86E5F03D7D622688B17D",
+      "working_crlf_bytes": 15443,
+      "working_crlf_sha256": "CEE16F6ECC66CDF3ACBB6A37134DA4218758FCAF1F5BD8D017986E28494E7BE5",
+      "normalized_lf_bytes": 15204,
+      "normalized_lf_sha256": "C9A82A8024249C17D152DD1F78515E6350953281D54E86E5F03D7D622688B17D",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/target-coverage/report-snapshots/docs/study-log.md",
+      "original_bytes": 37368,
+      "original_sha256": "808DF1CD022E27B2137965D09C451CEA0430C74BE89F74AF8D9AD0F1231F2885",
+      "working_crlf_bytes": 37936,
+      "working_crlf_sha256": "4C4E33D0A1FBBF87E9742FF25AA981C02C312403B4B18548E92672F39ABF55E1",
+      "normalized_lf_bytes": 37368,
+      "normalized_lf_sha256": "808DF1CD022E27B2137965D09C451CEA0430C74BE89F74AF8D9AD0F1231F2885",
+      "change": "representation_only"
+    },
+    {
+      "path": "data/experiments/peekable-input-stream/target-coverage/verification.json",
+      "original_bytes": 494,
+      "original_sha256": "06E2134324A5CAF92CA457BDF6A2851C2306F12F18970E6AF892A66F91A14E64",
+      "working_crlf_bytes": 494,
+      "working_crlf_sha256": "06E2134324A5CAF92CA457BDF6A2851C2306F12F18970E6AF892A66F91A14E64",
+      "normalized_lf_bytes": 485,
+      "normalized_lf_sha256": "5CBFC806F9CC3263A5FC89C572534C3F67073FB8C570B9EA5B1EB8566397C322",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/README.md",
+      "original_bytes": 5815,
+      "original_sha256": "6793F5D8967B578800B49BE9E6511A07C277CE0AD3C5EFC700076C61F52D1823",
+      "working_crlf_bytes": 5923,
+      "working_crlf_sha256": "07A7164DB2AE2BD19484623C898AC2A921D55808B37F8721ACFC757AFDC2ED68",
+      "normalized_lf_bytes": 5815,
+      "normalized_lf_sha256": "6793F5D8967B578800B49BE9E6511A07C277CE0AD3C5EFC700076C61F52D1823",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/cases/org-apache-commons-io-comparator-reversecomparator-constructor-java-util-comparator-path-0.md",
+      "original_bytes": 3615,
+      "original_sha256": "FCEF8D027275942B57808D9E536B11B2555629B6AADACC5319303132E0CCF911",
+      "working_crlf_bytes": 3615,
+      "working_crlf_sha256": "FCEF8D027275942B57808D9E536B11B2555629B6AADACC5319303132E0CCF911",
+      "normalized_lf_bytes": 3513,
+      "normalized_lf_sha256": "14A922B110E89EE885803307B4E28B903C2ADED17FDD0BAB6E8864517F70D988",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/cases/org-apache-commons-io-endianutils-readswappeddouble-java-io-inputstream-path-1.md",
+      "original_bytes": 4045,
+      "original_sha256": "D8332A9A87850098494BEC8572FDF1754535B4C04C125E97D7049A9AAA844001",
+      "working_crlf_bytes": 4045,
+      "working_crlf_sha256": "D8332A9A87850098494BEC8572FDF1754535B4C04C125E97D7049A9AAA844001",
+      "normalized_lf_bytes": 3934,
+      "normalized_lf_sha256": "F6DBF9CF242ABF4BB2FA5897ADEDC6FEDCAEEB2311CA2A3A432648E77C662781",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/cases/org-apache-commons-io-file-cleaningpathvisitor-accept-java-nio-file-path-path-0.md",
+      "original_bytes": 3647,
+      "original_sha256": "D28CEF7AC1B880BB487FB6E970D05328FB5D2257D99B578B435F662365F52760",
+      "working_crlf_bytes": 3647,
+      "working_crlf_sha256": "D28CEF7AC1B880BB487FB6E970D05328FB5D2257D99B578B435F662365F52760",
+      "normalized_lf_bytes": 3543,
+      "normalized_lf_sha256": "24F092F521890BFFBADB5C282035E5C4D1591772BE6BAE8342FBA3822F32D9FE",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/cases/org-apache-commons-io-filedeletestrategy-forcefiledeletestrategy-dodelete-java-io-file-path-3.md",
+      "original_bytes": 3982,
+      "original_sha256": "DECAFB16671E44102AF4CDA4F5BEEA27CD1CC62EE598CC52E81C4C434317E852",
+      "working_crlf_bytes": 3982,
+      "working_crlf_sha256": "DECAFB16671E44102AF4CDA4F5BEEA27CD1CC62EE598CC52E81C4C434317E852",
+      "normalized_lf_bytes": 3873,
+      "normalized_lf_sha256": "86EB1B8C4430BB22A3423ABD3D4B0B2FB76A1C31A50933DE68DFBBCD77F74C1E",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/cases/org-apache-commons-io-filefilter-agefilefilter-constructor-java-util-date-path-0.md",
+      "original_bytes": 3814,
+      "original_sha256": "7AE2DA179909DAD6EDC0DCAEEFCA4E780960A4138EC55CF0C05DDBCC9D4BD8BF",
+      "working_crlf_bytes": 3814,
+      "working_crlf_sha256": "7AE2DA179909DAD6EDC0DCAEEFCA4E780960A4138EC55CF0C05DDBCC9D4BD8BF",
+      "normalized_lf_bytes": 3707,
+      "normalized_lf_sha256": "09B263E3B6FDBC84A9CC57F9C717FBB8D9F54A04C4F4688A0D774EDD91434068",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/cases/org-apache-commons-io-filefilter-delegatefilefilter-constructor-java-io-filefilter-path-0.md",
+      "original_bytes": 3596,
+      "original_sha256": "1F302E94DE67BF19172DE7409F3B3CA11048A78FAE64C17520D0480D14997563",
+      "working_crlf_bytes": 3596,
+      "working_crlf_sha256": "1F302E94DE67BF19172DE7409F3B3CA11048A78FAE64C17520D0480D14997563",
+      "normalized_lf_bytes": 3494,
+      "normalized_lf_sha256": "CBB16E5E333EDD85CCB3EDB4976874FA59F76897CA92858527DAADAE6B225E35",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/cases/org-apache-commons-io-filefilter-filefilterutils-sizefilefilter-long-boolean-path-0.md",
+      "original_bytes": 3979,
+      "original_sha256": "715E13D2D568F2AF5234EEDEB7CCAC54511FB77E5D9632821E5FEBE19AA7B532",
+      "working_crlf_bytes": 3979,
+      "working_crlf_sha256": "715E13D2D568F2AF5234EEDEB7CCAC54511FB77E5D9632821E5FEBE19AA7B532",
+      "normalized_lf_bytes": 3872,
+      "normalized_lf_sha256": "0FA2E8D401B3A6323F09A36175391E3C8F7F20A8289905225530BE593DFCFE03",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/cases/org-apache-commons-io-filefilter-magicnumberfilefilter-constructor-byte-array-path-0.md",
+      "original_bytes": 3816,
+      "original_sha256": "1AFA98BB8E178AA239510E403BF3566C28628750900649CE4C36255502F38ED8",
+      "working_crlf_bytes": 3816,
+      "working_crlf_sha256": "1AFA98BB8E178AA239510E403BF3566C28628750900649CE4C36255502F38ED8",
+      "normalized_lf_bytes": 3709,
+      "normalized_lf_sha256": "BFB481D030371111985F2794BA052EE4281C45195D17D6A8C4526D1DDB5B6666",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/cases/org-apache-commons-io-filefilter-namefilefilter-constructor-java-util-list-path-0.md",
+      "original_bytes": 3842,
+      "original_sha256": "2265D707CE6A8D7557E0C99B0D7A8793E9D7F98D39FA1E7868A4A55658288FD0",
+      "working_crlf_bytes": 3842,
+      "working_crlf_sha256": "2265D707CE6A8D7557E0C99B0D7A8793E9D7F98D39FA1E7868A4A55658288FD0",
+      "normalized_lf_bytes": 3735,
+      "normalized_lf_sha256": "1E3BA134B2CADE3FC6922F6777989911A6B17EEE6A9DC49A1CB4ACCF1FD4A955",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/cases/org-apache-commons-io-filefilter-regexfilefilter-constructor-java-lang-string-int-path-0.md",
+      "original_bytes": 3647,
+      "original_sha256": "DC26661CF43E07831B46711317C9B532B512EFFE63D217AC06DAB705EA74EB4C",
+      "working_crlf_bytes": 3647,
+      "working_crlf_sha256": "DC26661CF43E07831B46711317C9B532B512EFFE63D217AC06DAB705EA74EB4C",
+      "normalized_lf_bytes": 3544,
+      "normalized_lf_sha256": "767D6DA699A7A27C6546DA84FC858CCE2FCAA7167FCA5FB7BBFC8F09D8B9B44A",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/cases/org-apache-commons-io-filefilter-sizefilefilter-constructor-long-path-0.md",
+      "original_bytes": 3563,
+      "original_sha256": "77864A96EAC28012869726749FD9FDCDBC34851F991D929EECEC7ABCF1351F8D",
+      "working_crlf_bytes": 3563,
+      "working_crlf_sha256": "77864A96EAC28012869726749FD9FDCDBC34851F991D929EECEC7ABCF1351F8D",
+      "normalized_lf_bytes": 3459,
+      "normalized_lf_sha256": "99D227551ED7EC3CA2E3296F9E8C41B0B2BDB14190AB2BBD9005EF8B2024C265",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/cases/org-apache-commons-io-filesystem-isosnamematch-java-lang-string-java-lang-string-path-1.md",
+      "original_bytes": 4050,
+      "original_sha256": "DE29C6DADCF0AE9E78D34B3706789FAE2E93621A3D757E888E1D6DDC6E045FDB",
+      "working_crlf_bytes": 4050,
+      "working_crlf_sha256": "DE29C6DADCF0AE9E78D34B3706789FAE2E93621A3D757E888E1D6DDC6E045FDB",
+      "normalized_lf_bytes": 3938,
+      "normalized_lf_sha256": "568B8E310197F665EE7A69E54B98A7E7AFCE7B27E79AFA7483016480A57E59D1",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/cases/org-apache-commons-io-filesystemutils-freespacekb-java-lang-string-long-path-2.md",
+      "original_bytes": 3833,
+      "original_sha256": "9E43C05C6E6BB6717251347E16820CE41A23FB89FD0871CCEF95CC8FDE3573D4",
+      "working_crlf_bytes": 3833,
+      "working_crlf_sha256": "9E43C05C6E6BB6717251347E16820CE41A23FB89FD0871CCEF95CC8FDE3573D4",
+      "normalized_lf_bytes": 3725,
+      "normalized_lf_sha256": "73728253E1C678D717890A639BC1961E285B21E49E956861BC9BD42FB87D5E60",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/cases/org-apache-commons-io-fileutils-getfile-java-lang-string-array-path-0.md",
+      "original_bytes": 3607,
+      "original_sha256": "7912B47792109EAE342095AA60A5C74F01780092A4F17244B5FFE8FF83D3BDAF",
+      "working_crlf_bytes": 3607,
+      "working_crlf_sha256": "7912B47792109EAE342095AA60A5C74F01780092A4F17244B5FFE8FF83D3BDAF",
+      "normalized_lf_bytes": 3503,
+      "normalized_lf_sha256": "41F649F3CE1A5F6F11D610ACC958A8A7EA15D4112A69733C366BAF19347CE698",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/cases/org-apache-commons-io-input-buffer-circularbytebuffer-constructor-int-path-0.md",
+      "original_bytes": 3302,
+      "original_sha256": "653C9ED9C7D70E09C33AE7C08BFD6746968B2C72E923408227B0069C06D3B293",
+      "working_crlf_bytes": 3302,
+      "working_crlf_sha256": "653C9ED9C7D70E09C33AE7C08BFD6746968B2C72E923408227B0069C06D3B293",
+      "normalized_lf_bytes": 3203,
+      "normalized_lf_sha256": "A9618D9EEABCD3707E5DE996FAA878D86B1D7817B734C59C79445E5B3992F7EB",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/cases/org-apache-commons-io-iocase-checkindexof-java-lang-string-int-java-lang-string-path-0.md",
+      "original_bytes": 3723,
+      "original_sha256": "BFFB93DE8B05C6DC93E845148C49835E791705C6ED305ADEE17BB8603DB08EE2",
+      "working_crlf_bytes": 3723,
+      "working_crlf_sha256": "BFFB93DE8B05C6DC93E845148C49835E791705C6ED305ADEE17BB8603DB08EE2",
+      "normalized_lf_bytes": 3618,
+      "normalized_lf_sha256": "934EA27D126FD6DC8A0B6FCD23C5302F31BE5AE306D62F19D8E5C48A51D156E5",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/cases/org-apache-commons-io-ioutils-tobytearray-java-io-reader-path-0.md",
+      "original_bytes": 4049,
+      "original_sha256": "8BF30E9FDA260066018C27DE011782B79E4307C0F9F77302CA4045D4AC6A1641",
+      "working_crlf_bytes": 4049,
+      "working_crlf_sha256": "8BF30E9FDA260066018C27DE011782B79E4307C0F9F77302CA4045D4AC6A1641",
+      "normalized_lf_bytes": 3938,
+      "normalized_lf_sha256": "1355E8FBB08894B611B99EAE2D620A3110EB4A06F0D81782B4D4D84D5D0A48F0",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/cases/org-apache-commons-io-lineiterator-remove-no-parameters-path-0.md",
+      "original_bytes": 2991,
+      "original_sha256": "34363FA872434516D867331C97CDED89EE4F1B3B34CBB34CE7510A7104FE60AA",
+      "working_crlf_bytes": 2991,
+      "working_crlf_sha256": "34363FA872434516D867331C97CDED89EE4F1B3B34CBB34CE7510A7104FE60AA",
+      "normalized_lf_bytes": 2904,
+      "normalized_lf_sha256": "50D371A078C58D7CF3A42145B8279E557754E0FBC46FA0623E785219A2DCD26E",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/cases/org-apache-commons-io-output-closedoutputstream-write-int-path-0.md",
+      "original_bytes": 3094,
+      "original_sha256": "E9DCB284355452839AC2BFBB37EC8346C086A6B078B8828E750AFB2AE8DF3B3C",
+      "working_crlf_bytes": 3094,
+      "working_crlf_sha256": "E9DCB284355452839AC2BFBB37EC8346C086A6B078B8828E750AFB2AE8DF3B3C",
+      "normalized_lf_bytes": 3005,
+      "normalized_lf_sha256": "67D5FD765961DAB6865B9E7E30C62E5C32807509365ECC12D40D762BC1CD2437",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/cases/org-apache-commons-io-serialization-validatingobjectinputstream-invalidclassnamefound-java-lang-string-path-0.md",
+      "original_bytes": 3352,
+      "original_sha256": "270B2E32C6DF06FB10986BB6BCB4B2248589E1D5DE1E7369131BCE5E6A3A870C",
+      "working_crlf_bytes": 3352,
+      "working_crlf_sha256": "270B2E32C6DF06FB10986BB6BCB4B2248589E1D5DE1E7369131BCE5E6A3A870C",
+      "normalized_lf_bytes": 3263,
+      "normalized_lf_sha256": "B7673DDD6BC51B0BA8FAD40ECCCDC5580078A9B61586253F37933BFB7A6E6EFE",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/commons-io-json-analysis.md",
+      "original_bytes": 3965,
+      "original_sha256": "EACD3DB6A19ACA28A661DA681E4B68DA50B37D0EF11FA762DBF05B53736EE0D5",
+      "working_crlf_bytes": 3965,
+      "working_crlf_sha256": "EACD3DB6A19ACA28A661DA681E4B68DA50B37D0EF11FA762DBF05B53736EE0D5",
+      "normalized_lf_bytes": 3911,
+      "normalized_lf_sha256": "A003E903BAD3F5D07300A6D2CAC7A0EA8C215922715F552DBEADB04CCE966210",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/findings/case-assessment.md",
+      "original_bytes": 8691,
+      "original_sha256": "B9F3D0A08058FD577EFF926E0AA53650736D49192EDF44ACB0174EF72B44646B",
+      "working_crlf_bytes": 8691,
+      "working_crlf_sha256": "B9F3D0A08058FD577EFF926E0AA53650736D49192EDF44ACB0174EF72B44646B",
+      "normalized_lf_bytes": 8605,
+      "normalized_lf_sha256": "B3461E776A6AC04B391D2A9A9D5273EB43011E8F26EC8DFC49C4E4C8B025E31F",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/findings/case-validation.md",
+      "original_bytes": 1970,
+      "original_sha256": "58504AB4E308CF7E89F620BFFF72D318761D2F484B50A51585D535DD54C8A00C",
+      "working_crlf_bytes": 1970,
+      "working_crlf_sha256": "58504AB4E308CF7E89F620BFFF72D318761D2F484B50A51585D535DD54C8A00C",
+      "normalized_lf_bytes": 1931,
+      "normalized_lf_sha256": "7042D023FA49835D9366F0D59B0FC1A1C704BD332FC16190D420F5B415CA3D8E",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/findings/json-candidate-examples.md",
+      "original_bytes": 4964,
+      "original_sha256": "071C4169B43331AF21AAAF48D4C6C88FD0148BEEF152BA57E2400866FC527D30",
+      "working_crlf_bytes": 4964,
+      "working_crlf_sha256": "071C4169B43331AF21AAAF48D4C6C88FD0148BEEF152BA57E2400866FC527D30",
+      "normalized_lf_bytes": 4779,
+      "normalized_lf_sha256": "A53656678C0B2A5883E1BB4C49215FA7C9A83F0851D17C3ADBC45AB651949864",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/findings/json-candidate-tiers.md",
+      "original_bytes": 3053,
+      "original_sha256": "5FD0A2718CFE84FFB57612076E5744C35D1AB1C0D793332C985A085F2112F785",
+      "working_crlf_bytes": 3053,
+      "working_crlf_sha256": "5FD0A2718CFE84FFB57612076E5744C35D1AB1C0D793332C985A085F2112F785",
+      "normalized_lf_bytes": 3019,
+      "normalized_lf_sha256": "E0FA9AC03D26CA9D80E0913D283A2E3A62BDE00B09D25E72635719C823CA08A0",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/findings/json-population.md",
+      "original_bytes": 4434,
+      "original_sha256": "DE5AC859E7EF6266B9D9DC01FDFE73CC5691B102FAC7DFB2FB091CFA16066E73",
+      "working_crlf_bytes": 4434,
+      "working_crlf_sha256": "DE5AC859E7EF6266B9D9DC01FDFE73CC5691B102FAC7DFB2FB091CFA16066E73",
+      "normalized_lf_bytes": 4350,
+      "normalized_lf_sha256": "1029556DE8512C85F898AD0C768D42724991B49C082693B1B57A9387E6A53B85",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/findings/json-schema-and-correspondence.md",
+      "original_bytes": 4817,
+      "original_sha256": "EA5AFE8BCB62A3605F2894B80660E6EC26E9B6CE8202C0E80E69C08B78E82053",
+      "working_crlf_bytes": 4817,
+      "working_crlf_sha256": "EA5AFE8BCB62A3605F2894B80660E6EC26E9B6CE8202C0E80E69C08B78E82053",
+      "normalized_lf_bytes": 4739,
+      "normalized_lf_sha256": "5B565A849DA7615112C7C64472C9F2E124EDCF74F0DA2969D1A58F275EDED45A",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/findings/json-test-information.md",
+      "original_bytes": 2863,
+      "original_sha256": "5FF289282C11A048FADC2B89B3D04D89D63C0F5E33ED09DBD0024BC3D2F618CE",
+      "working_crlf_bytes": 2863,
+      "working_crlf_sha256": "5FF289282C11A048FADC2B89B3D04D89D63C0F5E33ED09DBD0024BC3D2F618CE",
+      "normalized_lf_bytes": 2825,
+      "normalized_lf_sha256": "86781BB5146FDAC542CCD27C7B2FC45605C330F78AA8898DB725C0D0DB17F30F",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/findings/peekable-input-stream-generation.md",
+      "original_bytes": 39009,
+      "original_sha256": "1479E52A92043DE5842184E1A1288386F088CA4774F0A6FCD7A990A1DFE0E4A7",
+      "working_crlf_bytes": 39722,
+      "working_crlf_sha256": "AE796C024D8984C6D51B58173940D05827D9D00DF32E22C0C5A6D36161147D83",
+      "normalized_lf_bytes": 39009,
+      "normalized_lf_sha256": "1479E52A92043DE5842184E1A1288386F088CA4774F0A6FCD7A990A1DFE0E4A7",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/findings/peekable-input-stream-json-exception-generation.md",
+      "original_bytes": 30341,
+      "original_sha256": "3AE5F5F891C7C4AE05EBE75C32D396D0FBDDFF4D56F19907B58C3E109D5C38C1",
+      "working_crlf_bytes": 30862,
+      "working_crlf_sha256": "154DC9BAA3CBEC6342EF76DF8C28DE7F65C690B57B6CD92C7A9741686B7159D7",
+      "normalized_lf_bytes": 30341,
+      "normalized_lf_sha256": "3AE5F5F891C7C4AE05EBE75C32D396D0FBDDFF4D56F19907B58C3E109D5C38C1",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/findings/peekable-input-stream-json-generation.md",
+      "original_bytes": 32361,
+      "original_sha256": "32F37D9F89B4BF22ACB428267993066D05C1F708DA7386DE20DD47C33CD04382",
+      "working_crlf_bytes": 32890,
+      "working_crlf_sha256": "024AF47EBE7258DC206299B577B3DF9B4CB54BABF9ECC236AC0D18D0FBD568D4",
+      "normalized_lf_bytes": 32361,
+      "normalized_lf_sha256": "32F37D9F89B4BF22ACB428267993066D05C1F708DA7386DE20DD47C33CD04382",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/findings/peekable-input-stream-source-exception-generation.md",
+      "original_bytes": 36349,
+      "original_sha256": "4A7A3D5F7EDC97AC74AF649124EB4AF3A32B3E7017C4D3DEAF246C56C6CFA620",
+      "working_crlf_bytes": 36949,
+      "working_crlf_sha256": "0409BE2BD60BD220EDAB1C4034A9572C2E95A99A6A59AE03B0A4F96BA9AA05AB",
+      "normalized_lf_bytes": 36349,
+      "normalized_lf_sha256": "4A7A3D5F7EDC97AC74AF649124EB4AF3A32B3E7017C4D3DEAF246C56C6CFA620",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/findings/unit-test-coverage-baseline.md",
+      "original_bytes": 9740,
+      "original_sha256": "3C957A9B77F9BB916A337E17D35B35A325962BEB1ABDF2F92EA88EFBEAC66857",
+      "working_crlf_bytes": 9896,
+      "working_crlf_sha256": "128D14A0669867B8A2ADF415EB518723FB76D2209383B50A9CAD5ADAB2BAE7A1",
+      "normalized_lf_bytes": 9739,
+      "normalized_lf_sha256": "29A1F5223CD5144FB76B3B203552ECFADC683EBD169C78AF5812A596ABCBC847",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/methodology/case-assessment.md",
+      "original_bytes": 4799,
+      "original_sha256": "902E66092CD96CE6DA5886E5AB8696DA3878B6662676225D7DB569A9F44A6728",
+      "working_crlf_bytes": 4874,
+      "working_crlf_sha256": "B7919CB4CE98361978A5C00EC58055DAC443FF081B4EEF002FC1B3FA6A1A7E13",
+      "normalized_lf_bytes": 4799,
+      "normalized_lf_sha256": "902E66092CD96CE6DA5886E5AB8696DA3878B6662676225D7DB569A9F44A6728",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/methodology/case-selection.md",
+      "original_bytes": 3735,
+      "original_sha256": "209672942514EAA061D1E3941B89A70FDDB27A42738F1E5A1C67BE018A79BE77",
+      "working_crlf_bytes": 3812,
+      "working_crlf_sha256": "4BE13FDFDEB5A16A178989916F95A5C8D0861370C2A8750745C15AACD46CD63B",
+      "normalized_lf_bytes": 3735,
+      "normalized_lf_sha256": "209672942514EAA061D1E3941B89A70FDDB27A42738F1E5A1C67BE018A79BE77",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/methodology/generation-checkout-preparation.md",
+      "original_bytes": 3354,
+      "original_sha256": "233BC1E57C97E84EE33564800AD7AE26AF7152A2E5038360C6B8E55CBC81FE32",
+      "working_crlf_bytes": 3421,
+      "working_crlf_sha256": "038175EEAC8978912AA2E6EA0612C74A0BBC00FD31B7CE10EE1D53384DF1C294",
+      "normalized_lf_bytes": 3354,
+      "normalized_lf_sha256": "233BC1E57C97E84EE33564800AD7AE26AF7152A2E5038360C6B8E55CBC81FE32",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/methodology/json-analysis.md",
+      "original_bytes": 3678,
+      "original_sha256": "34A00F750011D05146BE04032E8603ABEF215DBE629B56AE2889EB54A8E33129",
+      "working_crlf_bytes": 3745,
+      "working_crlf_sha256": "291A284588B8D6E7028AB1334F73651FCA88C1067CE89DF8CAFD476ED9C0FCD8",
+      "normalized_lf_bytes": 3678,
+      "normalized_lf_sha256": "34A00F750011D05146BE04032E8603ABEF215DBE629B56AE2889EB54A8E33129",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/methodology/repository-storage.md",
+      "original_bytes": 5610,
+      "original_sha256": "E1ABAFCDD70B1C08922E44E4180042BA771FCE12013E8E21BFFFDBFB94627782",
+      "working_crlf_bytes": 7722,
+      "working_crlf_sha256": "1E0BB38E72F50D5534EA976A053923A58D800FC0590A5E392DB01C43DED426AA",
+      "normalized_lf_bytes": 7609,
+      "normalized_lf_sha256": "4C79A40EE9C78BE1D8F9A5D7C7AC9EA47E98B14FE73EC9F2539A6B8B64D24182",
+      "change": "storage_policy_and_history_documentation"
+    },
+    {
+      "path": "docs/methodology/study-scope.md",
+      "original_bytes": 3776,
+      "original_sha256": "C8EEA3732E940D750C565F0AF8F043975AC892654AC81BC9E4D8F2CBF60B1B9C",
+      "working_crlf_bytes": 3848,
+      "working_crlf_sha256": "5D1EF0ED137818CE44085DA3AE4F360976340B6256250BED4D9D3D0851CA4CDD",
+      "normalized_lf_bytes": 3776,
+      "normalized_lf_sha256": "C8EEA3732E940D750C565F0AF8F043975AC892654AC81BC9E4D8F2CBF60B1B9C",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/prompts/exception-test-generation-json.txt",
+      "original_bytes": 6628,
+      "original_sha256": "945BEA425089EE30FFE3230EF1B104E74D7F8CC58B53354F94D23DB4B5C5246F",
+      "working_crlf_bytes": 6734,
+      "working_crlf_sha256": "68EE4242856375F87A8FEA4CD5093D30AC9C758698E307F709D2451764209D7E",
+      "normalized_lf_bytes": 6628,
+      "normalized_lf_sha256": "945BEA425089EE30FFE3230EF1B104E74D7F8CC58B53354F94D23DB4B5C5246F",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/prompts/exception-test-generation-source.txt",
+      "original_bytes": 6501,
+      "original_sha256": "61DEBBF6647167F5CDDEBBCD5E06C1EC71C09782541DD8537E93114212F01063",
+      "working_crlf_bytes": 6605,
+      "working_crlf_sha256": "E66872D5E0EE4C729BD405A7BF45118D31A1CFD32359AA11489F73494D53E284",
+      "normalized_lf_bytes": 6501,
+      "normalized_lf_sha256": "61DEBBF6647167F5CDDEBBCD5E06C1EC71C09782541DD8537E93114212F01063",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/prompts/unit-test-generation-json.txt",
+      "original_bytes": 3378,
+      "original_sha256": "C30A0B9DA988EAF5F7F6E37BA99848387EE28266754CEC5167AC2DAA36AD8BD5",
+      "working_crlf_bytes": 3442,
+      "working_crlf_sha256": "A8028C3375D3F3B2AB9EFA500ED1F4EEF9F703F5E9F71BEC6714406C3563DE78",
+      "normalized_lf_bytes": 3378,
+      "normalized_lf_sha256": "C30A0B9DA988EAF5F7F6E37BA99848387EE28266754CEC5167AC2DAA36AD8BD5",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/prompts/unit-test-generation.txt",
+      "original_bytes": 1738,
+      "original_sha256": "5C42887A243644EF99C0ACF2E25BD839507D6F9BAD7281CAE897A1A4E4FE37E1",
+      "working_crlf_bytes": 1769,
+      "working_crlf_sha256": "8CDC650C785A1C224B05449248FDB632240555457455EBEF9A93694A8382A846",
+      "normalized_lf_bytes": 1738,
+      "normalized_lf_sha256": "5C42887A243644EF99C0ACF2E25BD839507D6F9BAD7281CAE897A1A4E4FE37E1",
+      "change": "representation_only"
+    },
+    {
+      "path": "docs/study-log.md",
+      "original_bytes": 45557,
+      "original_sha256": "2F6486AD49388EDD699EC5BCBAB4638A7D4C6ACF38984F3B728208416D746211",
+      "working_crlf_bytes": 48115,
+      "working_crlf_sha256": "D9F29E3B60D1193BA0F1E88C68B5A0D4911FC42AF3266987B0FD7407697098B1",
+      "normalized_lf_bytes": 47382,
+      "normalized_lf_sha256": "648318ADE17691E3826ED35C5D866232D556FE3C5F9978B73E4F77A715DD3277",
+      "change": "storage_policy_and_history_documentation"
+    },
+    {
+      "path": "pyproject.toml",
+      "original_bytes": 548,
+      "original_sha256": "14055EC61CD76BC70C0709D48DF06AC7F8F91E0D19990D72F6A22226BDA7CCD0",
+      "working_crlf_bytes": 576,
+      "working_crlf_sha256": "CA6A764ED316BFC9864AFE2A313540DFFB005B2A967D277DE466F9631BE27F6A",
+      "normalized_lf_bytes": 548,
+      "normalized_lf_sha256": "14055EC61CD76BC70C0709D48DF06AC7F8F91E0D19990D72F6A22226BDA7CCD0",
+      "change": "representation_only"
+    },
+    {
+      "path": "src/witup_analysis/__init__.py",
+      "original_bytes": 1915,
+      "original_sha256": "F46033D2689EFB4961796A4AFE9C896790B3C0599D6E76BE1C9482795B93C0FE",
+      "working_crlf_bytes": 1967,
+      "working_crlf_sha256": "76442796A55B2535C02776168BC7E97F8A484D1C774A8AFD21F2F1D657A0D349",
+      "normalized_lf_bytes": 1915,
+      "normalized_lf_sha256": "F46033D2689EFB4961796A4AFE9C896790B3C0599D6E76BE1C9482795B93C0FE",
+      "change": "representation_only"
+    },
+    {
+      "path": "src/witup_analysis/analysis.py",
+      "original_bytes": 13935,
+      "original_sha256": "284C49F9E93199AE0D9F28B8FFE82EF2376C4B76EBD2E01D31FC7D256ECC77A1",
+      "working_crlf_bytes": 14251,
+      "working_crlf_sha256": "52759FB689B700F1AB82B7F1CD1708601B639BDC7F0FE823A3C0F83E0E99E432",
+      "normalized_lf_bytes": 13935,
+      "normalized_lf_sha256": "284C49F9E93199AE0D9F28B8FFE82EF2376C4B76EBD2E01D31FC7D256ECC77A1",
+      "change": "representation_only"
+    },
+    {
+      "path": "src/witup_analysis/case_assessment.py",
+      "original_bytes": 6473,
+      "original_sha256": "13144EA0041357F718486C76275F05989DDA938A7890758D17F7C1A86D2FE12A",
+      "working_crlf_bytes": 6620,
+      "working_crlf_sha256": "0B60B644DD0BAFD4453187EAC3FA7B54FBFF9802A7AA89FE3A9DCB5C196A690B",
+      "normalized_lf_bytes": 6473,
+      "normalized_lf_sha256": "13144EA0041357F718486C76275F05989DDA938A7890758D17F7C1A86D2FE12A",
+      "change": "representation_only"
+    },
+    {
+      "path": "src/witup_analysis/case_reporting.py",
+      "original_bytes": 11151,
+      "original_sha256": "E42879CA3C22785D7B2976AC85EA9823CF9AED56C6558E0AFEC64D997FB801BE",
+      "working_crlf_bytes": 11376,
+      "working_crlf_sha256": "91627B9C7C2C50BE5C8F1FE77AA9D4FFBDC0DDACDDF7BB5B02989188AB4F1730",
+      "normalized_lf_bytes": 11151,
+      "normalized_lf_sha256": "E42879CA3C22785D7B2976AC85EA9823CF9AED56C6558E0AFEC64D997FB801BE",
+      "change": "representation_only"
+    },
+    {
+      "path": "src/witup_analysis/case_validation.py",
+      "original_bytes": 7232,
+      "original_sha256": "C4AB097108705429513EA8BB745106DBB5DE01BEFF55DE6C9E5F5CE4DBD612A1",
+      "working_crlf_bytes": 7382,
+      "working_crlf_sha256": "27C20C4CD88CA922CE1B4AEEDC22EB753333EA3F2324BD657288F4DECACEE616",
+      "normalized_lf_bytes": 7232,
+      "normalized_lf_sha256": "C4AB097108705429513EA8BB745106DBB5DE01BEFF55DE6C9E5F5CE4DBD612A1",
+      "change": "representation_only"
+    },
+    {
+      "path": "src/witup_analysis/profiling.py",
+      "original_bytes": 9502,
+      "original_sha256": "C209265620EFFF4C232C3A6F8B49ED3A84A7707566AAE5FC9AFA874AD3B323A9",
+      "working_crlf_bytes": 9750,
+      "working_crlf_sha256": "CCC6BBFBFCBB807E60A2C8211EF20DE8C68A2EA0ACD7FB5B37A62AD702C3A0D5",
+      "normalized_lf_bytes": 9502,
+      "normalized_lf_sha256": "C209265620EFFF4C232C3A6F8B49ED3A84A7707566AAE5FC9AFA874AD3B323A9",
+      "change": "representation_only"
+    },
+    {
+      "path": "src/witup_analysis/reporting.py",
+      "original_bytes": 26098,
+      "original_sha256": "ED016B1EC82A7A3ADD5D0F22E6807DEE5D0FB2A6CE560917A83C5702B1CF3104",
+      "working_crlf_bytes": 26546,
+      "working_crlf_sha256": "433851E3FB0A8F32652B6230D856BC978E8CE2B5648A2867D07C7105D0CA2EB0",
+      "normalized_lf_bytes": 26098,
+      "normalized_lf_sha256": "ED016B1EC82A7A3ADD5D0F22E6807DEE5D0FB2A6CE560917A83C5702B1CF3104",
+      "change": "representation_only"
+    },
+    {
+      "path": "src/witup_analysis/selection.py",
+      "original_bytes": 11857,
+      "original_sha256": "ECEDA89F3CF6E2238148CB25A9FDDD7A16FEC8D16E9D3E556E589E5914E554CB",
+      "working_crlf_bytes": 12167,
+      "working_crlf_sha256": "EE23212C277D7E3D1E4739B52F65F6638A02CD2C85C18AAE121192CCC7A87819",
+      "normalized_lf_bytes": 11857,
+      "normalized_lf_sha256": "ECEDA89F3CF6E2238148CB25A9FDDD7A16FEC8D16E9D3E556E589E5914E554CB",
+      "change": "representation_only"
+    },
+    {
+      "path": "tests/test_case_inventory.py",
+      "original_bytes": 5794,
+      "original_sha256": "27C53FEC9F6B6849C5BF35957FD43F2CC9328FB07BA6C78EB2D4C60201801D87",
+      "working_crlf_bytes": 5953,
+      "working_crlf_sha256": "92218C6EF9F299ACB494A7A1F80B8CEF5719EDF04548183315CFDA6C446C5D22",
+      "normalized_lf_bytes": 5794,
+      "normalized_lf_sha256": "27C53FEC9F6B6849C5BF35957FD43F2CC9328FB07BA6C78EB2D4C60201801D87",
+      "change": "representation_only"
+    },
+    {
+      "path": "uv.lock",
+      "original_bytes": 255735,
+      "original_sha256": "59DE2ECBA7DD335932472FE8B5A8A4E765FEA10CC92BDCB52B6B7092B4CDC3C7",
+      "working_crlf_bytes": 257443,
+      "working_crlf_sha256": "68925B275A0701F52A1074FD8FF57B325A0CE2869C01482B06287B0FE177E3BF",
+      "normalized_lf_bytes": 255735,
+      "normalized_lf_sha256": "59DE2ECBA7DD335932472FE8B5A8A4E765FEA10CC92BDCB52B6B7092B4CDC3C7",
+      "change": "representation_only"
+    }
+  ],
+  "validation": {
+    "root_versioned_files_checked": 250,
+    "working_text_crlf": true,
+    "index_text_lf": true,
+    "git_content_matches_working_text_after_normalization": true,
+    "original_git_blobs_verified": 247,
+    "semantic_changes_limited_to_storage_policy_and_study_log": true,
+    "documentation_links_checked": 298,
+    "ruff_check_exit_code": 0,
+    "ruff_format_check_exit_code": 0,
+    "python_tests": {
+      "executed": 5,
+      "passed": 5
+    },
+    "lock_check_exit_code": 0,
+    "authored_diff_check_exit_code": 0,
+    "full_diff_check_exit_code": 2,
+    "full_diff_findings_match_original_captured_output": true,
+    "full_diff_findings": [
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/maven.log",
+        "line": 2,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/maven.log",
+        "line": 7,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/maven.log",
+        "line": 10,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/maven.log",
+        "line": 12,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/maven.log",
+        "line": 14,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/maven.log",
+        "line": 24,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/maven.log",
+        "line": 26,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/maven.log",
+        "line": 33,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/maven.log",
+        "line": 35,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/maven.log",
+        "line": 46,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/maven.log",
+        "line": 51,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/maven.log",
+        "line": 57,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/maven.log",
+        "line": 59,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/maven.log",
+        "line": 62,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/maven.log",
+        "line": 67,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/maven.log",
+        "line": 73,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/maven.log",
+        "line": 76,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/maven.log",
+        "line": 78,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/maven.log",
+        "line": 426,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/maven.log",
+        "line": 428,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/maven.log",
+        "line": 430,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/maven.log",
+        "line": 431,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/maven.log",
+        "line": 434,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/maven.log",
+        "line": 437,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/maven.log",
+        "line": 440,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/maven.log",
+        "line": 443,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/maven.log",
+        "line": 446,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/after/maven.log",
+        "line": 455,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/maven.log",
+        "line": 2,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/maven.log",
+        "line": 7,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/maven.log",
+        "line": 9,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/maven.log",
+        "line": 11,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/maven.log",
+        "line": 13,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/maven.log",
+        "line": 23,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/maven.log",
+        "line": 25,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/maven.log",
+        "line": 32,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/maven.log",
+        "line": 34,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/maven.log",
+        "line": 45,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/maven.log",
+        "line": 50,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/maven.log",
+        "line": 56,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/maven.log",
+        "line": 58,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/maven.log",
+        "line": 61,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/maven.log",
+        "line": 66,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/maven.log",
+        "line": 72,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/maven.log",
+        "line": 75,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/maven.log",
+        "line": 77,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/maven.log",
+        "line": 423,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/maven.log",
+        "line": 425,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/maven.log",
+        "line": 427,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/maven.log",
+        "line": 428,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/maven.log",
+        "line": 431,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/maven.log",
+        "line": 434,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/maven.log",
+        "line": 437,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/maven.log",
+        "line": 440,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/maven.log",
+        "line": 443,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/coverage/before/maven.log",
+        "line": 453,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/environment/rat-after-correction.txt",
+        "line": 394,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/environment/rat-before-correction.txt",
+        "line": 404,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/environment/rat-before-correction.txt",
+        "line": 408,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/environment/target-test-run.log",
+        "line": 2,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/environment/target-test-run.log",
+        "line": 7,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/environment/target-test-run.log",
+        "line": 10,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/environment/target-test-run.log",
+        "line": 12,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/environment/target-test-run.log",
+        "line": 14,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/environment/target-test-run.log",
+        "line": 24,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/environment/target-test-run.log",
+        "line": 26,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/environment/target-test-run.log",
+        "line": 33,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/environment/target-test-run.log",
+        "line": 35,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/environment/target-test-run.log",
+        "line": 41,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/environment/target-test-run.log",
+        "line": 46,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/environment/target-test-run.log",
+        "line": 52,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/environment/target-test-run.log",
+        "line": 54,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/environment/target-test-run.log",
+        "line": 57,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/environment/target-test-run.log",
+        "line": 62,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/environment/target-test-run.log",
+        "line": 68,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/environment/target-test-run.log",
+        "line": 70,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/environment/target-test-run.log",
+        "line": 76,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/environment/target-test-run.log",
+        "line": 78,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/environment/target-test-run.log",
+        "line": 80,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/generation-rat.txt",
+        "line": 404,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-exceptions/generation-rat.txt",
+        "line": 408,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/after/maven.log",
+        "line": 2,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/after/maven.log",
+        "line": 7,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/after/maven.log",
+        "line": 10,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/after/maven.log",
+        "line": 12,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/after/maven.log",
+        "line": 14,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/after/maven.log",
+        "line": 24,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/after/maven.log",
+        "line": 26,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/after/maven.log",
+        "line": 33,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/after/maven.log",
+        "line": 35,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/after/maven.log",
+        "line": 46,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/after/maven.log",
+        "line": 51,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/after/maven.log",
+        "line": 57,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/after/maven.log",
+        "line": 59,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/after/maven.log",
+        "line": 62,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/after/maven.log",
+        "line": 67,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/after/maven.log",
+        "line": 73,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/after/maven.log",
+        "line": 76,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/after/maven.log",
+        "line": 78,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/after/maven.log",
+        "line": 426,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/after/maven.log",
+        "line": 428,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/after/maven.log",
+        "line": 430,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/after/maven.log",
+        "line": 431,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/after/maven.log",
+        "line": 434,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/after/maven.log",
+        "line": 437,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/after/maven.log",
+        "line": 440,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/after/maven.log",
+        "line": 443,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/after/maven.log",
+        "line": 446,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/after/maven.log",
+        "line": 456,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/before/maven.log",
+        "line": 2,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/before/maven.log",
+        "line": 7,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/before/maven.log",
+        "line": 10,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/before/maven.log",
+        "line": 12,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/before/maven.log",
+        "line": 14,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/before/maven.log",
+        "line": 24,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/before/maven.log",
+        "line": 26,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/before/maven.log",
+        "line": 33,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/before/maven.log",
+        "line": 35,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/before/maven.log",
+        "line": 46,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/before/maven.log",
+        "line": 51,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/before/maven.log",
+        "line": 57,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/before/maven.log",
+        "line": 59,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/before/maven.log",
+        "line": 62,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/before/maven.log",
+        "line": 67,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/before/maven.log",
+        "line": 73,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/before/maven.log",
+        "line": 76,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/before/maven.log",
+        "line": 78,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/before/maven.log",
+        "line": 424,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/before/maven.log",
+        "line": 426,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/before/maven.log",
+        "line": 428,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/before/maven.log",
+        "line": 429,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/before/maven.log",
+        "line": 432,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/before/maven.log",
+        "line": 435,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/before/maven.log",
+        "line": 438,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/before/maven.log",
+        "line": 441,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/before/maven.log",
+        "line": 444,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/json-only/coverage/before/maven.log",
+        "line": 454,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/after/maven.log",
+        "line": 2,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/after/maven.log",
+        "line": 7,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/after/maven.log",
+        "line": 10,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/after/maven.log",
+        "line": 12,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/after/maven.log",
+        "line": 14,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/after/maven.log",
+        "line": 24,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/after/maven.log",
+        "line": 26,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/after/maven.log",
+        "line": 33,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/after/maven.log",
+        "line": 35,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/after/maven.log",
+        "line": 46,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/after/maven.log",
+        "line": 51,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/after/maven.log",
+        "line": 57,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/after/maven.log",
+        "line": 59,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/after/maven.log",
+        "line": 62,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/after/maven.log",
+        "line": 67,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/after/maven.log",
+        "line": 73,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/after/maven.log",
+        "line": 76,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/after/maven.log",
+        "line": 78,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/after/maven.log",
+        "line": 426,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/after/maven.log",
+        "line": 428,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/after/maven.log",
+        "line": 430,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/after/maven.log",
+        "line": 431,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/after/maven.log",
+        "line": 434,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/after/maven.log",
+        "line": 437,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/after/maven.log",
+        "line": 440,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/after/maven.log",
+        "line": 443,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/after/maven.log",
+        "line": 446,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/after/maven.log",
+        "line": 455,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/before/maven.log",
+        "line": 2,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/before/maven.log",
+        "line": 7,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/before/maven.log",
+        "line": 10,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/before/maven.log",
+        "line": 12,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/before/maven.log",
+        "line": 14,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/before/maven.log",
+        "line": 24,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/before/maven.log",
+        "line": 26,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/before/maven.log",
+        "line": 33,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/before/maven.log",
+        "line": 35,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/before/maven.log",
+        "line": 46,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/before/maven.log",
+        "line": 51,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/before/maven.log",
+        "line": 57,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/before/maven.log",
+        "line": 59,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/before/maven.log",
+        "line": 62,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/before/maven.log",
+        "line": 67,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/before/maven.log",
+        "line": 73,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/before/maven.log",
+        "line": 76,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/before/maven.log",
+        "line": 78,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/before/maven.log",
+        "line": 424,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/before/maven.log",
+        "line": 426,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/before/maven.log",
+        "line": 428,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/before/maven.log",
+        "line": 429,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/before/maven.log",
+        "line": 432,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/before/maven.log",
+        "line": 435,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/before/maven.log",
+        "line": 438,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/before/maven.log",
+        "line": 441,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/before/maven.log",
+        "line": 444,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/reference-suite/coverage/before/maven.log",
+        "line": 454,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/maven.log",
+        "line": 2,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/maven.log",
+        "line": 7,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/maven.log",
+        "line": 10,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/maven.log",
+        "line": 12,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/maven.log",
+        "line": 14,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/maven.log",
+        "line": 24,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/maven.log",
+        "line": 26,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/maven.log",
+        "line": 33,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/maven.log",
+        "line": 35,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/maven.log",
+        "line": 40,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/maven.log",
+        "line": 46,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/maven.log",
+        "line": 51,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/maven.log",
+        "line": 57,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/maven.log",
+        "line": 59,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/maven.log",
+        "line": 62,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/maven.log",
+        "line": 67,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/maven.log",
+        "line": 73,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/maven.log",
+        "line": 76,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/maven.log",
+        "line": 78,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/maven.log",
+        "line": 426,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/maven.log",
+        "line": 428,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/maven.log",
+        "line": 430,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/maven.log",
+        "line": 431,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/maven.log",
+        "line": 434,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/maven.log",
+        "line": 437,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/maven.log",
+        "line": 440,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/maven.log",
+        "line": 443,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/maven.log",
+        "line": 446,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/after/maven.log",
+        "line": 455,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/maven.log",
+        "line": 2,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/maven.log",
+        "line": 7,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/maven.log",
+        "line": 9,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/maven.log",
+        "line": 11,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/maven.log",
+        "line": 13,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/maven.log",
+        "line": 23,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/maven.log",
+        "line": 25,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/maven.log",
+        "line": 32,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/maven.log",
+        "line": 34,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/maven.log",
+        "line": 39,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/maven.log",
+        "line": 45,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/maven.log",
+        "line": 50,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/maven.log",
+        "line": 56,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/maven.log",
+        "line": 58,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/maven.log",
+        "line": 61,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/maven.log",
+        "line": 66,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/maven.log",
+        "line": 72,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/maven.log",
+        "line": 75,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/maven.log",
+        "line": 77,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/maven.log",
+        "line": 423,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/maven.log",
+        "line": 425,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/maven.log",
+        "line": 427,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/maven.log",
+        "line": 428,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/maven.log",
+        "line": 431,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/maven.log",
+        "line": 434,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/maven.log",
+        "line": 437,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/maven.log",
+        "line": 440,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/maven.log",
+        "line": 443,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-exceptions/coverage/before/maven.log",
+        "line": 453,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/after/maven.log",
+        "line": 2,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/after/maven.log",
+        "line": 7,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/after/maven.log",
+        "line": 10,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/after/maven.log",
+        "line": 12,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/after/maven.log",
+        "line": 14,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/after/maven.log",
+        "line": 24,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/after/maven.log",
+        "line": 26,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/after/maven.log",
+        "line": 33,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/after/maven.log",
+        "line": 35,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/after/maven.log",
+        "line": 46,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/after/maven.log",
+        "line": 51,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/after/maven.log",
+        "line": 57,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/after/maven.log",
+        "line": 59,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/after/maven.log",
+        "line": 62,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/after/maven.log",
+        "line": 67,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/after/maven.log",
+        "line": 73,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/after/maven.log",
+        "line": 76,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/after/maven.log",
+        "line": 78,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/after/maven.log",
+        "line": 446,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/after/maven.log",
+        "line": 448,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/after/maven.log",
+        "line": 449,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/after/maven.log",
+        "line": 454,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/after/maven.log",
+        "line": 456,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/after/maven.log",
+        "line": 458,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/after/maven.log",
+        "line": 466,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/after/maven.log",
+        "line": 470,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/after/maven.log",
+        "line": 473,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/after/report-only.log",
+        "line": 2,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/after/report-only.log",
+        "line": 7,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/before/maven.log",
+        "line": 2,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/before/maven.log",
+        "line": 7,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/before/maven.log",
+        "line": 9,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/before/maven.log",
+        "line": 11,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/before/maven.log",
+        "line": 13,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/before/maven.log",
+        "line": 23,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/before/maven.log",
+        "line": 25,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/before/maven.log",
+        "line": 32,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/before/maven.log",
+        "line": 34,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/before/maven.log",
+        "line": 45,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/before/maven.log",
+        "line": 50,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/before/maven.log",
+        "line": 56,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/before/maven.log",
+        "line": 58,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/before/maven.log",
+        "line": 61,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/before/maven.log",
+        "line": 66,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/before/maven.log",
+        "line": 72,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/before/maven.log",
+        "line": 75,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/before/maven.log",
+        "line": 77,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/before/maven.log",
+        "line": 423,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/before/maven.log",
+        "line": 425,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/before/maven.log",
+        "line": 427,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/before/maven.log",
+        "line": 428,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/before/maven.log",
+        "line": 431,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/before/maven.log",
+        "line": 434,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/before/maven.log",
+        "line": 437,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/before/maven.log",
+        "line": 440,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/before/maven.log",
+        "line": 443,
+        "message": "trailing whitespace"
+      },
+      {
+        "path": "data/experiments/peekable-input-stream/source-only/coverage/before/maven.log",
+        "line": 453,
+        "message": "trailing whitespace"
+      }
+    ],
+    "uv_cross_drive_copy_fallback_warning_observed": true
+  }
+}

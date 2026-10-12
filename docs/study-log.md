@@ -702,3 +702,32 @@ Added the [checkout preparation procedure](methodology/generation-checkout-prepa
 keep Python tool state outside Commons IO and run RAT before opening a future
 independent generation chat. This is an environment-preparation procedure;
 the preserved experimental prompts remain fixed.
+
+## 2026-10-12: root commits and text line-ending policy
+
+Created two semantic commits in the root repository: "ca317f3" for the Python
+analysis pipeline and "bd38cc7" for the documentation and selected study evidence.
+The root contained 247 tracked files, and the external Commons IO checkout was
+unchanged. Ruff, formatting, all five Python tests, and the dependency-lock check
+passed. The initial documentation diff check reported CRLF as trailing whitespace;
+inspection found no additional trailing spaces or tabs.
+
+Configured root-local Git conversion and versioned editor/attribute rules for
+CRLF working files and LF Git text. Normalized only root-owned versioned text;
+no scenarios, assertions, measured counters, or diagnostic messages were changed.
+Original evidence bytes remain recoverable from root commit
+"bd38cc700eaad2654736df7d02cab951d0a0cd10". The
+[normalization record](../data/experiments/peekable-input-stream/line-ending-normalization.json)
+records the representation changes; historical hash manifests remain unchanged
+in meaning and still identify their original captures. The
+[storage policy](methodology/repository-storage.md#text-line-endings) explains
+verification and reproduction implications. Global Git settings, external Java
+checkouts, ignored raw exports, and binary evidence were not modified.
+
+After normalization, Ruff, formatting, all five Python tests, and the lockfile
+check passed. The authored-text diff check passed. The complete diff check
+exited 2 for 308 preexisting trailing-whitespace findings in captured
+Maven/RAT output. Those lines were preserved beyond the requested line-ending
+conversion. The uv package rebuild emitted its existing cross-drive hardlink
+warning and successfully used file copies. No whitespace-rule suppression or
+diagnostic filtering was configured.

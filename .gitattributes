@@ -1,0 +1,9 @@
+# Normalize repository text to LF and check it out with CRLF.
+* text=auto eol=crlf
+
+# Preserve binary artifact bytes.
+*.zip -text
+*.jar -text
+*.exec -text
+*.duckdb -text
+*.parquet -text

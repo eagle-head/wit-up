@@ -7,8 +7,10 @@
 The Git repository at "D:/Projects/wit-up" owns the Python analysis application,
 study documentation, prompts, and selected experiment evidence. The checkouts
 in "core" and "commons-io" are separate repositories and remain excluded here.
-This policy changes Git selection only; it does not delete or rewrite evidence,
-test results, production source, or quality-gate configuration.
+This policy defines Git selection and text representation. Original evidence
+bytes remain recoverable from recorded Git history. Text normalization preserves
+observations, test content, and diagnostic messages; it does not modify either
+external Java repository or quality-gate configuration.
 
 ## Content to version
 
@@ -64,6 +66,36 @@ every referenced file; absent local-only files are not a successful verification
 Restore the separate Commons IO checkout and its recorded baseline commits, and
 the raw input exports, before reproducing a Java measurement or input analysis.
 The Python lockfile alone does not supply those inputs.
+
+## Text line endings
+
+The root repository's ".gitattributes" normalizes detected text to LF in Git
+and requests CRLF in the working tree. ".editorconfig" requests CRLF for local
+editing. Repository-local "core.autocrlf=true" and "core.eol=crlf" support this
+policy without changing global settings or either external Java checkout.
+Binary archives and derived binary formats are excluded from text conversion.
+
+Git normalizes text when adding it to the index and committing it, before a
+push. Checkout conversion and editor settings do not automatically repair every
+file written directly by a script; project authors must keep local text in
+CRLF. A file with no newline requires no artificial newline to satisfy this rule.
+
+The original 247 versioned files are recoverable byte-for-byte from root commit
+"bd38cc700eaad2654736df7d02cab951d0a0cd10". The
+[line-ending normalization record](../../data/experiments/peekable-input-stream/line-ending-normalization.json)
+maps original, current CRLF, and normalized LF byte identities. Reformatting an
+archived log or source snapshot changes its byte hash even when its content and
+execution result remain unchanged. Historical manifests retain their original
+identities and are not rewritten to assert that normalization preserved hashes.
+
+Use the recorded original Git blob when verifying an original captured artifact.
+Read blobs through a byte-preserving API or "git archive"; PowerShell text
+redirection can change their bytes. Byte-sensitive source inventories may require
+restoring the recorded representation or rebuilding derived inventories in a
+separate reproduction. Do not replace historical identities to conceal the
+representation change. Ignored raw exports, binary evidence, generated browsing
+assets, tool environments, and external checkouts remain outside this root text
+normalization.
 
 ## Review result on October 12, 2026
 
