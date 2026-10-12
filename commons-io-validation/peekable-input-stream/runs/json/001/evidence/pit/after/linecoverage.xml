@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage>
+<block classname='org.apache.commons.io.input.buffer.PeekableInputStream' method='&lt;init&gt;(Ljava/io/InputStream;I)V' number='0'><tests>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testConstructorRejectsZeroBufferSize()]'/>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekArrayRejectsBufferLargerThanCapacity()]'/>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekArrayRejectsEmptyBuffer()]'/>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekArrayRejectsNullBuffer()]'/>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsBufferLargerThanCapacity()]'/>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsLengthLargerThanCapacity()]'/>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsNegativeLength()]'/>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsNegativeOffset()]'/>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsNullBuffer()]'/>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsOffsetAtEmptyBufferEnd()]'/>
+</tests>
+</block>
+<block classname='org.apache.commons.io.input.buffer.PeekableInputStream' method='&lt;init&gt;(Ljava/io/InputStream;I)V' number='1'><tests>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekArrayRejectsBufferLargerThanCapacity()]'/>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekArrayRejectsEmptyBuffer()]'/>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekArrayRejectsNullBuffer()]'/>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsBufferLargerThanCapacity()]'/>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsLengthLargerThanCapacity()]'/>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsNegativeLength()]'/>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsNegativeOffset()]'/>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsNullBuffer()]'/>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsOffsetAtEmptyBufferEnd()]'/>
+</tests>
+</block>
+<block classname='org.apache.commons.io.input.buffer.PeekableInputStream' method='peek([BII)Z' number='0'><tests>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsBufferLargerThanCapacity()]'/>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsLengthLargerThanCapacity()]'/>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsNegativeLength()]'/>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsNegativeOffset()]'/>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsNullBuffer()]'/>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsOffsetAtEmptyBufferEnd()]'/>
+</tests>
+</block>
+<block classname='org.apache.commons.io.input.buffer.PeekableInputStream' method='peek([BII)Z' number='14'><tests>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsLengthLargerThanCapacity()]'/>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsNegativeLength()]'/>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsNegativeOffset()]'/>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsOffsetAtEmptyBufferEnd()]'/>
+</tests>
+</block>
+<block classname='org.apache.commons.io.input.buffer.PeekableInputStream' method='peek([BII)Z' number='1'><tests>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsBufferLargerThanCapacity()]'/>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsLengthLargerThanCapacity()]'/>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsNegativeLength()]'/>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsNegativeOffset()]'/>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsOffsetAtEmptyBufferEnd()]'/>
+</tests>
+</block>
+<block classname='org.apache.commons.io.input.buffer.PeekableInputStream' method='peek([BII)Z' number='11'><tests>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsLengthLargerThanCapacity()]'/>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsNegativeLength()]'/>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsNegativeOffset()]'/>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsOffsetAtEmptyBufferEnd()]'/>
+</tests>
+</block>
+<block classname='org.apache.commons.io.input.buffer.PeekableInputStream' method='peek([BII)Z' number='12'><tests>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsLengthLargerThanCapacity()]'/>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsNegativeLength()]'/>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsNegativeOffset()]'/>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsOffsetAtEmptyBufferEnd()]'/>
+</tests>
+</block>
+<block classname='org.apache.commons.io.input.buffer.PeekableInputStream' method='peek([BII)Z' number='13'><tests>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsLengthLargerThanCapacity()]'/>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsNegativeLength()]'/>
+</tests>
+</block>
+<block classname='org.apache.commons.io.input.buffer.PeekableInputStream' method='peek([BII)Z' number='6'><tests>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsBufferLargerThanCapacity()]'/>
+</tests>
+</block>
+<block classname='org.apache.commons.io.input.buffer.PeekableInputStream' method='peek([BII)Z' number='7'><tests>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsBufferLargerThanCapacity()]'/>
+</tests>
+</block>
+<block classname='org.apache.commons.io.input.buffer.PeekableInputStream' method='peek([BII)Z' number='8'><tests>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsBufferLargerThanCapacity()]'/>
+</tests>
+</block>
+<block classname='org.apache.commons.io.input.buffer.PeekableInputStream' method='peek([BII)Z' number='9'><tests>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsBufferLargerThanCapacity()]'/>
+</tests>
+</block>
+<block classname='org.apache.commons.io.input.buffer.PeekableInputStream' method='peek([BII)Z' number='2'><tests>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsBufferLargerThanCapacity()]'/>
+</tests>
+</block>
+<block classname='org.apache.commons.io.input.buffer.PeekableInputStream' method='peek([BII)Z' number='3'><tests>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsBufferLargerThanCapacity()]'/>
+</tests>
+</block>
+<block classname='org.apache.commons.io.input.buffer.PeekableInputStream' method='peek([BII)Z' number='4'><tests>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsBufferLargerThanCapacity()]'/>
+</tests>
+</block>
+<block classname='org.apache.commons.io.input.buffer.PeekableInputStream' method='peek([BII)Z' number='5'><tests>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsBufferLargerThanCapacity()]'/>
+</tests>
+</block>
+<block classname='org.apache.commons.io.input.buffer.PeekableInputStream' method='peek([BII)Z' number='10'><tests>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekSliceRejectsBufferLargerThanCapacity()]'/>
+</tests>
+</block>
+<block classname='org.apache.commons.io.input.buffer.PeekableInputStream' method='peek([B)Z' number='0'><tests>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekArrayRejectsBufferLargerThanCapacity()]'/>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekArrayRejectsEmptyBuffer()]'/>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekArrayRejectsNullBuffer()]'/>
+</tests>
+</block>
+<block classname='org.apache.commons.io.input.buffer.PeekableInputStream' method='peek([B)Z' number='1'><tests>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekArrayRejectsBufferLargerThanCapacity()]'/>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekArrayRejectsEmptyBuffer()]'/>
+</tests>
+</block>
+<block classname='org.apache.commons.io.input.buffer.PeekableInputStream' method='peek([B)Z' number='4'><tests>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekArrayRejectsBufferLargerThanCapacity()]'/>
+</tests>
+</block>
+<block classname='org.apache.commons.io.input.buffer.PeekableInputStream' method='peek([B)Z' number='5'><tests>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekArrayRejectsBufferLargerThanCapacity()]'/>
+</tests>
+</block>
+<block classname='org.apache.commons.io.input.buffer.PeekableInputStream' method='peek([B)Z' number='2'><tests>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekArrayRejectsBufferLargerThanCapacity()]'/>
+</tests>
+</block>
+<block classname='org.apache.commons.io.input.buffer.PeekableInputStream' method='peek([B)Z' number='3'><tests>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekArrayRejectsBufferLargerThanCapacity()]'/>
+</tests>
+</block>
+<block classname='org.apache.commons.io.input.buffer.PeekableInputStream' method='peek([B)Z' number='8'><tests>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekArrayRejectsBufferLargerThanCapacity()]'/>
+</tests>
+</block>
+<block classname='org.apache.commons.io.input.buffer.PeekableInputStream' method='peek([B)Z' number='9'><tests>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekArrayRejectsBufferLargerThanCapacity()]'/>
+</tests>
+</block>
+<block classname='org.apache.commons.io.input.buffer.PeekableInputStream' method='peek([B)Z' number='6'><tests>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekArrayRejectsBufferLargerThanCapacity()]'/>
+</tests>
+</block>
+<block classname='org.apache.commons.io.input.buffer.PeekableInputStream' method='peek([B)Z' number='7'><tests>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekArrayRejectsBufferLargerThanCapacity()]'/>
+</tests>
+</block>
+<block classname='org.apache.commons.io.input.buffer.PeekableInputStream' method='peek([B)Z' number='10'><tests>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekArrayRejectsBufferLargerThanCapacity()]'/>
+</tests>
+</block>
+<block classname='org.apache.commons.io.input.buffer.PeekableInputStream' method='peek([B)Z' number='12'><tests>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekArrayRejectsEmptyBuffer()]'/>
+</tests>
+</block>
+<block classname='org.apache.commons.io.input.buffer.PeekableInputStream' method='peek([B)Z' number='11'><tests>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekArrayRejectsEmptyBuffer()]'/>
+</tests>
+</block>
+<block classname='org.apache.commons.io.input.buffer.PeekableInputStream' method='peek([B)Z' number='14'><tests>
+<test name='org.apache.commons.io.input.buffer.PeekableInputStreamTest.[engine:junit-jupiter]/[class:org.apache.commons.io.input.buffer.PeekableInputStreamTest]/[method:testPeekArrayRejectsEmptyBuffer()]'/>
+</tests>
+</block>
+</coverage>

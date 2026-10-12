@@ -1,0 +1,17 @@
+commons-io:commons-io:jar:2.7-SNAPSHOT
++- org.junit.jupiter:junit-jupiter:jar:5.5.2:test
+|  +- org.junit.jupiter:junit-jupiter-api:jar:5.5.2:test
+|  |  +- org.apiguardian:apiguardian-api:jar:1.1.0:test
+|  |  +- org.opentest4j:opentest4j:jar:1.2.0:test
+|  |  \- org.junit.platform:junit-platform-commons:jar:1.5.2:test
+|  +- org.junit.jupiter:junit-jupiter-params:jar:5.5.2:test
+|  \- org.junit.jupiter:junit-jupiter-engine:jar:5.5.2:test
+|     \- org.junit.platform:junit-platform-engine:jar:1.5.2:test
++- org.junit-pioneer:junit-pioneer:jar:0.3.0:test
++- org.mockito:mockito-core:jar:3.0.0:test
+|  +- net.bytebuddy:byte-buddy:jar:1.9.10:test
+|  +- net.bytebuddy:byte-buddy-agent:jar:1.9.10:test
+|  \- org.objenesis:objenesis:jar:2.6:test
++- com.google.jimfs:jimfs:jar:1.1:test
+|  \- com.google.guava:guava:jar:18.0:test
+\- org.apache.commons:commons-lang3:jar:3.9:test

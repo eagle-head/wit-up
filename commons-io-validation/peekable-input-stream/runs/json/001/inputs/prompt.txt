@@ -1,0 +1,173 @@
+Use this prompt in a fresh chat for one independent generation attempt.
+Work in "D:/Projects/wit-up/commons-io" using an already prepared checkout.
+Run the two source conditions in separate fresh chats and separate prepared
+attempts. Do not share generated tests, candidate inventories, or execution
+feedback between them.
+
+Before inspecting behavioral material or generating anything, verify that HEAD
+is "11f0abe7a3fb6954b2985ca4ab0697b2fb489e84", that all tracked files match
+that commit, and that
+"src/test/java/org/apache/commons/io/input/buffer/PeekableInputStreamTest.java"
+does not exist. Check existence without opening an earlier test. Use metadata-only
+Git checks such as "git rev-parse HEAD", "git status --short", and
+"git diff --quiet 11f0abe7a3fb6954b2985ca4ab0697b2fb489e84 --".
+Do not print source diffs during preflight. If a condition is not met, report
+the preparation required and stop. Do not reset the checkout, create or switch
+branches, delete files, or modify the baseline to satisfy these checks.
+
+Target production file:
+"D:/Projects/wit-up/commons-io/src/main/java/org/apache/commons/io/input/buffer/PeekableInputStream.java".
+This path identifies the target; permission to read production source depends
+on the designated scenario source below.
+
+Write JUnit tests only for exceptional behavior of the public constructors and
+declared peek overloads of "org.apache.commons.io.input.buffer.PeekableInputStream",
+in "src/test/java/org/apache/commons/io/input/buffer/PeekableInputStreamTest.java".
+Keep overloaded signatures distinct. Every test case, including each parameterized
+invocation, must assert an exception thrown by a target constructor or peek call.
+Exceptions propagated from dependencies qualify only through that target call
+and when supported by the designated source. Do not test inherited operations
+or dependency classes as independent targets. Normal calls may establish fixture
+state; do not add cases whose oracle is a successful return value, matching bytes,
+normal end of input, or another non-exception outcome. A "throws" declaration
+on a test method is not an exception assertion. Do not target a fixed test count.
+
+BEGIN SCENARIO SOURCE
+Source kind: WIT-UP JSON exports only.
+Source files:
+"D:/Projects/wit-up/legacy/commons-io-analysis-results/witup-results-commons-io-11f0abe7a.json"
+"D:/Projects/wit-up/legacy/commons-io-analysis-results/witup-summaries-commons-io-11f0abe7a.json"
+
+These two original raw exports are the only permitted inputs under "legacy".
+Read them directly; do not use historical extracted records, analysis scripts,
+derived datasets, reports, or generated tests as substitutes.
+
+Process the JSON programmatically with an inline, read-only parser. Select
+package "org.apache.commons.io.input.buffer", class "PeekableInputStream", and
+the target constructors and peek overloads. Join results and summaries on both
+"artifact" and "pathId". Preserve full method signatures and source-array
+positions. Check key uniqueness and counterpart metadata/status consistency;
+do not silently choose among conflicting records. Report unusable records
+separately and derive tests only from consistent joined SAT records.
+
+Check the selected artifact label against "commons-io-11f0abe7a.jar".
+The label identifies the supplied export; it does not independently verify
+the analyzed JAR bytes or the WIT-UP revision that produced it. Report missing
+provenance as unverified without claiming source/binary equivalence.
+
+Derive conditions from constraints together with "truthValue"; use "modelValues"
+as candidate concrete assignments and the summary's "exceptionType" as the
+exception candidate. SAT is not proof that a Java fixture is constructible.
+Do not treat every model symbol as a public argument or interpret a serialized
+reference identity as a Java scalar. Do not invent missing records or infer
+behavior absent from the exports.
+
+Do not read any Commons IO production source, source excerpts, Javadocs,
+source-bearing CodeGraph output, bytecode, or decompiled code. Do not use
+"git show", source diffs, dependency source JARs, or external implementations
+to recover this information. Compilation and test execution may consume
+production files mechanically; that does not authorize inspecting them.
+END SCENARIO SOURCE
+
+Use the designated source as the sole source of target-specific scenarios,
+input conditions, fixture behavior, and expected outcomes. The following rules
+are identical for both source conditions.
+
+Read and follow applicable repository instructions and project conventions.
+They may supply working rules, licensing, formatting, framework configuration,
+and build requirements, but not additional target-specific behavioral oracles.
+Use the Java level and JUnit version already configured in the checkout.
+Built-in language/framework knowledge may support test syntax and standard
+library fixture mechanics; it must not supply additional Commons IO scenarios.
+
+Only Codex built-in skills are permitted. Do not load, invoke, follow, or use
+guidance from user-defined, repository-defined, user-installed, or
+plugin-provided skills. Do not install or create skills.
+
+You may inspect build configuration and unrelated existing tests solely for
+framework, formatting, and project conventions. Do not inspect tests for the
+target, its superclasses, or its buffer dependencies. Do not use other tests
+as scenario sources. Avoid broad searches that expose prohibited content.
+
+Do not retrieve earlier versions of "PeekableInputStreamTest.java" from the
+workspace, Git history, other branches, backups, compiled classes, artifacts,
+or previous chats. Do not consult "D:/Projects/wit-up/reference-suite", other
+generation prompts, previous attempts, study findings, coverage or mutation
+reports, external test examples, or behavioral documentation outside the
+designated source. Apart from the explicitly permitted JSON files in the JSON
+condition, "legacy" is outside the permitted inputs. Do not consult the
+alternative scenario source. Do not reuse or reconstruct a prior gold standard.
+
+If a tool, attachment, or supplied context exposes prohibited behavioral
+material, disclose the exposure and stop before generating or revising tests.
+Ignoring already exposed material does not establish an independent attempt.
+
+Construct fixtures through accessible APIs without reflection, private-state
+mutation, bytecode manipulation, or special production changes. Use small,
+deterministic fixtures. A custom dependency stub is allowed only when its
+behavior and the target's expected propagation are supported by the designated
+source. Do not count an exception thrown directly by a stub as a target test.
+
+Keep fixture setup outside the exception assertion. The asserted executable
+must invoke only the intended target constructor or peek call; setup or cleanup
+failure must not satisfy the assertion. Assert a specific supported exception
+type, rather than Exception or Throwable as a catch-all. Assert exact runtime
+type, message, cause, or identity only when the source supports that detail.
+
+Make fixture assumptions explicit. Disclose concrete values changed from the
+supporting source, why the change was necessary, and whether the original
+conditions still hold. Do not claim reproduction of a particular path when
+the fixture does not establish its conditions. Report candidates lacking a
+supported fixture or exception oracle instead of inventing behavior or adding
+disabled/skipped tests. Avoid redundant tests with the same conditions and
+exception outcome, but do not equate distinct paths merely by exception class.
+A passing assertion alone is not proof of an exact internal path or of the
+implementation's correctness against an independent specification.
+
+Modify only the target test file. Keep production, other tests, dependencies,
+and configuration unchanged at the required baseline, even if you discover
+an apparent implementation defect. Do not apply any correction or select a
+different commit. Report source ambiguities or defects without changing the
+experiment. Keep all project files and generated artifacts on D:; do not
+create auxiliary tooling files or caches inside the Java checkout.
+
+Include the repository's required license header. Import Java types and use
+simple names, except where qualification is necessary to resolve a collision.
+Use descriptive behavior-based test names and clear Arrange, Act, and Assert
+sections; Act and Assert may be combined for an exception assertion. Write
+generated identifiers, comments, and any saved report in United States English.
+
+Complete one initial test suite using only the permitted inputs, then run it
+once from "D:/Projects/wit-up/commons-io" with:
+
+mvn "-P!jacoco,!cobertura,!travis-jacoco,!travis-cobertura" "-Dtest=org.apache.commons.io.input.buffer.PeekableInputStreamTest" clean test
+
+These profile selections keep coverage outside the generation phase; they do
+not authorize skipping tests, license checks, or other quality gates.
+Record the Java and Maven versions. Preserve the generated file after the
+first compilation/execution attempt, including failures. Do not repair tests,
+add cases, adjust fixtures, change assertions, or infer new cases from runtime
+feedback. Do not perform a second generation attempt in this chat.
+
+Perform additional checks only when repository instructions require them and
+report their scope separately. Do not run coverage or mutation analysis.
+Do not suppress diagnostics, skip failing tests, or relax quality gates.
+If no supported test can be written, report that result; do not create an empty
+or disabled suite or report unexecuted tests as passing.
+
+In the final response, report:
+- The exact checkout commit, designated source files, toolchain versions,
+  and isolation/preflight result. Recheck that tracked baseline files remain
+  unchanged and identify the generated target file.
+- The exact commands, exit statuses, and executed test counts, including
+  failures, errors, and skips. Distinguish a build that stopped before test
+  execution from executed tests that failed. State checks not performed.
+- For every generated test: target signature, expected exception, fixture
+  assumptions, changed source values, and supporting source locator.
+  For Java, use file path, signature, and relevant line numbers.
+  For JSON, use both "artifact" and "pathId", the overload signature, and the
+  zero-based positions in the two input arrays.
+- Exception candidates left unrepresented and the reason: inconsistent data,
+  insufficient fixture support, missing oracle, or justified redundancy.
+  Keep solver verdicts and source-derived candidates separate from observed
+  runtime outcomes. Do not label record associations or counts as path coverage.

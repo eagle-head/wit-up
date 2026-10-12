@@ -1,0 +1,36 @@
+{
+  "scope": "Infrastructure execution history; excluded from suite outcome counts",
+  "records": [
+    {
+      "completedAt": "2026-10-12T15:16:10-04:00",
+      "java": "Temurin 25.0.4.1+1",
+      "maven": "3.9.16",
+      "command": "mvn \"-P!jacoco,!cobertura,!travis-jacoco,!travis-cobertura\" \"-Dtest=org.apache.commons.io.input.buffer.PeekableInputStreamTest\" clean test",
+      "exitCode": 1,
+      "testsExecuted": 0,
+      "stage": "maven-bundle-plugin:4.2.1:manifest",
+      "diagnostic": "ConcurrentModificationException at TreeMap.callMappingFunctionWithCheck, reached from aQute.bnd.osgi.Jar.putResource",
+      "diagnosticSource": "Original Maven output preserved in the current chat"
+    },
+    {
+      "completedAt": "2026-10-12T15:23:12-04:00",
+      "java": "Temurin 1.8.0_504-b01",
+      "maven": "3.9.16",
+      "command": "mvn \"-P!jacoco,!cobertura,!travis-jacoco,!travis-cobertura\" process-classes",
+      "exitCode": 0,
+      "testsExecuted": 0,
+      "scope": "Build diagnosis through process-classes"
+    },
+    {
+      "completedAt": "2026-10-12T15:27:30-04:00",
+      "java": "Temurin 1.8.0_504-b01",
+      "maven": "3.9.16",
+      "command": "mvn \"-P!jacoco,!cobertura,!travis-jacoco,!travis-cobertura\" \"-Dtest=org.apache.commons.io.input.buffer.PeekableInputStreamTest\" clean test",
+      "exitCode": 1,
+      "testsExecuted": 0,
+      "stage": "Surefire fork startup",
+      "diagnostic": "Error: Could not find or load main class ${argLine}",
+      "rawDiagnostic": "D:\\Projects\\wit-up\\commons-io-validation\\infrastructure\\surefire-jdk8-argline\\2026-10-12T15-27-30_390.dumpstream"
+    }
+  ]
+}

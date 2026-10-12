@@ -1,0 +1,407 @@
+{
+  "targetClass": "org.apache.commons.io.input.buffer.PeekableInputStream",
+  "checkoutCommit": "11f0abe7a3fb6954b2985ca4ab0697b2fb489e84",
+  "baselineKind": "Reconstructed by temporarily removing the frozen generated source and clean-compiling; directly measured on October 12, 2026",
+  "jacocoScope": {
+    "before": "Existing full Surefire suite, generated test absent",
+    "after": "Generated test suite only"
+  },
+  "pitScope": {
+    "targetClasses": "org.apache.commons.io.input.buffer.PeekableInputStream",
+    "targetTests": "org.apache.commons.io.input.buffer.PeekableInputStreamTest",
+    "before": "Generated compiled test class absent",
+    "after": "Ten generated tests present",
+    "fullProjectPitValidation": "UNSUCCESSFUL; separate diagnostics retained"
+  },
+  "testSourceSHA256": "a29b1141af4aa61b9081d22e2056f69596e5ec602062773a4618b5567c3de926",
+  "productionClassSHA256": "7ab6a91f3618ccf5949692f1fc5d39b97174deab23925f872f0e31cb5a2591a1",
+  "plainSupplementalResult": {
+    "completedAt": "2026-10-12T15:29:30-04:00",
+    "exitCode": 0,
+    "counts": {
+      "tests": 10,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "baselineSurefireCounts": {
+    "tests": 1541,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 6
+  },
+  "baselineNonSkippedExecutions": 1535,
+  "afterSurefireCounts": {
+    "tests": 10,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "afterSuiteElapsedSeconds": 0.018,
+  "jacoco": {
+    "before": {
+      "counters": {
+        "INSTRUCTION": {
+          "covered": 0,
+          "missed": 98,
+          "total": 98,
+          "percent": 0.0
+        },
+        "BRANCH": {
+          "covered": 0,
+          "missed": 8,
+          "total": 8,
+          "percent": 0.0
+        },
+        "LINE": {
+          "covered": 0,
+          "missed": 16,
+          "total": 16,
+          "percent": 0.0
+        },
+        "COMPLEXITY": {
+          "covered": 0,
+          "missed": 8,
+          "total": 8,
+          "percent": 0.0
+        },
+        "METHOD": {
+          "covered": 0,
+          "missed": 4,
+          "total": 4,
+          "percent": 0.0
+        },
+        "CLASS": {
+          "covered": 0,
+          "missed": 1,
+          "total": 1,
+          "percent": 0.0
+        }
+      },
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "(Ljava/io/InputStream;I)V",
+          "counters": {
+            "INSTRUCTION": {
+              "type": "INSTRUCTION",
+              "missed": "5",
+              "covered": "0"
+            },
+            "LINE": {
+              "type": "LINE",
+              "missed": "2",
+              "covered": "0"
+            },
+            "COMPLEXITY": {
+              "type": "COMPLEXITY",
+              "missed": "1",
+              "covered": "0"
+            },
+            "METHOD": {
+              "type": "METHOD",
+              "missed": "1",
+              "covered": "0"
+            }
+          }
+        },
+        {
+          "name": "<init>",
+          "descriptor": "(Ljava/io/InputStream;)V",
+          "counters": {
+            "INSTRUCTION": {
+              "type": "INSTRUCTION",
+              "missed": "4",
+              "covered": "0"
+            },
+            "LINE": {
+              "type": "LINE",
+              "missed": "2",
+              "covered": "0"
+            },
+            "COMPLEXITY": {
+              "type": "COMPLEXITY",
+              "missed": "1",
+              "covered": "0"
+            },
+            "METHOD": {
+              "type": "METHOD",
+              "missed": "1",
+              "covered": "0"
+            }
+          }
+        },
+        {
+          "name": "peek",
+          "descriptor": "([B)Z",
+          "counters": {
+            "INSTRUCTION": {
+              "type": "INSTRUCTION",
+              "missed": "45",
+              "covered": "0"
+            },
+            "BRANCH": {
+              "type": "BRANCH",
+              "missed": "4",
+              "covered": "0"
+            },
+            "LINE": {
+              "type": "LINE",
+              "missed": "6",
+              "covered": "0"
+            },
+            "COMPLEXITY": {
+              "type": "COMPLEXITY",
+              "missed": "3",
+              "covered": "0"
+            },
+            "METHOD": {
+              "type": "METHOD",
+              "missed": "1",
+              "covered": "0"
+            }
+          }
+        },
+        {
+          "name": "peek",
+          "descriptor": "([BII)Z",
+          "counters": {
+            "INSTRUCTION": {
+              "type": "INSTRUCTION",
+              "missed": "44",
+              "covered": "0"
+            },
+            "BRANCH": {
+              "type": "BRANCH",
+              "missed": "4",
+              "covered": "0"
+            },
+            "LINE": {
+              "type": "LINE",
+              "missed": "6",
+              "covered": "0"
+            },
+            "COMPLEXITY": {
+              "type": "COMPLEXITY",
+              "missed": "3",
+              "covered": "0"
+            },
+            "METHOD": {
+              "type": "METHOD",
+              "missed": "1",
+              "covered": "0"
+            }
+          }
+        }
+      ],
+      "completedAt": "2026-10-12T15:48:11-04:00",
+      "exitCode": 0
+    },
+    "after": {
+      "counters": {
+        "INSTRUCTION": {
+          "covered": 77,
+          "missed": 21,
+          "total": 98,
+          "percent": 78.57142857142857
+        },
+        "BRANCH": {
+          "covered": 7,
+          "missed": 1,
+          "total": 8,
+          "percent": 87.5
+        },
+        "LINE": {
+          "covered": 11,
+          "missed": 5,
+          "total": 16,
+          "percent": 68.75
+        },
+        "COMPLEXITY": {
+          "covered": 6,
+          "missed": 2,
+          "total": 8,
+          "percent": 75.0
+        },
+        "METHOD": {
+          "covered": 3,
+          "missed": 1,
+          "total": 4,
+          "percent": 75.0
+        },
+        "CLASS": {
+          "covered": 1,
+          "missed": 0,
+          "total": 1,
+          "percent": 100.0
+        }
+      },
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "(Ljava/io/InputStream;I)V",
+          "counters": {
+            "INSTRUCTION": {
+              "type": "INSTRUCTION",
+              "missed": "0",
+              "covered": "5"
+            },
+            "LINE": {
+              "type": "LINE",
+              "missed": "0",
+              "covered": "2"
+            },
+            "COMPLEXITY": {
+              "type": "COMPLEXITY",
+              "missed": "0",
+              "covered": "1"
+            },
+            "METHOD": {
+              "type": "METHOD",
+              "missed": "0",
+              "covered": "1"
+            }
+          }
+        },
+        {
+          "name": "<init>",
+          "descriptor": "(Ljava/io/InputStream;)V",
+          "counters": {
+            "INSTRUCTION": {
+              "type": "INSTRUCTION",
+              "missed": "4",
+              "covered": "0"
+            },
+            "LINE": {
+              "type": "LINE",
+              "missed": "2",
+              "covered": "0"
+            },
+            "COMPLEXITY": {
+              "type": "COMPLEXITY",
+              "missed": "1",
+              "covered": "0"
+            },
+            "METHOD": {
+              "type": "METHOD",
+              "missed": "1",
+              "covered": "0"
+            }
+          }
+        },
+        {
+          "name": "peek",
+          "descriptor": "([B)Z",
+          "counters": {
+            "INSTRUCTION": {
+              "type": "INSTRUCTION",
+              "missed": "10",
+              "covered": "35"
+            },
+            "BRANCH": {
+              "type": "BRANCH",
+              "missed": "1",
+              "covered": "3"
+            },
+            "LINE": {
+              "type": "LINE",
+              "missed": "2",
+              "covered": "4"
+            },
+            "COMPLEXITY": {
+              "type": "COMPLEXITY",
+              "missed": "1",
+              "covered": "2"
+            },
+            "METHOD": {
+              "type": "METHOD",
+              "missed": "0",
+              "covered": "1"
+            }
+          }
+        },
+        {
+          "name": "peek",
+          "descriptor": "([BII)Z",
+          "counters": {
+            "INSTRUCTION": {
+              "type": "INSTRUCTION",
+              "missed": "7",
+              "covered": "37"
+            },
+            "BRANCH": {
+              "type": "BRANCH",
+              "missed": "0",
+              "covered": "4"
+            },
+            "LINE": {
+              "type": "LINE",
+              "missed": "1",
+              "covered": "5"
+            },
+            "COMPLEXITY": {
+              "type": "COMPLEXITY",
+              "missed": "0",
+              "covered": "3"
+            },
+            "METHOD": {
+              "type": "METHOD",
+              "missed": "0",
+              "covered": "1"
+            }
+          }
+        }
+      ],
+      "completedAt": "2026-10-12T15:55:47-04:00",
+      "exitCode": 0
+    }
+  },
+  "pit": {
+    "before": {
+      "completedAt": "2026-10-12T15:53:55-04:00",
+      "exitCode": 0,
+      "totalMutants": 14,
+      "statusCounts": {
+        "NO_COVERAGE": 14
+      },
+      "mutationScorePercent": 0.0,
+      "coveredMutants": 0,
+      "testStrengthPercent": null,
+      "pitLineCoverage": {
+        "covered": 0,
+        "total": 16,
+        "percent": 0.0
+      },
+      "cumulativeMutationTestExecutions": 0,
+      "distinctGeneratedTests": 0
+    },
+    "after": {
+      "completedAt": "2026-10-12T15:56:05-04:00",
+      "exitCode": 0,
+      "totalMutants": 14,
+      "statusCounts": {
+        "SURVIVED": 8,
+        "NO_COVERAGE": 5,
+        "KILLED": 1
+      },
+      "mutationScorePercent": 7.142857142857143,
+      "coveredMutants": 9,
+      "testStrengthPercent": 11.11111111111111,
+      "pitLineCoverage": {
+        "covered": 13,
+        "total": 16,
+        "percent": 81.25
+      },
+      "cumulativeMutationTestExecutions": 26,
+      "distinctGeneratedTests": 10
+    }
+  },
+  "sameMutantUniverse": true,
+  "integrity": {
+    "head": "11f0abe7a3fb6954b2985ca4ab0697b2fb489e84",
+    "trackedDiffExitCode": 0,
+    "gitStatus": "?? src/test/java/org/apache/commons/io/input/buffer/PeekableInputStreamTest.java",
+    "frozenTestBytesRestored": true
+  }
+}

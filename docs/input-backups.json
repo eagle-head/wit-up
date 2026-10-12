@@ -1,0 +1,20 @@
+{
+  "purpose": "Verified shared raw-input preservation; hashes establish byte identity, not analyzed-binary equivalence.",
+  "backupScope": "Local D: copies; no off-machine backup has been performed.",
+  "files": [
+    {
+      "source": "D:\\Projects\\wit-up\\legacy\\commons-io-analysis-results\\witup-results-commons-io-11f0abe7a.json",
+      "backup": "D:\\Projects\\experiment-backups\\shared-inputs\\dcecb6911821347c37fef48dbba040740133ccf5598ae348abeebef42d74aaad.json",
+      "sha256": "dcecb6911821347c37fef48dbba040740133ccf5598ae348abeebef42d74aaad",
+      "bytes": 61463191,
+      "verifiedAt": "2026-10-12T21:14:59+00:00"
+    },
+    {
+      "source": "D:\\Projects\\wit-up\\legacy\\commons-io-analysis-results\\witup-summaries-commons-io-11f0abe7a.json",
+      "backup": "D:\\Projects\\experiment-backups\\shared-inputs\\7a02a927431c15e1d3f4c0bdf1625e9647eddbe8f7664e2fce9a58f935205c1d.json",
+      "sha256": "7a02a927431c15e1d3f4c0bdf1625e9647eddbe8f7664e2fce9a58f935205c1d",
+      "bytes": 252491337,
+      "verifiedAt": "2026-10-12T21:15:00+00:00"
+    }
+  ]
+}

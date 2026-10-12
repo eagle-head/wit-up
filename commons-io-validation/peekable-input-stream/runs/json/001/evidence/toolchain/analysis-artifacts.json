@@ -1,0 +1,49 @@
+[
+  {
+    "coordinate": "org.jacoco:org.jacoco.agent:0.8.4:runtime",
+    "path": "D:\\Projects\\wit-up\\commons-io-validation\\peekable-input-stream\\tools\\org.jacoco.agent-0.8.4-runtime.jar",
+    "sha256": "1a7c1dc7280e535b9b6f383915bac5afbb9208c1af2019b4e674ca590c925c22",
+    "manifestVersions": {
+      "Implementation-Version": "0.8.4"
+    }
+  },
+  {
+    "coordinate": "org.jacoco:org.jacoco.cli:0.8.4:nodeps",
+    "path": "D:\\Projects\\wit-up\\commons-io-validation\\peekable-input-stream\\tools\\org.jacoco.cli-0.8.4-nodeps.jar",
+    "sha256": "65de07ff32bcf2f945f18180d1d10cdf0e155eee2b508519bbc5f31904cd8288",
+    "manifestVersions": {
+      "Implementation-Version": "0.8.4"
+    }
+  },
+  {
+    "coordinate": "org.pitest:pitest-maven:1.15.2",
+    "path": "C:\\Users\\edyko\\.m2\\repository\\org\\pitest\\pitest-maven\\1.15.2\\pitest-maven-1.15.2.jar",
+    "sha256": "18674572d7c5e1e30561d941fd69e73d1b3ed18c7d43e215b612b505b618e81c",
+    "manifestVersions": {}
+  },
+  {
+    "coordinate": "org.pitest:pitest:1.15.2",
+    "path": "C:\\Users\\edyko\\.m2\\repository\\org\\pitest\\pitest\\1.15.2\\pitest-1.15.2.jar",
+    "sha256": "29befcf6733680375aff5089ad02dab9166aa18760f82fc085adb6c4959362b6",
+    "manifestVersions": {
+      "Implementation-Version": "1.15.2"
+    }
+  },
+  {
+    "coordinate": "org.pitest:pitest-junit5-plugin:1.2.2",
+    "path": "C:\\Users\\edyko\\.m2\\repository\\org\\pitest\\pitest-junit5-plugin\\1.2.2\\pitest-junit5-plugin-1.2.2.jar",
+    "sha256": "2dbf5bbbc714ff702eb2e82c047a5b44a74c47cc9171c3a7a8dc78783bf099b9",
+    "manifestVersions": {
+      "Implementation-Version": "1.2.2"
+    }
+  },
+  {
+    "coordinate": "org.junit.platform:junit-platform-launcher:1.5.2",
+    "path": "C:\\Users\\edyko\\.m2\\repository\\org\\junit\\platform\\junit-platform-launcher\\1.5.2\\junit-platform-launcher-1.5.2.jar",
+    "sha256": "c1f6473ddd343550b42e94072aff9417ff38398f8b6bafe27b785aebcdaa660b",
+    "manifestVersions": {
+      "Specification-Version": "1.5.2",
+      "Implementation-Version": "1.5.2"
+    }
+  }
+]

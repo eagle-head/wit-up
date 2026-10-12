@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "runId": "json-001",
+  "condition": "json",
+  "sequence": "001",
+  "createdAt": null,
+  "importedAt": "2026-10-12T21:13:19+00:00",
+  "origin": "retrospective_import",
+  "state": "frozen",
+  "baselineCommit": "11f0abe7a3fb6954b2985ca4ab0697b2fb489e84",
+  "checkout": "D:/Projects/wit-up/commons-io",
+  "prompt": {
+    "path": "inputs/prompt.txt",
+    "sha256": "5e6b318584f89d0e847e65f343f7465590f424cdef36e889d691692891f4e4d6",
+    "originalAttachment": "C:\\Users\\edyko\\.codex\\attachments\\c3caec6a-145d-4317-8bc9-c081b55d479c\\Pasted text.txt",
+    "templateSHA256": null
+  },
+  "environment": {
+    "path": "evidence/toolchain/versions.txt",
+    "sha256": "a0bdbe090834e8cfe445c107343a89c1eff9575d13587ec35682c3c517c865ed"
+  },
+  "generator": {
+    "model": null,
+    "settings": null,
+    "applicationBuild": null,
+    "reason": "Not recorded during the original generation."
+  },
+  "isolation": {
+    "freshChat": null,
+    "enforcement": "Historical prompt required an independent fresh chat; no machine attestation was retained."
+  },
+  "frozenTest": {
+    "path": "evidence/test-source/PeekableInputStreamTest.java",
+    "sha256": "a29b1141af4aa61b9081d22e2056f69596e5ec602062773a4618b5567c3de926",
+    "frozenAt": null,
+    "note": "Frozen bytes were preserved; the original freeze timestamp was not recorded."
+  },
+  "sourceInputs": [
+    {
+      "path": "D:\\Projects\\wit-up\\legacy\\commons-io-analysis-results\\witup-results-commons-io-11f0abe7a.json",
+      "sha256": "dcecb6911821347c37fef48dbba040740133ccf5598ae348abeebef42d74aaad",
+      "arrayLength": 88303
+    },
+    {
+      "path": "D:\\Projects\\wit-up\\legacy\\commons-io-analysis-results\\witup-summaries-commons-io-11f0abe7a.json",
+      "sha256": "7a02a927431c15e1d3f4c0bdf1625e9647eddbe8f7664e2fce9a58f935205c1d",
+      "arrayLength": 72419
+    }
+  ],
+  "executionRecords": [
+    "infrastructure/execution-record.json",
+    "evidence/result.json",
+    "evidence/measurements.json"
+  ],
+  "relocations": [
+    {
+      "originalPrefix": "D:/Projects/wit-up/commons-io-validation/peekable-input-stream",
+      "currentRelativePrefix": "evidence"
+    },
+    {
+      "originalPrefix": "D:/Projects/wit-up/commons-io-validation/infrastructure",
+      "currentRelativePrefix": "infrastructure"
+    }
+  ],
+  "limitations": [
+    "This is a historical import, not a prospective execution of the new protocol.",
+    "Original execution paths are retained verbatim in historical records.",
+    "Exact generation model, settings, application build, initial isolation attestation, and freeze time are unavailable.",
+    "Do not pool this attempt with prospective repetitions as if those fields were known.",
+    "Analyzed JAR bytes and producing WIT-UP revision remain unverified."
+  ]
+}

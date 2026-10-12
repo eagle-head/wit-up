@@ -1,0 +1,207 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---< org.apache.commons.io.analysis:peekable-input-stream-analysis >----
+[INFO] Building PeekableInputStream Mutation Analysis 1.0
+[INFO]   from pit-baseline-pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- pitest:1.15.2:mutationCoverage (default-cli) @ peekable-input-stream-analysis ---
+[INFO] Root dir is : D:\Projects\wit-up\commons-io-validation\peekable-input-stream\pit
+[INFO] Found plugin : Default csv report plugin
+[INFO] Found plugin : Default xml report plugin
+[INFO] Found plugin : Default html report plugin
+[INFO] Found plugin : Static initializer code detector plugin
+[INFO] Found plugin : Excluded annotations plugin
+[INFO] Found plugin : Try with resources filter
+[INFO] Found plugin : Inlined finally block filter plugin
+[INFO] Found plugin : Implicit null check filter
+[INFO] Found plugin : Method reference null check filter
+[INFO] Found plugin : For each loop filter
+[INFO] Found plugin : Enum junk filter
+[INFO] Found plugin : Record junk mutation filter
+[INFO] Found plugin : String switch filter
+[INFO] Found plugin : Assertions filter
+[INFO] Found plugin : Enum switch filter
+[INFO] Found plugin : Logging calls filter
+[INFO] Found plugin : Infinite for loop filter
+[INFO] Found plugin : Long running iterator loop filter
+[INFO] Found plugin : For loop counter filter
+[INFO] Found plugin : Kotlin junk mutations filter
+[INFO] Found plugin : Groovy junk mutations filter
+[INFO] Found plugin : Max mutations per class limit
+[INFO] Found plugin : Equals shortcut equivalent mutant filter
+[INFO] Found plugin : Trivial return vals equivalence filter
+[INFO] Found plugin : Filters mutants with line number <= 1
+[INFO] Found plugin : Division by one equivalent mutant filter
+[INFO] Found plugin : Lombok junk mutations filter
+[INFO] Found plugin : Mutant export plugin
+[INFO] Found plugin : Auto add java.awt.headless=true to keep keyboard focus on Mac OS
+[INFO] Found plugin : Auto set number of threads based on machine
+[INFO] Found plugin : Default build verifier
+[INFO] Found plugin : Detect missing JUnit5 plugin
+[INFO] Found plugin : Detect missing TestNG plugin
+[INFO] Found plugin : Detect missing kotlin plugin
+[INFO] Found plugin : Detect missing spring plugin
+[INFO] Found shared classpath plugin : Default mutation engine
+[INFO] Found shared classpath plugin : JUnit 5 test framework support
+[INFO] Found shared classpath plugin : JUnit plugin
+[INFO] Available mutators : EXPERIMENTAL_ARGUMENT_PROPAGATION,FALSE_RETURNS,TRUE_RETURNS,CONDITIONALS_BOUNDARY,CONSTRUCTOR_CALLS,EMPTY_RETURNS,INCREMENTS,INLINE_CONSTS,INVERT_NEGS,MATH,NEGATE_CONDITIONALS,NON_VOID_METHOD_CALLS,NULL_RETURNS,PRIMITIVE_RETURNS,REMOVE_CONDITIONALS_EQUAL_IF,REMOVE_CONDITIONALS_EQUAL_ELSE,REMOVE_CONDITIONALS_ORDER_IF,REMOVE_CONDITIONALS_ORDER_ELSE,VOID_METHOD_CALLS,EXPERIMENTAL_BIG_DECIMAL,EXPERIMENTAL_BIG_INTEGER,EXPERIMENTAL_MEMBER_VARIABLE,EXPERIMENTAL_NAKED_RECEIVER,REMOVE_INCREMENTS,EXPERIMENTAL_SWITCH,EXPERIMENTAL_BIG_DECIMAL,EXPERIMENTAL_BIG_INTEGER
+[INFO] Adding org.pitest:pitest-junit5-plugin to SUT classpath
+[INFO] Adding org.pitest:pitest to SUT classpath
+[INFO] Auto adding org.junit.platform:junit-platform-launcher:jar:1.5.2 < central (https://repo.maven.apache.org/maven2, default, releases) to classpath.
+[INFO] Mutating from D:\Projects\wit-up\commons-io\target\classes
+3:48:14 PM PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
+3:48:14 PM PIT >> INFO : Created 1 mutation test units in pre scan
+3:48:14 PM PIT >> INFO : Sending 374 test classes to minion
+3:48:14 PM PIT >> INFO : Sent tests to minion
+3:48:15 PM PIT >> SEVERE : Description [testClass=org.apache.commons.io.DirectoryWalkerTestCase, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCase]/[method:testFilterAndLimitB()]] did not pass without mutation.
+3:48:15 PM PIT >> SEVERE : Description [testClass=org.apache.commons.io.DirectoryWalkerTestCase, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCase]/[method:testFilterAndLimitC()]] did not pass without mutation.
+3:48:15 PM PIT >> SEVERE : Description [testClass=org.apache.commons.io.DirectoryWalkerTestCase, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCase]/[method:testFilterAndLimitD()]] did not pass without mutation.
+3:48:15 PM PIT >> SEVERE : Description [testClass=org.apache.commons.io.DirectoryWalkerTestCase, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCase]/[method:testFilterString()]] did not pass without mutation.
+3:48:15 PM PIT >> SEVERE : Description [testClass=org.apache.commons.io.DirectoryWalkerTestCase, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCase]/[method:testMultiThreadCancel()]] did not pass without mutation.
+3:48:15 PM PIT >> SEVERE : Description [testClass=org.apache.commons.io.DirectoryWalkerTestCase, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCase]/[method:testCancel()]] did not pass without mutation.
+3:48:15 PM PIT >> SEVERE : Description [testClass=org.apache.commons.io.DirectoryWalkerTestCase, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCase]/[method:testFilter()]] did not pass without mutation.
+3:48:15 PM PIT >> SEVERE : Description [testClass=org.apache.commons.io.DirectoryWalkerTestCase, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCase]/[method:testFilterDirAndFile1()]] did not pass without mutation.
+3:48:15 PM PIT >> SEVERE : Description [testClass=org.apache.commons.io.DirectoryWalkerTestCase, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCase]/[method:testFilterDirAndFile2()]] did not pass without mutation.
+3:48:15 PM PIT >> SEVERE : Description [testClass=org.apache.commons.io.DirectoryWalkerTestCase, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCase]/[method:testFilterDirAndFile3()]] did not pass without mutation.
+3:48:15 PM PIT >> SEVERE : Description [testClass=org.apache.commons.io.DirectoryWalkerTestCase, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCase]/[method:testFilterDirAndFile4()]] did not pass without mutation.
+3:48:15 PM PIT >> SEVERE : Description [testClass=org.apache.commons.io.DirectoryWalkerTestCaseJava4, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCaseJava4]/[method:testFilterAndLimitB()]] did not pass without mutation.
+3:48:15 PM PIT >> SEVERE : Description [testClass=org.apache.commons.io.DirectoryWalkerTestCaseJava4, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCaseJava4]/[method:testFilterAndLimitC()]] did not pass without mutation.
+3:48:15 PM PIT >> SEVERE : Description [testClass=org.apache.commons.io.DirectoryWalkerTestCaseJava4, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCaseJava4]/[method:testFilterAndLimitD()]] did not pass without mutation.
+3:48:15 PM PIT >> SEVERE : Description [testClass=org.apache.commons.io.DirectoryWalkerTestCaseJava4, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCaseJava4]/[method:testMultiThreadCancel()]] did not pass without mutation.
+3:48:15 PM PIT >> SEVERE : Description [testClass=org.apache.commons.io.DirectoryWalkerTestCaseJava4, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCaseJava4]/[method:testCancel()]] did not pass without mutation.
+3:48:15 PM PIT >> SEVERE : Description [testClass=org.apache.commons.io.DirectoryWalkerTestCaseJava4, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCaseJava4]/[method:testFilter()]] did not pass without mutation.
+3:48:15 PM PIT >> SEVERE : Description [testClass=org.apache.commons.io.DirectoryWalkerTestCaseJava4, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCaseJava4]/[method:testFilterDirAndFile1()]] did not pass without mutation.
+3:48:15 PM PIT >> SEVERE : Description [testClass=org.apache.commons.io.DirectoryWalkerTestCaseJava4, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCaseJava4]/[method:testFilterDirAndFile2()]] did not pass without mutation.
+3:48:15 PM PIT >> SEVERE : Description [testClass=org.apache.commons.io.DirectoryWalkerTestCaseJava4, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCaseJava4]/[method:testFilterDirAndFile3()]] did not pass without mutation.
+3:48:19 PM PIT >> SEVERE : Description [testClass=org.apache.commons.io.DirectoryWalkerTestCaseJava4, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCaseJava4]/[method:testFilterDirAndFile4()]] did not pass without mutation.
+3:48:23 PM PIT >> SEVERE : Description [testClass=org.apache.commons.io.FileUtilsTestCase, name=[engine:junit-jupiter]/[class:org.apache.commons.io.FileUtilsTestCase]/[method:testIO276()]] did not pass without mutation.
+3:48:23 PM PIT >> SEVERE : Description [testClass=org.apache.commons.io.FileUtilsTestCase, name=[engine:junit-jupiter]/[class:org.apache.commons.io.FileUtilsTestCase]/[method:testIncorrectOutputSize()]] did not pass without mutation.
+3:48:25 PM PIT >> SEVERE : Description [testClass=org.apache.commons.io.FileUtilsTestCase, name=[engine:junit-jupiter]/[class:org.apache.commons.io.FileUtilsTestCase]/[method:testCompareSizeOf()]] did not pass without mutation.
+3:48:30 PM PIT >> INFO : MINION : org.apache.commons.io.IOExceptionList: 1 exceptions: [java.io.EOFException]
+3:48:30 PM PIT >> INFO : MINION : 	at org.apache.commons.io.IOExceptionListTestCase.testPrintStackTrace(IOExceptionListTestCase.java:58)
+3:48:30 PM PIT >> INFO : MINION : 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+3:48:30 PM PIT >> INFO : MINION : 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+3:48:30 PM PIT >> INFO : MINION : 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+3:48:30 PM PIT >> INFO : MINION : 	at java.lang.reflect.Method.invoke(Method.java:498)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:124)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:74)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:104)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:62)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:43)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:35)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:202)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:198)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+3:48:30 PM PIT >> INFO : MINION : 	at java.util.ArrayList.forEach(ArrayList.java:1259)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+3:48:30 PM PIT >> INFO : MINION : 	at java.util.ArrayList.forEach(ArrayList.java:1259)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:229)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:197)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:211)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:191)
+3:48:30 PM PIT >> INFO : MINION : 	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+3:48:30 PM PIT >> INFO : MINION : 	at org.pitest.junit5.JUnit5TestUnitFinder.findTestUnits(JUnit5TestUnitFinder.java:84)
+3:48:30 PM PIT >> INFO : MINION : 	at org.pitest.mutationtest.config.PrioritisingTestUnitFinder.findTestUnits(PrioritisingTestUnitFinder.java:20)
+3:48:30 PM PIT >> INFO : MINION : 	at org.pitest.testapi.execute.FindTestUnits.findTestUnits(FindTestUnits.java:64)
+3:48:30 PM PIT >> INFO : MINION : 	at org.pitest.testapi.execute.FindTestUnits.getTestUnits(FindTestUnits.java:47)
+3:48:30 PM PIT >> INFO : MINION : 	at org.pitest.testapi.execute.FindTestUnits.findTestUnitsForAllSuppliedClasses(FindTestUnits.java:36)
+3:48:30 PM PIT >> INFO : MINION : 	at org.pitest.coverage.execute.CoverageMinion.discoverTests(CoverageMinion.java:177)
+3:48:30 PM PIT >> INFO : MINION : 	at org.pitest.coverage.execute.CoverageMinion.getTestsFromParent(CoverageMinion.java:163)
+3:48:30 PM PIT >> INFO : MINION : 	at org.pitest.coverage.execute.CoverageMinion.main(CoverageMinion.java:87)
+3:48:30 PM PIT >> INFO : MINION : Caused by: java.io.EOFException
+3:48:30 PM PIT >> INFO : MINION : 	at org.apache.commons.io.IOExceptionListTestCase.testPrintStackTrace(IOExceptionListTestCase.java:56)
+3:48:30 PM PIT >> INFO : MINION : 	... 67 more
+3:48:31 PM PIT >> SEVERE : Description [testClass=org.apache.commons.io.comparator.DirectoryFileComparatorTest, name=[engine:junit-jupiter]/[class:org.apache.commons.io.comparator.DirectoryFileComparatorTest]/[method:testReverseComparator()]] did not pass without mutation.
+3:48:31 PM PIT >> SEVERE : Description [testClass=org.apache.commons.io.comparator.DirectoryFileComparatorTest, name=[engine:junit-jupiter]/[class:org.apache.commons.io.comparator.DirectoryFileComparatorTest]/[method:testComparator()]] did not pass without mutation.
+3:48:35 PM PIT >> SEVERE : Description [testClass=org.apache.commons.io.file.PathUtilsDeleteTest, name=[engine:junit-jupiter]/[class:org.apache.commons.io.file.PathUtilsDeleteTest]/[method:testDeleteDirectory1FileSize0()]] did not pass without mutation.
+3:48:35 PM PIT >> SEVERE : Description [testClass=org.apache.commons.io.file.PathUtilsDeleteTest, name=[engine:junit-jupiter]/[class:org.apache.commons.io.file.PathUtilsDeleteTest]/[method:testDeleteDirectory1FileSize1()]] did not pass without mutation.
+3:48:35 PM PIT >> SEVERE : Description [testClass=org.apache.commons.io.filefilter.FileFilterTestCase, name=[engine:junit-jupiter]/[class:org.apache.commons.io.filefilter.FileFilterTestCase]/[method:testFiles()]] did not pass without mutation.
+3:48:35 PM PIT >> SEVERE : Description [testClass=org.apache.commons.io.filefilter.FileFilterTestCase, name=[engine:junit-jupiter]/[class:org.apache.commons.io.filefilter.FileFilterTestCase]/[method:testDirectory()]] did not pass without mutation.
+3:48:45 PM PIT >> SEVERE : Description [testClass=org.apache.commons.io.input.TailerTest, name=[engine:junit-jupiter]/[class:org.apache.commons.io.input.TailerTest]/[method:testTailer()]] did not pass without mutation.
+3:48:51 PM PIT >> INFO : Calculated coverage in 36 seconds.
+3:48:51 PM PIT >> SEVERE : Tests failing without mutation: 
+Description [testClass=org.apache.commons.io.DirectoryWalkerTestCase, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCase]/[method:testFilterAndLimitB()]]
+Description [testClass=org.apache.commons.io.DirectoryWalkerTestCase, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCase]/[method:testFilterAndLimitC()]]
+Description [testClass=org.apache.commons.io.DirectoryWalkerTestCase, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCase]/[method:testFilterAndLimitD()]]
+Description [testClass=org.apache.commons.io.DirectoryWalkerTestCase, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCase]/[method:testFilterString()]]
+Description [testClass=org.apache.commons.io.DirectoryWalkerTestCase, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCase]/[method:testMultiThreadCancel()]]
+Description [testClass=org.apache.commons.io.DirectoryWalkerTestCase, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCase]/[method:testCancel()]]
+Description [testClass=org.apache.commons.io.DirectoryWalkerTestCase, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCase]/[method:testFilter()]]
+Description [testClass=org.apache.commons.io.DirectoryWalkerTestCase, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCase]/[method:testFilterDirAndFile1()]]
+Description [testClass=org.apache.commons.io.DirectoryWalkerTestCase, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCase]/[method:testFilterDirAndFile2()]]
+Description [testClass=org.apache.commons.io.DirectoryWalkerTestCase, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCase]/[method:testFilterDirAndFile3()]]
+Description [testClass=org.apache.commons.io.DirectoryWalkerTestCase, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCase]/[method:testFilterDirAndFile4()]]
+Description [testClass=org.apache.commons.io.DirectoryWalkerTestCaseJava4, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCaseJava4]/[method:testFilterAndLimitB()]]
+Description [testClass=org.apache.commons.io.DirectoryWalkerTestCaseJava4, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCaseJava4]/[method:testFilterAndLimitC()]]
+Description [testClass=org.apache.commons.io.DirectoryWalkerTestCaseJava4, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCaseJava4]/[method:testFilterAndLimitD()]]
+Description [testClass=org.apache.commons.io.DirectoryWalkerTestCaseJava4, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCaseJava4]/[method:testMultiThreadCancel()]]
+Description [testClass=org.apache.commons.io.DirectoryWalkerTestCaseJava4, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCaseJava4]/[method:testCancel()]]
+Description [testClass=org.apache.commons.io.DirectoryWalkerTestCaseJava4, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCaseJava4]/[method:testFilter()]]
+Description [testClass=org.apache.commons.io.DirectoryWalkerTestCaseJava4, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCaseJava4]/[method:testFilterDirAndFile1()]]
+Description [testClass=org.apache.commons.io.DirectoryWalkerTestCaseJava4, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCaseJava4]/[method:testFilterDirAndFile2()]]
+Description [testClass=org.apache.commons.io.DirectoryWalkerTestCaseJava4, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCaseJava4]/[method:testFilterDirAndFile3()]]
+Description [testClass=org.apache.commons.io.DirectoryWalkerTestCaseJava4, name=[engine:junit-jupiter]/[class:org.apache.commons.io.DirectoryWalkerTestCaseJava4]/[method:testFilterDirAndFile4()]]
+Description [testClass=org.apache.commons.io.FileUtilsTestCase, name=[engine:junit-jupiter]/[class:org.apache.commons.io.FileUtilsTestCase]/[method:testIO276()]]
+Description [testClass=org.apache.commons.io.FileUtilsTestCase, name=[engine:junit-jupiter]/[class:org.apache.commons.io.FileUtilsTestCase]/[method:testIncorrectOutputSize()]]
+Description [testClass=org.apache.commons.io.FileUtilsTestCase, name=[engine:junit-jupiter]/[class:org.apache.commons.io.FileUtilsTestCase]/[method:testCompareSizeOf()]]
+Description [testClass=org.apache.commons.io.comparator.DirectoryFileComparatorTest, name=[engine:junit-jupiter]/[class:org.apache.commons.io.comparator.DirectoryFileComparatorTest]/[method:testReverseComparator()]]
+Description [testClass=org.apache.commons.io.comparator.DirectoryFileComparatorTest, name=[engine:junit-jupiter]/[class:org.apache.commons.io.comparator.DirectoryFileComparatorTest]/[method:testComparator()]]
+Description [testClass=org.apache.commons.io.file.PathUtilsDeleteTest, name=[engine:junit-jupiter]/[class:org.apache.commons.io.file.PathUtilsDeleteTest]/[method:testDeleteDirectory1FileSize0()]]
+Description [testClass=org.apache.commons.io.file.PathUtilsDeleteTest, name=[engine:junit-jupiter]/[class:org.apache.commons.io.file.PathUtilsDeleteTest]/[method:testDeleteDirectory1FileSize1()]]
+Description [testClass=org.apache.commons.io.filefilter.FileFilterTestCase, name=[engine:junit-jupiter]/[class:org.apache.commons.io.filefilter.FileFilterTestCase]/[method:testFiles()]]
+Description [testClass=org.apache.commons.io.filefilter.FileFilterTestCase, name=[engine:junit-jupiter]/[class:org.apache.commons.io.filefilter.FileFilterTestCase]/[method:testDirectory()]]
+Description [testClass=org.apache.commons.io.input.TailerTest, name=[engine:junit-jupiter]/[class:org.apache.commons.io.input.TailerTest]/[method:testTailer()]]
+/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  38.035 s
+[INFO] Finished at: 2026-10-12T15:48:51-04:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.pitest:pitest-maven:1.15.2:mutationCoverage (default-cli) on project peekable-input-stream-analysis: Execution default-cli of goal org.pitest:pitest-maven:1.15.2:mutationCoverage failed: 31 tests did not pass without mutation when calculating line coverage. Mutation testing requires a green suite.
+[ERROR] See https://pitest.org for more details.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException

@@ -1,0 +1,7 @@
+{
+  "BaselineTestExit": 0,
+  "BaselineJaCoCoReportExit": 0,
+  "BaselinePITExit": 1,
+  "TestFileRestored": true,
+  "ExpectedTestSHA256": "A29B1141AF4AA61B9081D22E2056F69596E5EC602062773A4618B5567C3DE926"
+}

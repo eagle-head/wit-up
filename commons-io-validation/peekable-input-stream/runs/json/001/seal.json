@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "runId": "json-001",
+  "sealedAt": "2026-10-12T21:15:00+00:00",
+  "outcome": "completed",
+  "reason": null,
+  "report": "evidence/peekable-input-stream-report.md",
+  "files": [
+    {
+      "path": "evidence/artifact-manifest.json",
+      "bytes": 5930,
+      "sha256": "073539f072ffc9f2dc31b4be6fa2dc58fa078f56112f03717e0ef93c200e0694"
+    },
+    {
+      "path": "evidence/baseline-execution.json",
+      "bytes": 212,
+      "sha256": "9ec865acb5d42ac2d61f1a346eccd4067f7f5c424d006a7d3527e37b08a5649b"
+    },
+    {
+      "path": "evidence/execution-diagnostics.md",
+      "bytes": 2966,
+      "sha256": "c117168bb68ead8773f4667ac1f7b3a3f5f2fd35ea5c21eb550bd7f70316d568"
+    },
+    {
+      "path": "evidence/jacoco/after/jacoco.exec",
+      "bytes": 112,
+      "sha256": "eaa55899b277bf7390b3328275cd445c015fd63449e795f6cf294ecee1bb1141"
+    },
+    {
+      "path": "evidence/jacoco/after/jacoco.xml",
+      "bytes": 3500,
+      "sha256": "9d167ebd523dfebdd61924c1dfd68287709dce2e4176a54c2dfd1a5d4b48761a"
+    },
+    {
+      "path": "evidence/jacoco/after/maven.log",
+      "bytes": 4904,
+      "sha256": "cf554f27e97396fbec3c81816f09136b6656bf37f8d7d27572f03e5915690454"
+    },
+    {
+      "path": "evidence/jacoco/after/report.log",
+      "bytes": 154,
+      "sha256": "4cb161a5a607024dbd7e0285ac5cc5813f550942e1d59ed89402153255391a22"
+    },
+    {
+      "path": "evidence/jacoco/after/TEST-org.apache.commons.io.input.buffer.PeekableInputStreamTest.xml",
+      "bytes": 12749,
+      "sha256": "9474e22cb18f263a55bebfe2cc84e7c8d5487d334fdf732d266c4e8c3ca676ee"
+    },
+    {
+      "path": "evidence/jacoco/before/jacoco.exec",
+      "bytes": 5976,
+      "sha256": "4ac36cc44c3100cd6a08a55f8864513fb475ab55ab4d17e5be7f49ffb5e6f4bd"
+    },
+    {
+      "path": "evidence/jacoco/before/jacoco.xml",
+      "bytes": 14709,
+      "sha256": "7e71116bc187a5deac3d25d1852464a1a38ca82d386ee2a2a31bca55b6ff6ed9"
+    },
+    {
+      "path": "evidence/jacoco/before/maven.log",
+      "bytes": 39537,
+      "sha256": "ea2996679a1eca7d7bd05cac0d022b89f94a2167c517b0960f1e99cd76e17ec4"
+    },
+    {
+      "path": "evidence/jacoco/before/report.log",
+      "bytes": 155,
+      "sha256": "6de788a6090dc24e1ef4fb6881164476e0fce1187015cde977d8287e2a303245"
+    },
+    {
+      "path": "evidence/jacoco/before/suite-result.json",
+      "bytes": 8450,
+      "sha256": "3b3b58eb3892d19ee7011ea234ce426c8191f7edff3b13a536898300fce00687"
+    },
+    {
+      "path": "evidence/jacoco/before/surefire-reports.zip",
+      "bytes": 354807,
+      "sha256": "6e06498345f9e5e44539c9d835617f147b4dd91a17c13165ae8edc3bdd7a452e"
+    },
+    {
+      "path": "evidence/maven-jdk8.log",
+      "bytes": 4904,
+      "sha256": "23cac057451122c2eeadea2e67c68cf43224abf2cc6d04dc267cb12d8f90a352"
+    },
+    {
+      "path": "evidence/measurements.json",
+      "bytes": 10764,
+      "sha256": "2941840d676bc3844c9060e0a3ca54c3182a4b0267a15cc6a05dcc0b3d10f5ab"
+    },
+    {
+      "path": "evidence/peekable-input-stream-report.md",
+      "bytes": 64528,
+      "sha256": "00ae7c4e8de013d0da3a1aa40b06801564b77861643fd367fd2c61e8abb7936a"
+    },
+    {
+      "path": "evidence/pit/after/linecoverage.xml",
+      "bytes": 19240,
+      "sha256": "b0364637b575412827fa8061ae1639ed7b2dd0c01efeda19e7305082512836a4"
+    },
+    {
+      "path": "evidence/pit/after/maven.log",
+      "bytes": 6998,
+      "sha256": "21c870db93c957c489a90ae88b1d36312637c72aa66dac9ecb9004fc2f63a99d"
+    },
+    {
+      "path": "evidence/pit/after/mutations.xml",
+      "bytes": 8558,
+      "sha256": "f7aac032f4bce7b1b95824b01c5add4e400098fa3ba12be3707902249bdf49d7"
+    },
+    {
+      "path": "evidence/pit/before/linecoverage.xml",
+      "bytes": 62,
+      "sha256": "ac41648185a3832d420711a1278f735d754390a6fcafbdfbb171819b14c176ed"
+    },
+    {
+      "path": "evidence/pit/before/maven.log",
+      "bytes": 6928,
+      "sha256": "90ea9bdd1cc0ce4a8eff6a126d7c8c840a9d69f611b366fb557023d138a8397a"
+    },
+    {
+      "path": "evidence/pit/before/mutations.xml",
+      "bytes": 8371,
+      "sha256": "ad74ddaa20424cf4cce8e6af003b3b6b0f46a2f15b44259aa02204d456fd361a"
+    },
+    {
+      "path": "evidence/pit/pit-analysis-pom.xml",
+      "bytes": 3726,
+      "sha256": "75618bcd94e4585a40870417f217aaf4e2611f5ab63b77ed761a535418d9004f"
+    },
+    {
+      "path": "evidence/pit/pit-baseline-pom.xml",
+      "bytes": 3727,
+      "sha256": "111ff52c7362533042bce0dc1a077bf71c3af4ab5f848aea862419e4c411b3ae"
+    },
+    {
+      "path": "evidence/result.json",
+      "bytes": 3687,
+      "sha256": "32b34fa190707d5fac8f8db89df5d227162e66f302fce8576f9085e4905360e1"
+    },
+    {
+      "path": "evidence/TEST-org.apache.commons.io.input.buffer.PeekableInputStreamTest.xml",
+      "bytes": 12653,
+      "sha256": "7aa3b8bcf16324ef6ec5d37e986df61a4f0c1bb2b6e03b06a4b95465fa09d1a7"
+    },
+    {
+      "path": "evidence/test-scenarios.json",
+      "bytes": 216420,
+      "sha256": "35cf84954ea321550d227e9e5554cd323d3c775d5e5df9db8bf0fa68952e6e18"
+    },
+    {
+      "path": "evidence/test-source/PeekableInputStreamTest.java",
+      "bytes": 6356,
+      "sha256": "a29b1141af4aa61b9081d22e2056f69596e5ec602062773a4618b5567c3de926"
+    },
+    {
+      "path": "evidence/toolchain/analysis-artifacts.json",
+      "bytes": 2090,
+      "sha256": "f81bad28260e6ebd50040ee6cdf114ae442f1e0a108d4bee4f762629c9ea2e0a"
+    },
+    {
+      "path": "evidence/toolchain/dependency-tree.txt",
+      "bytes": 887,
+      "sha256": "41f34b53b328744b6dc48fbae821ba25992b7fed1ba33a01ddef0ec22c154fc7"
+    },
+    {
+      "path": "evidence/toolchain/effective-pom.xml",
+      "bytes": 104227,
+      "sha256": "2f1d4ae32f4e8a25f5a70d4915dbc52b4423dc64fac4641505d4db2a7e838ce2"
+    },
+    {
+      "path": "evidence/toolchain/pit-plugin-dependencies.txt",
+      "bytes": 6442,
+      "sha256": "1f5c05ca1f1d82872415ddc8b0231a4ac597705ef0a1b8256669e29624983d9c"
+    },
+    {
+      "path": "evidence/toolchain/surefire-classpath.json",
+      "bytes": 3759,
+      "sha256": "312481a2af156adb949237048a66bf04bdcb41489591d03642e8e0de9ae05793"
+    },
+    {
+      "path": "evidence/toolchain/versions.txt",
+      "bytes": 773,
+      "sha256": "a0bdbe090834e8cfe445c107343a89c1eff9575d13587ec35682c3c517c865ed"
+    },
+    {
+      "path": "infrastructure/execution-record.json",
+      "bytes": 1673,
+      "sha256": "d93f06c387158403e9dc1924d6b32234c01b8c2be58873b1914a27b1b8c3a1a0"
+    },
+    {
+      "path": "infrastructure/pit-baseline-directory/maven.log",
+      "bytes": 31231,
+      "sha256": "d1ecce6154ae34d74656b5225ca75191888480e6bce9e1b2c76db3277e114785"
+    },
+    {
+      "path": "infrastructure/pit-full-suite-baseline/maven-original-root.log",
+      "bytes": 30812,
+      "sha256": "908301ed0d81ac3eede5a8a15d8864fea67e5d6f7347d32da0e73d63954063fd"
+    },
+    {
+      "path": "infrastructure/pit-full-suite-baseline/pit-full-suite-pom.xml",
+      "bytes": 3749,
+      "sha256": "a0a58b0fe361fef3530a8c564ba7f8e6d0c150665924c3fb5570c879e5cc51cf"
+    },
+    {
+      "path": "infrastructure/surefire-jdk8-argline/2026-10-12T15-27-30_390.dumpstream",
+      "bytes": 93,
+      "sha256": "cb4d2a842cb4e74808df62b364f96271ebd27eacfe17437e86d43c46529bc08f"
+    },
+    {
+      "path": "inputs/prompt.txt",
+      "bytes": 10926,
+      "sha256": "5e6b318584f89d0e847e65f343f7465590f424cdef36e889d691692891f4e4d6"
+    },
+    {
+      "path": "run.json",
+      "bytes": 2855,
+      "sha256": "60f58e2b6530a3aba678ee1f7207e7f6774e847b01af66c5dc37e0c3a329da53"
+    }
+  ]
+}

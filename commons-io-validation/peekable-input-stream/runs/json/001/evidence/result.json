@@ -1,0 +1,102 @@
+{
+  "executionKind": "Authorized supplemental execution",
+  "completedAt": "2026-10-12T15:29:30-04:00",
+  "workingDirectory": "D:/Projects/wit-up/commons-io",
+  "checkoutCommit": "11f0abe7a3fb6954b2985ca4ab0697b2fb489e84",
+  "command": "mvn \"-P!jacoco,!cobertura,!travis-jacoco,!travis-cobertura\" \"-Dtest=org.apache.commons.io.input.buffer.PeekableInputStreamTest\" clean test",
+  "mavenExitCode": 0,
+  "buildStatus": "SUCCESS",
+  "toolchain": {
+    "java": "Temurin 1.8.0_504-b01",
+    "maven": "3.9.16",
+    "junit": "Jupiter 5.5.2",
+    "surefire": "2.22.2"
+  },
+  "processEnvironmentAdjustments": {
+    "JAVA_HOME": "C:/Users/edyko/AppData/Local/mise/installs/java/temurin-8.0.504+1",
+    "MAVEN_OPTSAdded": "-DargLine=",
+    "TEMP": "D:\\Projects\\wit-up\\commons-io-validation\\temporary",
+    "TMP": "D:\\Projects\\wit-up\\commons-io-validation\\temporary",
+    "scope": "Execution process only; no persistent configuration files changed"
+  },
+  "testClass": "org.apache.commons.io.input.buffer.PeekableInputStreamTest",
+  "counts": {
+    "tests": 10,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "testElapsedSeconds": 0.024,
+  "testCases": [
+    {
+      "name": "testPeekSliceRejectsNullBuffer",
+      "status": "PASSED"
+    },
+    {
+      "name": "testPeekSliceRejectsLengthLargerThanCapacity",
+      "status": "PASSED"
+    },
+    {
+      "name": "testPeekSliceRejectsBufferLargerThanCapacity",
+      "status": "PASSED"
+    },
+    {
+      "name": "testPeekArrayRejectsBufferLargerThanCapacity",
+      "status": "PASSED"
+    },
+    {
+      "name": "testPeekArrayRejectsEmptyBuffer",
+      "status": "PASSED"
+    },
+    {
+      "name": "testPeekSliceRejectsOffsetAtEmptyBufferEnd",
+      "status": "PASSED"
+    },
+    {
+      "name": "testPeekSliceRejectsNegativeLength",
+      "status": "PASSED"
+    },
+    {
+      "name": "testPeekSliceRejectsNegativeOffset",
+      "status": "PASSED"
+    },
+    {
+      "name": "testPeekArrayRejectsNullBuffer",
+      "status": "PASSED"
+    },
+    {
+      "name": "testConstructorRejectsZeroBufferSize",
+      "status": "PASSED"
+    }
+  ],
+  "baselineVerification": {
+    "gitDiffExitCode": 0,
+    "trackedFilesUnchanged": true,
+    "testFileUnchanged": true,
+    "testFileSHA256": "a29b1141af4aa61b9081d22e2056f69596e5ec602062773a4618b5567c3de926"
+  },
+  "qualityChecks": {
+    "apacheRat": "PASSED",
+    "animalSniffer": "PASSED"
+  },
+  "checksNotPerformed": [
+    "Full test suite",
+    "Checkstyle",
+    "Coverage analysis",
+    "Mutation analysis"
+  ],
+  "scenarioSource": {
+    "kind": "WIT-UP JSON exports only",
+    "files": [
+      "D:/Projects/wit-up/legacy/commons-io-analysis-results/witup-results-commons-io-11f0abe7a.json",
+      "D:/Projects/wit-up/legacy/commons-io-analysis-results/witup-summaries-commons-io-11f0abe7a.json"
+    ],
+    "artifactLabel": "commons-io-11f0abe7a.jar",
+    "analyzedJarBytesAndWitupRevision": "UNVERIFIED"
+  },
+  "interpretation": "All ten frozen exception assertions passed. This does not establish exact internal path reproduction or source/binary equivalence.",
+  "mavenLog": "D:\\Projects\\wit-up\\commons-io-validation\\peekable-input-stream\\maven-jdk8.log",
+  "surefireReport": "D:\\Projects\\wit-up\\commons-io-validation\\peekable-input-stream\\TEST-org.apache.commons.io.input.buffer.PeekableInputStreamTest.xml",
+  "infrastructureRecord": "D:\\Projects\\wit-up\\commons-io-validation\\infrastructure\\execution-record.json",
+  "testOutcomeScope": "Only this executed suite contributes to the test outcome counts. Infrastructure diagnostics are recorded separately."
+}
