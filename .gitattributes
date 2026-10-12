@@ -7,3 +7,7 @@
 *.exec -text
 *.duckdb -text
 *.parquet -text
+
+# Sealed experiment hashes describe exact bytes, including original line endings.
+/commons-io-validation/peekable-input-stream/runs/** -text
+/commons-io-validation/peekable-input-stream/supplements/** -text

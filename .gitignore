@@ -34,3 +34,14 @@ dist/
 
 # Archived study materials
 /legacy/
+
+# Regenerable validation output; retain native XML, logs, and archived suite results
+/commons-io-validation/temporary/
+/commons-io-validation/**/tools/
+/commons-io-validation/**/pit/build/
+/commons-io-validation/**/jacoco/*/html/
+/commons-io-validation/**/jacoco/*/surefire-reports/
+/commons-io-validation/**/jacoco/*/jacoco.csv
+/commons-io-validation/**/pit/*/*.html
+/commons-io-validation/**/pit/*/*.css
+/commons-io-validation/**/pit/*/org.apache.commons.io.input.buffer/
