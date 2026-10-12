@@ -1,0 +1,39 @@
+{
+  "phase": "infrastructure",
+  "command": "java -cp \"D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001/maven-repository/com/puppycrawl/tools/checkstyle/8.19/checkstyle-8.19.jar;D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001/maven-repository/info/picocli/picocli/3.9.5/picocli-3.9.5.jar;D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001/maven-repository/antlr/antlr/2.7.7/antlr-2.7.7.jar;D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001/maven-repository/org/antlr/antlr4-runtime/4.7.2/antlr4-runtime-4.7.2.jar;D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001/maven-repository/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.jar;D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001/maven-repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar;D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001/maven-repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar;D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001/maven-repository/com/google/guava/guava/27.1-jre/guava-27.1-jre.jar;D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001/maven-repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar\" com.puppycrawl.tools.checkstyle.Main -c checkstyle.xml -f xml -o \"D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001/checkstyle-generated-test.xml\" src/test/java/org/apache/commons/io/input/buffer/PeekableInputStreamTest.java",
+  "scope": "Checkstyle 8.19 with unchanged repository rules applied to the frozen generated Java file; no compilation or test execution",
+  "reservedAt": "2026-10-12T22:55:09.489608+00:00",
+  "reservedAtNs": 1791845709489000900,
+  "reportsDirectory": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001/generated-test-style/surefire-reports",
+  "artifacts": {},
+  "environment": {
+    "path": "environment.json",
+    "sha256": "7fb8164baae4c5024873074e1cda8d7679974f4f6660f96d45dde6eff8f79dd9",
+    "originalPath": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001/environment-generated-test-style.json"
+  },
+  "checkout": "D:/Projects/experiment-workspaces/peekable-input-stream/java-source-001",
+  "initialProblems": [],
+  "planSHA256": null,
+  "observedJava": {
+    "executable": "C:/Users/edyko/AppData/Local/mise/installs/java/temurin-8.0.504+1/bin\\java.exe",
+    "command": "java -version",
+    "exitCode": 0,
+    "output": [
+      "openjdk version \"1.8.0_504\"",
+      "OpenJDK Runtime Environment (Temurin)(build 1.8.0_504-b01)",
+      "OpenJDK 64-Bit Server VM (Temurin)(build 25.504-b01, mixed mode)"
+    ]
+  },
+  "observedMaven": {
+    "executable": "C:/Users/edyko/AppData/Local/mise/installs/maven/3.9.16/apache-maven-3.9.16/bin\\mvn.cmd",
+    "command": "mvn -version",
+    "exitCode": 0,
+    "output": [
+      "Apache Maven 3.9.16 (2bdd9fddda4b155ebf8000e807eb73fd829a51d5)",
+      "Maven home: C:\\Users\\edyko\\AppData\\Local\\mise\\installs\\maven\\3.9.16\\apache-maven-3.9.16",
+      "Java version: 1.8.0_504, vendor: Temurin, runtime: C:\\Users\\edyko\\AppData\\Local\\mise\\installs\\java\\temurin-8.0.504+1\\jre",
+      "Default locale: en_US, platform encoding: Cp1252",
+      "OS name: \"windows 11\", version: \"10.0\", arch: \"amd64\", family: \"windows\""
+    ]
+  }
+}

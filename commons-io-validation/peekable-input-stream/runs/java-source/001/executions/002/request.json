@@ -1,0 +1,39 @@
+{
+  "phase": "infrastructure",
+  "command": "mvn \"-P!jacoco,!cobertura,!travis-jacoco,!travis-cobertura\" apache-rat:check checkstyle:check",
+  "scope": "Configured repository license and Checkstyle gates; no test lifecycle or test execution",
+  "reservedAt": "2026-10-12T22:50:59.874351+00:00",
+  "reservedAtNs": 1791845459870395400,
+  "reportsDirectory": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001/quality-gates/surefire-reports",
+  "artifacts": {},
+  "environment": {
+    "path": "environment.json",
+    "sha256": "6bc6f89fdb87b4b71153d275931c53d9340bfda8c5b7f40375e8a48e00e77c1a",
+    "originalPath": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001/environment-quality-gates.json"
+  },
+  "checkout": "D:/Projects/experiment-workspaces/peekable-input-stream/java-source-001",
+  "initialProblems": [],
+  "planSHA256": null,
+  "observedJava": {
+    "executable": "C:/Users/edyko/AppData/Local/mise/installs/java/temurin-8.0.504+1/bin\\java.exe",
+    "command": "java -version",
+    "exitCode": 0,
+    "output": [
+      "openjdk version \"1.8.0_504\"",
+      "OpenJDK Runtime Environment (Temurin)(build 1.8.0_504-b01)",
+      "OpenJDK 64-Bit Server VM (Temurin)(build 25.504-b01, mixed mode)"
+    ]
+  },
+  "observedMaven": {
+    "executable": "C:/Users/edyko/AppData/Local/mise/installs/maven/3.9.16/apache-maven-3.9.16/bin\\mvn.cmd",
+    "command": "mvn -version",
+    "exitCode": 0,
+    "output": [
+      "Apache Maven 3.9.16 (2bdd9fddda4b155ebf8000e807eb73fd829a51d5)",
+      "Maven home: C:\\Users\\edyko\\AppData\\Local\\mise\\installs\\maven\\3.9.16\\apache-maven-3.9.16",
+      "Java version: 1.8.0_504, vendor: Temurin, runtime: C:\\Users\\edyko\\AppData\\Local\\mise\\installs\\java\\temurin-8.0.504+1\\jre",
+      "Default locale: en_US, platform encoding: Cp1252",
+      "OS name: \"windows 11\", version: \"10.0\", arch: \"amd64\", family: \"windows\""
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "command": "mvn \"-P!jacoco,!cobertura,!travis-jacoco,!travis-cobertura\" \"-Dtest=org.apache.commons.io.input.buffer.PeekableInputStreamTest\" clean test",
+  "exitCode": 0,
+  "completedAt": "2026-10-12T22:49:47.1241521Z",
+  "log": "D:\\Projects\\wit-up\\commons-io-validation\\peekable-input-stream\\runs\\java-source\\001\\executions\\001\\output.log",
+  "sequence": null
+}

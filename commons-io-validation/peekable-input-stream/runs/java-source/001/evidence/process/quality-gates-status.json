@@ -1,0 +1,7 @@
+{
+  "command": "mvn \"-P!jacoco,!cobertura,!travis-jacoco,!travis-cobertura\" apache-rat:check checkstyle:check",
+  "exitCode": 0,
+  "completedAt": "2026-10-12T22:51:06.0479968Z",
+  "log": "D:\\Projects\\wit-up\\commons-io-validation\\peekable-input-stream\\runs\\java-source\\001\\executions\\002\\output.log",
+  "execution": "002"
+}

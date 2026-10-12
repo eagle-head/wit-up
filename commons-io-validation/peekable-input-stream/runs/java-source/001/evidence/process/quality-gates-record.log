@@ -1,0 +1,42 @@
+{
+  "phase": "infrastructure",
+  "recordedAt": "2026-10-12T22:51:41.663105+00:00",
+  "exitCode": 0,
+  "suiteCounts": {
+    "tests": 0,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "nativeCounts": {
+    "tests": 0,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "suiteOutcome": "not_started",
+  "testsNotStarted": true,
+  "observationReason": "The captured command invokes only apache-rat:check and checkstyle:check; its log shows those two goals and BUILD SUCCESS, with no test lifecycle or Surefire execution.",
+  "protocolProblems": [],
+  "nativeReports": [],
+  "artifacts": {},
+  "logSHA256": "7de3d5d413360002e4835ea910dbb7ff840912ab38ce966ea917648c6e9ed57c",
+  "requestSHA256": "23a2f04d18fc4d81f459591455fa7ca1e3ccdcec7b083e9824e40f156cca1949",
+  "files": [
+    {
+      "path": "environment.json",
+      "bytes": 5573,
+      "sha256": "6bc6f89fdb87b4b71153d275931c53d9340bfda8c5b7f40375e8a48e00e77c1a"
+    },
+    {
+      "path": "output.log",
+      "bytes": 112461,
+      "sha256": "7de3d5d413360002e4835ea910dbb7ff840912ab38ce966ea917648c6e9ed57c"
+    },
+    {
+      "path": "request.json",
+      "bytes": 1952,
+      "sha256": "23a2f04d18fc4d81f459591455fa7ca1e3ccdcec7b083e9824e40f156cca1949"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "head": "11f0abe7a3fb6954b2985ca4ab0697b2fb489e84",
+  "headExitCode": 0,
+  "trackedBaselineDiffExitCode": 0,
+  "status": [
+    "?? src/test/java/org/apache/commons/io/input/buffer/PeekableInputStreamTest.java"
+  ],
+  "statusExitCode": 0,
+  "whitespaceCheckExitCode": 0,
+  "generatedTestSHA256": "365a763fbc4b383087d993e659e05bf04952a4d4333a2ff16ac4417fe9eb43dd"
+}

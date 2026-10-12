@@ -1,0 +1,6 @@
+{
+  "path": "evidence/test-source/PeekableInputStreamTest.java",
+  "sha256": "365a763fbc4b383087d993e659e05bf04952a4d4333a2ff16ac4417fe9eb43dd",
+  "originalPath": "D:/Projects/experiment-workspaces/peekable-input-stream/java-source-001/src/test/java/org/apache/commons/io/input/buffer/PeekableInputStreamTest.java",
+  "frozenAt": "2026-10-12T22:48:13.721225+00:00"
+}

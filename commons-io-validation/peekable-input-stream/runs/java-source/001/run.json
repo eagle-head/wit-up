@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 2,
+  "recordKind": "generation",
+  "runId": "java-source-001",
+  "condition": "java-source",
+  "sequence": "001",
+  "createdAt": "2026-10-12T22:37:31.151476+00:00",
+  "origin": "prospective",
+  "state": "frozen",
+  "baselineCommit": "11f0abe7a3fb6954b2985ca4ab0697b2fb489e84",
+  "checkout": "D:/Projects/experiment-workspaces/peekable-input-stream/java-source-001",
+  "frozenTest": {
+    "path": "evidence/test-source/PeekableInputStreamTest.java",
+    "sha256": "365a763fbc4b383087d993e659e05bf04952a4d4333a2ff16ac4417fe9eb43dd",
+    "originalPath": "D:/Projects/experiment-workspaces/peekable-input-stream/java-source-001/src/test/java/org/apache/commons/io/input/buffer/PeekableInputStreamTest.java",
+    "frozenAt": "2026-10-12T22:48:13.721225+00:00"
+  },
+  "preservedInputs": [
+    {
+      "path": "inputs/template.txt",
+      "sha256": "f7ac0ac2d59321f21af61c73e48e68714fef98ea8b37154bce36197c20457d06",
+      "originalPath": "D:/Projects/wit-up/docs/prompts/exception-test-generation-source.txt"
+    },
+    {
+      "path": "inputs/process/AGENTS.md",
+      "sha256": "3937a5407c5f39569f6167c1c1f456dc7bb2663d441491fa78cc85cf9feb9174",
+      "originalPath": "D:/Projects/wit-up/AGENTS.md"
+    },
+    {
+      "path": "inputs/process/docs/run-methodology.md",
+      "sha256": "cdf41d8323693346d89a67acc1ec2bce178c4af007096b8cbe6b537d76790221",
+      "originalPath": "D:/Projects/wit-up/docs/run-methodology.md"
+    },
+    {
+      "path": "inputs/process/docs/measurement-protocol.md",
+      "sha256": "4c88d83f1352ab86a21d9fd68947cab114b9fdd52882f92aed5f9958dd0c67dc",
+      "originalPath": "D:/Projects/wit-up/docs/measurement-protocol.md"
+    },
+    {
+      "path": "inputs/process/docs/measurement-plan.json",
+      "sha256": "4645a07cc21fecea80547d429e0d3f594254c6c6a86fa067c5be5410b4cbf3a3",
+      "originalPath": "D:/Projects/wit-up/docs/measurement-plan.json"
+    },
+    {
+      "path": "inputs/process/docs/pit-analysis-pom.xml",
+      "sha256": "3907123de00592d460ca29a17360f7890ec23b56f0ef8bd559d6743d22908ea8",
+      "originalPath": "D:/Projects/wit-up/docs/pit-analysis-pom.xml"
+    },
+    {
+      "path": "inputs/preservation-manager.py",
+      "sha256": "8b1c5a261a41cf84c448bdc2662f53ef21d4036c543b9b22e0a15c2b6efb7960",
+      "originalPath": "D:/Projects/wit-up/tools/experiment_runs.py"
+    },
+    {
+      "path": "inputs/production-source.zip",
+      "sha256": "e7a26ac122e8af01c4ee47643b296d7bd13152ec5a64dc6eddaa4da14ee61c93"
+    }
+  ],
+  "sourceInputs": [],
+  "executions": [
+    {
+      "path": "executions/001",
+      "requestSHA256": "331e3876a92dc7dabaf795b0d4c0367852946d79d94cd402c2524855e2b193fe",
+      "resultSHA256": "84e94a35ed3e069557be79b3b9bea40b95e29091e5b7477a2fabaa577948174b"
+    },
+    {
+      "path": "executions/002",
+      "requestSHA256": "23a2f04d18fc4d81f459591455fa7ca1e3ccdcec7b083e9824e40f156cca1949",
+      "resultSHA256": "3b0b3e60be268bcbf6d110a13aaf75f66433d190e396f928bb18e9d8f4e39f44"
+    },
+    {
+      "path": "executions/003",
+      "requestSHA256": "e8458f619b6d007f4c3e868736eab3da6b8e0764cfdf8e420e8d3e844c0b0f48",
+      "resultSHA256": "4e19e0790136584425bf97590a067bbb42a595a4766aa0a40c058772ebfb0500"
+    }
+  ],
+  "isolation": {
+    "freshChat": true,
+    "enforcement": "procedural"
+  },
+  "workingDirectory": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001",
+  "environment": {
+    "path": "inputs/environment.json",
+    "sha256": "26fef8e9bc0eb9afdf7f0d1bb9ddb3432c378eadb89295fe31ebc77e4f8e38d2",
+    "originalPath": "D:/Projects/experiment-workspaces/peekable-input-stream/.preparation/java-source-001/environment.json"
+  },
+  "generator": {
+    "model": null,
+    "settings": null,
+    "applicationBuild": null,
+    "reason": "No generation chat has started; its model, settings, and application build are not yet observable."
+  },
+  "prompt": {
+    "path": "inputs/prompt.txt",
+    "sha256": "ebbf3a636440b6aba0f2f20bceb20412eebec245b9f643365e65901d672cb77c",
+    "templateSHA256": "f7ac0ac2d59321f21af61c73e48e68714fef98ea8b37154bce36197c20457d06"
+  }
+}

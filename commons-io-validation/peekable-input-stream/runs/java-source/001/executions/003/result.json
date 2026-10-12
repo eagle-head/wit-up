@@ -1,0 +1,42 @@
+{
+  "phase": "infrastructure",
+  "recordedAt": "2026-10-12T22:55:56.444932+00:00",
+  "exitCode": 2,
+  "suiteCounts": {
+    "tests": 0,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "nativeCounts": {
+    "tests": 0,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "suiteOutcome": "not_started",
+  "testsNotStarted": true,
+  "observationReason": "The captured Java command runs Checkstyle only; its stdout/stderr and XML report show two style errors and no compilation, Surefire, or test execution.",
+  "protocolProblems": [],
+  "nativeReports": [],
+  "artifacts": {},
+  "logSHA256": "d0320c789454896f724a6bf7f277778d1b67783f2afb804f96b338f1c1ff16f4",
+  "requestSHA256": "e8458f619b6d007f4c3e868736eab3da6b8e0764cfdf8e420e8d3e844c0b0f48",
+  "files": [
+    {
+      "path": "environment.json",
+      "bytes": 5573,
+      "sha256": "7fb8164baae4c5024873074e1cda8d7679974f4f6660f96d45dde6eff8f79dd9"
+    },
+    {
+      "path": "output.log",
+      "bytes": 32,
+      "sha256": "d0320c789454896f724a6bf7f277778d1b67783f2afb804f96b338f1c1ff16f4"
+    },
+    {
+      "path": "request.json",
+      "bytes": 3573,
+      "sha256": "e8458f619b6d007f4c3e868736eab3da6b8e0764cfdf8e420e8d3e844c0b0f48"
+    }
+  ]
+}

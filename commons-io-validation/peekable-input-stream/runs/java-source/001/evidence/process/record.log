@@ -1,0 +1,53 @@
+{
+  "phase": "generated-tests",
+  "recordedAt": "2026-10-12T22:50:01.392513+00:00",
+  "exitCode": 0,
+  "suiteCounts": {
+    "tests": 20,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "nativeCounts": {
+    "tests": 20,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "suiteOutcome": "passed",
+  "testsNotStarted": false,
+  "observationReason": null,
+  "protocolProblems": [],
+  "nativeReports": [
+    {
+      "name": "TEST-org.apache.commons.io.input.buffer.PeekableInputStreamTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/java-source-001/target/surefire-reports/TEST-org.apache.commons.io.input.buffer.PeekableInputStreamTest.xml",
+      "sha256": "f0a6685539c07b538b54a504cc59d45b1b6e10e6423591de5a1cb340b3fc3a5b"
+    }
+  ],
+  "artifacts": {},
+  "logSHA256": "56d5edc24465dc1ae9acad492e7d8a8232f69a5ebe874a432b70387fd096fef5",
+  "requestSHA256": "331e3876a92dc7dabaf795b0d4c0367852946d79d94cd402c2524855e2b193fe",
+  "files": [
+    {
+      "path": "environment.json",
+      "bytes": 5573,
+      "sha256": "df6399800666d6bc328747876b104bff6b43e0183a15c61b4dbf88652c489d98"
+    },
+    {
+      "path": "output.log",
+      "bytes": 423130,
+      "sha256": "56d5edc24465dc1ae9acad492e7d8a8232f69a5ebe874a432b70387fd096fef5"
+    },
+    {
+      "path": "request.json",
+      "bytes": 1996,
+      "sha256": "331e3876a92dc7dabaf795b0d4c0367852946d79d94cd402c2524855e2b193fe"
+    },
+    {
+      "path": "surefire-reports.zip",
+      "bytes": 2940,
+      "sha256": "84467bdd9c7d40aeb3067889c9220b8fcdc20cf16ef9f6701e95474dc5a8e4d3"
+    }
+  ]
+}
