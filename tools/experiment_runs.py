@@ -876,20 +876,25 @@ def check_evaluation_completion(run, data):
                 raise PreservationError(
                     "PIT contains incomplete or exceptional mutation outcomes."
                 )
-            identities = {
-                tuple(
-                    m.findtext(k)
-                    for k in (
+            identities = set()
+            for mutation in mutations:
+                indexes = mutation.find("indexes")
+                blocks = mutation.find("blocks")
+                if indexes is None or blocks is None:
+                    raise PreservationError(
+                        "PIT mutant identity requires indexes and blocks metadata."
+                    )
+                identity = tuple(
+                    mutation.findtext(key)
+                    for key in (
                         "mutatedClass",
                         "mutatedMethod",
                         "methodDescription",
                         "lineNumber",
                         "mutator",
                     )
-                )
-                + (ET.tostring(m.find("indexes")), ET.tostring(m.find("blocks")))
-                for m in mutations
-            }
+                ) + (ET.tostring(indexes), ET.tostring(blocks))
+                identities.add(identity)
             if len(identities) != len(mutations):
                 raise PreservationError(
                     "Duplicate PIT mutant identities cannot establish a comparable pair."
@@ -985,7 +990,12 @@ def supplement(
     ):
         raise PreservationError("Reference the original generation inside this study.")
     if kind == "evaluation":
-        if not original.get("frozenTest") or not all((checkout, environment, plan)):
+        if (
+            not original.get("frozenTest")
+            or checkout is None
+            or environment is None
+            or plan is None
+        ):
             raise PreservationError(
                 "Evaluation requires frozen source, its own checkout, environment, plan, and authorization note."
             )
@@ -1034,6 +1044,8 @@ def supplement(
         try:
             data["authorization"] = snapshot(run, note, "inputs/note.md")
             if kind == "evaluation":
+                if checkout is None:
+                    raise PreservationError("Evaluation checkout is required.")
                 data["checkout"] = checkout.as_posix()
                 working = (
                     checkout.parent

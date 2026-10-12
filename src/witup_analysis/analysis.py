@@ -72,7 +72,10 @@ def records(connection: duckdb.DuckDBPyConnection, query: str) -> list[dict]:
 
 
 def scalar(connection: duckdb.DuckDBPyConnection, query: str) -> int:
-    return connection.execute(query).fetchone()[0]
+    row = connection.execute(query).fetchone()
+    if row is None:
+        raise ValueError("Scalar query returned no row.")
+    return row[0]
 
 
 def analyze(

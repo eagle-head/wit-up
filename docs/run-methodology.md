@@ -338,8 +338,9 @@ managed off-machine backup is required for disaster recovery; no upload is impli
 
 ```powershell
 uv run --frozen python -m unittest discover -s tests
-uv run --frozen ruff check tools/experiment_runs.py tests/test_experiment_runs.py
-uv run --frozen ruff format --check tools/experiment_runs.py tests/test_experiment_runs.py
+uv run --frozen ruff check src tools tests
+uv run --frozen ruff format --check src tools tests
+uv run --frozen pyright src tools tests
 uv run --frozen python tools/experiment_runs.py list
 git diff --check
 ```

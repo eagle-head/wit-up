@@ -5,6 +5,7 @@ import json
 import os
 import shutil
 import subprocess
+import sys
 import tempfile
 import unittest
 from pathlib import Path
@@ -12,6 +13,8 @@ from zipfile import ZipFile
 
 MODULE_PATH = Path(__file__).resolve().parents[1] / "tools/experiment_runs.py"
 SPEC = importlib.util.spec_from_file_location("experiment_runs", MODULE_PATH)
+if SPEC is None or SPEC.loader is None:
+    raise RuntimeError("The experiment preservation module could not be loaded.")
 runs = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(runs)
 SOURCE = b"// Synthetic byte preservation fixture; not a Commons IO test.\n"
@@ -121,7 +124,9 @@ class ExperimentPreservationChecks(unittest.TestCase):
             artifacts=artifacts,
         )
 
-    def finish(self, run, started, *, code=0, xml=PASSING_XML, not_started=False):
+    def finish(
+        self, run, started, *, code=0, xml: str | None = PASSING_XML, not_started=False
+    ):
         Path(started["log"]).write_text("Synthetic process output.\n")
         if xml is not None and started["reportsDirectory"]:
             directory = Path(started["reportsDirectory"])
@@ -179,6 +184,7 @@ class ExperimentPreservationChecks(unittest.TestCase):
         different_class=False,
         different_mutant=False,
         failed_phase=None,
+        missing_mutation_element=None,
     ):
         working = Path(runs.read_json(evaluation / "run.json")["workingDirectory"])
         target = "org.apache.commons.io.input.buffer.PeekableInputStream"
@@ -223,7 +229,7 @@ class ExperimentPreservationChecks(unittest.TestCase):
                 Path(artifacts["jacoco-exec"]).write_bytes(b"Synthetic execution data")
             else:
                 line = "2" if different_mutant and phase.endswith("after") else "1"
-                Path(artifacts["pit-mutations"]).write_text(
+                mutation_xml = (
                     '<mutations><mutation status="KILLED"><mutatedClass>'
                     + target
                     + "</mutatedClass>"
@@ -231,6 +237,15 @@ class ExperimentPreservationChecks(unittest.TestCase):
                     f"<lineNumber>{line}</lineNumber><mutator>synthetic</mutator><indexes><index>0</index></indexes>"
                     "<blocks><block>0</block></blocks></mutation></mutations>"
                 )
+                if missing_mutation_element == "indexes":
+                    mutation_xml = mutation_xml.replace(
+                        "<indexes><index>0</index></indexes>", ""
+                    )
+                elif missing_mutation_element == "blocks":
+                    mutation_xml = mutation_xml.replace(
+                        "<blocks><block>0</block></blocks>", ""
+                    )
+                Path(artifacts["pit-mutations"]).write_text(mutation_xml)
                 Path(artifacts["pit-linecoverage"]).write_text("<coverage/>")
             self.finish(evaluation, started, code=1 if phase == failed_phase else 0)
             if phase == failed_phase:
@@ -666,6 +681,42 @@ class ExperimentPreservationChecks(unittest.TestCase):
         )
         self.assertEqual(len(runs.read_json(evaluation / "run.json")["executions"]), 4)
 
+    def givenMissingMutationIndexes_whenClosingEvaluation_thenMalformedIdentityIsRejected(
+        self,
+    ):
+        # Arrange
+        _, evaluation = self.evaluation()
+        self.measurement_pair(evaluation, missing_mutation_element="indexes")
+        # Act / Assert
+        with self.assertRaisesRegex(runs.PreservationError, "indexes and blocks"):
+            runs.seal(evaluation, "report.md", outcome="evaluation-complete")
+        self.assertFalse((evaluation / "seal.json").exists())
+        runs.seal(
+            evaluation,
+            "report.md",
+            outcome="incomplete",
+            reason="Missing native indexes retained.",
+        )
+        self.assertTrue(runs.verify(evaluation)["sealed"])
+
+    def givenMissingMutationBlocks_whenClosingEvaluation_thenMalformedIdentityIsRejected(
+        self,
+    ):
+        # Arrange
+        _, evaluation = self.evaluation()
+        self.measurement_pair(evaluation, missing_mutation_element="blocks")
+        # Act / Assert
+        with self.assertRaisesRegex(runs.PreservationError, "indexes and blocks"):
+            runs.seal(evaluation, "report.md", outcome="evaluation-complete")
+        self.assertFalse((evaluation / "seal.json").exists())
+        runs.seal(
+            evaluation,
+            "report.md",
+            outcome="incomplete",
+            reason="Missing native blocks retained.",
+        )
+        self.assertTrue(runs.verify(evaluation)["sealed"])
+
     def givenDifferentProductionBytes_whenClosingEvaluation_thenComparisonIsRejected(
         self,
     ):
@@ -811,7 +862,7 @@ class ExperimentPreservationChecks(unittest.TestCase):
         run = self.sealed()
         # Act
         result = subprocess.run(
-            [os.sys.executable, str(MODULE_PATH), "verify", "--run", str(run)],
+            [sys.executable, str(MODULE_PATH), "verify", "--run", str(run)],
             check=True,
             capture_output=True,
             text=True,
