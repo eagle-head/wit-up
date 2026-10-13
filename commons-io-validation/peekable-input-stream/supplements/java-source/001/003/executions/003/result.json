@@ -1,0 +1,46 @@
+{
+  "phase": "pit-before",
+  "recordedAt": "2026-10-12T23:30:48.735070+00:00",
+  "exitCode": 1,
+  "suiteCounts": null,
+  "nativeCounts": null,
+  "suiteOutcome": "unknown",
+  "testsNotStarted": false,
+  "observationReason": null,
+  "protocolProblems": [
+    "Missing declared artifact: pit-mutations",
+    "Missing declared artifact: pit-linecoverage"
+  ],
+  "nativeReports": [],
+  "artifacts": {
+    "production-class": {
+      "path": "artifacts/000-PeekableInputStream.class",
+      "sha256": "7ab6a91f3618ccf5949692f1fc5d39b97174deab23925f872f0e31cb5a2591a1",
+      "originalPath": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/classes/org/apache/commons/io/input/buffer/PeekableInputStream.class"
+    }
+  },
+  "logSHA256": "fa49dc71cd30c1734cca4f9cc44ee256f1ba7c1dd0e8bafd85126b57dab912ad",
+  "requestSHA256": "81f04bef1224d1c39fb326e82ab4c7389f28e1ff13126311cbf4c18d7f3422a4",
+  "files": [
+    {
+      "path": "artifacts/000-PeekableInputStream.class",
+      "bytes": 1829,
+      "sha256": "7ab6a91f3618ccf5949692f1fc5d39b97174deab23925f872f0e31cb5a2591a1"
+    },
+    {
+      "path": "environment.json",
+      "bytes": 5505,
+      "sha256": "9599b2bbdc7aa93df56b6d4caad63e78d9bd0bb731e1b004a6fe821467fa26b0"
+    },
+    {
+      "path": "output.log",
+      "bytes": 56270,
+      "sha256": "fa49dc71cd30c1734cca4f9cc44ee256f1ba7c1dd0e8bafd85126b57dab912ad"
+    },
+    {
+      "path": "request.json",
+      "bytes": 2569,
+      "sha256": "81f04bef1224d1c39fb326e82ab4c7389f28e1ff13126311cbf4c18d7f3422a4"
+    }
+  ]
+}

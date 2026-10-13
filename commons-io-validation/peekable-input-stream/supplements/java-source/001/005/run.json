@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 2,
+  "recordKind": "evaluation",
+  "runId": "java-source-001/evaluation-005",
+  "condition": "java-source",
+  "sequence": "001",
+  "state": "frozen",
+  "origin": "supplement",
+  "createdAt": "2026-10-12T23:44:08.960133+00:00",
+  "sampleContribution": 0,
+  "baselineCommit": "11f0abe7a3fb6954b2985ca4ab0697b2fb489e84",
+  "parent": {
+    "path": "runs/java-source/001",
+    "sealSHA256": "28ac9b72af259f32261cb569e3ce65515007f3089213024d5065b60adcec9d5d"
+  },
+  "preservedInputs": [
+    {
+      "path": "inputs/preservation-manager.py",
+      "sha256": "7aa448ca1f4263e4ff6a565bea1c79fdb17f074f4635be40e99108889c6ee1bc",
+      "originalPath": "D:/Projects/wit-up/tools/experiment_runs.py"
+    },
+    {
+      "path": "inputs/measurement-protocol.md",
+      "sha256": "e122ec310bfd4f5a5ccfe2a65f4798eff7251dcaf8bbcf4d028ffe623149bd33",
+      "originalPath": "D:/Projects/wit-up/docs/measurement-protocol.md"
+    },
+    {
+      "path": "inputs/pit-analysis-pom.xml",
+      "sha256": "70729d4c46aec58d0df8ea6ce59f4e5fb9547556c086b8737051024403ef7de7",
+      "originalPath": "D:/Projects/wit-up/docs/pit-analysis-pom.xml"
+    },
+    {
+      "path": "inputs/pit-cli-pom.xml",
+      "sha256": "192aa06ca9ed8a13d1bcc82221e0485349cc7a2ce8c69d387a90471843e8b628",
+      "originalPath": "D:/Projects/wit-up/docs/pit-cli-pom.xml"
+    }
+  ],
+  "frozenTest": {
+    "path": "evidence/test-source/PeekableInputStreamTest.java",
+    "sha256": "365a763fbc4b383087d993e659e05bf04952a4d4333a2ff16ac4417fe9eb43dd",
+    "originalPath": "D:/Projects/wit-up/commons-io-validation/peekable-input-stream/runs/java-source/001/evidence/test-source/PeekableInputStreamTest.java"
+  },
+  "executions": [
+    {
+      "path": "executions/001",
+      "requestSHA256": "c30d71f2f5debc4648137267e4b9439dd96cee4da52ff9351b9b4381e4eb9520",
+      "resultSHA256": "0eecdb57ce1a4a25492b7400779d89ab83a3e37c60118b2e50730ef932747605"
+    },
+    {
+      "path": "executions/002",
+      "requestSHA256": "be6f7b8c6f013ef030666e9164502f62d24e8b798eaaef6e79b5c62f7cf55276",
+      "resultSHA256": "d70ffdaacb485338948e0c10361b3cbbcd8427fc478fa5bf50451d7297811160"
+    },
+    {
+      "path": "executions/003",
+      "requestSHA256": "d4c61461cd36e5d842f7bcf5f4a56db830ddd1c5a7c0b2939b584332469b8942",
+      "resultSHA256": "60e59d6493b113151d7d57f595c0a816d7431fca8c5209c4ccf8f79a5770e4fc"
+    },
+    {
+      "path": "executions/004",
+      "requestSHA256": "263c0140027803677501ce130c4f98139b9dfc5e85fd860e653273aa606f09d4",
+      "resultSHA256": "3a498c4fd94b90d199e49b1df7450f8b676d126905005e8af461e3598a209c2f"
+    },
+    {
+      "path": "executions/005",
+      "requestSHA256": "7bbe9737299fadc5282369a6f4ddaf24fc21ca30f894ef86892808a5923e3e9c",
+      "resultSHA256": "c4974ecc3469409b3bbe1c552d800d8cc917e9e822e906bc436862ebfedfc483"
+    }
+  ],
+  "authorization": {
+    "path": "inputs/note.md",
+    "sha256": "6ce1af876bc6a8e9867f289a6745d1c9fe9983e1ba97a5e3dcb9e3a0b70c58cc",
+    "originalPath": "D:/Projects/experiment-workspaces/peekable-input-stream/.preparation/java-source-001-evaluation-005/authorization.md"
+  },
+  "checkout": "D:/Projects/experiment-workspaces/peekable-input-stream/java-source-001-evaluation-005",
+  "workingDirectory": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-005",
+  "environment": {
+    "path": "inputs/environment.json",
+    "sha256": "e2a4423b2d41b2cec5a22328163d7a2657261206ec6c7d68c47e5ff928ab6995",
+    "originalPath": "D:/Projects/experiment-workspaces/peekable-input-stream/.preparation/java-source-001-evaluation-005/environment.json"
+  },
+  "measurementPlan": {
+    "path": "inputs/measurement-plan.json",
+    "sha256": "7dbe881b2acd1f547683f15b72444748e6f1e1eec26a7ee5b6beacf4ffa619bb",
+    "originalPath": "D:/Projects/wit-up/docs/measurement-plan.json"
+  }
+}

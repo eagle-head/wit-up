@@ -1,0 +1,45 @@
+{
+  "phase": "infrastructure",
+  "command": "pwsh -NoProfile -File \"D:/Projects/wit-up/commons-io-validation/peekable-input-stream/supplements/java-source/001/004/evidence/scripts/inspect-cli.ps1\"",
+  "scope": "Resolve the pinned PIT 1.15.2 CLI launcher and inspect its actual help; no test or mutation execution",
+  "reservedAt": "2026-10-12T23:39:42.896504+00:00",
+  "reservedAtNs": 1791848382895932000,
+  "reportsDirectory": null,
+  "artifacts": {
+    "launcher-classpath": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-004/cli-discovery/tool-classpath.txt"
+  },
+  "environment": {
+    "path": "environment.json",
+    "sha256": "50633af5939dc9eba296f7b1e2355d34b3a413e2091b8cbbf42265474df1a61a",
+    "originalPath": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-004/environments/cli-discovery.json"
+  },
+  "checkout": "D:/Projects/experiment-workspaces/peekable-input-stream/java-source-001-evaluation-004",
+  "initialProblems": [],
+  "planSHA256": "35b7f80a4db45d23dde7c140c71ea40d03b8ae24d7faf9bb21d192b692c3d001",
+  "observedJava": {
+    "executable": "C:/Users/edyko/AppData/Local/mise/installs/java/temurin-8.0.504+1/bin\\java.exe",
+    "arguments": [
+      "-version"
+    ],
+    "exitCode": 0,
+    "output": [
+      "openjdk version \"1.8.0_504\"",
+      "OpenJDK Runtime Environment (Temurin)(build 1.8.0_504-b01)",
+      "OpenJDK 64-Bit Server VM (Temurin)(build 25.504-b01, mixed mode)"
+    ]
+  },
+  "observedMaven": {
+    "executable": "C:\\Users\\edyko\\AppData\\Local\\mise\\installs\\maven\\3.9.16\\apache-maven-3.9.16/bin\\mvn.cmd",
+    "arguments": [
+      "-version"
+    ],
+    "exitCode": 0,
+    "output": [
+      "Apache Maven 3.9.16 (2bdd9fddda4b155ebf8000e807eb73fd829a51d5)",
+      "Maven home: C:\\Users\\edyko\\AppData\\Local\\mise\\installs\\maven\\3.9.16\\apache-maven-3.9.16",
+      "Java version: 1.8.0_504, vendor: Temurin, runtime: C:\\Users\\edyko\\AppData\\Local\\mise\\installs\\java\\temurin-8.0.504+1\\jre",
+      "Default locale: en_US, platform encoding: Cp1252",
+      "OS name: \"windows 11\", version: \"10.0\", arch: \"amd64\", family: \"windows\""
+    ]
+  }
+}

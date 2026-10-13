@@ -1,0 +1,53 @@
+{
+  "phase": "infrastructure",
+  "recordedAt": "2026-10-12T23:39:46.291980+00:00",
+  "exitCode": 0,
+  "suiteCounts": {
+    "tests": 0,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "nativeCounts": {
+    "tests": 0,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "suiteOutcome": "not_started",
+  "testsNotStarted": true,
+  "observationReason": "The dependency classpath goal and PIT --help inspect the launcher without executing tests or mutations.",
+  "protocolProblems": [],
+  "nativeReports": [],
+  "artifacts": {
+    "launcher-classpath": {
+      "path": "artifacts/000-tool-classpath.txt",
+      "sha256": "6fc0a98c46e04d0477c6aeeafa5bc40e513ab175b3def216607420ee391abcd5",
+      "originalPath": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-004/cli-discovery/tool-classpath.txt"
+    }
+  },
+  "logSHA256": "65d7a2fafa0da810a8091f58cd41caaa7f375196b8cdd40cac92f054350188eb",
+  "requestSHA256": "4df8d82916b7b6aca2b0510422acb00fdcb2bf2f6fefa4d8b4a526a867387099",
+  "files": [
+    {
+      "path": "artifacts/000-tool-classpath.txt",
+      "bytes": 1966,
+      "sha256": "6fc0a98c46e04d0477c6aeeafa5bc40e513ab175b3def216607420ee391abcd5"
+    },
+    {
+      "path": "environment.json",
+      "bytes": 5407,
+      "sha256": "50633af5939dc9eba296f7b1e2355d34b3a413e2091b8cbbf42265474df1a61a"
+    },
+    {
+      "path": "output.log",
+      "bytes": 8842,
+      "sha256": "65d7a2fafa0da810a8091f58cd41caaa7f375196b8cdd40cac92f054350188eb"
+    },
+    {
+      "path": "request.json",
+      "bytes": 2200,
+      "sha256": "4df8d82916b7b6aca2b0510422acb00fdcb2bf2f6fefa4d8b4a526a867387099"
+    }
+  ]
+}

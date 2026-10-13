@@ -1,0 +1,138 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----< org.apache.commons:peekable-input-stream-mutation-launcher >-----
+[INFO] Building peekable-input-stream-mutation-launcher 1.0
+[INFO]   from pit-cli-pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- dependency:3.6.1:build-classpath (default-cli) @ peekable-input-stream-mutation-launcher ---
+[INFO] Wrote classpath file 'D:\Projects\experiment-workspaces\peekable-input-stream\.working\java-source-001-evaluation-004\cli-discovery\tool-classpath.txt'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.550 s
+[INFO] Finished at: 2026-10-12T19:39:45-04:00
+[INFO] ------------------------------------------------------------------------
+Option (* = required)                   Description            
+---------------------                   -----------            
+-?, -h                                  show help              
+--argLine <argline for child JVMs>                             
+--avoidCallsTo <comma separated list                           
+  of packages to consider as                                   
+  untouchable logging calls>                                   
+--classPath <coma separated list of                            
+  additional classpath elements>                               
+--classPathFile <File: File with a                             
+  list of additional classpath                                 
+  elements (one per line)>                                     
+--coverageThreshold <Integer: Line      (default: 0)           
+  coverage below which to throw an                             
+  error>                                                       
+--detectInlinedCode [Boolean: whether   (default: true)        
+  or not to try and detect code                                
+  inlined from finally blocks]                                 
+--excludedClasses <comma separated                             
+  list of globs for classes to exclude                         
+  when mutating>                                               
+--excludedGroups <TestNG groups/JUnit                          
+  categories to include>                                       
+--excludedMethods <comma separated                             
+  list of filters to match against                             
+  methods to exclude from mutation                             
+  analysis>                                                    
+--excludedRunners <JUnit4 runners to                           
+  exclude>                                                     
+--excludedTestClasses <comma separated                         
+  list of globs of test classes to                             
+  exclude>                                                     
+--exportLineCoverage [Boolean: whether  (default: false)       
+  or not to dump per test line                                 
+  coverage data to disk]                                       
+--failWhenNoMutations [Boolean:         (default: true)        
+  whether to throw error if no                                 
+  mutations found]                                             
+--features <comma separated list of                            
+  features to enable/disable.>                                 
+--fullMutationMatrix [Boolean: Whether  (default: false)       
+  to create a full mutation matrix]                            
+--historyInputLocation <File: File to                          
+  read history from for incremental                            
+  analysis>                                                    
+--historyOutputLocation <File: File to                         
+  write history to for incremental                             
+  analysis>                                                    
+--includeLaunchClasspath [Boolean:      (default: true)        
+  whether or not to analyse launch                             
+  classpath]                                                   
+--includedGroups <TestNG groups/JUnit                          
+  categories to include>                                       
+--includedTestMethods <Test methods                            
+  that should be included for                                  
+  challenging the mutants>                                     
+--inputEncoding <input encoding>        (default: windows-1252)
+--jvmArgs <comma separated list of                             
+  child JVM args>                                              
+--jvmPath <path to java executable>                            
+--maxMutationsPerClass <Integer: No     (default: 0)           
+  longer supported. Use CLASSLIMIT                             
+  (limit[42]) feature instead>                                 
+--maxSurviving <Integer: Maximum        (default: -1)          
+  number of surviving mutants to allow                         
+  without throwing an error>                                   
+--mutableCodePaths <Globs identifying                          
+  classpath roots containing mutable                           
+  code>                                                        
+--mutationEngine <mutation engine to    (default: gregor)      
+  use>                                                         
+--mutationThreshold <Integer: Mutation  (default: 0)           
+  score below which to throw an error>                         
+--mutationUnitSize <Integer: Maximum    (default: 0)           
+  number of mutations to include                               
+  within a single unit of analysis>                            
+--mutators <comma separated list of                            
+  mutation operators>                                          
+--outputEncoding <output encoding>      (default: windows-1252)
+--outputFormats <comma separated list   (default: HTML)        
+  of listeners to receive mutation                             
+  results>                                                     
+--pluginConfiguration <KeyValuePair:                           
+  custom plugin properties>                                    
+--projectBase <File>                                           
+* --reportDir <directory to create                             
+  report folder in>                                            
+--skipFailingTests [Boolean: whether    (default: false)       
+  to ignore failing tests when                                 
+  computing coverage]                                          
+* --sourceDirs <File: comma separated                          
+  list of source directories>                                  
+* --targetClasses <comma separated                             
+  list of filters to match against                             
+  classes to test>                                             
+--targetTests <comma separated list of                         
+  filters to match against tests to                            
+  run>                                                         
+--testPlugin <this parameter is         (default: junit)       
+  ignored and will be removed in a                             
+  future release>                                              
+--testStrengthThreshold <Integer: Test  (default: 0)           
+  strength score below which to throw                          
+  an error>                                                    
+--threads <Integer: number of threads   (default: 1)           
+  to use for testing>                                          
+--timeoutConst [Long: constant to       (default: 4000)        
+  apply to calculate maximum test                              
+  duration]                                                    
+--timeoutFactor [Float: factor to       (default: 1.25)        
+  apply to calculate maximum test                              
+  duration]                                                    
+--timestampedReports [Boolean: whether  (default: false)       
+  or not to generated timestamped                              
+  directories]                                                 
+--useClasspathJar [Boolean: support     (default: false)       
+  large classpaths by creating a                               
+  classpath jar]                                               
+--verbose [Boolean: whether or not to   (default: false)       
+  generate verbose output]                                     
+--verbosity [the verbosity of output]   (default: DEFAULT)     
+>>>> help is not a recognized option
+PIT CLI help exit code: 0

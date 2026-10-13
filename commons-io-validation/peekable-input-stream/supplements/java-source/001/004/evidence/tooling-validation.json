@@ -1,0 +1,10 @@
+{
+  "scope": "Preservation tooling and synthetic fixtures; no additional Commons IO generation or measured test count.",
+  "checks": [
+    {"command": "uv run --frozen python -m unittest discover -s tests", "exitCode": 0, "tests": 48, "durationSeconds": 57.849},
+    {"command": "uv run --frozen ruff check src tools tests", "exitCode": 0},
+    {"command": "uv run --frozen ruff format --check src tools tests", "exitCode": 0, "formattedFiles": 12},
+    {"command": "uv run --frozen pyright src tools tests", "exitCode": 0, "errors": 0, "warnings": 0, "information": 0}
+  ],
+  "provenance": "Observed tool results in the evaluation chat; this concise receipt does not claim to be native Commons IO test output."
+}

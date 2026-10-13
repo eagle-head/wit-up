@@ -1,0 +1,55 @@
+{
+  "phase": "preflight",
+  "recordedAt": "2026-10-12T23:18:58.271291+00:00",
+  "exitCode": 1,
+  "suiteCounts": null,
+  "nativeCounts": null,
+  "suiteOutcome": "unknown",
+  "testsNotStarted": false,
+  "observationReason": null,
+  "protocolProblems": [
+    "Missing declared artifact: dependency-hashes"
+  ],
+  "nativeReports": [],
+  "artifacts": {
+    "effective-pom": {
+      "path": "artifacts/000-effective-pom.xml",
+      "sha256": "d8892de4b35b7a3e18393aa9b27176b1e2e83da397f327c1508885c4adb06b28",
+      "originalPath": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-001/preflight/effective-pom.xml"
+    },
+    "dependencies": {
+      "path": "artifacts/001-dependencies.txt",
+      "sha256": "9a7fed1f7327a7a03c4a4a5245777c8fa9ce6db4811ab476676083c6d13acbb4",
+      "originalPath": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-001/preflight/dependencies.txt"
+    }
+  },
+  "logSHA256": "1c0a2d707d33820f02952beee2b4f992359b945a87d10527ae1d557a7fd22ea4",
+  "requestSHA256": "8369cce1a002229ad9a81577865846ae450b1b288d15e353e071af1fe4842ac0",
+  "files": [
+    {
+      "path": "artifacts/000-effective-pom.xml",
+      "bytes": 106963,
+      "sha256": "d8892de4b35b7a3e18393aa9b27176b1e2e83da397f327c1508885c4adb06b28"
+    },
+    {
+      "path": "artifacts/001-dependencies.txt",
+      "bytes": 3641,
+      "sha256": "9a7fed1f7327a7a03c4a4a5245777c8fa9ce6db4811ab476676083c6d13acbb4"
+    },
+    {
+      "path": "environment.json",
+      "bytes": 5505,
+      "sha256": "d82dd36f4327ec81b00178a624c12299f21af80c3b9628700810a64c5092eb36"
+    },
+    {
+      "path": "output.log",
+      "bytes": 4225,
+      "sha256": "1c0a2d707d33820f02952beee2b4f992359b945a87d10527ae1d557a7fd22ea4"
+    },
+    {
+      "path": "request.json",
+      "bytes": 2500,
+      "sha256": "8369cce1a002229ad9a81577865846ae450b1b288d15e353e071af1fe4842ac0"
+    }
+  ]
+}

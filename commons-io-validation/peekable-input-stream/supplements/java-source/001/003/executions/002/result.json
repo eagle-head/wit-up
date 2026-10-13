@@ -1,0 +1,759 @@
+{
+  "phase": "jacoco-before",
+  "recordedAt": "2026-10-12T23:29:46.525412+00:00",
+  "exitCode": 0,
+  "suiteCounts": {
+    "tests": 1541,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 6
+  },
+  "nativeCounts": {
+    "tests": 1541,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 6
+  },
+  "suiteOutcome": "passed",
+  "testsNotStarted": false,
+  "observationReason": null,
+  "protocolProblems": [],
+  "nativeReports": [
+    {
+      "name": "TEST-org.apache.commons.io.ByteOrderMarkTestCase.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.ByteOrderMarkTestCase.xml",
+      "sha256": "7e1d1ccd2604a1d3ee2eeaeadd4912a57df3ec26414b221879c6c0219f6d1763"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.ByteOrderParserTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.ByteOrderParserTest.xml",
+      "sha256": "c150cdc863460d475c9924c0f30fcc08de96904e5fff5ca3f62a01e492505367"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.CharsetsTestCase.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.CharsetsTestCase.xml",
+      "sha256": "dd00f22525024d8d04e285afa024717887e68914083fe5e6a687af2d31dd3e85"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.comparator.CompositeFileComparatorTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.comparator.CompositeFileComparatorTest.xml",
+      "sha256": "786a482e1d2970b3e3fe3ec3806e85e39acebf4fcbe99920157a3893ce34312c"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.comparator.DefaultFileComparatorTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.comparator.DefaultFileComparatorTest.xml",
+      "sha256": "21baa115601850370bc4003f1d2e1c58c108d59f68847d083214ac4324cec8f6"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.comparator.DirectoryFileComparatorTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.comparator.DirectoryFileComparatorTest.xml",
+      "sha256": "b93cb8656747985f4f10fab5f9d1223faccfcb5225c7ab2154480d428121456c"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.comparator.ExtensionFileComparatorTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.comparator.ExtensionFileComparatorTest.xml",
+      "sha256": "07113131fd22d6f9872e9647f11a21f0c079af26537540bd1bab41623245b021"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.comparator.LastModifiedFileComparatorTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.comparator.LastModifiedFileComparatorTest.xml",
+      "sha256": "cd048ff64dcd118fda0e726380cea4c1cd948a4f330e94915ca7d9edf3212e51"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.comparator.NameFileComparatorTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.comparator.NameFileComparatorTest.xml",
+      "sha256": "05358a0d737a2aa23df9be45bee50f5223b7ab5cc18672f475ce5bec5a895264"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.comparator.PathFileComparatorTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.comparator.PathFileComparatorTest.xml",
+      "sha256": "c19eef2e6b9a970744d506884841fb7c34516a1f74d43a668e4b716a028c90e0"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.comparator.SizeFileComparatorTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.comparator.SizeFileComparatorTest.xml",
+      "sha256": "214d20a3070d8dcc93f28f24038934c3117e657911fcbae23e4d23e3a0578fae"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.CopyUtilsTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.CopyUtilsTest.xml",
+      "sha256": "fb1804344303393fb9940812d2fc27bc8c85f5706ac650a6eac9ab51d8d55032"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.DemuxTestCase.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.DemuxTestCase.xml",
+      "sha256": "8c3f2178a116eee80ccf19eb951eab78abeca71dcb42b79641f188dd24700971"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.DirectoryWalkerTestCase.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.DirectoryWalkerTestCase.xml",
+      "sha256": "34bf3d6d9ce5a02832c30ed12b2412062b106f1c725c7e975c7e8b1f57e032d9"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.DirectoryWalkerTestCaseJava4.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.DirectoryWalkerTestCaseJava4.xml",
+      "sha256": "15aa9f6c9dfac4366f91c00c3af1679daffd32d19a8f8523b12887ae299ef634"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.EndianUtilsTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.EndianUtilsTest.xml",
+      "sha256": "f2404584987533c32dca69a6aea858ef1287b831b0177b08bf05433d7ead9178"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.file.CleaningPathVisitorTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.file.CleaningPathVisitorTest.xml",
+      "sha256": "e705cf5ce4547d201fdea48269447bf41839e76ba9fcedec8ea7cc8f48f9118e"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.file.CopyDirectoryVisitorTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.file.CopyDirectoryVisitorTest.xml",
+      "sha256": "98e8099178f33236168c5b82f6b0f1721d9438a3172dbc5153b6d8ad3bae0372"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.file.CountersEqualsAndHashCodeTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.file.CountersEqualsAndHashCodeTest.xml",
+      "sha256": "7271456d19108d0cc5439f4e62577be3dff1ffab0d5dfc11ad9d05f7020c3244"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.file.CountersTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.file.CountersTest.xml",
+      "sha256": "2b53b8b694569384ad6b799963c3b5fb2c54b9fe1073bb3164ff9b11776becf0"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.file.CountingPathVisitorTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.file.CountingPathVisitorTest.xml",
+      "sha256": "72212f5dc56ca6b6a5e2af0cf645ee459630808c356b385aa231146b7f83a5bd"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.file.DeletingPathVisitorTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.file.DeletingPathVisitorTest.xml",
+      "sha256": "9eac22f476bbdac54b0b2c72c98a97961a95ef8de5bdd050b9ad2bfdceaa1860"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.file.PathUtilsCleanDirectoryTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.file.PathUtilsCleanDirectoryTest.xml",
+      "sha256": "9d232526aacde3d300ed9c091fd277bbeb74f3469c88f486e3afbf09ce61c573"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.file.PathUtilsContentEqualsTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.file.PathUtilsContentEqualsTest.xml",
+      "sha256": "b8221829f1b2248ee63570a015da131da035b73f08d61c371607690dd7e5b4a3"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.file.PathUtilsCountingTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.file.PathUtilsCountingTest.xml",
+      "sha256": "bf224e80d1c7f4f4a5884a1926faafb0cd4aef034f6c837cec8155d038ab39f4"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.file.PathUtilsDeleteDirectoryTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.file.PathUtilsDeleteDirectoryTest.xml",
+      "sha256": "f764497b5d2c5c7faae37eb5170e288451dadec4b9ae6ff6a5a61d7497276556"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.file.PathUtilsDeleteFileTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.file.PathUtilsDeleteFileTest.xml",
+      "sha256": "8f37bda80c41fac66bd2eb15710d17436406ad7b6608ec17023195b88b47fdfa"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.file.PathUtilsDeleteTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.file.PathUtilsDeleteTest.xml",
+      "sha256": "f0cb73da4194375b725615552c3b9fcb22e282328e8755a31e03af500b5db717"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.file.PathUtilsIsEmptyTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.file.PathUtilsIsEmptyTest.xml",
+      "sha256": "04b8f3a4838672ed1f1d47fe1a603a2c16177aa29e167f75edc4b71550c2c18e"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.file.PathUtilsTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.file.PathUtilsTest.xml",
+      "sha256": "ce8511bee9cecfd52d7034a8075fc9b0fe66223bd89f5e2c61d1f942cd292a80"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.FileCleanerTestCase.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.FileCleanerTestCase.xml",
+      "sha256": "69990e4f076b7e3eb5351557fd97862c013023c49dcc120395a4c71ef63b9bbc"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.FileCleaningTrackerTestCase.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.FileCleaningTrackerTestCase.xml",
+      "sha256": "8b877b4895506e1e67090b071c79d3274b1360b6df070caac157c6cc3a614980"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.FileDeleteStrategyTestCase.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.FileDeleteStrategyTestCase.xml",
+      "sha256": "99be6cfadbd99717b1c88ac3df4be8715b2b3dd71a75243824d00deb2a5e3e47"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.filefilter.AndFileFilterTestCase.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.filefilter.AndFileFilterTestCase.xml",
+      "sha256": "8c009f5eda1c063a0981b8c75b0382b64bd7226362c44113d4c6417e223fccf5"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.filefilter.FileFilterTestCase.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.filefilter.FileFilterTestCase.xml",
+      "sha256": "13094ec8edceed372150fad92d5ae461ef2b4cc1d2774f0f92b3d6f2f2f3353e"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.filefilter.OrFileFilterTestCase.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.filefilter.OrFileFilterTestCase.xml",
+      "sha256": "c3d464b6f911a2a07e39010721b4477e8036c7e7e7ad82f31d26172c2ba6dae1"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.filefilter.RegexFileFilterTestCase.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.filefilter.RegexFileFilterTestCase.xml",
+      "sha256": "09aade073ed432de5bd1ff59dc7a7cbe74f0f5a4c7979994c58ee621e0008255"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.FilenameUtilsTestCase.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.FilenameUtilsTestCase.xml",
+      "sha256": "100c574e95480059bc139abd9bcbc95b6d12a8b8b423861d3914319e802f10cd"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.FilenameUtilsWildcardTestCase.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.FilenameUtilsWildcardTestCase.xml",
+      "sha256": "107d26922fda7bbe3b25b968560d6b13f66cf6432a3e3d3ebe0deb251488408d"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.FileSystemTestCase.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.FileSystemTestCase.xml",
+      "sha256": "2971718300b635332c9aa398761fe7a853d1e391e2677c00fdd7352a7b4f2e1b"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.FileSystemUtilsTestCase.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.FileSystemUtilsTestCase.xml",
+      "sha256": "78a6b9600bdcb7eb7d5531772e74baea7f9d84c2aa3fd66484c228442ddeb224"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.FileUtilsCleanDirectoryTestCase.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.FileUtilsCleanDirectoryTestCase.xml",
+      "sha256": "6a3bfebfc4ecc475ffe75d3f070f5b06dabdc24197ad8324dc5c61aaac911ca0"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.FileUtilsCleanSymlinksTestCase.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.FileUtilsCleanSymlinksTestCase.xml",
+      "sha256": "5136b1b5cf4b7b21881dd75ff69f92622a064dd75bd69de9ec3b9ad3ce285f2b"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.FileUtilsCopyDirectoryToDirectoryTestCase.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.FileUtilsCopyDirectoryToDirectoryTestCase.xml",
+      "sha256": "eaf960d68b0ecb3ce2a0ee9b2d83ac0d818e6367e977ca8c3a94453332a70ecd"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.FileUtilsCopyToFileTestCase.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.FileUtilsCopyToFileTestCase.xml",
+      "sha256": "d11e8f52867af09fafcd92d5f01be9aea7e6f639543cb5e4d1ae9db0474fd97a"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.FileUtilsDirectoryContainsTestCase.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.FileUtilsDirectoryContainsTestCase.xml",
+      "sha256": "30dcbc75f43d38388f01edfcfd0b3e79d7ef38d9058c5df24bfc25277a04cb26"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.FileUtilsFileNewerTestCase.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.FileUtilsFileNewerTestCase.xml",
+      "sha256": "4a4354070aad116bc4c090b0a00b07f876f178b3e211fb22865ef0f958d96c76"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.FileUtilsListFilesTestCase.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.FileUtilsListFilesTestCase.xml",
+      "sha256": "2103c9ce1196b6cd2e004a5d7d4719cb21c3127052a284dd1ef5deada5020bfb"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.FileUtilsTestCase.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.FileUtilsTestCase.xml",
+      "sha256": "74c836cac9199b81335b6f326b50a5716e1b10a90f7778723bf74313f9731955"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.FileUtilsWaitForTestCase.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.FileUtilsWaitForTestCase.xml",
+      "sha256": "e55ef1fe45f6cc7085dd5945ef9464675abba91aea5f420e7ee3f30d6a100793"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.HexDumpTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.HexDumpTest.xml",
+      "sha256": "cac8f25ba8ce97d80c4ab4ef0305d58cf7092f413dd07be18c2757f059c408f7"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.input.AutoCloseInputStreamTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.input.AutoCloseInputStreamTest.xml",
+      "sha256": "5d0e86a7b0bb98a5bf486e8789251c40bcc06f7994bf3510d97213067572294d"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.input.BOMInputStreamTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.input.BOMInputStreamTest.xml",
+      "sha256": "179f40469c5b06fe9c4bf845eef5ff5100c287d8e772417f71e4b5b060e58fef"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.input.BoundedInputStreamTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.input.BoundedInputStreamTest.xml",
+      "sha256": "b2863bdd31fe6d2c83cf5033d1f9718da1847bb50015ebd3fd30de14773e6a64"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.input.BoundedReaderTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.input.BoundedReaderTest.xml",
+      "sha256": "1cce583bb9d1ef3abd0390000a667113f3205f5b89e186e3bd2736fc45d245bf"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.input.BrokenInputStreamTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.input.BrokenInputStreamTest.xml",
+      "sha256": "33b7d3e31f934672d374a086cd432a538a15152876a7ea03f05e2c7bf9edb3f7"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.input.BrokenReaderTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.input.BrokenReaderTest.xml",
+      "sha256": "7b883469e1f9c125b28db914ecc7fb7a346a1c4b0df6287ecd2f2c106896d73e"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.input.buffer.CircularBufferInputStreamTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.input.buffer.CircularBufferInputStreamTest.xml",
+      "sha256": "824684ed8a24c16e72291d1cabb1efa36466f52b6ff77041b7b657dd6262d0b2"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.input.CharacterFilterReaderTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.input.CharacterFilterReaderTest.xml",
+      "sha256": "6f698784f761c1615416b657edc0123f9c8172a41c722c3d8430b162b089caf3"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.input.CharacterSetFilterReaderTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.input.CharacterSetFilterReaderTest.xml",
+      "sha256": "875a74d50e4c5b3799888631c900a952cdbb2434ce7f93efd6709f071301209c"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.input.CharSequenceInputStreamTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.input.CharSequenceInputStreamTest.xml",
+      "sha256": "8d2357efd1a373a874593cae325fa1080284cd638396d98b18c2750cf6aa08bd"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.input.CharSequenceReaderTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.input.CharSequenceReaderTest.xml",
+      "sha256": "d219463af7c21e74858df22eb75ddb3ea1e1b92ff3cca6a98dd74205a539c058"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.input.ClassLoaderObjectInputStreamTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.input.ClassLoaderObjectInputStreamTest.xml",
+      "sha256": "7d09a493fbfdaf97cf73473ec4a7bc9d0002c02bab4eba8efdac2e17ad1ee034"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.input.ClosedInputStreamTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.input.ClosedInputStreamTest.xml",
+      "sha256": "bd5faacf4b79a56e94a24af6d40077f19dbace7d393451cbc8f12a33dceb9c8a"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.input.ClosedReaderTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.input.ClosedReaderTest.xml",
+      "sha256": "042a473925449b9e285b261ffc3d28d277c27972baafdb5859ac05939180771a"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.input.CloseShieldInputStreamTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.input.CloseShieldInputStreamTest.xml",
+      "sha256": "b5acd77b8eeda772d0feb341fe6da6c405af81589926af184021d1d9b5662957"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.input.CloseShieldReaderTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.input.CloseShieldReaderTest.xml",
+      "sha256": "4770b360aa33271524f78feb92734ccc997baa7973dcca4dcc408ba366e8a7d9"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.input.compatibility.XmlStreamReaderUtilitiesCompatibilityTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.input.compatibility.XmlStreamReaderUtilitiesCompatibilityTest.xml",
+      "sha256": "66ac0744ca836d0ff792ba2b2df9cb5df71a6bfa73e0ceab8262a5bba3360591"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.input.CountingInputStreamTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.input.CountingInputStreamTest.xml",
+      "sha256": "c1d266656d22e68d5a53b16ecab4bc401318eedccfe2d432cb8d75944b7afcc3"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.input.InfiniteCircularInputStreamTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.input.InfiniteCircularInputStreamTest.xml",
+      "sha256": "d3485bcdf7bd65a95d5b8a1d8d371a046841dec144705c1db46703297788e292"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.input.MessageDigestCalculatingInputStreamTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.input.MessageDigestCalculatingInputStreamTest.xml",
+      "sha256": "da3a9aa148144ce6cf1bca2d03a450ec193c6275783b39c9750c45ca9e9fd8e1"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.input.NullInputStreamTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.input.NullInputStreamTest.xml",
+      "sha256": "05e62c0119f931275ccf6e73774b4edd03e906371da9bda7f07842d9da527770"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.input.NullReaderTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.input.NullReaderTest.xml",
+      "sha256": "38317af7b67eadaff7968d1a3fd9adcc972f91d17be2140605a0dc49448bb568"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.input.ObservableInputStreamTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.input.ObservableInputStreamTest.xml",
+      "sha256": "6c6af6f5ed50347e79afbc26e7eda456e03b85e2f1ab45a92934aa10f5915042"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.input.ProxyReaderTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.input.ProxyReaderTest.xml",
+      "sha256": "f8d688ed44e59c6e45ce8110cd40d9596f441e092ba18d4a738655fd8d399424"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.input.ReaderInputStreamTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.input.ReaderInputStreamTest.xml",
+      "sha256": "12d5f29b1d3f8e26a89a3b478f8bc802e1fd3f128c291ad7c541130e19d7f890"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.input.ReversedLinesFileReaderTestParamBlockSize.xml",
+      "sha256": "f732839439088c9fd593822bfdde5c2d8d4117a600f51322c9093c3497208d98"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.input.ReversedLinesFileReaderTestParamFile.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.input.ReversedLinesFileReaderTestParamFile.xml",
+      "sha256": "c2f5445bf2208383f9d387de0fff3c3390477c08f523bed8a7ad23d900e70f83"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.input.ReversedLinesFileReaderTestSimple.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.input.ReversedLinesFileReaderTestSimple.xml",
+      "sha256": "14ae8026162b276b5592060595d596f185c478e3e05d7228ea0cfe6c38c31de1"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.input.SequenceReaderTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.input.SequenceReaderTest.xml",
+      "sha256": "368d7c618d0013f11f6ef2c172909ad0ecd9f7f1449ebdb8bdd6478613ed8fbc"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.input.SwappedDataInputStreamTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.input.SwappedDataInputStreamTest.xml",
+      "sha256": "1b8a7686a6effb913d6f643b6acca5e850fef53fd60783f61a01d21b839e34a7"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.input.TaggedInputStreamTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.input.TaggedInputStreamTest.xml",
+      "sha256": "7c23455da03a3a8cbbbbc1851e2dc9718c246b0d0679e8b3a3afd794f50e054a"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.input.TaggedReaderTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.input.TaggedReaderTest.xml",
+      "sha256": "c166cd6e36098b6363a75344092fa0dd35c70b025b6c5b92af9dc8dd08e641f7"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.input.TailerTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.input.TailerTest.xml",
+      "sha256": "a97c731f5a8cc9c609ed9ebe79e400fc4088751467cd4fd88c7f9b24492ba431"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.input.TeeInputStreamTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.input.TeeInputStreamTest.xml",
+      "sha256": "b82414b8eef36862cd0b9c246d0616d1ff8e7223efc59ed097361faf43d07bfd"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.input.TeeReaderTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.input.TeeReaderTest.xml",
+      "sha256": "ac965f6d62f23d1d2b2d263536dd9f92d52feac347d197442e51030cc1c7e9d2"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.input.UnixLineEndingInputStreamTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.input.UnixLineEndingInputStreamTest.xml",
+      "sha256": "0f07119dd1a1e0eb8e7c72c57cb00c044b0fee6c950c7812c45ff45c0a446291"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.input.WindowsLineEndingInputStreamTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.input.WindowsLineEndingInputStreamTest.xml",
+      "sha256": "5a756d5bf1f0760494cbd43a3ec139bb82e253973c89063e9e7fe3f3afa38740"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.input.XmlStreamReaderTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.input.XmlStreamReaderTest.xml",
+      "sha256": "4d73e159d4f012da175c12382290220f347a307b4859c6776968bbc47fa70614"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.input.XmlStreamReaderUtilitiesTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.input.XmlStreamReaderUtilitiesTest.xml",
+      "sha256": "58052f4de1952fcfa6c30312122a33b9fbdd3a944b9a4116ec9583e4538ae263"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.IOCaseTestCase.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.IOCaseTestCase.xml",
+      "sha256": "a3a05c06501a762c952b47d3cefef2d9016d2f314bab2df9e24aaac3de814c55"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.IOExceptionListTestCase.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.IOExceptionListTestCase.xml",
+      "sha256": "c7beb61318962bac86b1fc3d54d293f929e5886cee38ed445ae5c5f53ca6ad7f"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.IOExceptionWithCauseTestCase.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.IOExceptionWithCauseTestCase.xml",
+      "sha256": "fc82ac500fcb6587c80a21dba20d01b17e963890018b6e9132d06b1921a4d92b"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.IOIndexedExceptionTestCase.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.IOIndexedExceptionTestCase.xml",
+      "sha256": "83a27782e606885d043ac20538162519a6ae47bec7ba7c1a9d53a1479491df24"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.IOUtilsCopyTestCase.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.IOUtilsCopyTestCase.xml",
+      "sha256": "03c41321d420eb51085e3d8a9d455f086b7e5c03088f74d79aca4ee277986a49"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.IOUtilsTestCase.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.IOUtilsTestCase.xml",
+      "sha256": "6e1f4a80f7bfc6fd406877928330c4a450b36e9a1c47cc355cc19569fb794e91"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.IOUtilsWriteTestCase.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.IOUtilsWriteTestCase.xml",
+      "sha256": "ebbbe392b488c3d4f3aebb46b6ebc994ec9932f69fcf7cd05dad880b2d36ec33"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.LineIteratorTestCase.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.LineIteratorTestCase.xml",
+      "sha256": "3d03d641ee8d37f46a68c3e31015e07667d91d17f0a3ebe56ef1bce806d8f726"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.monitor.FileAlterationMonitorTestCase.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.monitor.FileAlterationMonitorTestCase.xml",
+      "sha256": "de0561427aaabd14cfbbc414c5fc9c0d994848e9cabf62631e56f088238436c5"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.monitor.FileAlterationObserverTestCase.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.monitor.FileAlterationObserverTestCase.xml",
+      "sha256": "70a3200142f4b2c3414ca6ecc4d64c681950f23e3e2bb28c4c284fbba3f88247"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.output.AppendableOutputStreamTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.output.AppendableOutputStreamTest.xml",
+      "sha256": "2f2f89800654dd1cb889a401a5f555b5eefce59f206f3af9f15cb68345af1657"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.output.AppendableWriterTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.output.AppendableWriterTest.xml",
+      "sha256": "e63bc61b4e7d7b3834259713ea45a71d6be2f3b7c0a823c24465474356781f2c"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.output.BrokenOutputStreamTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.output.BrokenOutputStreamTest.xml",
+      "sha256": "f5dba82385766a88fbdbb0a78bf4bf310a7e7c8247afea78e8dd150d1de7e28f"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.output.BrokenWriterTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.output.BrokenWriterTest.xml",
+      "sha256": "0959687788ab771b2b234fde935c8972130e8ef8061fc28d8fd257ac1ac6fcf2"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.output.ByteArrayOutputStreamTestCase.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.output.ByteArrayOutputStreamTestCase.xml",
+      "sha256": "c97e9dd589d13774fd80fb8b81d85e35a66b4c0a31a7c72e196b10c914701e21"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.output.ChunkedOutputStreamTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.output.ChunkedOutputStreamTest.xml",
+      "sha256": "2efbe83beb6f53a9d0825bd33210b99b04156ce39e3d012aecec303443535113"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.output.ChunkedWriterTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.output.ChunkedWriterTest.xml",
+      "sha256": "7419f86e730af1469ba24e4071963545c3255b9662172d5b59cf45264edd387f"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.output.ClosedOutputStreamTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.output.ClosedOutputStreamTest.xml",
+      "sha256": "e1c0549f65dae5c6a91d866d868a988463c07501542e6ba23fa62754ee8cf5c6"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.output.ClosedWriterTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.output.ClosedWriterTest.xml",
+      "sha256": "733edb075d0fff3df321a06fac38af8b778d27680a72e778c7c8a631cbefb2cc"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.output.CloseShieldOutputStreamTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.output.CloseShieldOutputStreamTest.xml",
+      "sha256": "a10d87a43bf5b58fe6525b50fe4f59061004c6fea3d9b243744be03ae9924ac7"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.output.CloseShieldWriterTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.output.CloseShieldWriterTest.xml",
+      "sha256": "dc2f00b145774cb4c60df5d563281acece783d3489e746d15b832bb9d47ae2d1"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.output.CountingOutputStreamTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.output.CountingOutputStreamTest.xml",
+      "sha256": "6ed970649649cff9c4d118fc0b9122e5b88d055422cf046e7b616debade617d6"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.output.DeferredFileOutputStreamTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.output.DeferredFileOutputStreamTest.xml",
+      "sha256": "1a4483469a8e91303d0d8b13f2c1354c95f43654743da9cb6f68b29611ecd8d3"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.output.FileWriterWithEncodingTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.output.FileWriterWithEncodingTest.xml",
+      "sha256": "b1d9fd3bcf8f4bb3168db807ba4be86174452e06231c901963c31bac4c1ef8e7"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.output.LockableFileWriterTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.output.LockableFileWriterTest.xml",
+      "sha256": "7d2e25c4f8afe40120a434f68de7afe2a70bcc61bac37d7b48dff4103ab7ba24"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.output.NullOutputStreamTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.output.NullOutputStreamTest.xml",
+      "sha256": "daaae451df07c474f99fed84d059c28c8deba25db70d1263327a6f15bf1d081a"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.output.NullPrintStreamTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.output.NullPrintStreamTest.xml",
+      "sha256": "e09138665d880a3c43bed230caf3179f1592f85c57b888961cdd54b73a479192"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.output.NullWriterTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.output.NullWriterTest.xml",
+      "sha256": "52eed450605750afc8b691d5cdad3b97db7006112c9a6bbed262b2da3c0dc677"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.output.ProxyCollectionWriterTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.output.ProxyCollectionWriterTest.xml",
+      "sha256": "c5a7ee78be98aeeef74e10c9ea3f3b726644316c33f431c60f7c588f06603a5e"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.output.ProxyOutputStreamTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.output.ProxyOutputStreamTest.xml",
+      "sha256": "5de6ede095270963a2ce865144f9e20e0b0b578e19ade6db7c404328ae2b6124"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.output.ProxyWriterTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.output.ProxyWriterTest.xml",
+      "sha256": "517c20d0f1cc93b5ce9335863a26cbb94fef4cbe8f4abbeb0f32c4d9cb2439b5"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.output.StringBuilderWriterTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.output.StringBuilderWriterTest.xml",
+      "sha256": "5c1af266435255b979dbe30085fe03d297c873f1a933c9cace1bab124b80fd6d"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.output.TaggedOutputStreamTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.output.TaggedOutputStreamTest.xml",
+      "sha256": "f76c0ef24edd024e3d7e41cfee7c83a6f69a1954d247515873145a406a965b93"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.output.TaggedWriterTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.output.TaggedWriterTest.xml",
+      "sha256": "a8b7019933823350a6694dbce5759396f542cac3f2a9db3cf796f5a0069e4bed"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.output.TeeOutputStreamTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.output.TeeOutputStreamTest.xml",
+      "sha256": "267a27dbe9ab17c8321f53403acbc09ec0264f18f1a7dc84cf9431d4a4e83879"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.output.TeeWriterTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.output.TeeWriterTest.xml",
+      "sha256": "5347d119344f63e1b7b81668ddd62750572fc3267c609ad740ed553c7eb2194e"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.output.ThresholdingOutputStreamTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.output.ThresholdingOutputStreamTest.xml",
+      "sha256": "bb5bd4cd116185b5673a31a967c5b408b7383d60c07b5352ac9046c8d6ba2b21"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.output.WriterOutputStreamTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.output.WriterOutputStreamTest.xml",
+      "sha256": "c1d344abd92fd8bb535a8324ca306d731f630074b5ce58bae0676b64fda4429b"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.output.XmlStreamWriterTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.output.XmlStreamWriterTest.xml",
+      "sha256": "d27d72dcae20f162c33d4a18305e044a0df56f818a465f79544ff7f47ed0e957"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.serialization.FullClassNameMatcherTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.serialization.FullClassNameMatcherTest.xml",
+      "sha256": "1234d4169cb809fa0eb84a43f4edfa8f8f44a88b0b2352e19d8e3015feb7a4f9"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.serialization.MoreComplexObjectTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.serialization.MoreComplexObjectTest.xml",
+      "sha256": "7d1de8ea83ed96c55dc2a0d0b403979dec99b8a3177258554952fa62fbdac18f"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.serialization.RegexpClassNameMatcherTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.serialization.RegexpClassNameMatcherTest.xml",
+      "sha256": "1951ce87f85a5ff6826089accaa02b73cc8fe9fb92e704550f296b15af1e7246"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.serialization.ValidatingObjectInputStreamTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.serialization.ValidatingObjectInputStreamTest.xml",
+      "sha256": "86507a1cb301c12a965e96ae909228332d0e6429cb937365ba84b0ae1356ff3e"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.serialization.WildcardClassNameMatcherTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.serialization.WildcardClassNameMatcherTest.xml",
+      "sha256": "71067d5c27b311e42b0d4c78a7d8995cd6dda409a662ba8a384d938de880d75b"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.TaggedIOExceptionTest.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.TaggedIOExceptionTest.xml",
+      "sha256": "68c98d8807ebe46aa6b7f8a7d812bd8fb0ed79692b07e45a786e4c50bbe3e918"
+    },
+    {
+      "name": "TEST-org.apache.commons.io.ThreadMonitorTestCase.xml",
+      "source": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/surefire-reports/TEST-org.apache.commons.io.ThreadMonitorTestCase.xml",
+      "sha256": "21b5bfabc3c3c2fdae27c35aba0260dc266f4a67ea364faf582b479263392102"
+    }
+  ],
+  "artifacts": {
+    "production-class": {
+      "path": "artifacts/000-PeekableInputStream.class",
+      "sha256": "7ab6a91f3618ccf5949692f1fc5d39b97174deab23925f872f0e31cb5a2591a1",
+      "originalPath": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/before-checkout/target/classes/org/apache/commons/io/input/buffer/PeekableInputStream.class"
+    },
+    "jacoco-xml": {
+      "path": "artifacts/001-jacoco.xml",
+      "sha256": "5a3a01de1697c9150a45f8b5e9bb1b535b3160b913e10e6c28b8889d90f8c837",
+      "originalPath": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/measurements/jacoco-before/jacoco.xml"
+    },
+    "jacoco-exec": {
+      "path": "artifacts/002-jacoco.exec",
+      "sha256": "a4c7261a974dcda65823210357eda041cc9d315456e879a9ff0b7b1d90467a92",
+      "originalPath": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-003/measurements/jacoco-before/jacoco.exec"
+    }
+  },
+  "logSHA256": "cf25b151cca7fe4913a1668b9ca1f3208d625645cca2fd27ad12267facd9fdc0",
+  "requestSHA256": "34b4112efd3760edc97b63d3a08b6dad6fe1ab7d5884537b4e49bb3348a9db69",
+  "files": [
+    {
+      "path": "artifacts/000-PeekableInputStream.class",
+      "bytes": 1829,
+      "sha256": "7ab6a91f3618ccf5949692f1fc5d39b97174deab23925f872f0e31cb5a2591a1"
+    },
+    {
+      "path": "artifacts/001-jacoco.xml",
+      "bytes": 14698,
+      "sha256": "5a3a01de1697c9150a45f8b5e9bb1b535b3160b913e10e6c28b8889d90f8c837"
+    },
+    {
+      "path": "artifacts/002-jacoco.exec",
+      "bytes": 5979,
+      "sha256": "a4c7261a974dcda65823210357eda041cc9d315456e879a9ff0b7b1d90467a92"
+    },
+    {
+      "path": "environment.json",
+      "bytes": 5872,
+      "sha256": "40d2defdbdc028b098c3479ad52e4ad37c639679e23b7d71ecd7d59fadf64637"
+    },
+    {
+      "path": "output.log",
+      "bytes": 40754,
+      "sha256": "cf25b151cca7fe4913a1668b9ca1f3208d625645cca2fd27ad12267facd9fdc0"
+    },
+    {
+      "path": "request.json",
+      "bytes": 2701,
+      "sha256": "34b4112efd3760edc97b63d3a08b6dad6fe1ab7d5884537b4e49bb3348a9db69"
+    },
+    {
+      "path": "surefire-reports.zip",
+      "bytes": 371395,
+      "sha256": "f52a300877f7875779b81d8750312e8eb4b89884f763a06661293aec7bb1d6cb"
+    }
+  ]
+}

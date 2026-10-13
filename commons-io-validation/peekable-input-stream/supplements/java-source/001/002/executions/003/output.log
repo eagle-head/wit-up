@@ -1,0 +1,17 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------< org.apache.commons:peekable-input-stream-measurement >--------
+[INFO] Building peekable-input-stream-measurement 1.0
+[INFO]   from pit-analysis-pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- pitest:1.15.2:mutationCoverage (default-cli) @ peekable-input-stream-measurement ---
+[INFO] Skipping project because:
+[INFO]   - Project has either no tests or no production code.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.973 s
+[INFO] Finished at: 2026-10-12T19:24:10-04:00
+[INFO] ------------------------------------------------------------------------
+PIT exit code: 0

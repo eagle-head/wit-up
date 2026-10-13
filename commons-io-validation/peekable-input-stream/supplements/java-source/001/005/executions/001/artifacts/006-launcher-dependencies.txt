@@ -1,0 +1,14 @@
+
+The following files have been resolved:
+   org.pitest:pitest-command-line:jar:1.15.2:compile:D:\Projects\experiment-workspaces\peekable-input-stream\.working\java-source-001-evaluation-005\maven-repository\org\pitest\pitest-command-line\1.15.2\pitest-command-line-1.15.2.jar
+   org.pitest:pitest-entry:jar:1.15.2:compile:D:\Projects\experiment-workspaces\peekable-input-stream\.working\java-source-001-evaluation-005\maven-repository\org\pitest\pitest-entry\1.15.2\pitest-entry-1.15.2.jar
+   org.pitest:pitest:jar:1.15.2:compile:D:\Projects\experiment-workspaces\peekable-input-stream\.working\java-source-001-evaluation-005\maven-repository\org\pitest\pitest\1.15.2\pitest-1.15.2.jar
+   org.apache.commons:commons-text:jar:1.10.0:compile:D:\Projects\experiment-workspaces\peekable-input-stream\.working\java-source-001-evaluation-005\maven-repository\org\apache\commons\commons-text\1.10.0\commons-text-1.10.0.jar
+   org.apache.commons:commons-lang3:jar:3.12.0:compile:D:\Projects\experiment-workspaces\peekable-input-stream\.working\java-source-001-evaluation-005\maven-repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar
+   org.pitest:pitest-junit5-plugin:jar:1.2.2:compile:D:\Projects\experiment-workspaces\peekable-input-stream\.working\java-source-001-evaluation-005\maven-repository\org\pitest\pitest-junit5-plugin\1.2.2\pitest-junit5-plugin-1.2.2.jar
+   org.junit.platform:junit-platform-launcher:jar:1.5.2:compile:D:\Projects\experiment-workspaces\peekable-input-stream\.working\java-source-001-evaluation-005\maven-repository\org\junit\platform\junit-platform-launcher\1.5.2\junit-platform-launcher-1.5.2.jar
+   org.apiguardian:apiguardian-api:jar:1.1.0:compile:D:\Projects\experiment-workspaces\peekable-input-stream\.working\java-source-001-evaluation-005\maven-repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar
+   org.junit.platform:junit-platform-engine:jar:1.5.2:compile:D:\Projects\experiment-workspaces\peekable-input-stream\.working\java-source-001-evaluation-005\maven-repository\org\junit\platform\junit-platform-engine\1.5.2\junit-platform-engine-1.5.2.jar
+   org.opentest4j:opentest4j:jar:1.2.0:compile:D:\Projects\experiment-workspaces\peekable-input-stream\.working\java-source-001-evaluation-005\maven-repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar
+   org.junit.platform:junit-platform-commons:jar:1.5.2:compile:D:\Projects\experiment-workspaces\peekable-input-stream\.working\java-source-001-evaluation-005\maven-repository\org\junit\platform\junit-platform-commons\1.5.2\junit-platform-commons-1.5.2.jar
+

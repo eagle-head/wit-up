@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "recordKind": "evaluation",
+  "runId": "java-source-001/evaluation-004",
+  "condition": "java-source",
+  "sequence": "001",
+  "state": "frozen",
+  "origin": "supplement",
+  "createdAt": "2026-10-12T23:33:34.640841+00:00",
+  "sampleContribution": 0,
+  "baselineCommit": "11f0abe7a3fb6954b2985ca4ab0697b2fb489e84",
+  "parent": {
+    "path": "runs/java-source/001",
+    "sealSHA256": "28ac9b72af259f32261cb569e3ce65515007f3089213024d5065b60adcec9d5d"
+  },
+  "preservedInputs": [
+    {
+      "path": "inputs/measurement-protocol.md",
+      "sha256": "286408433e9c1d2ba87f182902bc5e82db03236b6d5fe134f63eeabcb50e8bf6",
+      "originalPath": "D:/Projects/wit-up/docs/measurement-protocol.md"
+    },
+    {
+      "path": "inputs/pit-analysis-pom.xml",
+      "sha256": "70729d4c46aec58d0df8ea6ce59f4e5fb9547556c086b8737051024403ef7de7",
+      "originalPath": "D:/Projects/wit-up/docs/pit-analysis-pom.xml"
+    }
+  ],
+  "frozenTest": {
+    "path": "evidence/test-source/PeekableInputStreamTest.java",
+    "sha256": "365a763fbc4b383087d993e659e05bf04952a4d4333a2ff16ac4417fe9eb43dd",
+    "originalPath": "D:/Projects/wit-up/commons-io-validation/peekable-input-stream/runs/java-source/001/evidence/test-source/PeekableInputStreamTest.java"
+  },
+  "executions": [
+    {
+      "path": "executions/001",
+      "requestSHA256": "359e326c0de29634496e434aa2c98106a15769af7cd5a548d5ccba667c6042a2",
+      "resultSHA256": "84a4f674969a8147a122d56444544e1add002e55ef1c47147eaa59b32fe170a5"
+    },
+    {
+      "path": "executions/002",
+      "requestSHA256": "8b20c290c85c437889e619ff3542ed602598b1f33bf3a404b38bc3fdfb888780",
+      "resultSHA256": "3c82bf61db83819a590e3a470317ffdd6c7ace2025355965fe046c52f6db332f"
+    },
+    {
+      "path": "executions/003",
+      "requestSHA256": "86d574307c98a933b4da21b62351952df4c7ee79a6201ffb6e3c68643149f55e",
+      "resultSHA256": "37becb16b01709a9eea0417f3704321c74a6b39f120066091fa72250799eae7a"
+    },
+    {
+      "path": "executions/004",
+      "requestSHA256": "4df8d82916b7b6aca2b0510422acb00fdcb2bf2f6fefa4d8b4a526a867387099",
+      "resultSHA256": "bd5e98dc520adff3d47d38ac2582e3cd68fc45dd8e27fb4cedfa504958d31eff"
+    }
+  ],
+  "authorization": {
+    "path": "inputs/note.md",
+    "sha256": "2a93e60652bd736df307e27ba48e1135e5c0706ab0629ac1c53ce8f46eb74086",
+    "originalPath": "D:/Projects/experiment-workspaces/peekable-input-stream/.preparation/java-source-001-evaluation-004/authorization.md"
+  },
+  "checkout": "D:/Projects/experiment-workspaces/peekable-input-stream/java-source-001-evaluation-004",
+  "workingDirectory": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-004",
+  "environment": {
+    "path": "inputs/environment.json",
+    "sha256": "b813b3ea958cd20572af8e9d530fc3d6911ca76957c9668d95ffe3da4430a3f3",
+    "originalPath": "D:/Projects/experiment-workspaces/peekable-input-stream/.preparation/java-source-001-evaluation-004/environment.json"
+  },
+  "measurementPlan": {
+    "path": "inputs/measurement-plan.json",
+    "sha256": "35b7f80a4db45d23dde7c140c71ea40d03b8ae24d7faf9bb21d192b692c3d001",
+    "originalPath": "D:/Projects/wit-up/docs/measurement-plan.json"
+  }
+}

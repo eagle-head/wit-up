@@ -1,0 +1,47 @@
+{
+  "phase": "preflight",
+  "command": "pwsh -NoProfile -File \"D:/Projects/wit-up/commons-io-validation/peekable-input-stream/supplements/java-source/001/001/evidence/scripts/preflight.ps1\"",
+  "scope": "Fetch and verify pinned JaCoCo tools; preserve effective POM and exact resolved project dependencies; no test execution",
+  "reservedAt": "2026-10-12T23:18:41.171198+00:00",
+  "reservedAtNs": 1791847121168136200,
+  "reportsDirectory": null,
+  "artifacts": {
+    "effective-pom": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-001/preflight/effective-pom.xml",
+    "dependencies": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-001/preflight/dependencies.txt",
+    "dependency-hashes": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-001/preflight/dependency-hashes.json"
+  },
+  "environment": {
+    "path": "environment.json",
+    "sha256": "d82dd36f4327ec81b00178a624c12299f21af80c3b9628700810a64c5092eb36",
+    "originalPath": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-001/environments/preflight.json"
+  },
+  "checkout": "D:/Projects/experiment-workspaces/peekable-input-stream/java-source-001-evaluation-001",
+  "initialProblems": [],
+  "planSHA256": "4645a07cc21fecea80547d429e0d3f594254c6c6a86fa067c5be5410b4cbf3a3",
+  "observedJava": {
+    "executable": "C:/Users/edyko/AppData/Local/mise/installs/java/temurin-8.0.504+1/bin\\java.exe",
+    "arguments": [
+      "-version"
+    ],
+    "exitCode": 0,
+    "output": [
+      "openjdk version \"1.8.0_504\"",
+      "OpenJDK Runtime Environment (Temurin)(build 1.8.0_504-b01)",
+      "OpenJDK 64-Bit Server VM (Temurin)(build 25.504-b01, mixed mode)"
+    ]
+  },
+  "observedMaven": {
+    "executable": "C:\\Users\\edyko\\AppData\\Local\\mise\\installs\\maven\\3.9.16\\apache-maven-3.9.16/bin\\mvn.cmd",
+    "arguments": [
+      "-version"
+    ],
+    "exitCode": 0,
+    "output": [
+      "Apache Maven 3.9.16 (2bdd9fddda4b155ebf8000e807eb73fd829a51d5)",
+      "Maven home: C:\\Users\\edyko\\AppData\\Local\\mise\\installs\\maven\\3.9.16\\apache-maven-3.9.16",
+      "Java version: 1.8.0_504, vendor: Temurin, runtime: C:\\Users\\edyko\\AppData\\Local\\mise\\installs\\java\\temurin-8.0.504+1\\jre",
+      "Default locale: en_US, platform encoding: Cp1252",
+      "OS name: \"windows 11\", version: \"10.0\", arch: \"amd64\", family: \"windows\""
+    ]
+  }
+}

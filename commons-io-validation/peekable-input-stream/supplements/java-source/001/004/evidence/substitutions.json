@@ -1,0 +1,76 @@
+{
+  "evaluationRoot": "D:/Projects/wit-up/commons-io-validation/peekable-input-stream/supplements/java-source/001/004",
+  "workingDirectory": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-004",
+  "javaHome": "C:/Users/edyko/AppData/Local/mise/installs/java/temurin-8.0.504+1",
+  "agentJar": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-004/tools/org.jacoco.agent-0.8.4-runtime.jar",
+  "cliJar": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-004/tools/org.jacoco.cli-0.8.4-nodeps.jar",
+  "phases": {
+    "jacoco-before": {
+      "checkout": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-004/before-checkout",
+      "output": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-004/measurements/jacoco-before",
+      "build": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-004/pit-build/jacoco-before",
+      "temp": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-004/temp",
+      "script": "D:/Projects/wit-up/commons-io-validation/peekable-input-stream/supplements/java-source/001/004/evidence/scripts/jacoco-before.ps1",
+      "scope": "Full existing project suite; frozen generated test present only after; target production class only",
+      "reports": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-004/before-checkout/target/surefire-reports",
+      "artifacts": {
+        "production-class": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-004/before-checkout/target/classes/org/apache/commons/io/input/buffer/PeekableInputStream.class",
+        "jacoco-xml": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-004/measurements/jacoco-before/jacoco.xml",
+        "jacoco-exec": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-004/measurements/jacoco-before/jacoco.exec"
+      }
+    },
+    "pit-before": {
+      "checkout": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-004/before-checkout",
+      "output": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-004/measurements/pit-before",
+      "build": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-004/pit-build/pit-before",
+      "temp": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-004/temp",
+      "script": "D:/Projects/wit-up/commons-io-validation/peekable-input-stream/supplements/java-source/001/004/evidence/scripts/pit-before.ps1",
+      "scope": "Full existing project suite; frozen generated test present only after; target production class only",
+      "reports": null,
+      "artifacts": {
+        "production-class": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-004/before-checkout/target/classes/org/apache/commons/io/input/buffer/PeekableInputStream.class",
+        "pit-mutations": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-004/measurements/pit-before/mutations.xml",
+        "pit-linecoverage": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-004/measurements/pit-before/linecoverage.xml"
+      }
+    },
+    "jacoco-after": {
+      "checkout": "D:/Projects/experiment-workspaces/peekable-input-stream/java-source-001-evaluation-004",
+      "output": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-004/measurements/jacoco-after",
+      "build": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-004/pit-build/jacoco-after",
+      "temp": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-004/temp",
+      "script": "D:/Projects/wit-up/commons-io-validation/peekable-input-stream/supplements/java-source/001/004/evidence/scripts/jacoco-after.ps1",
+      "scope": "Full existing project suite; frozen generated test present only after; target production class only",
+      "reports": "D:/Projects/experiment-workspaces/peekable-input-stream/java-source-001-evaluation-004/target/surefire-reports",
+      "artifacts": {
+        "production-class": "D:/Projects/experiment-workspaces/peekable-input-stream/java-source-001-evaluation-004/target/classes/org/apache/commons/io/input/buffer/PeekableInputStream.class",
+        "jacoco-xml": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-004/measurements/jacoco-after/jacoco.xml",
+        "jacoco-exec": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-004/measurements/jacoco-after/jacoco.exec"
+      }
+    },
+    "pit-after": {
+      "checkout": "D:/Projects/experiment-workspaces/peekable-input-stream/java-source-001-evaluation-004",
+      "output": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-004/measurements/pit-after",
+      "build": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-004/pit-build/pit-after",
+      "temp": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-004/temp",
+      "script": "D:/Projects/wit-up/commons-io-validation/peekable-input-stream/supplements/java-source/001/004/evidence/scripts/pit-after.ps1",
+      "scope": "Full existing project suite; frozen generated test present only after; target production class only",
+      "reports": null,
+      "artifacts": {
+        "production-class": "D:/Projects/experiment-workspaces/peekable-input-stream/java-source-001-evaluation-004/target/classes/org/apache/commons/io/input/buffer/PeekableInputStream.class",
+        "pit-mutations": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-004/measurements/pit-after/mutations.xml",
+        "pit-linecoverage": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-004/measurements/pit-after/linecoverage.xml"
+      }
+    },
+    "preflight": {
+      "checkout": "D:/Projects/experiment-workspaces/peekable-input-stream/java-source-001-evaluation-004",
+      "script": "D:/Projects/wit-up/commons-io-validation/peekable-input-stream/supplements/java-source/001/004/evidence/scripts/preflight.ps1",
+      "scope": "Fetch and verify pinned JaCoCo tools; preserve effective POM and exact resolved project dependencies; no test execution",
+      "reports": null,
+      "artifacts": {
+        "effective-pom": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-004/preflight/effective-pom.xml",
+        "dependencies": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-004/preflight/dependencies.txt",
+        "dependency-hashes": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-004/preflight/dependency-hashes.json"
+      }
+    }
+  }
+}

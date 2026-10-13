@@ -1,0 +1,19 @@
+
+The following files have been resolved:
+   org.junit.jupiter:junit-jupiter:jar:5.5.2:test:D:\Projects\experiment-workspaces\peekable-input-stream\.working\java-source-001-evaluation-004\maven-repository\org\junit\jupiter\junit-jupiter\5.5.2\junit-jupiter-5.5.2.jar
+   org.junit.jupiter:junit-jupiter-api:jar:5.5.2:test:D:\Projects\experiment-workspaces\peekable-input-stream\.working\java-source-001-evaluation-004\maven-repository\org\junit\jupiter\junit-jupiter-api\5.5.2\junit-jupiter-api-5.5.2.jar
+   org.apiguardian:apiguardian-api:jar:1.1.0:test:D:\Projects\experiment-workspaces\peekable-input-stream\.working\java-source-001-evaluation-004\maven-repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar
+   org.opentest4j:opentest4j:jar:1.2.0:test:D:\Projects\experiment-workspaces\peekable-input-stream\.working\java-source-001-evaluation-004\maven-repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar
+   org.junit.platform:junit-platform-commons:jar:1.5.2:test:D:\Projects\experiment-workspaces\peekable-input-stream\.working\java-source-001-evaluation-004\maven-repository\org\junit\platform\junit-platform-commons\1.5.2\junit-platform-commons-1.5.2.jar
+   org.junit.jupiter:junit-jupiter-params:jar:5.5.2:test:D:\Projects\experiment-workspaces\peekable-input-stream\.working\java-source-001-evaluation-004\maven-repository\org\junit\jupiter\junit-jupiter-params\5.5.2\junit-jupiter-params-5.5.2.jar
+   org.junit.jupiter:junit-jupiter-engine:jar:5.5.2:test:D:\Projects\experiment-workspaces\peekable-input-stream\.working\java-source-001-evaluation-004\maven-repository\org\junit\jupiter\junit-jupiter-engine\5.5.2\junit-jupiter-engine-5.5.2.jar
+   org.junit.platform:junit-platform-engine:jar:1.5.2:test:D:\Projects\experiment-workspaces\peekable-input-stream\.working\java-source-001-evaluation-004\maven-repository\org\junit\platform\junit-platform-engine\1.5.2\junit-platform-engine-1.5.2.jar
+   org.junit-pioneer:junit-pioneer:jar:0.3.0:test:D:\Projects\experiment-workspaces\peekable-input-stream\.working\java-source-001-evaluation-004\maven-repository\org\junit-pioneer\junit-pioneer\0.3.0\junit-pioneer-0.3.0.jar
+   org.mockito:mockito-core:jar:3.0.0:test:D:\Projects\experiment-workspaces\peekable-input-stream\.working\java-source-001-evaluation-004\maven-repository\org\mockito\mockito-core\3.0.0\mockito-core-3.0.0.jar
+   net.bytebuddy:byte-buddy:jar:1.9.10:test:D:\Projects\experiment-workspaces\peekable-input-stream\.working\java-source-001-evaluation-004\maven-repository\net\bytebuddy\byte-buddy\1.9.10\byte-buddy-1.9.10.jar
+   net.bytebuddy:byte-buddy-agent:jar:1.9.10:test:D:\Projects\experiment-workspaces\peekable-input-stream\.working\java-source-001-evaluation-004\maven-repository\net\bytebuddy\byte-buddy-agent\1.9.10\byte-buddy-agent-1.9.10.jar
+   org.objenesis:objenesis:jar:2.6:test:D:\Projects\experiment-workspaces\peekable-input-stream\.working\java-source-001-evaluation-004\maven-repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar
+   com.google.jimfs:jimfs:jar:1.1:test:D:\Projects\experiment-workspaces\peekable-input-stream\.working\java-source-001-evaluation-004\maven-repository\com\google\jimfs\jimfs\1.1\jimfs-1.1.jar
+   com.google.guava:guava:jar:18.0:test:D:\Projects\experiment-workspaces\peekable-input-stream\.working\java-source-001-evaluation-004\maven-repository\com\google\guava\guava\18.0\guava-18.0.jar
+   org.apache.commons:commons-lang3:jar:3.9:test:D:\Projects\experiment-workspaces\peekable-input-stream\.working\java-source-001-evaluation-004\maven-repository\org\apache\commons\commons-lang3\3.9\commons-lang3-3.9.jar
+

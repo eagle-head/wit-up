@@ -1,0 +1,34 @@
+[
+  {
+    "path": "scripts/run-phase.ps1",
+    "sha256": "e2afffeea1c0af37788379ccb2ea93589e0fcc88a10acce7d7bb3f5a5fe1d2f8"
+  },
+  {
+    "path": "scripts/preflight.ps1",
+    "sha256": "67957ac98a6cb062fcc5b0c09d9215d156ae9999c1e8038a09c1de1e33e78ab4"
+  },
+  {
+    "path": "scripts/pit-before.ps1",
+    "sha256": "7f70404e6f6b262bf24a55692930cc2d2b3819a82af88e2dbc04f0f5940596dd"
+  },
+  {
+    "path": "scripts/pit-after.ps1",
+    "sha256": "6dc018aa8ee80e931e9e4d90f6c96b658124050d98ac6bea24e2610cf2d8d4d3"
+  },
+  {
+    "path": "scripts/observe-environment.ps1",
+    "sha256": "796777105ecef2058a46afe2195ed523dd8448e9ade14783d44c9971b6b021fa"
+  },
+  {
+    "path": "scripts/jacoco-before.ps1",
+    "sha256": "9159b3ca1675322ab15b8bc13d5323c26d251357d0046726878761e38b5a21a3"
+  },
+  {
+    "path": "scripts/jacoco-after.ps1",
+    "sha256": "603848da07802f382340229fc185f8b33a46a3e044c5491850a6819ad8f09529"
+  },
+  {
+    "path": "scripts/capture-toolchain.ps1",
+    "sha256": "cce86d40f0bea907649c8bef5398c5359aeab6bec77bab2a9ff2095a972b2271"
+  }
+]

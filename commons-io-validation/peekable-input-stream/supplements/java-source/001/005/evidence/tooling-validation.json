@@ -1,0 +1,11 @@
+{
+  "scope": "Preservation tooling and synthetic fixtures; no Commons IO generation or measured-case contribution.",
+  "checks": [
+    {"command": "uv run --frozen python -m unittest discover -s tests", "exitCode": 0, "tests": 49, "durationSeconds": 59.700},
+    {"command": "uv run --frozen ruff check src tools tests", "exitCode": 0},
+    {"command": "uv run --frozen ruff format --check src tools tests", "exitCode": 0, "formattedFiles": 12},
+    {"command": "uv run --frozen pyright src tools tests", "exitCode": 0, "errors": 0, "warnings": 0, "information": 0}
+  ],
+  "priorDiagnostic": "An earlier Pyright invocation reported a possibly unbound selected_plan after adding the CLI snapshot. The final source initializes the optional plan and checks it explicitly before access. No suppression was added.",
+  "provenance": "Observed tool results from the evaluation chat; native Commons IO results are recorded separately per phase."
+}

@@ -1,0 +1,248 @@
+11f0abe7a3fb6954b2985ca4ab0697b2fb489e84
+PIT native launch location: D:\Projects\experiment-workspaces\peekable-input-stream\.working\java-source-001-evaluation-005\before-checkout
+Property settings:
+    awt.toolkit = sun.awt.windows.WToolkit
+    file.encoding = Cp1252
+    file.encoding.pkg = sun.io
+    file.separator = \
+    java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+    java.awt.printerjob = sun.awt.windows.WPrinterJob
+    java.class.path = .
+    java.class.version = 52.0
+    java.endorsed.dirs = C:\Users\edyko\AppData\Local\mise\installs\java\temurin-8.0.504+1\jre\lib\endorsed
+    java.ext.dirs = C:\Users\edyko\AppData\Local\mise\installs\java\temurin-8.0.504+1\jre\lib\ext
+        C:\WINDOWS\Sun\Java\lib\ext
+    java.home = C:\Users\edyko\AppData\Local\mise\installs\java\temurin-8.0.504+1\jre
+    java.io.tmpdir = D:\Projects\experiment-workspaces\peekable-input-stream\.working\java-source-001-evaluation-005\temp\
+    java.library.path = C:\Users\edyko\AppData\Local\mise\installs\java\temurin-8.0.504+1\bin
+        C:\WINDOWS\Sun\Java\bin
+        C:\WINDOWS\system32
+        C:\WINDOWS
+        C:\Users\edyko\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell
+        C:/Users/edyko/AppData/Local/mise/installs/java/temurin-8.0.504+1/bin
+        C:\Users\edyko\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell
+        C:\Users\edyko\AppData\Local\mise\installs\java\temurin-25.0.4+101.0.LTS\bin
+        C:\Users\edyko\AppData\Local\mise\installs\maven\3.9.16\apache-maven-3.9.16/bin
+        C:\Users\edyko\AppData\Local\mise\installs\node\22.23.2
+        C:\Users\edyko\AppData\Local\mise\installs\python\3.13.15
+        C:\Users\edyko\AppData\Local\mise\installs\python\3.13.15\Scripts
+        C:\Users\edyko\AppData\Local\mise\installs\uv\0.12.23
+        C:\Users\edyko\AppData\Local\mise\shims
+        C:\Users\edyko\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell
+        C:\Users\edyko\.codex\tmp\arg0\codex-arg0pgGc3k
+        C:\Users\edyko\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin
+        C:\Users\edyko\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin
+        C:\Users\edyko\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin
+        C:\Users\edyko\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override
+        C:\WINDOWS\system32
+        C:\WINDOWS
+        C:\WINDOWS\System32\Wbem
+        C:\WINDOWS\System32\WindowsPowerShell\v1.0\
+        C:\WINDOWS\System32\OpenSSH\
+        C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common
+        C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR
+        C:\Program Files\dotnet\
+        C:\Users\edyko\AppData\Local\Android\Sdk\platform-tools
+        C:\Users\edyko\AppData\Local\Android\Sdk\emulator
+        C:\Users\edyko\AppData\Local\Android\Sdk\cmdline-tools\latest\bin
+        C:\Program Files\GitHub CLI\
+        C:\Program Files\Docker\Docker\resources\bin
+        C:\Program Files\Git\cmd
+        C:\Users\edyko\AppData\Local\codegraph\current\bin
+        C:\Users\edyko\AppData\Local\Programs\OpenAI\Codex\bin
+        C:\Users\edyko\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell
+        C:\Users\edyko\AppData\Local\Microsoft\WindowsApps
+        C:\Users\edyko\AppData\Local\Programs\Microsoft VS Code\bin
+        C:\Program Files\JetBrains\PyCharm 2026.2.1\bin
+        C:\Program Files\JetBrains\IntelliJ IDEA 2026.2.1\bin
+        C:\Users\edyko\AppData\Local\Microsoft\WinGet\Packages\jdx.mise_Microsoft.Winget.Source_8wekyb3d8bbwe\mise\bin
+        C:\Users\edyko\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\fallback
+        C:\Users\edyko\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin
+        C:\Users\edyko\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd
+        C:\Users\edyko\AppData\Local\OpenAI\Codex\bin\9a7ba4b9ea0c44a3
+        C:\Users\edyko\AppData\Local\OpenAI\Codex\bin\2e5e00daee91c61d
+        .
+    java.runtime.name = OpenJDK Runtime Environment
+    java.runtime.version = 1.8.0_504-b01
+    java.specification.maintenance.version = 6
+    java.specification.name = Java Platform API Specification
+    java.specification.vendor = Oracle Corporation
+    java.specification.version = 1.8
+    java.vendor = Temurin
+    java.vendor.url = https://adoptium.net/
+    java.vendor.url.bug = https://github.com/adoptium/adoptium-support/issues
+    java.version = 1.8.0_504
+    java.vm.info = mixed mode
+    java.vm.name = OpenJDK 64-Bit Server VM
+    java.vm.specification.name = Java Virtual Machine Specification
+    java.vm.specification.vendor = Oracle Corporation
+    java.vm.specification.version = 1.8
+    java.vm.vendor = Temurin
+    java.vm.version = 25.504-b01
+    line.separator = \r \n 
+    os.arch = amd64
+    os.name = Windows 11
+    os.version = 10.0
+    path.separator = ;
+    sun.arch.data.model = 64
+    sun.boot.class.path = C:\Users\edyko\AppData\Local\mise\installs\java\temurin-8.0.504+1\jre\lib\resources.jar
+        C:\Users\edyko\AppData\Local\mise\installs\java\temurin-8.0.504+1\jre\lib\rt.jar
+        C:\Users\edyko\AppData\Local\mise\installs\java\temurin-8.0.504+1\jre\lib\sunrsasign.jar
+        C:\Users\edyko\AppData\Local\mise\installs\java\temurin-8.0.504+1\jre\lib\jsse.jar
+        C:\Users\edyko\AppData\Local\mise\installs\java\temurin-8.0.504+1\jre\lib\jce.jar
+        C:\Users\edyko\AppData\Local\mise\installs\java\temurin-8.0.504+1\jre\lib\charsets.jar
+        C:\Users\edyko\AppData\Local\mise\installs\java\temurin-8.0.504+1\jre\lib\jfr.jar
+        C:\Users\edyko\AppData\Local\mise\installs\java\temurin-8.0.504+1\jre\classes
+    sun.boot.library.path = C:\Users\edyko\AppData\Local\mise\installs\java\temurin-8.0.504+1\jre\bin
+    sun.cpu.endian = little
+    sun.cpu.isalist = amd64
+    sun.desktop = windows
+    sun.io.unicode.encoding = UnicodeLittle
+    sun.java.launcher = SUN_STANDARD
+    sun.jnu.encoding = Cp1252
+    sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+    sun.os.patch.level = 
+    user.country = US
+    user.dir = D:\Projects\experiment-workspaces\peekable-input-stream\.working\java-source-001-evaluation-005\before-checkout
+    user.home = C:\Users\edyko
+    user.language = en
+    user.name = edyko
+    user.script = 
+    user.timezone = 
+    user.variant = 
+
+openjdk version "1.8.0_504"
+OpenJDK Runtime Environment (Temurin)(build 1.8.0_504-b01)
+OpenJDK 64-Bit Server VM (Temurin)(build 25.504-b01, mixed mode)
+7:49:25 PM PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
+7:49:25 PM PIT >> INFO : Created 1 mutation test units in pre scan
+7:49:26 PM PIT >> INFO : Sending 374 test classes to minion
+7:49:26 PM PIT >> INFO : Sent tests to minion
+7:49:41 PM PIT >> INFO : MINION : org.apache.commons.io.IOExceptionList: 1 exceptions: [java.io.EOFException]
+7:49:41 PM PIT >> INFO : MINION : 	at org.apache.commons.io.IOExceptionListTestCase.testPrintStackTrace(IOExceptionListTestCase.java:58)
+7:49:41 PM PIT >> INFO : MINION : 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+7:49:41 PM PIT >> INFO : MINION : 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+7:49:41 PM PIT >> INFO : MINION : 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+7:49:41 PM PIT >> INFO : MINION : 	at java.lang.reflect.Method.invoke(Method.java:498)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:124)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:74)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:104)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:62)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:43)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:35)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:202)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:198)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+7:49:41 PM PIT >> INFO : MINION : 	at java.util.ArrayList.forEach(ArrayList.java:1259)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+7:49:41 PM PIT >> INFO : MINION : 	at java.util.ArrayList.forEach(ArrayList.java:1259)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:229)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:197)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:211)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:191)
+7:49:41 PM PIT >> INFO : MINION : 	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+7:49:41 PM PIT >> INFO : MINION : 	at org.pitest.junit5.JUnit5TestUnitFinder.findTestUnits(JUnit5TestUnitFinder.java:84)
+7:49:41 PM PIT >> INFO : MINION : 	at org.pitest.mutationtest.config.PrioritisingTestUnitFinder.findTestUnits(PrioritisingTestUnitFinder.java:20)
+7:49:41 PM PIT >> INFO : MINION : 	at org.pitest.testapi.execute.FindTestUnits.findTestUnits(FindTestUnits.java:64)
+7:49:41 PM PIT >> INFO : MINION : 	at org.pitest.testapi.execute.FindTestUnits.getTestUnits(FindTestUnits.java:47)
+7:49:41 PM PIT >> INFO : MINION : 	at org.pitest.testapi.execute.FindTestUnits.findTestUnitsForAllSuppliedClasses(FindTestUnits.java:36)
+7:49:41 PM PIT >> INFO : MINION : 	at org.pitest.coverage.execute.CoverageMinion.discoverTests(CoverageMinion.java:177)
+7:49:41 PM PIT >> INFO : MINION : 	at org.pitest.coverage.execute.CoverageMinion.getTestsFromParent(CoverageMinion.java:163)
+7:49:41 PM PIT >> INFO : MINION : 	at org.pitest.coverage.execute.CoverageMinion.main(CoverageMinion.java:87)
+7:49:41 PM PIT >> INFO : MINION : Caused by: java.io.EOFException
+7:49:41 PM PIT >> INFO : MINION : 	at org.apache.commons.io.IOExceptionListTestCase.testPrintStackTrace(IOExceptionListTestCase.java:56)
+7:49:41 PM PIT >> INFO : MINION : 	... 67 more
+7:50:05 PM PIT >> INFO : Calculated coverage in 39 seconds.
+7:50:05 PM PIT >> INFO : Created 1 mutation test units
+7:50:05 PM PIT >> INFO : Completed in 39 seconds
+/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/================================================================================
+- Mutators
+================================================================================
+> org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+>> Generated 4 Killed 0 (0%)
+> KILLED 0 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 4 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+>> Generated 4 Killed 0 (0%)
+> KILLED 0 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 4 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+>> Generated 2 Killed 0 (0%)
+> KILLED 0 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 2 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator
+>> Generated 2 Killed 0 (0%)
+> KILLED 0 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 2 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator
+>> Generated 2 Killed 0 (0%)
+> KILLED 0 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 2 
+--------------------------------------------------------------------------------
+================================================================================
+- Timings
+================================================================================
+> pre-scan for mutations : < 1 second
+> scan classpath : < 1 second
+> coverage and dependency analysis : 39 seconds
+> build mutation tests : < 1 second
+> run mutation analysis : < 1 second
+--------------------------------------------------------------------------------
+> Total  : 39 seconds
+--------------------------------------------------------------------------------
+================================================================================
+- Statistics
+================================================================================
+>> Line Coverage (for mutated classes only): 0/16 (0%)
+>> Generated 14 mutations Killed 0 (0%)
+>> Mutations with no coverage 14. Test strength 100%
+>> Ran 0 tests (0 tests per mutation)
+Enhanced functionality available at https://www.arcmutate.com/
+PIT exit code: 0

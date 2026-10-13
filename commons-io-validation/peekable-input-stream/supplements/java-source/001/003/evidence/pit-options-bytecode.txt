@@ -1,0 +1,1205 @@
+Compiled from "MojoToReportOptionsConverter.java"
+public class org.pitest.maven.MojoToReportOptionsConverter {
+  private final org.pitest.maven.AbstractPitMojo mojo;
+
+  private final java.util.function.Predicate<org.apache.maven.artifact.Artifact> dependencyFilter;
+
+  private final org.apache.maven.plugin.logging.Log log;
+
+  private final org.pitest.maven.SurefireConfigConverter surefireConverter;
+
+  public org.pitest.maven.MojoToReportOptionsConverter(org.pitest.maven.AbstractPitMojo, org.pitest.maven.SurefireConfigConverter, java.util.function.Predicate<org.apache.maven.artifact.Artifact>);
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: aload_1
+       6: putfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+       9: aload_0
+      10: aload_3
+      11: putfield      #3                  // Field dependencyFilter:Ljava/util/function/Predicate;
+      14: aload_0
+      15: aload_1
+      16: invokevirtual #4                  // Method org/pitest/maven/AbstractPitMojo.getLog:()Lorg/apache/maven/plugin/logging/Log;
+      19: putfield      #5                  // Field log:Lorg/apache/maven/plugin/logging/Log;
+      22: aload_0
+      23: aload_2
+      24: putfield      #6                  // Field surefireConverter:Lorg/pitest/maven/SurefireConfigConverter;
+      27: return
+
+  public org.pitest.mutationtest.config.ReportOptions convert();
+    Code:
+       0: new           #7                  // class java/util/ArrayList
+       3: dup
+       4: invokespecial #8                  // Method java/util/ArrayList."<init>":()V
+       7: astore_1
+       8: aload_1
+       9: aload_0
+      10: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+      13: invokevirtual #9                  // Method org/pitest/maven/AbstractPitMojo.getProject:()Lorg/apache/maven/project/MavenProject;
+      16: invokevirtual #10                 // Method org/apache/maven/project/MavenProject.getTestClasspathElements:()Ljava/util/List;
+      19: invokeinterface #11,  2           // InterfaceMethod java/util/List.addAll:(Ljava/util/Collection;)Z
+      24: pop
+      25: goto          39
+      28: astore_2
+      29: aload_0
+      30: getfield      #5                  // Field log:Lorg/apache/maven/plugin/logging/Log;
+      33: aload_2
+      34: invokeinterface #13,  2           // InterfaceMethod org/apache/maven/plugin/logging/Log.info:(Ljava/lang/Throwable;)V
+      39: aload_0
+      40: aload_1
+      41: invokespecial #14                 // Method addOwnDependenciesToClassPath:(Ljava/util/List;)V
+      44: aload_1
+      45: aload_0
+      46: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+      49: invokevirtual #15                 // Method org/pitest/maven/AbstractPitMojo.getAdditionalClasspathElements:()Ljava/util/List;
+      52: invokeinterface #11,  2           // InterfaceMethod java/util/List.addAll:(Ljava/util/Collection;)Z
+      57: pop
+      58: aload_0
+      59: aload_1
+      60: invokespecial #16                 // Method autoAddJUnitPlatform:(Ljava/util/List;)V
+      63: aload_0
+      64: aload_1
+      65: invokespecial #17                 // Method removeExcludedDependencies:(Ljava/util/List;)V
+      68: aload_0
+      69: aload_1
+      70: invokespecial #18                 // Method parseReportOptions:(Ljava/util/List;)Lorg/pitest/mutationtest/config/ReportOptions;
+      73: astore_2
+      74: aload_0
+      75: aload_2
+      76: invokespecial #19                 // Method updateFromSurefire:(Lorg/pitest/mutationtest/config/ReportOptions;)Lorg/pitest/mutationtest/config/ReportOptions;
+      79: areturn
+    Exception table:
+       from    to  target type
+           8    25    28   Class org/apache/maven/artifact/DependencyResolutionRequiredException
+
+  private void autoAddJUnitPlatform(java.util.List<java.lang.String>);
+    Code:
+       0: aload_0
+       1: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+       4: invokevirtual #9                  // Method org/pitest/maven/AbstractPitMojo.getProject:()Lorg/apache/maven/project/MavenProject;
+       7: invokevirtual #20                 // Method org/apache/maven/project/MavenProject.getArtifacts:()Ljava/util/Set;
+      10: invokeinterface #21,  1           // InterfaceMethod java/util/Set.stream:()Ljava/util/stream/Stream;
+      15: invokedynamic #22,  0             // InvokeDynamic #0:test:()Ljava/util/function/Predicate;
+      20: invokeinterface #23,  2           // InterfaceMethod java/util/stream/Stream.filter:(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+      25: invokestatic  #24                 // Method java/util/stream/Collectors.toList:()Ljava/util/stream/Collector;
+      28: invokeinterface #25,  2           // InterfaceMethod java/util/stream/Stream.collect:(Ljava/util/stream/Collector;)Ljava/lang/Object;
+      33: checkcast     #26                 // class java/util/List
+      36: astore_2
+      37: aload_2
+      38: invokeinterface #27,  1           // InterfaceMethod java/util/List.stream:()Ljava/util/stream/Stream;
+      43: invokedynamic #28,  0             // InvokeDynamic #1:test:()Ljava/util/function/Predicate;
+      48: invokeinterface #29,  2           // InterfaceMethod java/util/stream/Stream.anyMatch:(Ljava/util/function/Predicate;)Z
+      53: ifeq          57
+      56: return
+      57: aload_2
+      58: invokestatic  #30                 // Method findJUnitArtifact:(Ljava/util/List;)Ljava/util/Optional;
+      61: astore_3
+      62: aload_3
+      63: invokevirtual #31                 // Method java/util/Optional.isPresent:()Z
+      66: ifne          81
+      69: aload_0
+      70: getfield      #5                  // Field log:Lorg/apache/maven/plugin/logging/Log;
+      73: ldc           #32                 // String JUnit 5 not on classpath
+      75: invokeinterface #33,  2           // InterfaceMethod org/apache/maven/plugin/logging/Log.debug:(Ljava/lang/CharSequence;)V
+      80: return
+      81: aload_3
+      82: invokevirtual #34                 // Method java/util/Optional.get:()Ljava/lang/Object;
+      85: checkcast     #35                 // class org/apache/maven/artifact/Artifact
+      88: astore        4
+      90: new           #36                 // class org/eclipse/aether/artifact/DefaultArtifact
+      93: dup
+      94: aload         4
+      96: invokeinterface #37,  1           // InterfaceMethod org/apache/maven/artifact/Artifact.getGroupId:()Ljava/lang/String;
+     101: ldc           #38                 // String junit-platform-launcher
+     103: ldc           #39                 // String jar
+     105: aload         4
+     107: invokeinterface #40,  1           // InterfaceMethod org/apache/maven/artifact/Artifact.getVersion:()Ljava/lang/String;
+     112: invokespecial #41                 // Method org/eclipse/aether/artifact/DefaultArtifact."<init>":(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+     115: astore        5
+     117: new           #42                 // class org/eclipse/aether/resolution/ArtifactRequest
+     120: dup
+     121: invokespecial #43                 // Method org/eclipse/aether/resolution/ArtifactRequest."<init>":()V
+     124: astore        6
+     126: aload         6
+     128: aload         5
+     130: invokevirtual #44                 // Method org/eclipse/aether/resolution/ArtifactRequest.setArtifact:(Lorg/eclipse/aether/artifact/Artifact;)Lorg/eclipse/aether/resolution/ArtifactRequest;
+     133: pop
+     134: aload         6
+     136: aload_0
+     137: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+     140: invokevirtual #9                  // Method org/pitest/maven/AbstractPitMojo.getProject:()Lorg/apache/maven/project/MavenProject;
+     143: invokevirtual #45                 // Method org/apache/maven/project/MavenProject.getRemotePluginRepositories:()Ljava/util/List;
+     146: invokevirtual #46                 // Method org/eclipse/aether/resolution/ArtifactRequest.setRepositories:(Ljava/util/List;)Lorg/eclipse/aether/resolution/ArtifactRequest;
+     149: pop
+     150: aload_0
+     151: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+     154: invokevirtual #47                 // Method org/pitest/maven/AbstractPitMojo.repositorySystem:()Lorg/eclipse/aether/RepositorySystem;
+     157: aload_0
+     158: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+     161: invokevirtual #48                 // Method org/pitest/maven/AbstractPitMojo.session:()Lorg/apache/maven/execution/MavenSession;
+     164: invokevirtual #49                 // Method org/apache/maven/execution/MavenSession.getRepositorySession:()Lorg/eclipse/aether/RepositorySystemSession;
+     167: aload         6
+     169: invokeinterface #50,  3           // InterfaceMethod org/eclipse/aether/RepositorySystem.resolveArtifact:(Lorg/eclipse/aether/RepositorySystemSession;Lorg/eclipse/aether/resolution/ArtifactRequest;)Lorg/eclipse/aether/resolution/ArtifactResult;
+     174: astore        7
+     176: aload_0
+     177: getfield      #5                  // Field log:Lorg/apache/maven/plugin/logging/Log;
+     180: new           #51                 // class java/lang/StringBuilder
+     183: dup
+     184: invokespecial #52                 // Method java/lang/StringBuilder."<init>":()V
+     187: ldc           #53                 // String Auto adding
+     189: invokevirtual #54                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     192: aload         7
+     194: invokevirtual #55                 // Method java/lang/StringBuilder.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+     197: ldc           #56                 // String  to classpath.
+     199: invokevirtual #54                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     202: invokevirtual #57                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+     205: invokeinterface #58,  2           // InterfaceMethod org/apache/maven/plugin/logging/Log.info:(Ljava/lang/CharSequence;)V
+     210: aload_1
+     211: aload         7
+     213: invokevirtual #59                 // Method org/eclipse/aether/resolution/ArtifactResult.getArtifact:()Lorg/eclipse/aether/artifact/Artifact;
+     216: invokeinterface #60,  1           // InterfaceMethod org/eclipse/aether/artifact/Artifact.getFile:()Ljava/io/File;
+     221: invokevirtual #61                 // Method java/io/File.getAbsolutePath:()Ljava/lang/String;
+     224: invokeinterface #62,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     229: pop
+     230: goto          274
+     233: astore        6
+     235: aload_0
+     236: getfield      #5                  // Field log:Lorg/apache/maven/plugin/logging/Log;
+     239: new           #51                 // class java/lang/StringBuilder
+     242: dup
+     243: invokespecial #52                 // Method java/lang/StringBuilder."<init>":()V
+     246: ldc           #64                 // String Could not resolve
+     248: invokevirtual #54                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     251: aload         5
+     253: invokevirtual #55                 // Method java/lang/StringBuilder.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+     256: invokevirtual #57                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+     259: invokeinterface #65,  2           // InterfaceMethod org/apache/maven/plugin/logging/Log.error:(Ljava/lang/CharSequence;)V
+     264: new           #66                 // class java/lang/RuntimeException
+     267: dup
+     268: aload         6
+     270: invokespecial #67                 // Method java/lang/RuntimeException."<init>":(Ljava/lang/Throwable;)V
+     273: athrow
+     274: return
+    Exception table:
+       from    to  target type
+         117   230   233   Class org/eclipse/aether/resolution/ArtifactResolutionException
+
+  private static java.util.Optional<org.apache.maven.artifact.Artifact> findJUnitArtifact(java.util.List<org.apache.maven.artifact.Artifact>);
+    Code:
+       0: aload_0
+       1: invokeinterface #27,  1           // InterfaceMethod java/util/List.stream:()Ljava/util/stream/Stream;
+       6: invokedynamic #68,  0             // InvokeDynamic #2:test:()Ljava/util/function/Predicate;
+      11: invokeinterface #23,  2           // InterfaceMethod java/util/stream/Stream.filter:(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+      16: invokeinterface #69,  1           // InterfaceMethod java/util/stream/Stream.findAny:()Ljava/util/Optional;
+      21: astore_1
+      22: aload_1
+      23: invokevirtual #31                 // Method java/util/Optional.isPresent:()Z
+      26: ifeq          31
+      29: aload_1
+      30: areturn
+      31: aload_0
+      32: invokeinterface #27,  1           // InterfaceMethod java/util/List.stream:()Ljava/util/stream/Stream;
+      37: invokedynamic #70,  0             // InvokeDynamic #3:test:()Ljava/util/function/Predicate;
+      42: invokeinterface #23,  2           // InterfaceMethod java/util/stream/Stream.filter:(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+      47: invokeinterface #69,  1           // InterfaceMethod java/util/stream/Stream.findAny:()Ljava/util/Optional;
+      52: areturn
+
+  private void removeExcludedDependencies(java.util.List<java.lang.String>);
+    Code:
+       0: aload_0
+       1: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+       4: invokevirtual #9                  // Method org/pitest/maven/AbstractPitMojo.getProject:()Lorg/apache/maven/project/MavenProject;
+       7: invokevirtual #20                 // Method org/apache/maven/project/MavenProject.getArtifacts:()Ljava/util/Set;
+      10: invokeinterface #71,  1           // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+      15: astore_2
+      16: aload_2
+      17: invokeinterface #72,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+      22: ifeq          108
+      25: aload_2
+      26: invokeinterface #73,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      31: astore_3
+      32: aload_3
+      33: checkcast     #35                 // class org/apache/maven/artifact/Artifact
+      36: astore        4
+      38: aload_0
+      39: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+      42: invokevirtual #74                 // Method org/pitest/maven/AbstractPitMojo.getClasspathDependencyExcludes:()Ljava/util/List;
+      45: new           #51                 // class java/lang/StringBuilder
+      48: dup
+      49: invokespecial #52                 // Method java/lang/StringBuilder."<init>":()V
+      52: aload         4
+      54: invokeinterface #37,  1           // InterfaceMethod org/apache/maven/artifact/Artifact.getGroupId:()Ljava/lang/String;
+      59: invokevirtual #54                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      62: ldc           #75                 // String :
+      64: invokevirtual #54                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      67: aload         4
+      69: invokeinterface #76,  1           // InterfaceMethod org/apache/maven/artifact/Artifact.getArtifactId:()Ljava/lang/String;
+      74: invokevirtual #54                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      77: invokevirtual #57                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      80: invokeinterface #77,  2           // InterfaceMethod java/util/List.contains:(Ljava/lang/Object;)Z
+      85: ifeq          105
+      88: aload_1
+      89: aload         4
+      91: invokeinterface #78,  1           // InterfaceMethod org/apache/maven/artifact/Artifact.getFile:()Ljava/io/File;
+      96: invokevirtual #79                 // Method java/io/File.getPath:()Ljava/lang/String;
+      99: invokeinterface #80,  2           // InterfaceMethod java/util/List.remove:(Ljava/lang/Object;)Z
+     104: pop
+     105: goto          16
+     108: return
+
+  private org.pitest.mutationtest.config.ReportOptions parseReportOptions(java.util.List<java.lang.String>);
+    Code:
+       0: new           #81                 // class org/pitest/mutationtest/config/ReportOptions
+       3: dup
+       4: invokespecial #82                 // Method org/pitest/mutationtest/config/ReportOptions."<init>":()V
+       7: astore_2
+       8: aload_0
+       9: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+      12: invokevirtual #9                  // Method org/pitest/maven/AbstractPitMojo.getProject:()Lorg/apache/maven/project/MavenProject;
+      15: invokevirtual #83                 // Method org/apache/maven/project/MavenProject.getBuild:()Lorg/apache/maven/model/Build;
+      18: ifnull        81
+      21: aload_0
+      22: getfield      #5                  // Field log:Lorg/apache/maven/plugin/logging/Log;
+      25: new           #51                 // class java/lang/StringBuilder
+      28: dup
+      29: invokespecial #52                 // Method java/lang/StringBuilder."<init>":()V
+      32: ldc           #84                 // String Mutating from
+      34: invokevirtual #54                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      37: aload_0
+      38: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+      41: invokevirtual #9                  // Method org/pitest/maven/AbstractPitMojo.getProject:()Lorg/apache/maven/project/MavenProject;
+      44: invokevirtual #83                 // Method org/apache/maven/project/MavenProject.getBuild:()Lorg/apache/maven/model/Build;
+      47: invokevirtual #85                 // Method org/apache/maven/model/Build.getOutputDirectory:()Ljava/lang/String;
+      50: invokevirtual #54                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      53: invokevirtual #57                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      56: invokeinterface #58,  2           // InterfaceMethod org/apache/maven/plugin/logging/Log.info:(Ljava/lang/CharSequence;)V
+      61: aload_2
+      62: aload_0
+      63: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+      66: invokevirtual #9                  // Method org/pitest/maven/AbstractPitMojo.getProject:()Lorg/apache/maven/project/MavenProject;
+      69: invokevirtual #83                 // Method org/apache/maven/project/MavenProject.getBuild:()Lorg/apache/maven/model/Build;
+      72: invokevirtual #85                 // Method org/apache/maven/model/Build.getOutputDirectory:()Ljava/lang/String;
+      75: invokestatic  #86                 // Method java/util/Collections.singleton:(Ljava/lang/Object;)Ljava/util/Set;
+      78: invokevirtual #87                 // Method org/pitest/mutationtest/config/ReportOptions.setCodePaths:(Ljava/util/Collection;)V
+      81: aload_2
+      82: aload_0
+      83: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+      86: invokevirtual #88                 // Method org/pitest/maven/AbstractPitMojo.isUseClasspathJar:()Z
+      89: invokevirtual #89                 // Method org/pitest/mutationtest/config/ReportOptions.setUseClasspathJar:(Z)V
+      92: aload_2
+      93: aload_1
+      94: invokevirtual #90                 // Method org/pitest/mutationtest/config/ReportOptions.setClassPathElements:(Ljava/util/Collection;)V
+      97: aload_2
+      98: aload_0
+      99: invokespecial #91                 // Method shouldFailWhenNoMutations:()Z
+     102: invokevirtual #92                 // Method org/pitest/mutationtest/config/ReportOptions.setFailWhenNoMutations:(Z)V
+     105: aload_2
+     106: aload_0
+     107: invokespecial #93                 // Method determineTargetClasses:()Ljava/util/Collection;
+     110: invokevirtual #94                 // Method org/pitest/mutationtest/config/ReportOptions.setTargetClasses:(Ljava/util/Collection;)V
+     113: aload_2
+     114: aload_0
+     115: invokespecial #95                 // Method determineTargetTests:()Ljava/util/Collection;
+     118: invokevirtual #96                 // Method org/pitest/mutationtest/config/ReportOptions.setTargetTests:(Ljava/util/Collection;)V
+     121: aload_2
+     122: aload_0
+     123: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+     126: invokevirtual #97                 // Method org/pitest/maven/AbstractPitMojo.getExcludedMethods:()Ljava/util/List;
+     129: invokevirtual #98                 // Method org/pitest/mutationtest/config/ReportOptions.setExcludedMethods:(Ljava/util/Collection;)V
+     132: aload_2
+     133: aload_0
+     134: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+     137: invokevirtual #99                 // Method org/pitest/maven/AbstractPitMojo.getExcludedClasses:()Ljava/util/List;
+     140: invokevirtual #100                // Method org/pitest/mutationtest/config/ReportOptions.setExcludedClasses:(Ljava/util/Collection;)V
+     143: aload_2
+     144: aload_0
+     145: aload_0
+     146: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+     149: invokevirtual #101                // Method org/pitest/maven/AbstractPitMojo.getExcludedTestClasses:()Ljava/util/ArrayList;
+     152: invokespecial #102                // Method globStringsToPredicates:(Ljava/util/List;)Ljava/util/Collection;
+     155: invokevirtual #103                // Method org/pitest/mutationtest/config/ReportOptions.setExcludedTestClasses:(Ljava/util/Collection;)V
+     158: aload_2
+     159: aload_0
+     160: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+     163: invokevirtual #104                // Method org/pitest/maven/AbstractPitMojo.getThreads:()I
+     166: invokevirtual #105                // Method org/pitest/mutationtest/config/ReportOptions.setNumberOfThreads:(I)V
+     169: aload_2
+     170: aload_0
+     171: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+     174: invokevirtual #106                // Method org/pitest/maven/AbstractPitMojo.getExcludedRunners:()Ljava/util/ArrayList;
+     177: invokevirtual #107                // Method org/pitest/mutationtest/config/ReportOptions.setExcludedRunners:(Ljava/util/Collection;)V
+     180: aload_2
+     181: aload_0
+     182: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+     185: invokevirtual #108                // Method org/pitest/maven/AbstractPitMojo.getReportsDirectory:()Ljava/io/File;
+     188: invokevirtual #61                 // Method java/io/File.getAbsolutePath:()Ljava/lang/String;
+     191: invokevirtual #109                // Method org/pitest/mutationtest/config/ReportOptions.setReportDir:(Ljava/lang/String;)V
+     194: aload_0
+     195: aload_2
+     196: invokespecial #110                // Method configureVerbosity:(Lorg/pitest/mutationtest/config/ReportOptions;)V
+     199: aload_0
+     200: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+     203: invokevirtual #111                // Method org/pitest/maven/AbstractPitMojo.getJvmArgs:()Ljava/util/List;
+     206: ifnull        220
+     209: aload_2
+     210: aload_0
+     211: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+     214: invokevirtual #111                // Method org/pitest/maven/AbstractPitMojo.getJvmArgs:()Ljava/util/List;
+     217: invokevirtual #112                // Method org/pitest/mutationtest/config/ReportOptions.addChildJVMArgs:(Ljava/util/List;)V
+     220: aload_0
+     221: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+     224: invokevirtual #113                // Method org/pitest/maven/AbstractPitMojo.getArgLine:()Ljava/lang/String;
+     227: ifnull        245
+     230: aload_2
+     231: aload_0
+     232: aload_0
+     233: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+     236: invokevirtual #113                // Method org/pitest/maven/AbstractPitMojo.getArgLine:()Ljava/lang/String;
+     239: invokespecial #114                // Method replacePropertyExpressions:(Ljava/lang/String;)Ljava/lang/String;
+     242: invokevirtual #115                // Method org/pitest/mutationtest/config/ReportOptions.setArgLine:(Ljava/lang/String;)V
+     245: aload_2
+     246: aload_0
+     247: invokespecial #116                // Method determineMutators:()Ljava/util/Collection;
+     250: invokevirtual #117                // Method org/pitest/mutationtest/config/ReportOptions.setMutators:(Ljava/util/Collection;)V
+     253: aload_2
+     254: aload_0
+     255: invokespecial #118                // Method determineFeatures:()Ljava/util/Collection;
+     258: invokevirtual #119                // Method org/pitest/mutationtest/config/ReportOptions.setFeatures:(Ljava/util/Collection;)V
+     261: aload_2
+     262: aload_0
+     263: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+     266: invokevirtual #120                // Method org/pitest/maven/AbstractPitMojo.getTimeoutConstant:()J
+     269: invokevirtual #121                // Method org/pitest/mutationtest/config/ReportOptions.setTimeoutConstant:(J)V
+     272: aload_2
+     273: aload_0
+     274: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+     277: invokevirtual #122                // Method org/pitest/maven/AbstractPitMojo.getTimeoutFactor:()F
+     280: invokevirtual #123                // Method org/pitest/mutationtest/config/ReportOptions.setTimeoutFactor:(F)V
+     283: aload_0
+     284: aload_0
+     285: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+     288: invokevirtual #124                // Method org/pitest/maven/AbstractPitMojo.getAvoidCallsTo:()Ljava/util/List;
+     291: invokespecial #125                // Method hasValue:(Ljava/util/Collection;)Z
+     294: ifeq          308
+     297: aload_2
+     298: aload_0
+     299: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+     302: invokevirtual #124                // Method org/pitest/maven/AbstractPitMojo.getAvoidCallsTo:()Ljava/util/List;
+     305: invokevirtual #126                // Method org/pitest/mutationtest/config/ReportOptions.setLoggingClasses:(Ljava/util/Collection;)V
+     308: new           #7                  // class java/util/ArrayList
+     311: dup
+     312: invokespecial #8                  // Method java/util/ArrayList."<init>":()V
+     315: astore_3
+     316: aload_3
+     317: aload_0
+     318: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+     321: invokevirtual #9                  // Method org/pitest/maven/AbstractPitMojo.getProject:()Lorg/apache/maven/project/MavenProject;
+     324: invokevirtual #127                // Method org/apache/maven/project/MavenProject.getCompileSourceRoots:()Ljava/util/List;
+     327: invokeinterface #11,  2           // InterfaceMethod java/util/List.addAll:(Ljava/util/Collection;)Z
+     332: pop
+     333: aload_3
+     334: aload_0
+     335: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+     338: invokevirtual #9                  // Method org/pitest/maven/AbstractPitMojo.getProject:()Lorg/apache/maven/project/MavenProject;
+     341: invokevirtual #128                // Method org/apache/maven/project/MavenProject.getTestCompileSourceRoots:()Ljava/util/List;
+     344: invokeinterface #11,  2           // InterfaceMethod java/util/List.addAll:(Ljava/util/Collection;)Z
+     349: pop
+     350: aload_3
+     351: aload_0
+     352: invokespecial #129                // Method kotlinIfPresent:()Ljava/util/Collection;
+     355: invokeinterface #11,  2           // InterfaceMethod java/util/List.addAll:(Ljava/util/Collection;)Z
+     360: pop
+     361: aload_2
+     362: aload_0
+     363: aload_3
+     364: invokespecial #130                // Method stringsToPaths:(Ljava/util/List;)Ljava/util/Collection;
+     367: invokevirtual #131                // Method org/pitest/mutationtest/config/ReportOptions.setSourceDirs:(Ljava/util/Collection;)V
+     370: aload_2
+     371: aload_0
+     372: invokespecial #132                // Method determineOutputFormats:()Ljava/util/Collection;
+     375: invokevirtual #133                // Method org/pitest/mutationtest/config/ReportOptions.addOutputFormats:(Ljava/util/Collection;)V
+     378: aload_0
+     379: aload_2
+     380: invokespecial #134                // Method setTestGroups:(Lorg/pitest/mutationtest/config/ReportOptions;)V
+     383: aload_2
+     384: aload_0
+     385: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+     388: invokevirtual #135                // Method org/pitest/maven/AbstractPitMojo.isFullMutationMatrix:()Z
+     391: invokevirtual #136                // Method org/pitest/mutationtest/config/ReportOptions.setFullMutationMatrix:(Z)V
+     394: aload_2
+     395: aload_0
+     396: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+     399: invokevirtual #137                // Method org/pitest/maven/AbstractPitMojo.getMutationUnitSize:()I
+     402: invokevirtual #138                // Method org/pitest/mutationtest/config/ReportOptions.setMutationUnitSize:(I)V
+     405: aload_2
+     406: aload_0
+     407: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+     410: invokevirtual #139                // Method org/pitest/maven/AbstractPitMojo.isTimestampedReports:()Z
+     413: invokevirtual #140                // Method org/pitest/mutationtest/config/ReportOptions.setShouldCreateTimestampedReports:(Z)V
+     416: aload_2
+     417: aload_0
+     418: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+     421: invokevirtual #141                // Method org/pitest/maven/AbstractPitMojo.isDetectInlinedCode:()Z
+     424: invokevirtual #142                // Method org/pitest/mutationtest/config/ReportOptions.setDetectInlinedCode:(Z)V
+     427: aload_0
+     428: aload_2
+     429: invokespecial #143                // Method determineHistory:(Lorg/pitest/mutationtest/config/ReportOptions;)V
+     432: aload_2
+     433: aload_0
+     434: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+     437: invokevirtual #144                // Method org/pitest/maven/AbstractPitMojo.isExportLineCoverage:()Z
+     440: invokevirtual #145                // Method org/pitest/mutationtest/config/ReportOptions.setExportLineCoverage:(Z)V
+     443: aload_2
+     444: aload_0
+     445: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+     448: invokevirtual #146                // Method org/pitest/maven/AbstractPitMojo.getMutationEngine:()Ljava/lang/String;
+     451: invokevirtual #147                // Method org/pitest/mutationtest/config/ReportOptions.setMutationEngine:(Ljava/lang/String;)V
+     454: aload_2
+     455: aload_0
+     456: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+     459: invokevirtual #148                // Method org/pitest/maven/AbstractPitMojo.getJavaExecutable:()Ljava/lang/String;
+     462: invokevirtual #149                // Method org/pitest/mutationtest/config/ReportOptions.setJavaExecutable:(Ljava/lang/String;)V
+     465: aload_2
+     466: aload_0
+     467: invokespecial #150                // Method createPluginProperties:()Ljava/util/Properties;
+     470: invokevirtual #151                // Method org/pitest/mutationtest/config/ReportOptions.setFreeFormProperties:(Ljava/util/Properties;)V
+     473: aload_2
+     474: aload_0
+     475: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+     478: invokevirtual #152                // Method org/pitest/maven/AbstractPitMojo.getIncludedTestMethods:()Ljava/util/List;
+     481: invokevirtual #153                // Method org/pitest/mutationtest/config/ReportOptions.setIncludedTestMethods:(Ljava/util/Collection;)V
+     484: aload_2
+     485: aload_0
+     486: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+     489: invokevirtual #154                // Method org/pitest/maven/AbstractPitMojo.skipFailingTests:()Z
+     492: invokevirtual #155                // Method org/pitest/mutationtest/config/ReportOptions.setSkipFailingTests:(Z)V
+     495: aload_2
+     496: aload_0
+     497: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+     500: invokevirtual #156                // Method org/pitest/maven/AbstractPitMojo.getSourceEncoding:()Ljava/nio/charset/Charset;
+     503: invokevirtual #157                // Method org/pitest/mutationtest/config/ReportOptions.setInputEncoding:(Ljava/nio/charset/Charset;)V
+     506: aload_2
+     507: aload_0
+     508: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+     511: invokevirtual #158                // Method org/pitest/maven/AbstractPitMojo.getOutputEncoding:()Ljava/nio/charset/Charset;
+     514: invokevirtual #159                // Method org/pitest/mutationtest/config/ReportOptions.setOutputEncoding:(Ljava/nio/charset/Charset;)V
+     517: aload_0
+     518: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+     521: invokevirtual #160                // Method org/pitest/maven/AbstractPitMojo.getProjectBase:()Ljava/lang/String;
+     524: ifnull        548
+     527: aload_2
+     528: invokestatic  #161                // Method java/nio/file/FileSystems.getDefault:()Ljava/nio/file/FileSystem;
+     531: aload_0
+     532: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+     535: invokevirtual #160                // Method org/pitest/maven/AbstractPitMojo.getProjectBase:()Ljava/lang/String;
+     538: iconst_0
+     539: anewarray     #162                // class java/lang/String
+     542: invokevirtual #163                // Method java/nio/file/FileSystem.getPath:(Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;
+     545: invokevirtual #164                // Method org/pitest/mutationtest/config/ReportOptions.setProjectBase:(Ljava/nio/file/Path;)V
+     548: aload_0
+     549: aload_0
+     550: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+     553: invokespecial #165                // Method checkForObsoleteOptions:(Lorg/pitest/maven/AbstractPitMojo;)V
+     556: aload_2
+     557: areturn
+
+  private java.util.Collection<java.lang.String> kotlinIfPresent();
+    Code:
+       0: aload_0
+       1: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+       4: invokevirtual #9                  // Method org/pitest/maven/AbstractPitMojo.getProject:()Lorg/apache/maven/project/MavenProject;
+       7: invokevirtual #166                // Method org/apache/maven/project/MavenProject.getBasedir:()Ljava/io/File;
+      10: invokevirtual #61                 // Method java/io/File.getAbsolutePath:()Ljava/lang/String;
+      13: iconst_3
+      14: anewarray     #162                // class java/lang/String
+      17: dup
+      18: iconst_0
+      19: ldc           #167                // String src
+      21: aastore
+      22: dup
+      23: iconst_1
+      24: ldc           #168                // String test
+      26: aastore
+      27: dup
+      28: iconst_2
+      29: ldc           #169                // String kotlin
+      31: aastore
+      32: invokestatic  #170                // Method java/nio/file/Paths.get:(Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;
+      35: astore_1
+      36: aload_0
+      37: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+      40: invokevirtual #9                  // Method org/pitest/maven/AbstractPitMojo.getProject:()Lorg/apache/maven/project/MavenProject;
+      43: invokevirtual #166                // Method org/apache/maven/project/MavenProject.getBasedir:()Ljava/io/File;
+      46: invokevirtual #61                 // Method java/io/File.getAbsolutePath:()Ljava/lang/String;
+      49: iconst_3
+      50: anewarray     #162                // class java/lang/String
+      53: dup
+      54: iconst_0
+      55: ldc           #167                // String src
+      57: aastore
+      58: dup
+      59: iconst_1
+      60: ldc           #171                // String main
+      62: aastore
+      63: dup
+      64: iconst_2
+      65: ldc           #169                // String kotlin
+      67: aastore
+      68: invokestatic  #170                // Method java/nio/file/Paths.get:(Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;
+      71: astore_2
+      72: iconst_2
+      73: anewarray     #172                // class java/nio/file/Path
+      76: dup
+      77: iconst_0
+      78: aload_1
+      79: aastore
+      80: dup
+      81: iconst_1
+      82: aload_2
+      83: aastore
+      84: invokestatic  #173                // InterfaceMethod java/util/stream/Stream.of:([Ljava/lang/Object;)Ljava/util/stream/Stream;
+      87: invokedynamic #174,  0            // InvokeDynamic #4:test:()Ljava/util/function/Predicate;
+      92: invokeinterface #23,  2           // InterfaceMethod java/util/stream/Stream.filter:(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+      97: invokedynamic #175,  0            // InvokeDynamic #5:apply:()Ljava/util/function/Function;
+     102: invokeinterface #176,  2          // InterfaceMethod java/util/stream/Stream.map:(Ljava/util/function/Function;)Ljava/util/stream/Stream;
+     107: invokestatic  #24                 // Method java/util/stream/Collectors.toList:()Ljava/util/stream/Collector;
+     110: invokeinterface #25,  2           // InterfaceMethod java/util/stream/Stream.collect:(Ljava/util/stream/Collector;)Ljava/lang/Object;
+     115: checkcast     #177                // class java/util/Collection
+     118: areturn
+
+  private void configureVerbosity(org.pitest.mutationtest.config.ReportOptions);
+    Code:
+       0: aload_0
+       1: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+       4: invokevirtual #178                // Method org/pitest/maven/AbstractPitMojo.isVerbose:()Z
+       7: ifeq          20
+      10: aload_1
+      11: getstatic     #179                // Field org/pitest/util/Verbosity.VERBOSE:Lorg/pitest/util/Verbosity;
+      14: invokevirtual #180                // Method org/pitest/mutationtest/config/ReportOptions.setVerbosity:(Lorg/pitest/util/Verbosity;)V
+      17: goto          36
+      20: aload_0
+      21: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+      24: invokevirtual #181                // Method org/pitest/maven/AbstractPitMojo.getVerbosity:()Ljava/lang/String;
+      27: invokestatic  #182                // Method org/pitest/util/Verbosity.fromString:(Ljava/lang/String;)Lorg/pitest/util/Verbosity;
+      30: astore_2
+      31: aload_1
+      32: aload_2
+      33: invokevirtual #180                // Method org/pitest/mutationtest/config/ReportOptions.setVerbosity:(Lorg/pitest/util/Verbosity;)V
+      36: return
+
+  private void checkForObsoleteOptions(org.pitest.maven.AbstractPitMojo);
+    Code:
+       0: aload_1
+       1: invokevirtual #183                // Method org/pitest/maven/AbstractPitMojo.getMaxMutationsPerClass:()I
+       4: ifle          42
+       7: new           #184                // class java/lang/IllegalArgumentException
+      10: dup
+      11: new           #51                 // class java/lang/StringBuilder
+      14: dup
+      15: invokespecial #52                 // Method java/lang/StringBuilder."<init>":()V
+      18: ldc           #185                // String The max mutations per class argument is no longer supported, use features=+CLASSLIMIT(limit[
+      20: invokevirtual #54                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      23: aload_1
+      24: invokevirtual #183                // Method org/pitest/maven/AbstractPitMojo.getMaxMutationsPerClass:()I
+      27: invokevirtual #186                // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      30: ldc           #187                // String ]) instead
+      32: invokevirtual #54                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      35: invokevirtual #57                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      38: invokespecial #188                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+      41: athrow
+      42: return
+
+  private void determineHistory(org.pitest.mutationtest.config.ReportOptions);
+    Code:
+       0: aload_0
+       1: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+       4: invokevirtual #189                // Method org/pitest/maven/AbstractPitMojo.useHistory:()Z
+       7: ifeq          18
+      10: aload_0
+      11: aload_1
+      12: invokespecial #190                // Method useHistoryFileInTempDir:(Lorg/pitest/mutationtest/config/ReportOptions;)V
+      15: goto          40
+      18: aload_1
+      19: aload_0
+      20: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+      23: invokevirtual #191                // Method org/pitest/maven/AbstractPitMojo.getHistoryInputFile:()Ljava/io/File;
+      26: invokevirtual #192                // Method org/pitest/mutationtest/config/ReportOptions.setHistoryInputLocation:(Ljava/io/File;)V
+      29: aload_1
+      30: aload_0
+      31: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+      34: invokevirtual #193                // Method org/pitest/maven/AbstractPitMojo.getHistoryOutputFile:()Ljava/io/File;
+      37: invokevirtual #194                // Method org/pitest/mutationtest/config/ReportOptions.setHistoryOutputLocation:(Ljava/io/File;)V
+      40: return
+
+  private void useHistoryFileInTempDir(org.pitest.mutationtest.config.ReportOptions);
+    Code:
+       0: ldc           #195                // String java.io.tmpdir
+       2: invokestatic  #196                // Method java/lang/System.getProperty:(Ljava/lang/String;)Ljava/lang/String;
+       5: astore_2
+       6: aload_0
+       7: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+      10: invokevirtual #9                  // Method org/pitest/maven/AbstractPitMojo.getProject:()Lorg/apache/maven/project/MavenProject;
+      13: astore_3
+      14: new           #51                 // class java/lang/StringBuilder
+      17: dup
+      18: invokespecial #52                 // Method java/lang/StringBuilder."<init>":()V
+      21: aload_3
+      22: invokevirtual #197                // Method org/apache/maven/project/MavenProject.getGroupId:()Ljava/lang/String;
+      25: invokevirtual #54                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      28: ldc           #198                // String .
+      30: invokevirtual #54                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      33: aload_3
+      34: invokevirtual #199                // Method org/apache/maven/project/MavenProject.getArtifactId:()Ljava/lang/String;
+      37: invokevirtual #54                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      40: ldc           #198                // String .
+      42: invokevirtual #54                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      45: aload_3
+      46: invokevirtual #200                // Method org/apache/maven/project/MavenProject.getVersion:()Ljava/lang/String;
+      49: invokevirtual #54                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      52: ldc           #201                // String _pitest_history.bin
+      54: invokevirtual #54                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      57: invokevirtual #57                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      60: astore        4
+      62: new           #202                // class java/io/File
+      65: dup
+      66: aload_2
+      67: aload         4
+      69: invokespecial #203                // Method java/io/File."<init>":(Ljava/lang/String;Ljava/lang/String;)V
+      72: astore        5
+      74: aload_0
+      75: getfield      #5                  // Field log:Lorg/apache/maven/plugin/logging/Log;
+      78: new           #51                 // class java/lang/StringBuilder
+      81: dup
+      82: invokespecial #52                 // Method java/lang/StringBuilder."<init>":()V
+      85: ldc           #204                // String Will read and write history at
+      87: invokevirtual #54                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      90: aload         5
+      92: invokevirtual #55                 // Method java/lang/StringBuilder.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+      95: invokevirtual #57                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      98: invokeinterface #58,  2           // InterfaceMethod org/apache/maven/plugin/logging/Log.info:(Ljava/lang/CharSequence;)V
+     103: aload_0
+     104: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+     107: invokevirtual #191                // Method org/pitest/maven/AbstractPitMojo.getHistoryInputFile:()Ljava/io/File;
+     110: ifnonnull     119
+     113: aload_1
+     114: aload         5
+     116: invokevirtual #192                // Method org/pitest/mutationtest/config/ReportOptions.setHistoryInputLocation:(Ljava/io/File;)V
+     119: aload_0
+     120: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+     123: invokevirtual #193                // Method org/pitest/maven/AbstractPitMojo.getHistoryOutputFile:()Ljava/io/File;
+     126: ifnonnull     135
+     129: aload_1
+     130: aload         5
+     132: invokevirtual #194                // Method org/pitest/mutationtest/config/ReportOptions.setHistoryOutputLocation:(Ljava/io/File;)V
+     135: return
+
+  private org.pitest.mutationtest.config.ReportOptions updateFromSurefire(org.pitest.mutationtest.config.ReportOptions);
+    Code:
+       0: aload_0
+       1: ldc           #205                // String org.apache.maven.plugins:maven-surefire-plugin
+       3: invokespecial #206                // Method lookupPlugin:(Ljava/lang/String;)Ljava/util/Collection;
+       6: astore_2
+       7: aload_0
+       8: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+      11: invokevirtual #207                // Method org/pitest/maven/AbstractPitMojo.isParseSurefireConfig:()Z
+      14: ifne          19
+      17: aload_1
+      18: areturn
+      19: aload_2
+      20: invokeinterface #208,  1          // InterfaceMethod java/util/Collection.isEmpty:()Z
+      25: ifeq          41
+      28: aload_0
+      29: getfield      #5                  // Field log:Lorg/apache/maven/plugin/logging/Log;
+      32: ldc           #209                // String Could not find surefire configuration in pom
+      34: invokeinterface #210,  2          // InterfaceMethod org/apache/maven/plugin/logging/Log.warn:(Ljava/lang/CharSequence;)V
+      39: aload_1
+      40: areturn
+      41: aload_2
+      42: invokeinterface #211,  1          // InterfaceMethod java/util/Collection.iterator:()Ljava/util/Iterator;
+      47: invokeinterface #73,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      52: checkcast     #212                // class org/apache/maven/model/Plugin
+      55: astore_3
+      56: aload_3
+      57: ifnull        76
+      60: aload_0
+      61: getfield      #6                  // Field surefireConverter:Lorg/pitest/maven/SurefireConfigConverter;
+      64: aload_1
+      65: aload_3
+      66: invokevirtual #213                // Method org/apache/maven/model/Plugin.getConfiguration:()Ljava/lang/Object;
+      69: checkcast     #214                // class org/codehaus/plexus/util/xml/Xpp3Dom
+      72: invokevirtual #215                // Method org/pitest/maven/SurefireConfigConverter.update:(Lorg/pitest/mutationtest/config/ReportOptions;Lorg/codehaus/plexus/util/xml/Xpp3Dom;)Lorg/pitest/mutationtest/config/ReportOptions;
+      75: areturn
+      76: aload_1
+      77: areturn
+
+  private java.util.Collection<org.apache.maven.model.Plugin> lookupPlugin(java.lang.String);
+    Code:
+       0: aload_0
+       1: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+       4: invokevirtual #9                  // Method org/pitest/maven/AbstractPitMojo.getProject:()Lorg/apache/maven/project/MavenProject;
+       7: invokevirtual #216                // Method org/apache/maven/project/MavenProject.getBuildPlugins:()Ljava/util/List;
+      10: astore_2
+      11: aload_2
+      12: aload_1
+      13: invokestatic  #217                // Method hasKey:(Ljava/lang/String;)Ljava/util/function/Predicate;
+      16: invokestatic  #218                // Method org/pitest/functional/FCollection.filter:(Ljava/lang/Iterable;Ljava/util/function/Predicate;)Ljava/util/List;
+      19: areturn
+
+  private static java.util.function.Predicate<org.apache.maven.model.Plugin> hasKey(java.lang.String);
+    Code:
+       0: aload_0
+       1: invokedynamic #219,  0            // InvokeDynamic #6:test:(Ljava/lang/String;)Ljava/util/function/Predicate;
+       6: areturn
+
+  private boolean shouldFailWhenNoMutations();
+    Code:
+       0: aload_0
+       1: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+       4: invokevirtual #220                // Method org/pitest/maven/AbstractPitMojo.isFailWhenNoMutations:()Z
+       7: ireturn
+
+  private void setTestGroups(org.pitest.mutationtest.config.ReportOptions);
+    Code:
+       0: new           #221                // class org/pitest/testapi/TestGroupConfig
+       3: dup
+       4: aload_0
+       5: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+       8: invokevirtual #222                // Method org/pitest/maven/AbstractPitMojo.getExcludedGroups:()Ljava/util/List;
+      11: aload_0
+      12: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+      15: invokevirtual #223                // Method org/pitest/maven/AbstractPitMojo.getIncludedGroups:()Ljava/util/List;
+      18: invokespecial #224                // Method org/pitest/testapi/TestGroupConfig."<init>":(Ljava/util/List;Ljava/util/List;)V
+      21: astore_2
+      22: aload_1
+      23: aload_2
+      24: invokevirtual #225                // Method org/pitest/mutationtest/config/ReportOptions.setGroupConfig:(Lorg/pitest/testapi/TestGroupConfig;)V
+      27: return
+
+  private void addOwnDependenciesToClassPath(java.util.List<java.lang.String>);
+    Code:
+       0: aload_0
+       1: invokespecial #226                // Method filteredDependencies:()Ljava/util/Collection;
+       4: invokeinterface #211,  1          // InterfaceMethod java/util/Collection.iterator:()Ljava/util/Iterator;
+       9: astore_2
+      10: aload_2
+      11: invokeinterface #72,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+      16: ifeq          100
+      19: aload_2
+      20: invokeinterface #73,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      25: checkcast     #35                 // class org/apache/maven/artifact/Artifact
+      28: astore_3
+      29: aload_0
+      30: getfield      #5                  // Field log:Lorg/apache/maven/plugin/logging/Log;
+      33: new           #51                 // class java/lang/StringBuilder
+      36: dup
+      37: invokespecial #52                 // Method java/lang/StringBuilder."<init>":()V
+      40: ldc           #227                // String Adding
+      42: invokevirtual #54                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      45: aload_3
+      46: invokeinterface #37,  1           // InterfaceMethod org/apache/maven/artifact/Artifact.getGroupId:()Ljava/lang/String;
+      51: invokevirtual #54                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      54: ldc           #75                 // String :
+      56: invokevirtual #54                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      59: aload_3
+      60: invokeinterface #76,  1           // InterfaceMethod org/apache/maven/artifact/Artifact.getArtifactId:()Ljava/lang/String;
+      65: invokevirtual #54                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      68: ldc           #228                // String  to SUT classpath
+      70: invokevirtual #54                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      73: invokevirtual #57                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      76: invokeinterface #58,  2           // InterfaceMethod org/apache/maven/plugin/logging/Log.info:(Ljava/lang/CharSequence;)V
+      81: aload_1
+      82: aload_3
+      83: invokeinterface #78,  1           // InterfaceMethod org/apache/maven/artifact/Artifact.getFile:()Ljava/io/File;
+      88: invokevirtual #61                 // Method java/io/File.getAbsolutePath:()Ljava/lang/String;
+      91: invokeinterface #62,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      96: pop
+      97: goto          10
+     100: aload_0
+     101: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+     104: invokevirtual #229                // Method org/pitest/maven/AbstractPitMojo.getPluginArtifactMap:()Ljava/util/Map;
+     107: invokeinterface #230,  1          // InterfaceMethod java/util/Map.values:()Ljava/util/Collection;
+     112: invokeinterface #231,  1          // InterfaceMethod java/util/Collection.stream:()Ljava/util/stream/Stream;
+     117: invokedynamic #232,  0            // InvokeDynamic #7:test:()Ljava/util/function/Predicate;
+     122: invokeinterface #23,  2           // InterfaceMethod java/util/stream/Stream.filter:(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+     127: aload_1
+     128: invokedynamic #233,  0            // InvokeDynamic #8:accept:(Ljava/util/List;)Ljava/util/function/Consumer;
+     133: invokeinterface #234,  2          // InterfaceMethod java/util/stream/Stream.forEach:(Ljava/util/function/Consumer;)V
+     138: return
+
+  private java.util.Collection<java.util.function.Predicate<java.lang.String>> globStringsToPredicates(java.util.List<java.lang.String>);
+    Code:
+       0: aload_1
+       1: invokestatic  #235                // Method org/pitest/functional/Streams.asStream:(Ljava/util/Collection;)Ljava/util/stream/Stream;
+       4: invokestatic  #236                // Method org/pitest/util/Glob.toGlobPredicate:()Ljava/util/function/Function;
+       7: invokeinterface #176,  2          // InterfaceMethod java/util/stream/Stream.map:(Ljava/util/function/Function;)Ljava/util/stream/Stream;
+      12: invokestatic  #24                 // Method java/util/stream/Collectors.toList:()Ljava/util/stream/Collector;
+      15: invokeinterface #25,  2           // InterfaceMethod java/util/stream/Stream.collect:(Ljava/util/stream/Collector;)Ljava/lang/Object;
+      20: checkcast     #177                // class java/util/Collection
+      23: areturn
+
+  private java.util.Collection<java.util.function.Predicate<java.lang.String>> determineTargetTests();
+    Code:
+       0: aload_0
+       1: aload_0
+       2: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+       5: invokevirtual #237                // Method org/pitest/maven/AbstractPitMojo.getTargetTests:()Ljava/util/List;
+       8: invokespecial #238                // Method useConfiguredTargetTestsOrFindOccupiedPackages:(Ljava/util/Collection;)Ljava/util/Collection;
+      11: invokeinterface #231,  1          // InterfaceMethod java/util/Collection.stream:()Ljava/util/stream/Stream;
+      16: invokestatic  #236                // Method org/pitest/util/Glob.toGlobPredicate:()Ljava/util/function/Function;
+      19: invokeinterface #176,  2          // InterfaceMethod java/util/stream/Stream.map:(Ljava/util/function/Function;)Ljava/util/stream/Stream;
+      24: invokestatic  #24                 // Method java/util/stream/Collectors.toList:()Ljava/util/stream/Collector;
+      27: invokeinterface #25,  2           // InterfaceMethod java/util/stream/Stream.collect:(Ljava/util/stream/Collector;)Ljava/lang/Object;
+      32: checkcast     #177                // class java/util/Collection
+      35: areturn
+
+  private java.util.Collection<java.lang.String> useConfiguredTargetTestsOrFindOccupiedPackages(java.util.Collection<java.lang.String>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #125                // Method hasValue:(Ljava/util/Collection;)Z
+       5: ifne          27
+       8: aload_0
+       9: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+      12: invokevirtual #4                  // Method org/pitest/maven/AbstractPitMojo.getLog:()Lorg/apache/maven/plugin/logging/Log;
+      15: ldc           #239                // String Defaulting target tests to match packages in test build directory
+      17: invokeinterface #58,  2           // InterfaceMethod org/apache/maven/plugin/logging/Log.info:(Ljava/lang/CharSequence;)V
+      22: aload_0
+      23: invokespecial #240                // Method findOccupiedTestPackages:()Ljava/util/Collection;
+      26: areturn
+      27: aload_1
+      28: areturn
+
+  private java.util.Collection<java.lang.String> findOccupiedTestPackages();
+    Code:
+       0: aload_0
+       1: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+       4: invokevirtual #9                  // Method org/pitest/maven/AbstractPitMojo.getProject:()Lorg/apache/maven/project/MavenProject;
+       7: invokevirtual #83                 // Method org/apache/maven/project/MavenProject.getBuild:()Lorg/apache/maven/model/Build;
+      10: invokevirtual #241                // Method org/apache/maven/model/Build.getTestOutputDirectory:()Ljava/lang/String;
+      13: astore_1
+      14: aload_1
+      15: ifnull        32
+      18: new           #202                // class java/io/File
+      21: dup
+      22: aload_1
+      23: invokespecial #242                // Method java/io/File."<init>":(Ljava/lang/String;)V
+      26: astore_2
+      27: aload_2
+      28: invokestatic  #243                // Method findOccupiedPackagesIn:(Ljava/io/File;)Ljava/util/Collection;
+      31: areturn
+      32: invokestatic  #244                // Method java/util/Collections.emptyList:()Ljava/util/List;
+      35: areturn
+
+  private java.util.Collection<org.apache.maven.artifact.Artifact> filteredDependencies();
+    Code:
+       0: aload_0
+       1: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+       4: invokevirtual #229                // Method org/pitest/maven/AbstractPitMojo.getPluginArtifactMap:()Ljava/util/Map;
+       7: invokeinterface #230,  1          // InterfaceMethod java/util/Map.values:()Ljava/util/Collection;
+      12: aload_0
+      13: getfield      #3                  // Field dependencyFilter:Ljava/util/function/Predicate;
+      16: invokestatic  #218                // Method org/pitest/functional/FCollection.filter:(Ljava/lang/Iterable;Ljava/util/function/Predicate;)Ljava/util/List;
+      19: areturn
+
+  private java.util.Collection<java.lang.String> determineMutators();
+    Code:
+       0: aload_0
+       1: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+       4: invokevirtual #245                // Method org/pitest/maven/AbstractPitMojo.getMutators:()Ljava/util/List;
+       7: ifnull        18
+      10: aload_0
+      11: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+      14: invokevirtual #245                // Method org/pitest/maven/AbstractPitMojo.getMutators:()Ljava/util/List;
+      17: areturn
+      18: invokestatic  #244                // Method java/util/Collections.emptyList:()Ljava/util/List;
+      21: areturn
+
+  private java.util.Collection<java.lang.String> determineFeatures();
+    Code:
+       0: aload_0
+       1: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+       4: invokevirtual #246                // Method org/pitest/maven/AbstractPitMojo.getFeatures:()Ljava/util/ArrayList;
+       7: ifnull        18
+      10: aload_0
+      11: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+      14: invokevirtual #246                // Method org/pitest/maven/AbstractPitMojo.getFeatures:()Ljava/util/ArrayList;
+      17: areturn
+      18: invokestatic  #244                // Method java/util/Collections.emptyList:()Ljava/util/List;
+      21: areturn
+
+  private java.util.Collection<java.lang.String> determineTargetClasses();
+    Code:
+       0: aload_0
+       1: aload_0
+       2: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+       5: invokevirtual #247                // Method org/pitest/maven/AbstractPitMojo.getTargetClasses:()Ljava/util/List;
+       8: invokespecial #248                // Method useConfiguredTargetClassesOrFindOccupiedPackages:(Ljava/util/Collection;)Ljava/util/Collection;
+      11: areturn
+
+  private java.util.Collection<java.lang.String> useConfiguredTargetClassesOrFindOccupiedPackages(java.util.Collection<java.lang.String>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #125                // Method hasValue:(Ljava/util/Collection;)Z
+       5: ifne          27
+       8: aload_0
+       9: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+      12: invokevirtual #4                  // Method org/pitest/maven/AbstractPitMojo.getLog:()Lorg/apache/maven/plugin/logging/Log;
+      15: ldc           #249                // String Defaulting target classes to match packages in build directory
+      17: invokeinterface #58,  2           // InterfaceMethod org/apache/maven/plugin/logging/Log.info:(Ljava/lang/CharSequence;)V
+      22: aload_0
+      23: invokespecial #250                // Method findOccupiedPackages:()Ljava/util/Collection;
+      26: areturn
+      27: aload_1
+      28: areturn
+
+  private java.util.Collection<java.lang.String> findOccupiedPackages();
+    Code:
+       0: aload_0
+       1: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+       4: invokevirtual #9                  // Method org/pitest/maven/AbstractPitMojo.getProject:()Lorg/apache/maven/project/MavenProject;
+       7: invokevirtual #83                 // Method org/apache/maven/project/MavenProject.getBuild:()Lorg/apache/maven/model/Build;
+      10: invokevirtual #85                 // Method org/apache/maven/model/Build.getOutputDirectory:()Ljava/lang/String;
+      13: astore_1
+      14: new           #202                // class java/io/File
+      17: dup
+      18: aload_1
+      19: invokespecial #242                // Method java/io/File."<init>":(Ljava/lang/String;)V
+      22: astore_2
+      23: aload_2
+      24: invokestatic  #243                // Method findOccupiedPackagesIn:(Ljava/io/File;)Ljava/util/Collection;
+      27: areturn
+
+  public static java.util.Collection<java.lang.String> findOccupiedPackagesIn(java.io.File);
+    Code:
+       0: aload_0
+       1: invokevirtual #251                // Method java/io/File.exists:()Z
+       4: ifeq          37
+       7: new           #252                // class org/pitest/classpath/DirectoryClassPathRoot
+      10: dup
+      11: aload_0
+      12: invokespecial #253                // Method org/pitest/classpath/DirectoryClassPathRoot."<init>":(Ljava/io/File;)V
+      15: astore_1
+      16: new           #254                // class java/util/HashSet
+      19: dup
+      20: invokespecial #255                // Method java/util/HashSet."<init>":()V
+      23: astore_2
+      24: aload_1
+      25: invokevirtual #256                // Method org/pitest/classpath/DirectoryClassPathRoot.classNames:()Ljava/util/Collection;
+      28: invokestatic  #257                // Method classToPackageGlob:()Ljava/util/function/Function;
+      31: aload_2
+      32: invokestatic  #258                // Method org/pitest/functional/FCollection.mapTo:(Ljava/lang/Iterable;Ljava/util/function/Function;Ljava/util/Collection;)V
+      35: aload_2
+      36: areturn
+      37: invokestatic  #244                // Method java/util/Collections.emptyList:()Ljava/util/List;
+      40: areturn
+
+  private static java.util.function.Function<java.lang.String, java.lang.String> classToPackageGlob();
+    Code:
+       0: invokedynamic #259,  0            // InvokeDynamic #9:apply:()Ljava/util/function/Function;
+       5: areturn
+
+  private java.util.Collection<java.nio.file.Path> stringsToPaths(java.util.List<java.lang.String>);
+    Code:
+       0: aload_1
+       1: invokeinterface #27,  1           // InterfaceMethod java/util/List.stream:()Ljava/util/stream/Stream;
+       6: invokedynamic #260,  0            // InvokeDynamic #10:apply:()Ljava/util/function/Function;
+      11: invokeinterface #176,  2          // InterfaceMethod java/util/stream/Stream.map:(Ljava/util/function/Function;)Ljava/util/stream/Stream;
+      16: invokestatic  #24                 // Method java/util/stream/Collectors.toList:()Ljava/util/stream/Collector;
+      19: invokeinterface #25,  2           // InterfaceMethod java/util/stream/Stream.collect:(Ljava/util/stream/Collector;)Ljava/lang/Object;
+      24: checkcast     #177                // class java/util/Collection
+      27: areturn
+
+  private java.util.Collection<java.lang.String> determineOutputFormats();
+    Code:
+       0: aload_0
+       1: aload_0
+       2: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+       5: invokevirtual #261                // Method org/pitest/maven/AbstractPitMojo.getOutputFormats:()Ljava/util/List;
+       8: invokespecial #125                // Method hasValue:(Ljava/util/Collection;)Z
+      11: ifeq          22
+      14: aload_0
+      15: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+      18: invokevirtual #261                // Method org/pitest/maven/AbstractPitMojo.getOutputFormats:()Ljava/util/List;
+      21: areturn
+      22: iconst_1
+      23: anewarray     #162                // class java/lang/String
+      26: dup
+      27: iconst_0
+      28: ldc_w         #262                // String HTML
+      31: aastore
+      32: invokestatic  #263                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+      35: areturn
+
+  private boolean hasValue(java.util.Collection<?>);
+    Code:
+       0: aload_1
+       1: ifnull        17
+       4: aload_1
+       5: invokeinterface #208,  1          // InterfaceMethod java/util/Collection.isEmpty:()Z
+      10: ifne          17
+      13: iconst_1
+      14: goto          18
+      17: iconst_0
+      18: ireturn
+
+  private java.util.Properties createPluginProperties();
+    Code:
+       0: new           #264                // class java/util/Properties
+       3: dup
+       4: invokespecial #265                // Method java/util/Properties."<init>":()V
+       7: astore_1
+       8: aload_0
+       9: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+      12: invokevirtual #266                // Method org/pitest/maven/AbstractPitMojo.getPluginProperties:()Ljava/util/Map;
+      15: ifnull        29
+      18: aload_1
+      19: aload_0
+      20: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+      23: invokevirtual #266                // Method org/pitest/maven/AbstractPitMojo.getPluginProperties:()Ljava/util/Map;
+      26: invokevirtual #267                // Method java/util/Properties.putAll:(Ljava/util/Map;)V
+      29: aload_1
+      30: areturn
+
+  private java.lang.String replacePropertyExpressions(java.lang.String);
+    Code:
+       0: aload_0
+       1: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+       4: invokevirtual #9                  // Method org/pitest/maven/AbstractPitMojo.getProject:()Lorg/apache/maven/project/MavenProject;
+       7: invokevirtual #268                // Method org/apache/maven/project/MavenProject.getProperties:()Ljava/util/Properties;
+      10: invokevirtual #269                // Method java/util/Properties.propertyNames:()Ljava/util/Enumeration;
+      13: astore_2
+      14: aload_2
+      15: invokeinterface #270,  1          // InterfaceMethod java/util/Enumeration.hasMoreElements:()Z
+      20: ifeq          97
+      23: aload_2
+      24: invokeinterface #271,  1          // InterfaceMethod java/util/Enumeration.nextElement:()Ljava/lang/Object;
+      29: invokevirtual #272                // Method java/lang/Object.toString:()Ljava/lang/String;
+      32: astore_3
+      33: new           #51                 // class java/lang/StringBuilder
+      36: dup
+      37: invokespecial #52                 // Method java/lang/StringBuilder."<init>":()V
+      40: ldc_w         #273                // String @{
+      43: invokevirtual #54                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      46: aload_3
+      47: invokevirtual #54                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      50: ldc_w         #274                // String }
+      53: invokevirtual #54                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      56: invokevirtual #57                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      59: astore        4
+      61: aload_1
+      62: aload         4
+      64: invokevirtual #275                // Method java/lang/String.contains:(Ljava/lang/CharSequence;)Z
+      67: ifeq          94
+      70: aload_1
+      71: aload         4
+      73: aload_0
+      74: getfield      #2                  // Field mojo:Lorg/pitest/maven/AbstractPitMojo;
+      77: invokevirtual #9                  // Method org/pitest/maven/AbstractPitMojo.getProject:()Lorg/apache/maven/project/MavenProject;
+      80: invokevirtual #268                // Method org/apache/maven/project/MavenProject.getProperties:()Ljava/util/Properties;
+      83: aload_3
+      84: ldc_w         #276                // String
+      87: invokevirtual #277                // Method java/util/Properties.getProperty:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      90: invokevirtual #278                // Method java/lang/String.replace:(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+      93: astore_1
+      94: goto          14
+      97: aload_1
+      98: areturn
+
+  private static java.nio.file.Path lambda$stringsToPaths$10(java.lang.String);
+    Code:
+       0: aload_0
+       1: iconst_0
+       2: anewarray     #162                // class java/lang/String
+       5: invokestatic  #170                // Method java/nio/file/Paths.get:(Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;
+       8: areturn
+
+  private static java.lang.String lambda$classToPackageGlob$9(java.lang.String);
+    Code:
+       0: new           #51                 // class java/lang/StringBuilder
+       3: dup
+       4: invokespecial #52                 // Method java/lang/StringBuilder."<init>":()V
+       7: aload_0
+       8: invokestatic  #279                // Method org/pitest/classinfo/ClassName.fromString:(Ljava/lang/String;)Lorg/pitest/classinfo/ClassName;
+      11: invokevirtual #280                // Method org/pitest/classinfo/ClassName.getPackage:()Lorg/pitest/classinfo/ClassName;
+      14: invokevirtual #281                // Method org/pitest/classinfo/ClassName.asJavaName:()Ljava/lang/String;
+      17: invokevirtual #54                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      20: ldc_w         #282                // String .*
+      23: invokevirtual #54                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      26: invokevirtual #57                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      29: areturn
+
+  private static void lambda$addOwnDependenciesToClassPath$8(java.util.List, org.apache.maven.artifact.Artifact);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokeinterface #78,  1           // InterfaceMethod org/apache/maven/artifact/Artifact.getFile:()Ljava/io/File;
+       7: invokevirtual #61                 // Method java/io/File.getAbsolutePath:()Ljava/lang/String;
+      10: invokeinterface #62,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      15: pop
+      16: return
+
+  private static boolean lambda$addOwnDependenciesToClassPath$7(org.apache.maven.artifact.Artifact);
+    Code:
+       0: aload_0
+       1: invokeinterface #37,  1           // InterfaceMethod org/apache/maven/artifact/Artifact.getGroupId:()Ljava/lang/String;
+       6: ldc_w         #283                // String org.junit.platform
+       9: invokevirtual #284                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      12: ireturn
+
+  private static boolean lambda$hasKey$6(java.lang.String, org.apache.maven.model.Plugin);
+    Code:
+       0: aload_1
+       1: invokevirtual #285                // Method org/apache/maven/model/Plugin.getKey:()Ljava/lang/String;
+       4: aload_0
+       5: invokevirtual #284                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+       8: ireturn
+
+  private static java.lang.String lambda$kotlinIfPresent$5(java.nio.file.Path);
+    Code:
+       0: aload_0
+       1: invokeinterface #286,  1          // InterfaceMethod java/nio/file/Path.toFile:()Ljava/io/File;
+       6: invokevirtual #61                 // Method java/io/File.getAbsolutePath:()Ljava/lang/String;
+       9: areturn
+
+  private static boolean lambda$kotlinIfPresent$4(java.nio.file.Path);
+    Code:
+       0: aload_0
+       1: iconst_0
+       2: anewarray     #287                // class java/nio/file/LinkOption
+       5: invokestatic  #288                // Method java/nio/file/Files.exists:(Ljava/nio/file/Path;[Ljava/nio/file/LinkOption;)Z
+       8: ireturn
+
+  private static boolean lambda$findJUnitArtifact$3(org.apache.maven.artifact.Artifact);
+    Code:
+       0: aload_0
+       1: invokeinterface #76,  1           // InterfaceMethod org/apache/maven/artifact/Artifact.getArtifactId:()Ljava/lang/String;
+       6: ldc_w         #289                // String junit-platform-commons
+       9: invokevirtual #284                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      12: ireturn
+
+  private static boolean lambda$findJUnitArtifact$2(org.apache.maven.artifact.Artifact);
+    Code:
+       0: aload_0
+       1: invokeinterface #76,  1           // InterfaceMethod org/apache/maven/artifact/Artifact.getArtifactId:()Ljava/lang/String;
+       6: ldc_w         #290                // String junit-platform-engine
+       9: invokevirtual #284                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      12: ireturn
+
+  private static boolean lambda$autoAddJUnitPlatform$1(org.apache.maven.artifact.Artifact);
+    Code:
+       0: aload_0
+       1: invokeinterface #76,  1           // InterfaceMethod org/apache/maven/artifact/Artifact.getArtifactId:()Ljava/lang/String;
+       6: ldc           #38                 // String junit-platform-launcher
+       8: invokevirtual #284                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      11: ireturn
+
+  private static boolean lambda$autoAddJUnitPlatform$0(org.apache.maven.artifact.Artifact);
+    Code:
+       0: aload_0
+       1: invokeinterface #37,  1           // InterfaceMethod org/apache/maven/artifact/Artifact.getGroupId:()Ljava/lang/String;
+       6: ldc_w         #283                // String org.junit.platform
+       9: invokevirtual #284                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      12: ireturn
+}

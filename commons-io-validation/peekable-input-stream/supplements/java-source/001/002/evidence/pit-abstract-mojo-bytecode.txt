@@ -1,0 +1,973 @@
+Compiled from "AbstractPitMojo.java"
+public class org.pitest.maven.AbstractPitMojo extends org.apache.maven.plugin.AbstractMojo {
+  private final java.util.function.Predicate<org.apache.maven.project.MavenProject> notEmptyProject;
+
+  private final java.util.function.Predicate<org.apache.maven.artifact.Artifact> filter;
+
+  private final org.pitest.mutationtest.config.PluginServices plugins;
+
+  private org.apache.maven.execution.MavenSession session;
+
+  private java.util.ArrayList<java.lang.String> targetClasses;
+
+  private java.util.ArrayList<java.lang.String> targetTests;
+
+  private java.util.ArrayList<java.lang.String> excludedMethods;
+
+  private java.util.ArrayList<java.lang.String> excludedClasses;
+
+  private java.util.ArrayList<java.lang.String> excludedTestClasses;
+
+  private java.util.ArrayList<java.lang.String> avoidCallsTo;
+
+  private java.io.File reportsDirectory;
+
+  private java.io.File historyOutputFile;
+
+  private java.io.File historyInputFile;
+
+  private boolean withHistory;
+
+  private int threads;
+
+  private boolean detectInlinedCode;
+
+  private java.util.ArrayList<java.lang.String> mutators;
+
+  private java.util.ArrayList<java.lang.String> features;
+
+  private java.util.ArrayList<java.lang.String> extraFeatures;
+
+  private float timeoutFactor;
+
+  private long timeoutConstant;
+
+  private int maxMutationsPerClass;
+
+  private java.util.ArrayList<java.lang.String> jvmArgs;
+
+  private java.lang.String argLine;
+
+  private java.util.ArrayList<java.lang.String> outputFormats;
+
+  private boolean verbose;
+
+  private boolean failWhenNoMutations;
+
+  private boolean timestampedReports;
+
+  private java.util.ArrayList<java.lang.String> excludedGroups;
+
+  private java.util.ArrayList<java.lang.String> includedGroups;
+
+  private java.util.ArrayList<java.lang.String> includedTestMethods;
+
+  private boolean fullMutationMatrix;
+
+  private int mutationUnitSize;
+
+  private boolean exportLineCoverage;
+
+  private int mutationThreshold;
+
+  private int testStrengthThreshold;
+
+  private int maxSurviving;
+
+  private int coverageThreshold;
+
+  private java.lang.String jvm;
+
+  private java.lang.String mutationEngine;
+
+  private java.util.ArrayList<java.lang.String> additionalClasspathElements;
+
+  private java.util.ArrayList<java.lang.String> classpathDependencyExcludes;
+
+  private java.util.ArrayList<java.lang.String> excludedRunners;
+
+  private boolean skip;
+
+  private boolean parseSurefireConfig;
+
+  private boolean skipTests;
+
+  private boolean skipFailingTests;
+
+  private boolean useSlf4j;
+
+  private java.lang.String inputEncoding;
+
+  private java.lang.String outputEncoding;
+
+  private java.lang.String projectBase;
+
+  private java.util.Map<java.lang.String, java.lang.String> pluginConfiguration;
+
+  private java.util.Map<java.lang.String, java.lang.String> environmentVariables;
+
+  private org.apache.maven.project.MavenProject project;
+
+  private java.util.Map<java.lang.String, org.apache.maven.artifact.Artifact> pluginArtifactMap;
+
+  private boolean useClasspathJar;
+
+  private java.lang.String verbosity;
+
+  private final org.pitest.maven.GoalStrategy goalStrategy;
+
+  private final org.eclipse.aether.RepositorySystem repositorySystem;
+
+  public org.pitest.maven.AbstractPitMojo(org.eclipse.aether.RepositorySystem);
+    Code:
+       0: aload_0
+       1: new           #1                  // class org/pitest/maven/RunPitStrategy
+       4: dup
+       5: invokespecial #2                  // Method org/pitest/maven/RunPitStrategy."<init>":()V
+       8: new           #3                  // class org/pitest/maven/DependencyFilter
+      11: dup
+      12: ldc           #4                  // class org/pitest/maven/AbstractPitMojo
+      14: invokevirtual #5                  // Method java/lang/Class.getClassLoader:()Ljava/lang/ClassLoader;
+      17: invokestatic  #6                  // Method org/pitest/mutationtest/config/PluginServices.makeForLoader:(Ljava/lang/ClassLoader;)Lorg/pitest/mutationtest/config/PluginServices;
+      20: invokespecial #7                  // Method org/pitest/maven/DependencyFilter."<init>":(Lorg/pitest/mutationtest/config/PluginServices;)V
+      23: ldc           #4                  // class org/pitest/maven/AbstractPitMojo
+      25: invokevirtual #5                  // Method java/lang/Class.getClassLoader:()Ljava/lang/ClassLoader;
+      28: invokestatic  #6                  // Method org/pitest/mutationtest/config/PluginServices.makeForLoader:(Ljava/lang/ClassLoader;)Lorg/pitest/mutationtest/config/PluginServices;
+      31: new           #8                  // class org/pitest/maven/NonEmptyProjectCheck
+      34: dup
+      35: invokespecial #9                  // Method org/pitest/maven/NonEmptyProjectCheck."<init>":()V
+      38: aload_1
+      39: invokespecial #10                 // Method "<init>":(Lorg/pitest/maven/GoalStrategy;Ljava/util/function/Predicate;Lorg/pitest/mutationtest/config/PluginServices;Ljava/util/function/Predicate;Lorg/eclipse/aether/RepositorySystem;)V
+      42: return
+
+  public org.pitest.maven.AbstractPitMojo(org.pitest.maven.GoalStrategy, java.util.function.Predicate<org.apache.maven.artifact.Artifact>, org.pitest.mutationtest.config.PluginServices, java.util.function.Predicate<org.apache.maven.project.MavenProject>, org.eclipse.aether.RepositorySystem);
+    Code:
+       0: aload_0
+       1: invokespecial #11                 // Method org/apache/maven/plugin/AbstractMojo."<init>":()V
+       4: aload_0
+       5: iconst_m1
+       6: putfield      #12                 // Field maxSurviving:I
+       9: aload_0
+      10: new           #13                 // class java/util/HashMap
+      13: dup
+      14: invokespecial #14                 // Method java/util/HashMap."<init>":()V
+      17: putfield      #15                 // Field environmentVariables:Ljava/util/Map;
+      20: aload_0
+      21: aload_1
+      22: putfield      #16                 // Field goalStrategy:Lorg/pitest/maven/GoalStrategy;
+      25: aload_0
+      26: aload_2
+      27: putfield      #17                 // Field filter:Ljava/util/function/Predicate;
+      30: aload_0
+      31: aload_3
+      32: putfield      #18                 // Field plugins:Lorg/pitest/mutationtest/config/PluginServices;
+      35: aload_0
+      36: aload         4
+      38: putfield      #19                 // Field notEmptyProject:Ljava/util/function/Predicate;
+      41: aload_0
+      42: aload         5
+      44: putfield      #20                 // Field repositorySystem:Lorg/eclipse/aether/RepositorySystem;
+      47: return
+
+  public final void execute() throws org.apache.maven.plugin.MojoExecutionException, org.apache.maven.plugin.MojoFailureException;
+    Code:
+       0: aload_0
+       1: invokespecial #21                 // Method switchLogging:()V
+       4: aload_0
+       5: invokevirtual #22                 // Method shouldRun:()Lorg/pitest/maven/AbstractPitMojo$RunDecision;
+       8: astore_1
+       9: aload_1
+      10: invokevirtual #23                 // Method org/pitest/maven/AbstractPitMojo$RunDecision.shouldRun:()Z
+      13: ifeq          283
+      16: aload_0
+      17: invokevirtual #24                 // Method getLog:()Lorg/apache/maven/plugin/logging/Log;
+      20: new           #25                 // class java/lang/StringBuilder
+      23: dup
+      24: invokespecial #26                 // Method java/lang/StringBuilder."<init>":()V
+      27: ldc           #27                 // String Root dir is :
+      29: invokevirtual #28                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      32: aload_0
+      33: getfield      #29                 // Field projectBase:Ljava/lang/String;
+      36: invokevirtual #28                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      39: invokevirtual #30                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      42: invokeinterface #31,  2           // InterfaceMethod org/apache/maven/plugin/logging/Log.info:(Ljava/lang/CharSequence;)V
+      47: aload_0
+      48: getfield      #18                 // Field plugins:Lorg/pitest/mutationtest/config/PluginServices;
+      51: invokevirtual #32                 // Method org/pitest/mutationtest/config/PluginServices.findToolClasspathPlugins:()Ljava/util/Collection;
+      54: invokeinterface #33,  1           // InterfaceMethod java/util/Collection.iterator:()Ljava/util/Iterator;
+      59: astore_2
+      60: aload_2
+      61: invokeinterface #34,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+      66: ifeq          115
+      69: aload_2
+      70: invokeinterface #35,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      75: checkcast     #36                 // class org/pitest/plugin/ToolClasspathPlugin
+      78: astore_3
+      79: aload_0
+      80: invokevirtual #24                 // Method getLog:()Lorg/apache/maven/plugin/logging/Log;
+      83: new           #25                 // class java/lang/StringBuilder
+      86: dup
+      87: invokespecial #26                 // Method java/lang/StringBuilder."<init>":()V
+      90: ldc           #37                 // String Found plugin :
+      92: invokevirtual #28                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      95: aload_3
+      96: invokeinterface #38,  1           // InterfaceMethod org/pitest/plugin/ToolClasspathPlugin.description:()Ljava/lang/String;
+     101: invokevirtual #28                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     104: invokevirtual #30                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+     107: invokeinterface #31,  2           // InterfaceMethod org/apache/maven/plugin/logging/Log.info:(Ljava/lang/CharSequence;)V
+     112: goto          60
+     115: aload_0
+     116: getfield      #18                 // Field plugins:Lorg/pitest/mutationtest/config/PluginServices;
+     119: invokevirtual #39                 // Method org/pitest/mutationtest/config/PluginServices.findClientClasspathPlugins:()Ljava/util/List;
+     122: invokeinterface #40,  1           // InterfaceMethod java/util/List.stream:()Ljava/util/stream/Stream;
+     127: invokedynamic #41,  0             // InvokeDynamic #0:test:()Ljava/util/function/Predicate;
+     132: invokeinterface #42,  2           // InterfaceMethod java/util/stream/Stream.filter:(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+     137: aload_0
+     138: invokedynamic #43,  0             // InvokeDynamic #1:accept:(Lorg/pitest/maven/AbstractPitMojo;)Ljava/util/function/Consumer;
+     143: invokeinterface #44,  2           // InterfaceMethod java/util/stream/Stream.forEach:(Ljava/util/function/Consumer;)V
+     148: aload_0
+     149: getfield      #18                 // Field plugins:Lorg/pitest/mutationtest/config/PluginServices;
+     152: invokevirtual #45                 // Method org/pitest/mutationtest/config/PluginServices.findMutationOperators:()Ljava/util/Collection;
+     155: invokeinterface #46,  1           // InterfaceMethod java/util/Collection.stream:()Ljava/util/stream/Stream;
+     160: invokedynamic #47,  0             // InvokeDynamic #2:apply:()Ljava/util/function/Function;
+     165: invokeinterface #48,  2           // InterfaceMethod java/util/stream/Stream.map:(Ljava/util/function/Function;)Ljava/util/stream/Stream;
+     170: ldc           #49                 // String ,
+     172: invokestatic  #50                 // Method java/util/stream/Collectors.joining:(Ljava/lang/CharSequence;)Ljava/util/stream/Collector;
+     175: invokeinterface #51,  2           // InterfaceMethod java/util/stream/Stream.collect:(Ljava/util/stream/Collector;)Ljava/lang/Object;
+     180: checkcast     #52                 // class java/lang/String
+     183: astore_2
+     184: aload_0
+     185: invokevirtual #24                 // Method getLog:()Lorg/apache/maven/plugin/logging/Log;
+     188: new           #25                 // class java/lang/StringBuilder
+     191: dup
+     192: invokespecial #26                 // Method java/lang/StringBuilder."<init>":()V
+     195: ldc           #53                 // String Available mutators :
+     197: invokevirtual #28                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     200: aload_2
+     201: invokevirtual #28                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     204: invokevirtual #30                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+     207: invokeinterface #31,  2           // InterfaceMethod org/apache/maven/plugin/logging/Log.info:(Ljava/lang/CharSequence;)V
+     212: aload_0
+     213: invokevirtual #54                 // Method analyse:()Ljava/util/Optional;
+     216: astore_3
+     217: aload_3
+     218: invokevirtual #55                 // Method java/util/Optional.isPresent:()Z
+     221: ifeq          280
+     224: aload_0
+     225: aload_3
+     226: invokevirtual #56                 // Method java/util/Optional.get:()Ljava/lang/Object;
+     229: checkcast     #57                 // class org/pitest/mutationtest/tooling/CombinedStatistics
+     232: invokevirtual #58                 // Method org/pitest/mutationtest/tooling/CombinedStatistics.getMutationStatistics:()Lorg/pitest/mutationtest/statistics/MutationStatistics;
+     235: invokespecial #59                 // Method throwErrorIfTestStrengthBelowThreshold:(Lorg/pitest/mutationtest/statistics/MutationStatistics;)V
+     238: aload_0
+     239: aload_3
+     240: invokevirtual #56                 // Method java/util/Optional.get:()Ljava/lang/Object;
+     243: checkcast     #57                 // class org/pitest/mutationtest/tooling/CombinedStatistics
+     246: invokevirtual #58                 // Method org/pitest/mutationtest/tooling/CombinedStatistics.getMutationStatistics:()Lorg/pitest/mutationtest/statistics/MutationStatistics;
+     249: invokespecial #60                 // Method throwErrorIfScoreBelowThreshold:(Lorg/pitest/mutationtest/statistics/MutationStatistics;)V
+     252: aload_0
+     253: aload_3
+     254: invokevirtual #56                 // Method java/util/Optional.get:()Ljava/lang/Object;
+     257: checkcast     #57                 // class org/pitest/mutationtest/tooling/CombinedStatistics
+     260: invokevirtual #58                 // Method org/pitest/mutationtest/tooling/CombinedStatistics.getMutationStatistics:()Lorg/pitest/mutationtest/statistics/MutationStatistics;
+     263: invokespecial #61                 // Method throwErrorIfMoreThanMaximumSurvivors:(Lorg/pitest/mutationtest/statistics/MutationStatistics;)V
+     266: aload_0
+     267: aload_3
+     268: invokevirtual #56                 // Method java/util/Optional.get:()Ljava/lang/Object;
+     271: checkcast     #57                 // class org/pitest/mutationtest/tooling/CombinedStatistics
+     274: invokevirtual #62                 // Method org/pitest/mutationtest/tooling/CombinedStatistics.getCoverageSummary:()Lorg/pitest/coverage/CoverageSummary;
+     277: invokespecial #63                 // Method throwErrorIfCoverageBelowThreshold:(Lorg/pitest/coverage/CoverageSummary;)V
+     280: goto          354
+     283: aload_0
+     284: invokevirtual #24                 // Method getLog:()Lorg/apache/maven/plugin/logging/Log;
+     287: ldc           #64                 // String Skipping project because:
+     289: invokeinterface #31,  2           // InterfaceMethod org/apache/maven/plugin/logging/Log.info:(Ljava/lang/CharSequence;)V
+     294: aload_1
+     295: invokevirtual #65                 // Method org/pitest/maven/AbstractPitMojo$RunDecision.getReasons:()Ljava/util/List;
+     298: invokeinterface #66,  1           // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+     303: astore_2
+     304: aload_2
+     305: invokeinterface #34,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+     310: ifeq          354
+     313: aload_2
+     314: invokeinterface #35,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     319: checkcast     #52                 // class java/lang/String
+     322: astore_3
+     323: aload_0
+     324: invokevirtual #24                 // Method getLog:()Lorg/apache/maven/plugin/logging/Log;
+     327: new           #25                 // class java/lang/StringBuilder
+     330: dup
+     331: invokespecial #26                 // Method java/lang/StringBuilder."<init>":()V
+     334: ldc           #67                 // String   -
+     336: invokevirtual #28                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     339: aload_3
+     340: invokevirtual #28                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     343: invokevirtual #30                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+     346: invokeinterface #31,  2           // InterfaceMethod org/apache/maven/plugin/logging/Log.info:(Ljava/lang/CharSequence;)V
+     351: goto          304
+     354: return
+
+  private void switchLogging();
+    Code:
+       0: aload_0
+       1: getfield      #68                 // Field useSlf4j:Z
+       4: ifeq          31
+       7: invokestatic  #69                 // Method org/slf4j/bridge/SLF4JBridgeHandler.removeHandlersForRootLogger:()V
+      10: invokestatic  #70                 // Method org/slf4j/bridge/SLF4JBridgeHandler.install:()V
+      13: ldc           #71                 // String PIT
+      15: invokestatic  #72                 // Method java/util/logging/Logger.getLogger:(Ljava/lang/String;)Ljava/util/logging/Logger;
+      18: new           #73                 // class org/slf4j/bridge/SLF4JBridgeHandler
+      21: dup
+      22: invokespecial #74                 // Method org/slf4j/bridge/SLF4JBridgeHandler."<init>":()V
+      25: invokevirtual #75                 // Method java/util/logging/Logger.addHandler:(Ljava/util/logging/Handler;)V
+      28: invokestatic  #76                 // Method uk/org/lidalia/sysoutslf4j/context/SysOutOverSLF4J.sendSystemOutAndErrToSLF4J:()V
+      31: return
+
+  private void throwErrorIfCoverageBelowThreshold(org.pitest.coverage.CoverageSummary) throws org.apache.maven.plugin.MojoFailureException;
+    Code:
+       0: aload_0
+       1: getfield      #77                 // Field coverageThreshold:I
+       4: ifeq          84
+       7: aload_1
+       8: invokevirtual #78                 // Method org/pitest/coverage/CoverageSummary.getCoverage:()I
+      11: aload_0
+      12: getfield      #77                 // Field coverageThreshold:I
+      15: if_icmpge     84
+      18: new           #79                 // class org/apache/maven/plugin/MojoFailureException
+      21: dup
+      22: new           #25                 // class java/lang/StringBuilder
+      25: dup
+      26: invokespecial #26                 // Method java/lang/StringBuilder."<init>":()V
+      29: ldc           #80                 // String Line coverage of
+      31: invokevirtual #28                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      34: aload_1
+      35: invokevirtual #78                 // Method org/pitest/coverage/CoverageSummary.getCoverage:()I
+      38: invokevirtual #81                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      41: ldc           #82                 // String (
+      43: invokevirtual #28                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      46: aload_1
+      47: invokevirtual #83                 // Method org/pitest/coverage/CoverageSummary.getNumberOfCoveredLines:()I
+      50: invokevirtual #81                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      53: ldc           #84                 // String /
+      55: invokevirtual #28                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      58: aload_1
+      59: invokevirtual #85                 // Method org/pitest/coverage/CoverageSummary.getNumberOfLines:()I
+      62: invokevirtual #81                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      65: ldc           #86                 // String ) is below threshold of
+      67: invokevirtual #28                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      70: aload_0
+      71: getfield      #77                 // Field coverageThreshold:I
+      74: invokevirtual #81                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      77: invokevirtual #30                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      80: invokespecial #87                 // Method org/apache/maven/plugin/MojoFailureException."<init>":(Ljava/lang/String;)V
+      83: athrow
+      84: return
+
+  private void throwErrorIfScoreBelowThreshold(org.pitest.mutationtest.statistics.MutationStatistics) throws org.apache.maven.plugin.MojoFailureException;
+    Code:
+       0: aload_0
+       1: getfield      #88                 // Field mutationThreshold:I
+       4: ifeq          60
+       7: aload_1
+       8: invokevirtual #89                 // Method org/pitest/mutationtest/statistics/MutationStatistics.getPercentageDetected:()I
+      11: aload_0
+      12: getfield      #88                 // Field mutationThreshold:I
+      15: if_icmpge     60
+      18: new           #79                 // class org/apache/maven/plugin/MojoFailureException
+      21: dup
+      22: new           #25                 // class java/lang/StringBuilder
+      25: dup
+      26: invokespecial #26                 // Method java/lang/StringBuilder."<init>":()V
+      29: ldc           #90                 // String Mutation score of
+      31: invokevirtual #28                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      34: aload_1
+      35: invokevirtual #89                 // Method org/pitest/mutationtest/statistics/MutationStatistics.getPercentageDetected:()I
+      38: invokevirtual #81                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      41: ldc           #91                 // String  is below threshold of
+      43: invokevirtual #28                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      46: aload_0
+      47: getfield      #88                 // Field mutationThreshold:I
+      50: invokevirtual #81                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      53: invokevirtual #30                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      56: invokespecial #87                 // Method org/apache/maven/plugin/MojoFailureException."<init>":(Ljava/lang/String;)V
+      59: athrow
+      60: return
+
+  private void throwErrorIfTestStrengthBelowThreshold(org.pitest.mutationtest.statistics.MutationStatistics) throws org.apache.maven.plugin.MojoFailureException;
+    Code:
+       0: aload_0
+       1: getfield      #92                 // Field testStrengthThreshold:I
+       4: ifeq          60
+       7: aload_1
+       8: invokevirtual #93                 // Method org/pitest/mutationtest/statistics/MutationStatistics.getTestStrength:()I
+      11: aload_0
+      12: getfield      #92                 // Field testStrengthThreshold:I
+      15: if_icmpge     60
+      18: new           #79                 // class org/apache/maven/plugin/MojoFailureException
+      21: dup
+      22: new           #25                 // class java/lang/StringBuilder
+      25: dup
+      26: invokespecial #26                 // Method java/lang/StringBuilder."<init>":()V
+      29: ldc           #94                 // String Test strength score of
+      31: invokevirtual #28                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      34: aload_1
+      35: invokevirtual #93                 // Method org/pitest/mutationtest/statistics/MutationStatistics.getTestStrength:()I
+      38: invokevirtual #81                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      41: ldc           #91                 // String  is below threshold of
+      43: invokevirtual #28                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      46: aload_0
+      47: getfield      #92                 // Field testStrengthThreshold:I
+      50: invokevirtual #81                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      53: invokevirtual #30                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      56: invokespecial #87                 // Method org/apache/maven/plugin/MojoFailureException."<init>":(Ljava/lang/String;)V
+      59: athrow
+      60: return
+
+  private void throwErrorIfMoreThanMaximumSurvivors(org.pitest.mutationtest.statistics.MutationStatistics) throws org.apache.maven.plugin.MojoFailureException;
+    Code:
+       0: aload_0
+       1: getfield      #12                 // Field maxSurviving:I
+       4: iflt          67
+       7: aload_1
+       8: invokevirtual #95                 // Method org/pitest/mutationtest/statistics/MutationStatistics.getTotalSurvivingMutations:()J
+      11: aload_0
+      12: getfield      #12                 // Field maxSurviving:I
+      15: i2l
+      16: lcmp
+      17: ifle          67
+      20: new           #79                 // class org/apache/maven/plugin/MojoFailureException
+      23: dup
+      24: new           #25                 // class java/lang/StringBuilder
+      27: dup
+      28: invokespecial #26                 // Method java/lang/StringBuilder."<init>":()V
+      31: ldc           #96                 // String Had
+      33: invokevirtual #28                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      36: aload_1
+      37: invokevirtual #95                 // Method org/pitest/mutationtest/statistics/MutationStatistics.getTotalSurvivingMutations:()J
+      40: invokevirtual #97                 // Method java/lang/StringBuilder.append:(J)Ljava/lang/StringBuilder;
+      43: ldc           #98                 // String  surviving mutants, but only
+      45: invokevirtual #28                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      48: aload_0
+      49: getfield      #12                 // Field maxSurviving:I
+      52: invokevirtual #81                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      55: ldc           #99                 // String  survivors allowed
+      57: invokevirtual #28                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      60: invokevirtual #30                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      63: invokespecial #87                 // Method org/apache/maven/plugin/MojoFailureException."<init>":(Ljava/lang/String;)V
+      66: athrow
+      67: return
+
+  protected java.util.Optional<org.pitest.mutationtest.tooling.CombinedStatistics> analyse() throws org.apache.maven.plugin.MojoExecutionException;
+    Code:
+       0: new           #100                // class org/pitest/maven/MojoToReportOptionsConverter
+       3: dup
+       4: aload_0
+       5: new           #101                // class org/pitest/maven/SurefireConfigConverter
+       8: dup
+       9: invokespecial #102                // Method org/pitest/maven/SurefireConfigConverter."<init>":()V
+      12: aload_0
+      13: getfield      #17                 // Field filter:Ljava/util/function/Predicate;
+      16: invokespecial #103                // Method org/pitest/maven/MojoToReportOptionsConverter."<init>":(Lorg/pitest/maven/AbstractPitMojo;Lorg/pitest/maven/SurefireConfigConverter;Ljava/util/function/Predicate;)V
+      19: invokevirtual #104                // Method org/pitest/maven/MojoToReportOptionsConverter.convert:()Lorg/pitest/mutationtest/config/ReportOptions;
+      22: astore_1
+      23: aload_0
+      24: getfield      #16                 // Field goalStrategy:Lorg/pitest/maven/GoalStrategy;
+      27: aload_0
+      28: invokevirtual #105                // Method detectBaseDir:()Ljava/io/File;
+      31: aload_1
+      32: aload_0
+      33: getfield      #18                 // Field plugins:Lorg/pitest/mutationtest/config/PluginServices;
+      36: aload_0
+      37: getfield      #15                 // Field environmentVariables:Ljava/util/Map;
+      40: invokeinterface #106,  5          // InterfaceMethod org/pitest/maven/GoalStrategy.execute:(Ljava/io/File;Lorg/pitest/mutationtest/config/ReportOptions;Lorg/pitest/mutationtest/config/PluginServices;Ljava/util/Map;)Lorg/pitest/mutationtest/tooling/CombinedStatistics;
+      45: invokestatic  #107                // Method java/util/Optional.ofNullable:(Ljava/lang/Object;)Ljava/util/Optional;
+      48: areturn
+
+  protected java.io.File detectBaseDir();
+    Code:
+       0: aload_0
+       1: getfield      #108                // Field project:Lorg/apache/maven/project/MavenProject;
+       4: invokevirtual #109                // Method org/apache/maven/project/MavenProject.getExecutionProject:()Lorg/apache/maven/project/MavenProject;
+       7: astore_1
+       8: aload_1
+       9: ifnonnull     14
+      12: aconst_null
+      13: areturn
+      14: aload_1
+      15: invokevirtual #110                // Method org/apache/maven/project/MavenProject.getBasedir:()Ljava/io/File;
+      18: areturn
+
+  protected java.util.function.Predicate<org.apache.maven.artifact.Artifact> getFilter();
+    Code:
+       0: aload_0
+       1: getfield      #17                 // Field filter:Ljava/util/function/Predicate;
+       4: areturn
+
+  protected org.pitest.maven.GoalStrategy getGoalStrategy();
+    Code:
+       0: aload_0
+       1: getfield      #16                 // Field goalStrategy:Lorg/pitest/maven/GoalStrategy;
+       4: areturn
+
+  protected org.pitest.mutationtest.config.PluginServices getPlugins();
+    Code:
+       0: aload_0
+       1: getfield      #18                 // Field plugins:Lorg/pitest/mutationtest/config/PluginServices;
+       4: areturn
+
+  public java.util.List<java.lang.String> getTargetClasses();
+    Code:
+       0: aload_0
+       1: aload_0
+       2: getfield      #111                // Field targetClasses:Ljava/util/ArrayList;
+       5: invokespecial #112                // Method withoutNulls:(Ljava/util/List;)Ljava/util/ArrayList;
+       8: areturn
+
+  public void setTargetClasses(java.util.ArrayList<java.lang.String>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #111                // Field targetClasses:Ljava/util/ArrayList;
+       5: return
+
+  public java.util.List<java.lang.String> getTargetTests();
+    Code:
+       0: aload_0
+       1: aload_0
+       2: getfield      #113                // Field targetTests:Ljava/util/ArrayList;
+       5: invokespecial #112                // Method withoutNulls:(Ljava/util/List;)Ljava/util/ArrayList;
+       8: areturn
+
+  public void setTargetTests(java.util.ArrayList<java.lang.String>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #113                // Field targetTests:Ljava/util/ArrayList;
+       5: return
+
+  public java.util.List<java.lang.String> getExcludedMethods();
+    Code:
+       0: aload_0
+       1: aload_0
+       2: getfield      #114                // Field excludedMethods:Ljava/util/ArrayList;
+       5: invokespecial #112                // Method withoutNulls:(Ljava/util/List;)Ljava/util/ArrayList;
+       8: areturn
+
+  public java.util.List<java.lang.String> getExcludedClasses();
+    Code:
+       0: aload_0
+       1: aload_0
+       2: getfield      #115                // Field excludedClasses:Ljava/util/ArrayList;
+       5: invokespecial #112                // Method withoutNulls:(Ljava/util/List;)Ljava/util/ArrayList;
+       8: areturn
+
+  public java.util.List<java.lang.String> getAvoidCallsTo();
+    Code:
+       0: aload_0
+       1: aload_0
+       2: getfield      #116                // Field avoidCallsTo:Ljava/util/ArrayList;
+       5: invokespecial #112                // Method withoutNulls:(Ljava/util/List;)Ljava/util/ArrayList;
+       8: areturn
+
+  public java.io.File getReportsDirectory();
+    Code:
+       0: aload_0
+       1: getfield      #117                // Field reportsDirectory:Ljava/io/File;
+       4: areturn
+
+  public int getThreads();
+    Code:
+       0: aload_0
+       1: getfield      #118                // Field threads:I
+       4: ireturn
+
+  public java.util.List<java.lang.String> getMutators();
+    Code:
+       0: aload_0
+       1: aload_0
+       2: getfield      #119                // Field mutators:Ljava/util/ArrayList;
+       5: invokespecial #112                // Method withoutNulls:(Ljava/util/List;)Ljava/util/ArrayList;
+       8: areturn
+
+  public float getTimeoutFactor();
+    Code:
+       0: aload_0
+       1: getfield      #120                // Field timeoutFactor:F
+       4: freturn
+
+  public long getTimeoutConstant();
+    Code:
+       0: aload_0
+       1: getfield      #121                // Field timeoutConstant:J
+       4: lreturn
+
+  public java.util.ArrayList<java.lang.String> getExcludedTestClasses();
+    Code:
+       0: aload_0
+       1: aload_0
+       2: getfield      #122                // Field excludedTestClasses:Ljava/util/ArrayList;
+       5: invokespecial #112                // Method withoutNulls:(Ljava/util/List;)Ljava/util/ArrayList;
+       8: areturn
+
+  public int getMaxMutationsPerClass();
+    Code:
+       0: aload_0
+       1: getfield      #123                // Field maxMutationsPerClass:I
+       4: ireturn
+
+  public java.util.List<java.lang.String> getJvmArgs();
+    Code:
+       0: aload_0
+       1: aload_0
+       2: getfield      #124                // Field jvmArgs:Ljava/util/ArrayList;
+       5: invokespecial #112                // Method withoutNulls:(Ljava/util/List;)Ljava/util/ArrayList;
+       8: areturn
+
+  public java.lang.String getArgLine();
+    Code:
+       0: aload_0
+       1: getfield      #125                // Field argLine:Ljava/lang/String;
+       4: areturn
+
+  public java.util.List<java.lang.String> getOutputFormats();
+    Code:
+       0: aload_0
+       1: aload_0
+       2: getfield      #126                // Field outputFormats:Ljava/util/ArrayList;
+       5: invokespecial #112                // Method withoutNulls:(Ljava/util/List;)Ljava/util/ArrayList;
+       8: areturn
+
+  public boolean isVerbose();
+    Code:
+       0: aload_0
+       1: getfield      #127                // Field verbose:Z
+       4: ireturn
+
+  public org.apache.maven.project.MavenProject getProject();
+    Code:
+       0: aload_0
+       1: getfield      #108                // Field project:Lorg/apache/maven/project/MavenProject;
+       4: areturn
+
+  public java.util.Map<java.lang.String, org.apache.maven.artifact.Artifact> getPluginArtifactMap();
+    Code:
+       0: aload_0
+       1: getfield      #128                // Field pluginArtifactMap:Ljava/util/Map;
+       4: areturn
+
+  public boolean isFailWhenNoMutations();
+    Code:
+       0: aload_0
+       1: getfield      #129                // Field failWhenNoMutations:Z
+       4: ireturn
+
+  public java.util.List<java.lang.String> getExcludedGroups();
+    Code:
+       0: aload_0
+       1: aload_0
+       2: getfield      #130                // Field excludedGroups:Ljava/util/ArrayList;
+       5: invokespecial #112                // Method withoutNulls:(Ljava/util/List;)Ljava/util/ArrayList;
+       8: areturn
+
+  public java.util.List<java.lang.String> getIncludedGroups();
+    Code:
+       0: aload_0
+       1: aload_0
+       2: getfield      #131                // Field includedGroups:Ljava/util/ArrayList;
+       5: invokespecial #112                // Method withoutNulls:(Ljava/util/List;)Ljava/util/ArrayList;
+       8: areturn
+
+  public java.util.List<java.lang.String> getIncludedTestMethods();
+    Code:
+       0: aload_0
+       1: aload_0
+       2: getfield      #132                // Field includedTestMethods:Ljava/util/ArrayList;
+       5: invokespecial #112                // Method withoutNulls:(Ljava/util/List;)Ljava/util/ArrayList;
+       8: areturn
+
+  public boolean isFullMutationMatrix();
+    Code:
+       0: aload_0
+       1: getfield      #133                // Field fullMutationMatrix:Z
+       4: ireturn
+
+  public int getMutationUnitSize();
+    Code:
+       0: aload_0
+       1: getfield      #134                // Field mutationUnitSize:I
+       4: ireturn
+
+  public boolean isTimestampedReports();
+    Code:
+       0: aload_0
+       1: getfield      #135                // Field timestampedReports:Z
+       4: ireturn
+
+  public boolean isDetectInlinedCode();
+    Code:
+       0: aload_0
+       1: getfield      #136                // Field detectInlinedCode:Z
+       4: ireturn
+
+  public void setTimestampedReports(boolean);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #135                // Field timestampedReports:Z
+       5: return
+
+  public java.io.File getHistoryOutputFile();
+    Code:
+       0: aload_0
+       1: getfield      #137                // Field historyOutputFile:Ljava/io/File;
+       4: areturn
+
+  public java.io.File getHistoryInputFile();
+    Code:
+       0: aload_0
+       1: getfield      #138                // Field historyInputFile:Ljava/io/File;
+       4: areturn
+
+  public boolean isExportLineCoverage();
+    Code:
+       0: aload_0
+       1: getfield      #139                // Field exportLineCoverage:Z
+       4: ireturn
+
+  public java.nio.charset.Charset getSourceEncoding();
+    Code:
+       0: aload_0
+       1: getfield      #140                // Field inputEncoding:Ljava/lang/String;
+       4: ifnull        15
+       7: aload_0
+       8: getfield      #140                // Field inputEncoding:Ljava/lang/String;
+      11: invokestatic  #141                // Method java/nio/charset/Charset.forName:(Ljava/lang/String;)Ljava/nio/charset/Charset;
+      14: areturn
+      15: invokestatic  #142                // Method java/nio/charset/Charset.defaultCharset:()Ljava/nio/charset/Charset;
+      18: areturn
+
+  public java.nio.charset.Charset getOutputEncoding();
+    Code:
+       0: aload_0
+       1: getfield      #143                // Field outputEncoding:Ljava/lang/String;
+       4: ifnull        15
+       7: aload_0
+       8: getfield      #143                // Field outputEncoding:Ljava/lang/String;
+      11: invokestatic  #141                // Method java/nio/charset/Charset.forName:(Ljava/lang/String;)Ljava/nio/charset/Charset;
+      14: areturn
+      15: invokestatic  #142                // Method java/nio/charset/Charset.defaultCharset:()Ljava/nio/charset/Charset;
+      18: areturn
+
+  protected org.pitest.maven.AbstractPitMojo$RunDecision shouldRun();
+    Code:
+       0: new           #144                // class org/pitest/maven/AbstractPitMojo$RunDecision
+       3: dup
+       4: invokespecial #145                // Method org/pitest/maven/AbstractPitMojo$RunDecision."<init>":()V
+       7: astore_1
+       8: aload_0
+       9: getfield      #146                // Field skip:Z
+      12: ifeq          21
+      15: aload_1
+      16: ldc           #147                // String Execution of PIT should be skipped.
+      18: invokevirtual #148                // Method org/pitest/maven/AbstractPitMojo$RunDecision.addReason:(Ljava/lang/String;)V
+      21: aload_0
+      22: getfield      #149                // Field skipTests:Z
+      25: ifeq          34
+      28: aload_1
+      29: ldc           #150                // String Test execution should be skipped (-DskipTests).
+      31: invokevirtual #148                // Method org/pitest/maven/AbstractPitMojo$RunDecision.addReason:(Ljava/lang/String;)V
+      34: ldc           #151                // String pom
+      36: aload_0
+      37: getfield      #108                // Field project:Lorg/apache/maven/project/MavenProject;
+      40: invokevirtual #152                // Method org/apache/maven/project/MavenProject.getPackaging:()Ljava/lang/String;
+      43: invokevirtual #153                // Method java/lang/String.equalsIgnoreCase:(Ljava/lang/String;)Z
+      46: ifeq          55
+      49: aload_1
+      50: ldc           #154                // String Packaging is POM.
+      52: invokevirtual #148                // Method org/pitest/maven/AbstractPitMojo$RunDecision.addReason:(Ljava/lang/String;)V
+      55: aload_0
+      56: getfield      #19                 // Field notEmptyProject:Ljava/util/function/Predicate;
+      59: aload_0
+      60: getfield      #108                // Field project:Lorg/apache/maven/project/MavenProject;
+      63: invokeinterface #155,  2          // InterfaceMethod java/util/function/Predicate.test:(Ljava/lang/Object;)Z
+      68: ifne          77
+      71: aload_1
+      72: ldc           #156                // String Project has either no tests or no production code.
+      74: invokevirtual #148                // Method org/pitest/maven/AbstractPitMojo$RunDecision.addReason:(Ljava/lang/String;)V
+      77: aload_1
+      78: areturn
+
+  public java.lang.String getMutationEngine();
+    Code:
+       0: aload_0
+       1: getfield      #157                // Field mutationEngine:Ljava/lang/String;
+       4: areturn
+
+  public java.lang.String getJavaExecutable();
+    Code:
+       0: aload_0
+       1: getfield      #158                // Field jvm:Ljava/lang/String;
+       4: areturn
+
+  public java.util.List<java.lang.String> getAdditionalClasspathElements();
+    Code:
+       0: aload_0
+       1: aload_0
+       2: getfield      #159                // Field additionalClasspathElements:Ljava/util/ArrayList;
+       5: invokespecial #112                // Method withoutNulls:(Ljava/util/List;)Ljava/util/ArrayList;
+       8: areturn
+
+  public java.util.List<java.lang.String> getClasspathDependencyExcludes();
+    Code:
+       0: aload_0
+       1: aload_0
+       2: getfield      #160                // Field classpathDependencyExcludes:Ljava/util/ArrayList;
+       5: invokespecial #112                // Method withoutNulls:(Ljava/util/List;)Ljava/util/ArrayList;
+       8: areturn
+
+  public boolean isParseSurefireConfig();
+    Code:
+       0: aload_0
+       1: getfield      #161                // Field parseSurefireConfig:Z
+       4: ireturn
+
+  public boolean skipFailingTests();
+    Code:
+       0: aload_0
+       1: getfield      #162                // Field skipFailingTests:Z
+       4: ireturn
+
+  public java.util.Map<java.lang.String, java.lang.String> getPluginProperties();
+    Code:
+       0: aload_0
+       1: getfield      #163                // Field pluginConfiguration:Ljava/util/Map;
+       4: areturn
+
+  public java.util.Map<java.lang.String, java.lang.String> getEnvironmentVariables();
+    Code:
+       0: aload_0
+       1: getfield      #15                 // Field environmentVariables:Ljava/util/Map;
+       4: areturn
+
+  public boolean useHistory();
+    Code:
+       0: aload_0
+       1: getfield      #164                // Field withHistory:Z
+       4: ireturn
+
+  public java.util.ArrayList<java.lang.String> getExcludedRunners();
+    Code:
+       0: aload_0
+       1: aload_0
+       2: getfield      #165                // Field excludedRunners:Ljava/util/ArrayList;
+       5: invokespecial #112                // Method withoutNulls:(Ljava/util/List;)Ljava/util/ArrayList;
+       8: areturn
+
+  public java.util.ArrayList<java.lang.String> getFeatures();
+    Code:
+       0: aload_0
+       1: aload_0
+       2: getfield      #166                // Field features:Ljava/util/ArrayList;
+       5: invokespecial #167                // Method emptyWithoutNulls:(Ljava/util/List;)Ljava/util/ArrayList;
+       8: astore_1
+       9: aload_1
+      10: aload_0
+      11: aload_0
+      12: getfield      #168                // Field extraFeatures:Ljava/util/ArrayList;
+      15: invokespecial #167                // Method emptyWithoutNulls:(Ljava/util/List;)Ljava/util/ArrayList;
+      18: invokevirtual #169                // Method java/util/ArrayList.addAll:(Ljava/util/Collection;)Z
+      21: pop
+      22: aload_1
+      23: areturn
+
+  public boolean isUseClasspathJar();
+    Code:
+       0: aload_0
+       1: getfield      #170                // Field useClasspathJar:Z
+       4: ireturn
+
+  public java.lang.String getVerbosity();
+    Code:
+       0: aload_0
+       1: getfield      #171                // Field verbosity:Ljava/lang/String;
+       4: areturn
+
+  public java.lang.String getProjectBase();
+    Code:
+       0: aload_0
+       1: getfield      #29                 // Field projectBase:Ljava/lang/String;
+       4: areturn
+
+  public org.apache.maven.execution.MavenSession session();
+    Code:
+       0: aload_0
+       1: getfield      #172                // Field session:Lorg/apache/maven/execution/MavenSession;
+       4: areturn
+
+  public org.eclipse.aether.RepositorySystem repositorySystem();
+    Code:
+       0: aload_0
+       1: getfield      #20                 // Field repositorySystem:Lorg/eclipse/aether/RepositorySystem;
+       4: areturn
+
+  private <X> java.util.ArrayList<X> emptyWithoutNulls(java.util.List<X>);
+    Code:
+       0: aload_1
+       1: ifnonnull     12
+       4: new           #173                // class java/util/ArrayList
+       7: dup
+       8: invokespecial #174                // Method java/util/ArrayList."<init>":()V
+      11: areturn
+      12: aload_0
+      13: aload_1
+      14: invokespecial #112                // Method withoutNulls:(Ljava/util/List;)Ljava/util/ArrayList;
+      17: areturn
+
+  private <X> java.util.ArrayList<X> withoutNulls(java.util.List<X>);
+    Code:
+       0: aload_1
+       1: ifnonnull     6
+       4: aconst_null
+       5: areturn
+       6: aload_1
+       7: invokeinterface #40,  1           // InterfaceMethod java/util/List.stream:()Ljava/util/stream/Stream;
+      12: invokedynamic #175,  0            // InvokeDynamic #3:test:()Ljava/util/function/Predicate;
+      17: invokeinterface #42,  2           // InterfaceMethod java/util/stream/Stream.filter:(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+      22: invokedynamic #176,  0            // InvokeDynamic #4:get:()Ljava/util/function/Supplier;
+      27: invokestatic  #177                // Method java/util/stream/Collectors.toCollection:(Ljava/util/function/Supplier;)Ljava/util/stream/Collector;
+      30: invokeinterface #51,  2           // InterfaceMethod java/util/stream/Stream.collect:(Ljava/util/stream/Collector;)Ljava/lang/Object;
+      35: checkcast     #173                // class java/util/ArrayList
+      38: areturn
+
+  private static java.lang.String lambda$execute$2(org.pitest.mutationtest.engine.gregor.MethodMutatorFactory);
+    Code:
+       0: aload_0
+       1: invokeinterface #178,  1          // InterfaceMethod org/pitest/mutationtest/engine/gregor/MethodMutatorFactory.getName:()Ljava/lang/String;
+       6: areturn
+
+  private void lambda$execute$1(org.pitest.plugin.ClientClasspathPlugin);
+    Code:
+       0: aload_0
+       1: invokevirtual #24                 // Method getLog:()Lorg/apache/maven/plugin/logging/Log;
+       4: new           #25                 // class java/lang/StringBuilder
+       7: dup
+       8: invokespecial #26                 // Method java/lang/StringBuilder."<init>":()V
+      11: ldc           #179                // String Found shared classpath plugin :
+      13: invokevirtual #28                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      16: aload_1
+      17: invokeinterface #180,  1          // InterfaceMethod org/pitest/plugin/ClientClasspathPlugin.description:()Ljava/lang/String;
+      22: invokevirtual #28                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      25: invokevirtual #30                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      28: invokeinterface #31,  2           // InterfaceMethod org/apache/maven/plugin/logging/Log.info:(Ljava/lang/CharSequence;)V
+      33: return
+
+  private static boolean lambda$execute$0(org.pitest.plugin.ClientClasspathPlugin);
+    Code:
+       0: aload_0
+       1: instanceof    #181                // class org/pitest/mutationtest/engine/gregor/MethodMutatorFactory
+       4: ifne          11
+       7: iconst_1
+       8: goto          12
+      11: iconst_0
+      12: ireturn
+}

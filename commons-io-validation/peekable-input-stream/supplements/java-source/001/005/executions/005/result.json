@@ -1,0 +1,63 @@
+{
+  "phase": "pit-after",
+  "recordedAt": "2026-10-12T23:55:01.261218+00:00",
+  "exitCode": 0,
+  "suiteCounts": null,
+  "nativeCounts": null,
+  "suiteOutcome": "unknown",
+  "testsNotStarted": false,
+  "observationReason": null,
+  "protocolProblems": [],
+  "nativeReports": [],
+  "artifacts": {
+    "production-class": {
+      "path": "artifacts/000-PeekableInputStream.class",
+      "sha256": "7ab6a91f3618ccf5949692f1fc5d39b97174deab23925f872f0e31cb5a2591a1",
+      "originalPath": "D:/Projects/experiment-workspaces/peekable-input-stream/java-source-001-evaluation-005/target/classes/org/apache/commons/io/input/buffer/PeekableInputStream.class"
+    },
+    "pit-mutations": {
+      "path": "artifacts/001-mutations.xml",
+      "sha256": "49a41c08affd0baf52f03dee48e8d23d38e0db16de04c35189f0f7d4b4dd1afe",
+      "originalPath": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-005/measurements/pit-after/mutations.xml"
+    },
+    "pit-linecoverage": {
+      "path": "artifacts/002-linecoverage.xml",
+      "sha256": "263381b2ed3b588752eaf933ad89b6e66766bc3a5edf8c25b27b3fdc09bb077a",
+      "originalPath": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-005/measurements/pit-after/linecoverage.xml"
+    }
+  },
+  "logSHA256": "4ce8d07e0c4e62d91ca1435f560ba1de2add8be6d199f1f93881ef2d4efdd35c",
+  "requestSHA256": "7bbe9737299fadc5282369a6f4ddaf24fc21ca30f894ef86892808a5923e3e9c",
+  "files": [
+    {
+      "path": "artifacts/000-PeekableInputStream.class",
+      "bytes": 1829,
+      "sha256": "7ab6a91f3618ccf5949692f1fc5d39b97174deab23925f872f0e31cb5a2591a1"
+    },
+    {
+      "path": "artifacts/001-mutations.xml",
+      "bytes": 10031,
+      "sha256": "49a41c08affd0baf52f03dee48e8d23d38e0db16de04c35189f0f7d4b4dd1afe"
+    },
+    {
+      "path": "artifacts/002-linecoverage.xml",
+      "bytes": 34918,
+      "sha256": "263381b2ed3b588752eaf933ad89b6e66766bc3a5edf8c25b27b3fdc09bb077a"
+    },
+    {
+      "path": "environment.json",
+      "bytes": 5505,
+      "sha256": "01ca0e65464fa5c31c99f27ebb428159eda2ae146090378fd1c7c901daf76d15"
+    },
+    {
+      "path": "output.log",
+      "bytes": 22687,
+      "sha256": "4ce8d07e0c4e62d91ca1435f560ba1de2add8be6d199f1f93881ef2d4efdd35c"
+    },
+    {
+      "path": "request.json",
+      "bytes": 2539,
+      "sha256": "7bbe9737299fadc5282369a6f4ddaf24fc21ca30f894ef86892808a5923e3e9c"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "purpose": "Verified shared raw-input preservation; hashes establish byte identity, not analyzed-binary equivalence.",
+  "purpose": "Verified shared raw-input and source-repository preservation; hashes establish byte identity, not analyzed-binary equivalence.",
   "backupScope": "Local D: copies; no off-machine backup has been performed.",
   "files": [
     {
@@ -15,6 +15,17 @@
       "sha256": "7a02a927431c15e1d3f4c0bdf1625e9647eddbe8f7664e2fce9a58f935205c1d",
       "bytes": 252491337,
       "verifiedAt": "2026-10-12T21:15:00+00:00"
+    }
+  ],
+  "sourceRepositories": [
+    {
+      "source": "D:/Projects/wit-up/commons-io",
+      "backup": "D:/Projects/experiment-backups/source-repositories/commons-io-11f0abe7a.bundle",
+      "checksum": "D:/Projects/experiment-backups/source-repositories/commons-io-11f0abe7a.bundle.sha256",
+      "sha256": "56c77e2d311dcabc39a69ba2873ef151d1ab2b78dad8792a152b4158eb117aee",
+      "bytes": 5179982,
+      "baselineCommit": "11f0abe7a3fb6954b2985ca4ab0697b2fb489e84",
+      "verification": "git bundle verify succeeded, advertised the exact baseline as HEAD, and reported complete history. The bundle preserves committed build inputs and excludes untracked experiment tests."
     }
   ]
 }

@@ -1,0 +1,82 @@
+[
+  {
+    "path": "D:\\Projects\\experiment-workspaces\\peekable-input-stream\\.working\\java-source-001-evaluation-002\\maven-repository\\org\\junit\\jupiter\\junit-jupiter\\5.5.2\\junit-jupiter-5.5.2.jar",
+    "sha256": "72fb607d1778cb870a6e009432b51619a70b88d7056f708ab1e0aaf72ef25452",
+    "bytes": 6161
+  },
+  {
+    "path": "D:\\Projects\\experiment-workspaces\\peekable-input-stream\\.working\\java-source-001-evaluation-002\\maven-repository\\org\\junit\\jupiter\\junit-jupiter-api\\5.5.2\\junit-jupiter-api-5.5.2.jar",
+    "sha256": "249a2fdbd3931987c0298d00ca08ed248496e0fc11e0463c08c4f82e0cc79b1c",
+    "bytes": 141766
+  },
+  {
+    "path": "D:\\Projects\\experiment-workspaces\\peekable-input-stream\\.working\\java-source-001-evaluation-002\\maven-repository\\org\\apiguardian\\apiguardian-api\\1.1.0\\apiguardian-api-1.1.0.jar",
+    "sha256": "a9aae9ff8ae3e17a2a18f79175e82b16267c246fbbd3ca9dfbbb290b08dcfdd4",
+    "bytes": 2387
+  },
+  {
+    "path": "D:\\Projects\\experiment-workspaces\\peekable-input-stream\\.working\\java-source-001-evaluation-002\\maven-repository\\org\\opentest4j\\opentest4j\\1.2.0\\opentest4j-1.2.0.jar",
+    "sha256": "58812de60898d976fb81ef3b62da05c6604c18fd4a249f5044282479fc286af2",
+    "bytes": 7653
+  },
+  {
+    "path": "D:\\Projects\\experiment-workspaces\\peekable-input-stream\\.working\\java-source-001-evaluation-002\\maven-repository\\org\\junit\\platform\\junit-platform-commons\\1.5.2\\junit-platform-commons-1.5.2.jar",
+    "sha256": "fc44afdfc0f20c85e71a66e7943281aef3bc1e0fd62d2d69a36cb6901e682c10",
+    "bytes": 91709
+  },
+  {
+    "path": "D:\\Projects\\experiment-workspaces\\peekable-input-stream\\.working\\java-source-001-evaluation-002\\maven-repository\\org\\junit\\jupiter\\junit-jupiter-params\\5.5.2\\junit-jupiter-params-5.5.2.jar",
+    "sha256": "fd49c7fd9d0f7f1e5b5f6982254cee79177fa2e76a37fdee0466e64f975567b5",
+    "bytes": 549435
+  },
+  {
+    "path": "D:\\Projects\\experiment-workspaces\\peekable-input-stream\\.working\\java-source-001-evaluation-002\\maven-repository\\org\\junit\\jupiter\\junit-jupiter-engine\\5.5.2\\junit-jupiter-engine-5.5.2.jar",
+    "sha256": "6d777da9876e2ef7a0336e8f098f8d74a5a64f810aa3a4a2f5f3b766ce97837b",
+    "bytes": 219630
+  },
+  {
+    "path": "D:\\Projects\\experiment-workspaces\\peekable-input-stream\\.working\\java-source-001-evaluation-002\\maven-repository\\org\\junit\\platform\\junit-platform-engine\\1.5.2\\junit-platform-engine-1.5.2.jar",
+    "sha256": "ff20ba4ad8c00ef17baef9c55512f9c02d9a68740f7f1ac01a9a6aa0239931f8",
+    "bytes": 163866
+  },
+  {
+    "path": "D:\\Projects\\experiment-workspaces\\peekable-input-stream\\.working\\java-source-001-evaluation-002\\maven-repository\\org\\junit-pioneer\\junit-pioneer\\0.3.0\\junit-pioneer-0.3.0.jar",
+    "sha256": "e8569ccd96843a1f1a3d5330fa731cdaf9038c1f7c5b9ba0b47cf89346357d32",
+    "bytes": 26655
+  },
+  {
+    "path": "D:\\Projects\\experiment-workspaces\\peekable-input-stream\\.working\\java-source-001-evaluation-002\\maven-repository\\org\\mockito\\mockito-core\\3.0.0\\mockito-core-3.0.0.jar",
+    "sha256": "ae2efd8f05ceda5ed9c802a43265a95adfa885ca5535a8476a7aaa0b15b95abb",
+    "bytes": 591095
+  },
+  {
+    "path": "D:\\Projects\\experiment-workspaces\\peekable-input-stream\\.working\\java-source-001-evaluation-002\\maven-repository\\net\\bytebuddy\\byte-buddy\\1.9.10\\byte-buddy-1.9.10.jar",
+    "sha256": "2936debc4d7b6c534848d361412e2d0f8bd06f7f27a6f4e728a20e97648d2bf3",
+    "bytes": 3272730
+  },
+  {
+    "path": "D:\\Projects\\experiment-workspaces\\peekable-input-stream\\.working\\java-source-001-evaluation-002\\maven-repository\\net\\bytebuddy\\byte-buddy-agent\\1.9.10\\byte-buddy-agent-1.9.10.jar",
+    "sha256": "8ed739d29132103250d307d2e8e3c95f07588ef0543ab11d2881d00768a5e182",
+    "bytes": 43420
+  },
+  {
+    "path": "D:\\Projects\\experiment-workspaces\\peekable-input-stream\\.working\\java-source-001-evaluation-002\\maven-repository\\org\\objenesis\\objenesis\\2.6\\objenesis-2.6.jar",
+    "sha256": "5e168368fbc250af3c79aa5fef0c3467a2d64e5a7bd74005f25d8399aeb0708d",
+    "bytes": 55684
+  },
+  {
+    "path": "D:\\Projects\\experiment-workspaces\\peekable-input-stream\\.working\\java-source-001-evaluation-002\\maven-repository\\com\\google\\jimfs\\jimfs\\1.1\\jimfs-1.1.jar",
+    "sha256": "c4828e28d7c0a930af9387510b3bada7daa5c04d7c25a75c7b8b081f1c257ddd",
+    "bytes": 206691
+  },
+  {
+    "path": "D:\\Projects\\experiment-workspaces\\peekable-input-stream\\.working\\java-source-001-evaluation-002\\maven-repository\\com\\google\\guava\\guava\\18.0\\guava-18.0.jar",
+    "sha256": "d664fbfc03d2e5ce9cab2a44fb01f1d0bf9dfebeccc1a473b1f9ea31f79f6f99",
+    "bytes": 2256213
+  },
+  {
+    "path": "D:\\Projects\\experiment-workspaces\\peekable-input-stream\\.working\\java-source-001-evaluation-002\\maven-repository\\org\\apache\\commons\\commons-lang3\\3.9\\commons-lang3-3.9.jar",
+    "sha256": "de2e1dcdcf3ef917a8ce858661a06726a9a944f28e33ad7f9e08bea44dc3c230",
+    "bytes": 503880
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "path": "scripts/run-phase.ps1",
+    "sha256": "e2afffeea1c0af37788379ccb2ea93589e0fcc88a10acce7d7bb3f5a5fe1d2f8"
+  },
+  {
+    "path": "scripts/preflight.ps1",
+    "sha256": "dc950a165b45c6b3befdb8d8fc778ef96e265db7413deca36dc685f352b34bd3"
+  },
+  {
+    "path": "scripts/pit-before.ps1",
+    "sha256": "1feac706fb175972966e7d1fd35840c24c7411020164617933d53fd1a460d529"
+  },
+  {
+    "path": "scripts/pit-after.ps1",
+    "sha256": "f429fdd4f9ae10752b43c76a4ffa61eb69bf9d2b67b45593782074be25ae529c"
+  },
+  {
+    "path": "scripts/observe-environment.ps1",
+    "sha256": "796777105ecef2058a46afe2195ed523dd8448e9ade14783d44c9971b6b021fa"
+  },
+  {
+    "path": "scripts/jacoco-before.ps1",
+    "sha256": "991c55cb60980fef48e881dc598b4eb304b97bb4959ea0667cbd7d399b5959e5"
+  },
+  {
+    "path": "scripts/jacoco-after.ps1",
+    "sha256": "83cbf9fa6e78353423bcf968dd30710cef7471b1236c00349ddef59c0ed42be0"
+  }
+]

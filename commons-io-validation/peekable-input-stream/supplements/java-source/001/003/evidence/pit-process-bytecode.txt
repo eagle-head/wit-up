@@ -1,0 +1,167 @@
+Compiled from "ProcessArgs.java"
+public final class org.pitest.process.ProcessArgs {
+  private final java.lang.String launchClassPath;
+
+  private java.util.function.Consumer<java.lang.String> stdout;
+
+  private java.util.function.Consumer<java.lang.String> stdErr;
+
+  private java.util.List<java.lang.String> jvmArgs;
+
+  private org.pitest.process.JavaAgent javaAgentFinder;
+
+  private java.io.File workingDir;
+
+  private java.lang.String javaExecutable;
+
+  private java.util.Map<java.lang.String, java.lang.String> environmentVariables;
+
+  private boolean useClasspathJar;
+
+  private org.pitest.process.ProcessArgs(java.lang.String);
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: ldc           #2                  // class java/lang/String
+       7: invokestatic  #3                  // Method org/pitest/functional/prelude/Prelude.println:(Ljava/lang/Class;)Ljava/util/function/Consumer;
+      10: putfield      #4                  // Field stdout:Ljava/util/function/Consumer;
+      13: aload_0
+      14: ldc           #2                  // class java/lang/String
+      16: getstatic     #5                  // Field java/lang/System.err:Ljava/io/PrintStream;
+      19: invokestatic  #6                  // Method org/pitest/functional/prelude/Prelude.printlnTo:(Ljava/lang/Class;Ljava/io/PrintStream;)Ljava/util/function/Consumer;
+      22: putfield      #7                  // Field stdErr:Ljava/util/function/Consumer;
+      25: aload_0
+      26: invokestatic  #8                  // Method java/util/Collections.emptyList:()Ljava/util/List;
+      29: putfield      #9                  // Field jvmArgs:Ljava/util/List;
+      32: aload_0
+      33: aconst_null
+      34: putfield      #10                 // Field workingDir:Ljava/io/File;
+      37: aload_0
+      38: iconst_0
+      39: putfield      #11                 // Field useClasspathJar:Z
+      42: aload_0
+      43: aload_1
+      44: putfield      #12                 // Field launchClassPath:Ljava/lang/String;
+      47: return
+
+  public static org.pitest.process.ProcessArgs withClassPath(java.lang.String);
+    Code:
+       0: new           #13                 // class org/pitest/process/ProcessArgs
+       3: dup
+       4: aload_0
+       5: invokespecial #14                 // Method "<init>":(Ljava/lang/String;)V
+       8: areturn
+
+  public static org.pitest.process.ProcessArgs withClassPath(org.pitest.classpath.ClassPath);
+    Code:
+       0: new           #13                 // class org/pitest/process/ProcessArgs
+       3: dup
+       4: aload_0
+       5: invokevirtual #15                 // Method org/pitest/classpath/ClassPath.getLocalClassPath:()Ljava/lang/String;
+       8: invokespecial #14                 // Method "<init>":(Ljava/lang/String;)V
+      11: areturn
+
+  public org.pitest.process.ProcessArgs andBaseDir(java.io.File);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #10                 // Field workingDir:Ljava/io/File;
+       5: aload_0
+       6: areturn
+
+  public org.pitest.process.ProcessArgs andStdout(java.util.function.Consumer<java.lang.String>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #4                  // Field stdout:Ljava/util/function/Consumer;
+       5: aload_0
+       6: areturn
+
+  public org.pitest.process.ProcessArgs andStderr(java.util.function.Consumer<java.lang.String>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #7                  // Field stdErr:Ljava/util/function/Consumer;
+       5: aload_0
+       6: areturn
+
+  public java.lang.String getLaunchClassPath();
+    Code:
+       0: aload_0
+       1: getfield      #12                 // Field launchClassPath:Ljava/lang/String;
+       4: areturn
+
+  public java.util.function.Consumer<java.lang.String> getStdout();
+    Code:
+       0: aload_0
+       1: getfield      #4                  // Field stdout:Ljava/util/function/Consumer;
+       4: areturn
+
+  public java.util.function.Consumer<java.lang.String> getStdErr();
+    Code:
+       0: aload_0
+       1: getfield      #7                  // Field stdErr:Ljava/util/function/Consumer;
+       4: areturn
+
+  public java.util.List<java.lang.String> getJvmArgs();
+    Code:
+       0: aload_0
+       1: getfield      #9                  // Field jvmArgs:Ljava/util/List;
+       4: areturn
+
+  public org.pitest.process.JavaAgent getJavaAgentFinder();
+    Code:
+       0: aload_0
+       1: getfield      #16                 // Field javaAgentFinder:Lorg/pitest/process/JavaAgent;
+       4: areturn
+
+  public java.io.File getWorkingDir();
+    Code:
+       0: aload_0
+       1: getfield      #10                 // Field workingDir:Ljava/io/File;
+       4: areturn
+
+  public java.lang.String getJavaExecutable();
+    Code:
+       0: aload_0
+       1: getfield      #17                 // Field javaExecutable:Ljava/lang/String;
+       4: areturn
+
+  public boolean useClasspathJar();
+    Code:
+       0: aload_0
+       1: getfield      #11                 // Field useClasspathJar:Z
+       4: ireturn
+
+  public org.pitest.process.ProcessArgs andLaunchOptions(org.pitest.process.LaunchOptions);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #18                 // Method org/pitest/process/LaunchOptions.getChildJVMArgs:()Ljava/util/List;
+       5: putfield      #9                  // Field jvmArgs:Ljava/util/List;
+       8: aload_0
+       9: aload_1
+      10: invokevirtual #19                 // Method org/pitest/process/LaunchOptions.getJavaAgentFinder:()Lorg/pitest/process/JavaAgent;
+      13: putfield      #16                 // Field javaAgentFinder:Lorg/pitest/process/JavaAgent;
+      16: aload_0
+      17: aload_1
+      18: invokevirtual #20                 // Method org/pitest/process/LaunchOptions.getJavaExecutable:()Ljava/lang/String;
+      21: putfield      #17                 // Field javaExecutable:Ljava/lang/String;
+      24: aload_0
+      25: aload_1
+      26: invokevirtual #21                 // Method org/pitest/process/LaunchOptions.getEnvironmentVariables:()Ljava/util/Map;
+      29: putfield      #22                 // Field environmentVariables:Ljava/util/Map;
+      32: aload_0
+      33: aload_1
+      34: invokevirtual #23                 // Method org/pitest/process/LaunchOptions.useClasspathJar:()Z
+      37: putfield      #11                 // Field useClasspathJar:Z
+      40: aload_0
+      41: areturn
+
+  public java.util.Map<java.lang.String, java.lang.String> getEnvironmentVariables();
+    Code:
+       0: aload_0
+       1: getfield      #22                 // Field environmentVariables:Ljava/util/Map;
+       4: areturn
+}

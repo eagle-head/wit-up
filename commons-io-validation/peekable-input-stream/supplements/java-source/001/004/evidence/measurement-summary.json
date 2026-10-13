@@ -1,0 +1,61 @@
+{
+  "preflight": {
+    "exitCode": 0,
+    "suiteCounts": {
+      "tests": 0,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "jacoco-before": {
+    "exitCode": 0,
+    "suiteCounts": {
+      "tests": 1541,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 6
+    },
+    "counters": {
+      "INSTRUCTION": {
+        "missed": 98,
+        "covered": 0
+      },
+      "BRANCH": {
+        "missed": 8,
+        "covered": 0
+      },
+      "LINE": {
+        "missed": 16,
+        "covered": 0
+      },
+      "COMPLEXITY": {
+        "missed": 8,
+        "covered": 0
+      },
+      "METHOD": {
+        "missed": 4,
+        "covered": 0
+      },
+      "CLASS": {
+        "missed": 1,
+        "covered": 0
+      }
+    },
+    "classSHA256": "7ab6a91f3618ccf5949692f1fc5d39b97174deab23925f872f0e31cb5a2591a1"
+  },
+  "pit-before": {
+    "exitCode": 1,
+    "suiteCounts": null,
+    "classSHA256": "7ab6a91f3618ccf5949692f1fc5d39b97174deab23925f872f0e31cb5a2591a1"
+  },
+  "infrastructure": {
+    "exitCode": 0,
+    "suiteCounts": {
+      "tests": 0,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  }
+}

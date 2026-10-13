@@ -1,0 +1,398 @@
+Compiled from "EntryPoint.java"
+public class org.pitest.mutationtest.tooling.EntryPoint {
+  public org.pitest.mutationtest.tooling.EntryPoint();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public org.pitest.mutationtest.tooling.AnalysisResult execute(java.io.File, org.pitest.mutationtest.config.ReportOptions, org.pitest.mutationtest.config.PluginServices, java.util.Map<java.lang.String, java.lang.String>);
+    Code:
+       0: new           #2                  // class org/pitest/mutationtest/config/SettingsFactory
+       3: dup
+       4: aload_2
+       5: aload_3
+       6: invokespecial #3                  // Method org/pitest/mutationtest/config/SettingsFactory."<init>":(Lorg/pitest/mutationtest/config/ReportOptions;Lorg/pitest/mutationtest/config/PluginServices;)V
+       9: astore        5
+      11: aload_0
+      12: aload_1
+      13: aload_2
+      14: aload         5
+      16: aload         4
+      18: invokevirtual #4                  // Method execute:(Ljava/io/File;Lorg/pitest/mutationtest/config/ReportOptions;Lorg/pitest/mutationtest/config/SettingsFactory;Ljava/util/Map;)Lorg/pitest/mutationtest/tooling/AnalysisResult;
+      21: areturn
+
+  public org.pitest.mutationtest.tooling.AnalysisResult execute(java.io.File, org.pitest.mutationtest.config.ReportOptions, org.pitest.mutationtest.config.SettingsFactory, java.util.Map<java.lang.String, java.lang.String>);
+    Code:
+       0: aload_0
+       1: aload_2
+       2: aload_3
+       3: invokespecial #5                  // Method updateData:(Lorg/pitest/mutationtest/config/ReportOptions;Lorg/pitest/mutationtest/config/SettingsFactory;)V
+       6: aload_2
+       7: invokevirtual #6                  // Method org/pitest/mutationtest/config/ReportOptions.getVerbosity:()Lorg/pitest/util/Verbosity;
+      10: getstatic     #7                  // Field org/pitest/util/Verbosity.VERBOSE:Lorg/pitest/util/Verbosity;
+      13: if_acmpeq     26
+      16: aload_2
+      17: invokevirtual #6                  // Method org/pitest/mutationtest/config/ReportOptions.getVerbosity:()Lorg/pitest/util/Verbosity;
+      20: getstatic     #8                  // Field org/pitest/util/Verbosity.VERBOSE_NO_SPINNER:Lorg/pitest/util/Verbosity;
+      23: if_acmpne     102
+      26: invokestatic  #9                  // Method org/pitest/util/Log.getLogger:()Ljava/util/logging/Logger;
+      29: new           #10                 // class java/lang/StringBuilder
+      32: dup
+      33: invokespecial #11                 // Method java/lang/StringBuilder."<init>":()V
+      36: ldc           #12                 // String Project base directory is
+      38: invokevirtual #13                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      41: aload_2
+      42: invokevirtual #14                 // Method org/pitest/mutationtest/config/ReportOptions.getProjectBase:()Ljava/nio/file/Path;
+      45: invokevirtual #15                 // Method java/lang/StringBuilder.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+      48: invokevirtual #16                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      51: invokevirtual #17                 // Method java/util/logging/Logger.info:(Ljava/lang/String;)V
+      54: invokestatic  #9                  // Method org/pitest/util/Log.getLogger:()Ljava/util/logging/Logger;
+      57: ldc           #18                 // String ---------------------------------------------------------------------------
+      59: invokevirtual #17                 // Method java/util/logging/Logger.info:(Ljava/lang/String;)V
+      62: invokestatic  #9                  // Method org/pitest/util/Log.getLogger:()Ljava/util/logging/Logger;
+      65: ldc           #19                 // String Enabled (+) and disabled (-) features.
+      67: invokevirtual #17                 // Method java/util/logging/Logger.info:(Ljava/lang/String;)V
+      70: invokestatic  #9                  // Method org/pitest/util/Log.getLogger:()Ljava/util/logging/Logger;
+      73: ldc           #20                 // String -----------------------------------------
+      75: invokevirtual #17                 // Method java/util/logging/Logger.info:(Ljava/lang/String;)V
+      78: aload_3
+      79: aload_0
+      80: ldc           #21                 // String +
+      82: invokespecial #22                 // Method asInfo:(Ljava/lang/String;)Ljava/util/function/Consumer;
+      85: aload_0
+      86: ldc           #23                 // String -
+      88: invokespecial #22                 // Method asInfo:(Ljava/lang/String;)Ljava/util/function/Consumer;
+      91: invokevirtual #24                 // Method org/pitest/mutationtest/config/SettingsFactory.describeFeatures:(Ljava/util/function/Consumer;Ljava/util/function/Consumer;)V
+      94: invokestatic  #9                  // Method org/pitest/util/Log.getLogger:()Ljava/util/logging/Logger;
+      97: ldc           #18                 // String ---------------------------------------------------------------------------
+      99: invokevirtual #17                 // Method java/util/logging/Logger.info:(Ljava/lang/String;)V
+     102: aload_3
+     103: invokevirtual #25                 // Method org/pitest/mutationtest/config/SettingsFactory.checkRequestedFeatures:()V
+     106: aload_0
+     107: aload_2
+     108: invokespecial #26                 // Method checkMatrixMode:(Lorg/pitest/mutationtest/config/ReportOptions;)V
+     111: aload_2
+     112: invokevirtual #27                 // Method org/pitest/mutationtest/config/ReportOptions.getClassPath:()Lorg/pitest/classpath/ClassPath;
+     115: astore        5
+     117: new           #28                 // class org/pitest/mutationtest/tooling/JarCreatingJarFinder
+     120: dup
+     121: new           #29                 // class org/pitest/classpath/ClassPathByteArraySource
+     124: dup
+     125: aload         5
+     127: invokespecial #30                 // Method org/pitest/classpath/ClassPathByteArraySource."<init>":(Lorg/pitest/classpath/ClassPath;)V
+     130: invokespecial #31                 // Method org/pitest/mutationtest/tooling/JarCreatingJarFinder."<init>":(Lorg/pitest/classinfo/ClassByteArraySource;)V
+     133: astore        6
+     135: new           #32                 // class org/pitest/mutationtest/tooling/KnownLocationJavaAgentFinder
+     138: dup
+     139: aload         6
+     141: invokeinterface #33,  1           // InterfaceMethod org/pitest/process/JavaAgent.getJarLocation:()Ljava/util/Optional;
+     146: invokevirtual #34                 // Method java/util/Optional.get:()Ljava/lang/Object;
+     149: checkcast     #35                 // class java/lang/String
+     152: invokespecial #36                 // Method org/pitest/mutationtest/tooling/KnownLocationJavaAgentFinder."<init>":(Ljava/lang/String;)V
+     155: astore        7
+     157: aload_3
+     158: invokevirtual #37                 // Method org/pitest/mutationtest/config/SettingsFactory.getOutputStrategy:()Lorg/pitest/util/ResultOutputStrategy;
+     161: astore        8
+     163: aload_3
+     164: invokevirtual #38                 // Method org/pitest/mutationtest/config/SettingsFactory.createListener:()Lorg/pitest/mutationtest/MutationResultListenerFactory;
+     167: astore        9
+     169: aload_3
+     170: invokevirtual #39                 // Method org/pitest/mutationtest/config/SettingsFactory.createCoverageOptions:()Lorg/pitest/coverage/execute/CoverageOptions;
+     173: astore        10
+     175: new           #40                 // class org/pitest/process/LaunchOptions
+     178: dup
+     179: aload         7
+     181: aload_3
+     182: invokevirtual #41                 // Method org/pitest/mutationtest/config/SettingsFactory.getJavaExecutable:()Lorg/pitest/process/JavaExecutableLocator;
+     185: aload_0
+     186: aload_2
+     187: invokespecial #42                 // Method createJvmArgs:(Lorg/pitest/mutationtest/config/ReportOptions;)Ljava/util/List;
+     190: aload         4
+     192: invokespecial #43                 // Method org/pitest/process/LaunchOptions."<init>":(Lorg/pitest/process/JavaAgent;Lorg/pitest/process/JavaExecutableLocator;Ljava/util/List;Ljava/util/Map;)V
+     195: aload_2
+     196: invokevirtual #44                 // Method org/pitest/mutationtest/config/ReportOptions.useClasspathJar:()Z
+     199: invokevirtual #45                 // Method org/pitest/process/LaunchOptions.usingClassPathJar:(Z)Lorg/pitest/process/LaunchOptions;
+     202: astore        11
+     204: aload_2
+     205: invokevirtual #46                 // Method org/pitest/mutationtest/config/ReportOptions.getMutationClassPaths:()Lorg/pitest/classpath/ProjectClassPaths;
+     208: astore        12
+     210: aload_3
+     211: aload         12
+     213: invokevirtual #47                 // Method org/pitest/mutationtest/config/SettingsFactory.createCodeSource:(Lorg/pitest/classpath/ProjectClassPaths;)Lorg/pitest/classpath/CodeSource;
+     216: astore        13
+     218: new           #48                 // class org/pitest/util/Timings
+     221: dup
+     222: invokespecial #49                 // Method org/pitest/util/Timings."<init>":()V
+     225: astore        14
+     227: new           #50                 // class org/pitest/coverage/execute/DefaultCoverageGenerator
+     230: dup
+     231: aload_1
+     232: aload         10
+     234: aload         11
+     236: aload         13
+     238: aload_3
+     239: invokevirtual #51                 // Method org/pitest/mutationtest/config/SettingsFactory.createCoverageExporter:()Lorg/pitest/coverage/CoverageExporter;
+     242: aload         14
+     244: aload_2
+     245: invokevirtual #6                  // Method org/pitest/mutationtest/config/ReportOptions.getVerbosity:()Lorg/pitest/util/Verbosity;
+     248: invokespecial #52                 // Method org/pitest/coverage/execute/DefaultCoverageGenerator."<init>":(Ljava/io/File;Lorg/pitest/coverage/execute/CoverageOptions;Lorg/pitest/process/LaunchOptions;Lorg/pitest/classpath/CodeSource;Lorg/pitest/coverage/CoverageExporter;Lorg/pitest/util/Timings;Lorg/pitest/util/Verbosity;)V
+     251: astore        15
+     253: aload_2
+     254: invokevirtual #53                 // Method org/pitest/mutationtest/config/ReportOptions.createHistoryWriter:()Ljava/util/Optional;
+     257: astore        16
+     259: aload         16
+     261: new           #54                 // class org/pitest/mutationtest/incremental/NullWriterFactory
+     264: dup
+     265: invokespecial #55                 // Method org/pitest/mutationtest/incremental/NullWriterFactory."<init>":()V
+     268: invokevirtual #56                 // Method java/util/Optional.orElse:(Ljava/lang/Object;)Ljava/lang/Object;
+     271: checkcast     #57                 // class org/pitest/mutationtest/incremental/WriterFactory
+     274: astore        17
+     276: aload_3
+     277: invokevirtual #58                 // Method org/pitest/mutationtest/config/SettingsFactory.createHistory:()Lorg/pitest/mutationtest/HistoryFactory;
+     280: astore        18
+     282: aload_0
+     283: aload         13
+     285: aload_2
+     286: aload         16
+     288: aload         18
+     290: invokespecial #59                 // Method pickHistoryStore:(Lorg/pitest/classpath/CodeSource;Lorg/pitest/mutationtest/config/ReportOptions;Ljava/util/Optional;Lorg/pitest/mutationtest/HistoryFactory;)Lorg/pitest/mutationtest/History;
+     293: astore        19
+     295: new           #60                 // class org/pitest/mutationtest/tooling/MutationStrategies
+     298: dup
+     299: aload_3
+     300: invokevirtual #61                 // Method org/pitest/mutationtest/config/SettingsFactory.createEngine:()Lorg/pitest/mutationtest/MutationEngineFactory;
+     303: aload         19
+     305: aload         15
+     307: aload         9
+     309: aload_3
+     310: invokevirtual #62                 // Method org/pitest/mutationtest/config/SettingsFactory.getResultInterceptor:()Lorg/pitest/mutationtest/CompoundMutationResultInterceptor;
+     313: new           #63                 // class org/pitest/mutationtest/incremental/HistoryResultInterceptor
+     316: dup
+     317: aload         19
+     319: invokespecial #64                 // Method org/pitest/mutationtest/incremental/HistoryResultInterceptor."<init>":(Lorg/pitest/mutationtest/History;)V
+     322: invokevirtual #65                 // Method org/pitest/mutationtest/CompoundMutationResultInterceptor.add:(Lorg/pitest/mutationtest/MutationResultInterceptor;)Lorg/pitest/mutationtest/CompoundMutationResultInterceptor;
+     325: aload_3
+     326: aload         13
+     328: invokevirtual #66                 // Method org/pitest/mutationtest/config/SettingsFactory.createCoverageTransformer:(Lorg/pitest/classpath/CodeSource;)Lorg/pitest/mutationtest/build/CoverageTransformer;
+     331: aload         8
+     333: aload_3
+     334: invokevirtual #67                 // Method org/pitest/mutationtest/config/SettingsFactory.createVerifier:()Lorg/pitest/mutationtest/verify/BuildVerifierFactory;
+     337: aload         13
+     339: invokeinterface #68,  2           // InterfaceMethod org/pitest/mutationtest/verify/BuildVerifierFactory.create:(Lorg/pitest/classpath/CodeSource;)Lorg/pitest/mutationtest/verify/BuildVerifier;
+     344: invokespecial #69                 // Method org/pitest/mutationtest/tooling/MutationStrategies."<init>":(Lorg/pitest/mutationtest/MutationEngineFactory;Lorg/pitest/mutationtest/History;Lorg/pitest/coverage/CoverageGenerator;Lorg/pitest/mutationtest/MutationResultListenerFactory;Lorg/pitest/mutationtest/MutationResultInterceptor;Lorg/pitest/mutationtest/build/CoverageTransformer;Lorg/pitest/util/ResultOutputStrategy;Lorg/pitest/mutationtest/verify/BuildVerifier;)V
+     347: astore        20
+     349: new           #70                 // class org/pitest/mutationtest/tooling/MutationCoverage
+     352: dup
+     353: aload         20
+     355: aload_1
+     356: aload         13
+     358: aload_2
+     359: aload_3
+     360: aload         14
+     362: invokespecial #71                 // Method org/pitest/mutationtest/tooling/MutationCoverage."<init>":(Lorg/pitest/mutationtest/tooling/MutationStrategies;Ljava/io/File;Lorg/pitest/classpath/CodeSource;Lorg/pitest/mutationtest/config/ReportOptions;Lorg/pitest/mutationtest/config/SettingsFactory;Lorg/pitest/util/Timings;)V
+     365: astore        21
+     367: aload         21
+     369: invokevirtual #72                 // Method org/pitest/mutationtest/tooling/MutationCoverage.runReport:()Lorg/pitest/mutationtest/tooling/CombinedStatistics;
+     372: invokestatic  #73                 // Method org/pitest/mutationtest/tooling/AnalysisResult.success:(Lorg/pitest/mutationtest/tooling/CombinedStatistics;)Lorg/pitest/mutationtest/tooling/AnalysisResult;
+     375: astore        22
+     377: aload         6
+     379: invokeinterface #74,  1           // InterfaceMethod org/pitest/process/JavaAgent.close:()V
+     384: aload         7
+     386: invokevirtual #75                 // Method org/pitest/mutationtest/tooling/KnownLocationJavaAgentFinder.close:()V
+     389: aload         17
+     391: invokeinterface #76,  1           // InterfaceMethod org/pitest/mutationtest/incremental/WriterFactory.close:()V
+     396: aload         22
+     398: areturn
+     399: astore        22
+     401: aload         22
+     403: invokestatic  #78                 // Method org/pitest/mutationtest/tooling/AnalysisResult.fail:(Ljava/lang/Exception;)Lorg/pitest/mutationtest/tooling/AnalysisResult;
+     406: astore        23
+     408: aload         6
+     410: invokeinterface #74,  1           // InterfaceMethod org/pitest/process/JavaAgent.close:()V
+     415: aload         7
+     417: invokevirtual #75                 // Method org/pitest/mutationtest/tooling/KnownLocationJavaAgentFinder.close:()V
+     420: aload         17
+     422: invokeinterface #76,  1           // InterfaceMethod org/pitest/mutationtest/incremental/WriterFactory.close:()V
+     427: aload         23
+     429: areturn
+     430: astore        24
+     432: aload         6
+     434: invokeinterface #74,  1           // InterfaceMethod org/pitest/process/JavaAgent.close:()V
+     439: aload         7
+     441: invokevirtual #75                 // Method org/pitest/mutationtest/tooling/KnownLocationJavaAgentFinder.close:()V
+     444: aload         17
+     446: invokeinterface #76,  1           // InterfaceMethod org/pitest/mutationtest/incremental/WriterFactory.close:()V
+     451: aload         24
+     453: athrow
+    Exception table:
+       from    to  target type
+         367   377   399   Class java/io/IOException
+         367   377   430   any
+         399   408   430   any
+         430   432   430   any
+
+  private java.util.List<java.lang.String> createJvmArgs(org.pitest.mutationtest.config.ReportOptions);
+    Code:
+       0: new           #79                 // class java/util/ArrayList
+       3: dup
+       4: aload_1
+       5: invokevirtual #80                 // Method org/pitest/mutationtest/config/ReportOptions.getJvmArgs:()Ljava/util/List;
+       8: invokespecial #81                 // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+      11: astore_2
+      12: aload_2
+      13: aload_1
+      14: invokevirtual #82                 // Method org/pitest/mutationtest/config/ReportOptions.getArgLine:()Ljava/lang/String;
+      17: invokestatic  #83                 // Method org/pitest/process/ArgLineParser.split:(Ljava/lang/String;)Ljava/util/List;
+      20: invokeinterface #84,  2           // InterfaceMethod java/util/List.addAll:(Ljava/util/Collection;)Z
+      25: pop
+      26: aload_2
+      27: areturn
+
+  private void updateData(org.pitest.mutationtest.config.ReportOptions, org.pitest.mutationtest.config.SettingsFactory);
+    Code:
+       0: aload_2
+       1: invokevirtual #85                 // Method org/pitest/mutationtest/config/SettingsFactory.createUpdater:()Lorg/pitest/mutationtest/config/ConfigurationUpdater;
+       4: aconst_null
+       5: aload_1
+       6: invokeinterface #86,  3           // InterfaceMethod org/pitest/mutationtest/config/ConfigurationUpdater.updateConfig:(Lorg/pitest/plugin/FeatureSetting;Lorg/pitest/mutationtest/config/ReportOptions;)V
+      11: return
+
+  private org.pitest.mutationtest.History pickHistoryStore(org.pitest.classpath.CodeSource, org.pitest.mutationtest.config.ReportOptions, java.util.Optional<org.pitest.mutationtest.incremental.WriterFactory>, org.pitest.mutationtest.HistoryFactory);
+    Code:
+       0: aload_2
+       1: invokevirtual #87                 // Method org/pitest/mutationtest/config/ReportOptions.createHistoryReader:()Ljava/util/Optional;
+       4: astore        5
+       6: aload         5
+       8: invokevirtual #88                 // Method java/util/Optional.isPresent:()Z
+      11: ifne          29
+      14: aload_3
+      15: invokevirtual #88                 // Method java/util/Optional.isPresent:()Z
+      18: ifne          29
+      21: new           #89                 // class org/pitest/mutationtest/incremental/NullHistory
+      24: dup
+      25: invokespecial #90                 // Method org/pitest/mutationtest/incremental/NullHistory."<init>":()V
+      28: areturn
+      29: new           #91                 // class org/pitest/plugin/FeatureParser
+      32: dup
+      33: invokespecial #92                 // Method org/pitest/plugin/FeatureParser."<init>":()V
+      36: astore        6
+      38: new           #93                 // class org/pitest/plugin/FeatureSelector
+      41: dup
+      42: aload         6
+      44: aload_2
+      45: invokevirtual #94                 // Method org/pitest/mutationtest/config/ReportOptions.getFeatures:()Ljava/util/Collection;
+      48: invokevirtual #95                 // Method org/pitest/plugin/FeatureParser.parseFeatures:(Ljava/util/Collection;)Ljava/util/List;
+      51: aload         4
+      53: invokestatic  #96                 // Method java/util/Collections.singletonList:(Ljava/lang/Object;)Ljava/util/List;
+      56: invokespecial #97                 // Method org/pitest/plugin/FeatureSelector."<init>":(Ljava/util/List;Ljava/util/Collection;)V
+      59: astore        7
+      61: aload         4
+      63: new           #98                 // class org/pitest/mutationtest/HistoryParams
+      66: dup
+      67: aload         7
+      69: aload_1
+      70: invokespecial #99                 // Method org/pitest/mutationtest/HistoryParams."<init>":(Lorg/pitest/plugin/FeatureSelector;Lorg/pitest/classpath/CodeSource;)V
+      73: aload_3
+      74: new           #54                 // class org/pitest/mutationtest/incremental/NullWriterFactory
+      77: dup
+      78: invokespecial #55                 // Method org/pitest/mutationtest/incremental/NullWriterFactory."<init>":()V
+      81: invokevirtual #56                 // Method java/util/Optional.orElse:(Ljava/lang/Object;)Ljava/lang/Object;
+      84: checkcast     #57                 // class org/pitest/mutationtest/incremental/WriterFactory
+      87: aload         5
+      89: invokeinterface #100,  4          // InterfaceMethod org/pitest/mutationtest/HistoryFactory.makeHistory:(Lorg/pitest/mutationtest/HistoryParams;Lorg/pitest/mutationtest/incremental/WriterFactory;Ljava/util/Optional;)Lorg/pitest/mutationtest/History;
+      94: areturn
+
+  private void checkMatrixMode(org.pitest.mutationtest.config.ReportOptions);
+    Code:
+       0: aload_1
+       1: invokevirtual #101                // Method org/pitest/mutationtest/config/ReportOptions.isFullMutationMatrix:()Z
+       4: ifeq          31
+       7: aload_1
+       8: invokevirtual #102                // Method org/pitest/mutationtest/config/ReportOptions.getOutputFormats:()Ljava/util/Collection;
+      11: ldc           #103                // String XML
+      13: invokeinterface #104,  2          // InterfaceMethod java/util/Collection.contains:(Ljava/lang/Object;)Z
+      18: ifne          31
+      21: new           #105                // class org/pitest/util/PitError
+      24: dup
+      25: ldc           #106                // String Full mutation matrix is only supported in the output format XML.
+      27: invokespecial #107                // Method org/pitest/util/PitError."<init>":(Ljava/lang/String;)V
+      30: athrow
+      31: return
+
+  private java.util.function.Consumer<org.pitest.plugin.Feature> asInfo(java.lang.String);
+    Code:
+       0: aload_1
+       1: invokedynamic #108,  0            // InvokeDynamic #0:accept:(Ljava/lang/String;)Ljava/util/function/Consumer;
+       6: areturn
+
+  private static void lambda$asInfo$0(java.lang.String, org.pitest.plugin.Feature);
+    Code:
+       0: invokestatic  #9                  // Method org/pitest/util/Log.getLogger:()Ljava/util/logging/Logger;
+       3: new           #10                 // class java/lang/StringBuilder
+       6: dup
+       7: invokespecial #11                 // Method java/lang/StringBuilder."<init>":()V
+      10: ldc           #109                // String %1$-16s
+      12: iconst_1
+      13: anewarray     #110                // class java/lang/Object
+      16: dup
+      17: iconst_0
+      18: new           #10                 // class java/lang/StringBuilder
+      21: dup
+      22: invokespecial #11                 // Method java/lang/StringBuilder."<init>":()V
+      25: aload_0
+      26: invokevirtual #13                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      29: aload_1
+      30: invokevirtual #111                // Method org/pitest/plugin/Feature.name:()Ljava/lang/String;
+      33: invokevirtual #13                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      36: invokevirtual #16                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      39: aastore
+      40: invokestatic  #112                // Method java/lang/String.format:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+      43: invokevirtual #13                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      46: aload_1
+      47: invokevirtual #113                // Method org/pitest/plugin/Feature.description:()Ljava/lang/String;
+      50: invokevirtual #13                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      53: invokevirtual #16                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      56: invokevirtual #17                 // Method java/util/logging/Logger.info:(Ljava/lang/String;)V
+      59: aload_1
+      60: invokevirtual #114                // Method org/pitest/plugin/Feature.params:()Ljava/util/List;
+      63: invokeinterface #115,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      68: astore_2
+      69: aload_2
+      70: invokeinterface #116,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      75: ifeq          156
+      78: aload_2
+      79: invokeinterface #117,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      84: checkcast     #118                // class org/pitest/plugin/FeatureParameter
+      87: astore_3
+      88: invokestatic  #9                  // Method org/pitest/util/Log.getLogger:()Ljava/util/logging/Logger;
+      91: new           #10                 // class java/lang/StringBuilder
+      94: dup
+      95: invokespecial #11                 // Method java/lang/StringBuilder."<init>":()V
+      98: ldc           #119                // String %1$-18s
+     100: iconst_1
+     101: anewarray     #110                // class java/lang/Object
+     104: dup
+     105: iconst_0
+     106: new           #10                 // class java/lang/StringBuilder
+     109: dup
+     110: invokespecial #11                 // Method java/lang/StringBuilder."<init>":()V
+     113: ldc           #120                // String   [
+     115: invokevirtual #13                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     118: aload_3
+     119: invokevirtual #121                // Method org/pitest/plugin/FeatureParameter.name:()Ljava/lang/String;
+     122: invokevirtual #13                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     125: ldc           #122                // String ]
+     127: invokevirtual #13                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     130: invokevirtual #16                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+     133: aastore
+     134: invokestatic  #112                // Method java/lang/String.format:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+     137: invokevirtual #13                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     140: aload_3
+     141: invokevirtual #123                // Method org/pitest/plugin/FeatureParameter.description:()Ljava/lang/String;
+     144: invokevirtual #13                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     147: invokevirtual #16                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+     150: invokevirtual #17                 // Method java/util/logging/Logger.info:(Ljava/lang/String;)V
+     153: goto          69
+     156: return
+}

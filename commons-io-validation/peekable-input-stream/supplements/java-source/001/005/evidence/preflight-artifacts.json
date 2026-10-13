@@ -1,0 +1,12 @@
+{
+  "effective-pom": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-005/preflight/effective-pom.xml",
+  "dependencies": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-005/preflight/dependencies.txt",
+  "dependency-hashes": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-005/preflight/dependency-hashes.json",
+  "launcher-classpath": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-005/preflight/tool-classpath.txt",
+  "project-classpath": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-005/preflight/project-classpath.txt",
+  "launcher-effective-pom": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-005/preflight/launcher-effective-pom.xml",
+  "launcher-dependencies": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-005/preflight/launcher-dependencies.txt",
+  "runtime-hashes": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-005/preflight/runtime-hashes.json",
+  "before-classpath": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-005/preflight/pit-before-classpath.txt",
+  "after-classpath": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-005/preflight/pit-after-classpath.txt"
+}

@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 2,
+  "recordKind": "evaluation",
+  "runId": "java-source-001/evaluation-001",
+  "condition": "java-source",
+  "sequence": "001",
+  "state": "frozen",
+  "origin": "supplement",
+  "createdAt": "2026-10-12T23:16:54.211305+00:00",
+  "sampleContribution": 0,
+  "baselineCommit": "11f0abe7a3fb6954b2985ca4ab0697b2fb489e84",
+  "parent": {
+    "path": "runs/java-source/001",
+    "sealSHA256": "28ac9b72af259f32261cb569e3ce65515007f3089213024d5065b60adcec9d5d"
+  },
+  "preservedInputs": [
+    {
+      "path": "inputs/measurement-protocol.md",
+      "sha256": "4c88d83f1352ab86a21d9fd68947cab114b9fdd52882f92aed5f9958dd0c67dc",
+      "originalPath": "D:/Projects/wit-up/docs/measurement-protocol.md"
+    },
+    {
+      "path": "inputs/pit-analysis-pom.xml",
+      "sha256": "3907123de00592d460ca29a17360f7890ec23b56f0ef8bd559d6743d22908ea8",
+      "originalPath": "D:/Projects/wit-up/docs/pit-analysis-pom.xml"
+    }
+  ],
+  "frozenTest": {
+    "path": "evidence/test-source/PeekableInputStreamTest.java",
+    "sha256": "365a763fbc4b383087d993e659e05bf04952a4d4333a2ff16ac4417fe9eb43dd",
+    "originalPath": "D:/Projects/wit-up/commons-io-validation/peekable-input-stream/runs/java-source/001/evidence/test-source/PeekableInputStreamTest.java"
+  },
+  "executions": [
+    {
+      "path": "executions/001",
+      "requestSHA256": "8369cce1a002229ad9a81577865846ae450b1b288d15e353e071af1fe4842ac0",
+      "resultSHA256": "22dccdafd6226246a9d52c7dca7c78bc137c1a84ff8c405c84bc59a0d8ecbd34"
+    }
+  ],
+  "authorization": {
+    "path": "inputs/note.md",
+    "sha256": "fa5954dc96a6b8aa8ad668b29a52149372c9e21014d8e383b1aa1df1b2d44c55",
+    "originalPath": "D:/Projects/experiment-workspaces/peekable-input-stream/.preparation/java-source-001-evaluation-001/authorization.md"
+  },
+  "checkout": "D:/Projects/experiment-workspaces/peekable-input-stream/java-source-001-evaluation-001",
+  "workingDirectory": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/java-source-001-evaluation-001",
+  "environment": {
+    "path": "inputs/environment.json",
+    "sha256": "dd04ab3f5b7bf036c9f79f03b1f683fcd68151f1d4a4053917692896bdef2e30",
+    "originalPath": "D:/Projects/experiment-workspaces/peekable-input-stream/.preparation/java-source-001-evaluation-001/environment.json"
+  },
+  "measurementPlan": {
+    "path": "inputs/measurement-plan.json",
+    "sha256": "4645a07cc21fecea80547d429e0d3f594254c6c6a86fa067c5be5410b4cbf3a3",
+    "originalPath": "D:/Projects/wit-up/docs/measurement-plan.json"
+  }
+}

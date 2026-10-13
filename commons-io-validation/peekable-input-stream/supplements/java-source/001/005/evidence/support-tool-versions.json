@@ -1,0 +1,30 @@
+{
+  "git": {
+    "command": "git --version",
+    "output": [
+      "git version 2.56.0.windows.2"
+    ],
+    "exitCode": 0
+  },
+  "uv": {
+    "command": "uv --version",
+    "output": [
+      "uv 0.12.23 (46b84fd0b 2026-10-03 x86_64-pc-windows-msvc)"
+    ],
+    "exitCode": 0
+  },
+  "ruff": {
+    "command": "uv run --frozen ruff --version",
+    "output": [
+      "ruff 0.16.10"
+    ],
+    "exitCode": 0
+  },
+  "pyright": {
+    "command": "uv run --frozen pyright --version",
+    "output": [
+      "pyright 1.1.414"
+    ],
+    "exitCode": 0
+  }
+}
