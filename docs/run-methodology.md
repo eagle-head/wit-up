@@ -73,6 +73,13 @@ Do not follow their links into earlier evidence. Isolation is procedural, not an
 access-control sandbox. Disclose prohibited exposure, stop generation, and close
 the attempt as `contaminated`; do not claim independence by ignoring exposure.
 
+Deliver a ready-to-use prompt to the user. The preparer reserves the run and
+resolves every template placeholder before handing over `inputs/prompt.txt`.
+Never ask the user to discover paths, fill placeholders, or perform preparation
+steps manually. Any remaining permitted environment discovery and preflight
+checks are the executing agent's responsibility. Templates in `docs/prompts/`
+are preparation inputs, not the user-facing handoff.
+
 ## Prepare and preserve inputs
 
 Prepare a distinct checkout at the fixed commit. Inspect only metadata during
