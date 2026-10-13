@@ -1,0 +1,369 @@
+{
+  "preflight": {
+    "exitCode": 0,
+    "suiteCounts": {
+      "tests": 0,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "jacoco-before": {
+    "exitCode": 0,
+    "suiteCounts": {
+      "tests": 1541,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 6
+    },
+    "counters": {
+      "INSTRUCTION": {
+        "missed": 98,
+        "covered": 0
+      },
+      "BRANCH": {
+        "missed": 8,
+        "covered": 0
+      },
+      "LINE": {
+        "missed": 16,
+        "covered": 0
+      },
+      "COMPLEXITY": {
+        "missed": 8,
+        "covered": 0
+      },
+      "METHOD": {
+        "missed": 4,
+        "covered": 0
+      },
+      "CLASS": {
+        "missed": 1,
+        "covered": 0
+      }
+    },
+    "classSHA256": "7ab6a91f3618ccf5949692f1fc5d39b97174deab23925f872f0e31cb5a2591a1"
+  },
+  "pit-before": {
+    "exitCode": 0,
+    "suiteCounts": null,
+    "mutationStatuses": {
+      "NO_COVERAGE": 14
+    },
+    "mutantCount": 14,
+    "cumulativeMutationTests": 0,
+    "mutantIdentities": [
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStream",
+        "peek",
+        "([B)Z",
+        "63",
+        "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator",
+        "<indexes><index>13</index></indexes>",
+        "<blocks><block>1</block></blocks>"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStream",
+        "peek",
+        "([B)Z",
+        "63",
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE",
+        "<indexes><index>13</index></indexes>",
+        "<blocks><block>1</block></blocks>"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStream",
+        "peek",
+        "([B)Z",
+        "67",
+        "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator",
+        "<indexes><index>44</index></indexes>",
+        "<blocks><block>12</block></blocks>"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStream",
+        "peek",
+        "([B)Z",
+        "67",
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE",
+        "<indexes><index>44</index></indexes>",
+        "<blocks><block>12</block></blocks>"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStream",
+        "peek",
+        "([B)Z",
+        "68",
+        "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator",
+        "<indexes><index>48</index></indexes>",
+        "<blocks><block>13</block></blocks>"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStream",
+        "peek",
+        "([B)Z",
+        "70",
+        "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator",
+        "<indexes><index>59</index></indexes>",
+        "<blocks><block>15</block></blocks>"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStream",
+        "peek",
+        "([B)Z",
+        "70",
+        "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator",
+        "<indexes><index>59</index></indexes>",
+        "<blocks><block>15</block></blocks>"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStream",
+        "peek",
+        "([BII)Z",
+        "85",
+        "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator",
+        "<indexes><index>13</index></indexes>",
+        "<blocks><block>1</block></blocks>"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStream",
+        "peek",
+        "([BII)Z",
+        "85",
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE",
+        "<indexes><index>13</index></indexes>",
+        "<blocks><block>1</block></blocks>"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStream",
+        "peek",
+        "([BII)Z",
+        "89",
+        "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator",
+        "<indexes><index>44</index></indexes>",
+        "<blocks><block>12</block></blocks>"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStream",
+        "peek",
+        "([BII)Z",
+        "89",
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE",
+        "<indexes><index>44</index></indexes>",
+        "<blocks><block>12</block></blocks>"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStream",
+        "peek",
+        "([BII)Z",
+        "90",
+        "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator",
+        "<indexes><index>48</index></indexes>",
+        "<blocks><block>13</block></blocks>"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStream",
+        "peek",
+        "([BII)Z",
+        "92",
+        "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator",
+        "<indexes><index>58</index></indexes>",
+        "<blocks><block>15</block></blocks>"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStream",
+        "peek",
+        "([BII)Z",
+        "92",
+        "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator",
+        "<indexes><index>58</index></indexes>",
+        "<blocks><block>15</block></blocks>"
+      ]
+    ],
+    "lineCoverage": {
+      "covered": 0,
+      "total": 16
+    },
+    "classSHA256": "7ab6a91f3618ccf5949692f1fc5d39b97174deab23925f872f0e31cb5a2591a1"
+  },
+  "jacoco-after": {
+    "exitCode": 0,
+    "suiteCounts": {
+      "tests": 1551,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 6
+    },
+    "counters": {
+      "INSTRUCTION": {
+        "missed": 21,
+        "covered": 77
+      },
+      "BRANCH": {
+        "missed": 1,
+        "covered": 7
+      },
+      "LINE": {
+        "missed": 5,
+        "covered": 11
+      },
+      "COMPLEXITY": {
+        "missed": 2,
+        "covered": 6
+      },
+      "METHOD": {
+        "missed": 1,
+        "covered": 3
+      },
+      "CLASS": {
+        "missed": 0,
+        "covered": 1
+      }
+    },
+    "classSHA256": "7ab6a91f3618ccf5949692f1fc5d39b97174deab23925f872f0e31cb5a2591a1"
+  },
+  "pit-after": {
+    "exitCode": 0,
+    "suiteCounts": null,
+    "mutationStatuses": {
+      "SURVIVED": 8,
+      "NO_COVERAGE": 5,
+      "KILLED": 1
+    },
+    "mutantCount": 14,
+    "cumulativeMutationTests": 26,
+    "mutantIdentities": [
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStream",
+        "peek",
+        "([B)Z",
+        "63",
+        "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator",
+        "<indexes><index>13</index></indexes>",
+        "<blocks><block>1</block></blocks>"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStream",
+        "peek",
+        "([B)Z",
+        "63",
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE",
+        "<indexes><index>13</index></indexes>",
+        "<blocks><block>1</block></blocks>"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStream",
+        "peek",
+        "([B)Z",
+        "67",
+        "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator",
+        "<indexes><index>44</index></indexes>",
+        "<blocks><block>12</block></blocks>"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStream",
+        "peek",
+        "([B)Z",
+        "67",
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE",
+        "<indexes><index>44</index></indexes>",
+        "<blocks><block>12</block></blocks>"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStream",
+        "peek",
+        "([B)Z",
+        "68",
+        "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator",
+        "<indexes><index>48</index></indexes>",
+        "<blocks><block>13</block></blocks>"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStream",
+        "peek",
+        "([B)Z",
+        "70",
+        "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator",
+        "<indexes><index>59</index></indexes>",
+        "<blocks><block>15</block></blocks>"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStream",
+        "peek",
+        "([B)Z",
+        "70",
+        "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator",
+        "<indexes><index>59</index></indexes>",
+        "<blocks><block>15</block></blocks>"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStream",
+        "peek",
+        "([BII)Z",
+        "85",
+        "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator",
+        "<indexes><index>13</index></indexes>",
+        "<blocks><block>1</block></blocks>"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStream",
+        "peek",
+        "([BII)Z",
+        "85",
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE",
+        "<indexes><index>13</index></indexes>",
+        "<blocks><block>1</block></blocks>"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStream",
+        "peek",
+        "([BII)Z",
+        "89",
+        "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator",
+        "<indexes><index>44</index></indexes>",
+        "<blocks><block>12</block></blocks>"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStream",
+        "peek",
+        "([BII)Z",
+        "89",
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE",
+        "<indexes><index>44</index></indexes>",
+        "<blocks><block>12</block></blocks>"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStream",
+        "peek",
+        "([BII)Z",
+        "90",
+        "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator",
+        "<indexes><index>48</index></indexes>",
+        "<blocks><block>13</block></blocks>"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStream",
+        "peek",
+        "([BII)Z",
+        "92",
+        "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator",
+        "<indexes><index>58</index></indexes>",
+        "<blocks><block>15</block></blocks>"
+      ],
+      [
+        "org.apache.commons.io.input.buffer.PeekableInputStream",
+        "peek",
+        "([BII)Z",
+        "92",
+        "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator",
+        "<indexes><index>58</index></indexes>",
+        "<blocks><block>15</block></blocks>"
+      ]
+    ],
+    "lineCoverage": {
+      "covered": 13,
+      "total": 16
+    },
+    "classSHA256": "7ab6a91f3618ccf5949692f1fc5d39b97174deab23925f872f0e31cb5a2591a1"
+  }
+}

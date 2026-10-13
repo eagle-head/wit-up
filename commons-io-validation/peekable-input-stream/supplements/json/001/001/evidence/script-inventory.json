@@ -1,0 +1,51 @@
+[
+  {
+    "path": "evidence/scripts/jacoco-after.ps1",
+    "sha256": "379fd9ee11902acf26083af8231c66429c897c4bce9c738678f01e16b2c28ce9",
+    "sourcePath": "supplements/java-source/001/005/evidence/scripts/jacoco-after.ps1",
+    "sourceSHA256": "88538da038d75fafb3485f33d6f4d64b063e365c89c013553d46cea612bd36d7",
+    "onlyEvaluationPathSubstitutions": true
+  },
+  {
+    "path": "evidence/scripts/jacoco-before.ps1",
+    "sha256": "132d363c277537d8194cb9040d46f26ee390fa827aa08086045593b4d91b5b0f",
+    "sourcePath": "supplements/java-source/001/005/evidence/scripts/jacoco-before.ps1",
+    "sourceSHA256": "df9ace3748cd15d4898d93789dcf98ce9137fe7dd8f06253e6186bec1e5be8d5",
+    "onlyEvaluationPathSubstitutions": true
+  },
+  {
+    "path": "evidence/scripts/observe-environment.ps1",
+    "sha256": "796777105ecef2058a46afe2195ed523dd8448e9ade14783d44c9971b6b021fa",
+    "sourcePath": "supplements/java-source/001/005/evidence/scripts/observe-environment.ps1",
+    "sourceSHA256": "796777105ecef2058a46afe2195ed523dd8448e9ade14783d44c9971b6b021fa",
+    "onlyEvaluationPathSubstitutions": true
+  },
+  {
+    "path": "evidence/scripts/pit-after.ps1",
+    "sha256": "2f8ad8e6081665ff2a37f7d9ceb156c17c86aeb7a4f21eff9100a113343e6d3f",
+    "sourcePath": "supplements/java-source/001/005/evidence/scripts/pit-after.ps1",
+    "sourceSHA256": "2ea73861602cb3259c6eb8d63156e450fd6f12098dd8e3b6cf44a91080db9739",
+    "onlyEvaluationPathSubstitutions": true
+  },
+  {
+    "path": "evidence/scripts/pit-before.ps1",
+    "sha256": "c20e8310aea80f0e152a11116f8277132e256822756afe5496eec880ea4f65ea",
+    "sourcePath": "supplements/java-source/001/005/evidence/scripts/pit-before.ps1",
+    "sourceSHA256": "bc27e4af4bcef8b5f64cbd9b873c5a7ae8aeeb2b99d3051131ed2da64d45ddee",
+    "onlyEvaluationPathSubstitutions": true
+  },
+  {
+    "path": "evidence/scripts/preflight.ps1",
+    "sha256": "275b0f4efdeb8ecefb5f9ea1565a3fe1769bc94f62f32ef5864e612d8611ef40",
+    "sourcePath": "supplements/java-source/001/005/evidence/scripts/preflight.ps1",
+    "sourceSHA256": "8fdf73538e4ddc8a0001942a60e9575448480ef00150fc94760b53286281d4ac",
+    "onlyEvaluationPathSubstitutions": true
+  },
+  {
+    "path": "evidence/scripts/run-phase.ps1",
+    "sha256": "e2afffeea1c0af37788379ccb2ea93589e0fcc88a10acce7d7bb3f5a5fe1d2f8",
+    "sourcePath": "supplements/java-source/001/005/evidence/scripts/run-phase.ps1",
+    "sourceSHA256": "e2afffeea1c0af37788379ccb2ea93589e0fcc88a10acce7d7bb3f5a5fe1d2f8",
+    "onlyEvaluationPathSubstitutions": true
+  }
+]

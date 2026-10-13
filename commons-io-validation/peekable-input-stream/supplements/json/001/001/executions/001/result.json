@@ -1,0 +1,143 @@
+{
+  "phase": "preflight",
+  "recordedAt": "2026-10-13T01:02:14.353446+00:00",
+  "exitCode": 0,
+  "suiteCounts": {
+    "tests": 0,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "nativeCounts": {
+    "tests": 0,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "suiteOutcome": "not_started",
+  "testsNotStarted": true,
+  "observationReason": "Only dependency-copy, effective-POM, and dependency-list goals ran; no compilation or test goal was invoked.",
+  "protocolProblems": [],
+  "nativeReports": [],
+  "artifacts": {
+    "effective-pom": {
+      "path": "artifacts/000-effective-pom.xml",
+      "sha256": "962b740771d27b23902b2df3043b7e01949c49d7d24416951acbd513c16b0b76",
+      "originalPath": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/preflight/effective-pom.xml"
+    },
+    "dependencies": {
+      "path": "artifacts/001-dependencies.txt",
+      "sha256": "d583502237b2776136ae216cacfdfa193b1a0fe0e4b76d28e7135ae6ebd29491",
+      "originalPath": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/preflight/dependencies.txt"
+    },
+    "dependency-hashes": {
+      "path": "artifacts/002-dependency-hashes.json",
+      "sha256": "16d0b24b304d42499426af76323dd2e4db80c8003344777e2c251ac6520e2981",
+      "originalPath": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/preflight/dependency-hashes.json"
+    },
+    "launcher-classpath": {
+      "path": "artifacts/003-tool-classpath.txt",
+      "sha256": "9419f984e2a1b1b6420202903cd8101e000a77cdf3dd1226a2fadcb96627d4a1",
+      "originalPath": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/preflight/tool-classpath.txt"
+    },
+    "project-classpath": {
+      "path": "artifacts/004-project-classpath.txt",
+      "sha256": "c6bdbebbbd26524a429f31ae279f451079de4639201f5e031faf20e9ff588e46",
+      "originalPath": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/preflight/project-classpath.txt"
+    },
+    "launcher-effective-pom": {
+      "path": "artifacts/005-launcher-effective-pom.xml",
+      "sha256": "170f19fc9bbafc5566d4b7d314e0531231979fb1e4ba923e821460d47f6a8b5c",
+      "originalPath": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/preflight/launcher-effective-pom.xml"
+    },
+    "launcher-dependencies": {
+      "path": "artifacts/006-launcher-dependencies.txt",
+      "sha256": "dbee45bb8997c3c0d31ca61e19a99742064b273cca709570c395bc4a1cc19d98",
+      "originalPath": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/preflight/launcher-dependencies.txt"
+    },
+    "runtime-hashes": {
+      "path": "artifacts/007-runtime-hashes.json",
+      "sha256": "12b84c3b581bce92f8e7ad008a13ec6bbcd3fbe5b9e7cbc75a831325ed630aa0",
+      "originalPath": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/preflight/runtime-hashes.json"
+    },
+    "before-classpath": {
+      "path": "artifacts/008-pit-before-classpath.txt",
+      "sha256": "3f105d37629fefa15104af92672de5a2e1f1c5ba80987ac7c31012af8849eaef",
+      "originalPath": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/preflight/pit-before-classpath.txt"
+    },
+    "after-classpath": {
+      "path": "artifacts/009-pit-after-classpath.txt",
+      "sha256": "f19bb545792183fff8d4b36b1b2c98aea65f249e0d48599ab347422b82a6601c",
+      "originalPath": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/preflight/pit-after-classpath.txt"
+    }
+  },
+  "logSHA256": "3412130c10b7da7c9e0155411ff09b8b0700033dca8647bd69e4b0e4eb0716cc",
+  "requestSHA256": "43734ca0e62ce843ad446216000e3a6720dad89f99c4499e2662bc01f1a90bbd",
+  "files": [
+    {
+      "path": "artifacts/000-effective-pom.xml",
+      "bytes": 106627,
+      "sha256": "962b740771d27b23902b2df3043b7e01949c49d7d24416951acbd513c16b0b76"
+    },
+    {
+      "path": "artifacts/001-dependencies.txt",
+      "bytes": 3529,
+      "sha256": "d583502237b2776136ae216cacfdfa193b1a0fe0e4b76d28e7135ae6ebd29491"
+    },
+    {
+      "path": "artifacts/002-dependency-hashes.json",
+      "bytes": 4960,
+      "sha256": "16d0b24b304d42499426af76323dd2e4db80c8003344777e2c251ac6520e2981"
+    },
+    {
+      "path": "artifacts/003-tool-classpath.txt",
+      "bytes": 1889,
+      "sha256": "9419f984e2a1b1b6420202903cd8101e000a77cdf3dd1226a2fadcb96627d4a1"
+    },
+    {
+      "path": "artifacts/004-project-classpath.txt",
+      "bytes": 2681,
+      "sha256": "c6bdbebbbd26524a429f31ae279f451079de4639201f5e031faf20e9ff588e46"
+    },
+    {
+      "path": "artifacts/005-launcher-effective-pom.xml",
+      "bytes": 9821,
+      "sha256": "170f19fc9bbafc5566d4b7d314e0531231979fb1e4ba923e821460d47f6a8b5c"
+    },
+    {
+      "path": "artifacts/006-launcher-dependencies.txt",
+      "bytes": 2536,
+      "sha256": "dbee45bb8997c3c0d31ca61e19a99742064b273cca709570c395bc4a1cc19d98"
+    },
+    {
+      "path": "artifacts/007-runtime-hashes.json",
+      "bytes": 7144,
+      "sha256": "12b84c3b581bce92f8e7ad008a13ec6bbcd3fbe5b9e7cbc75a831325ed630aa0"
+    },
+    {
+      "path": "artifacts/008-pit-before-classpath.txt",
+      "bytes": 4141,
+      "sha256": "3f105d37629fefa15104af92672de5a2e1f1c5ba80987ac7c31012af8849eaef"
+    },
+    {
+      "path": "artifacts/009-pit-after-classpath.txt",
+      "bytes": 4091,
+      "sha256": "f19bb545792183fff8d4b36b1b2c98aea65f249e0d48599ab347422b82a6601c"
+    },
+    {
+      "path": "environment.json",
+      "bytes": 5492,
+      "sha256": "ad7cdf0045c44108a0ad2ecd9cd91873c236fe91190b1950d76b9f5d92d1c0c6"
+    },
+    {
+      "path": "output.log",
+      "bytes": 15150,
+      "sha256": "3412130c10b7da7c9e0155411ff09b8b0700033dca8647bd69e4b0e4eb0716cc"
+    },
+    {
+      "path": "request.json",
+      "bytes": 3514,
+      "sha256": "43734ca0e62ce843ad446216000e3a6720dad89f99c4499e2662bc01f1a90bbd"
+    }
+  ]
+}

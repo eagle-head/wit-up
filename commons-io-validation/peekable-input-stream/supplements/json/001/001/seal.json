@@ -1,0 +1,401 @@
+{
+  "schemaVersion": 2,
+  "runId": "json-001/evaluation-001",
+  "sealedAt": "2026-10-13T01:14:56.584235+00:00",
+  "outcome": "evaluation-complete",
+  "reason": null,
+  "evaluationStatus": "complete",
+  "report": "report.md",
+  "files": [
+    {
+      "path": "evidence/comparison-validation.json",
+      "bytes": 2313,
+      "sha256": "dea5344eceb4e84ed53763126a6af6a65841e7bf5566dec7ff09a6086c9db00c"
+    },
+    {
+      "path": "evidence/dependency-equivalence.json",
+      "bytes": 6355,
+      "sha256": "95c78cceb1f0c33af0f242f09aec340c06d4f901dbe9ed18f688e15a2655e9a2"
+    },
+    {
+      "path": "evidence/jacoco-after-artifacts.json",
+      "bytes": 481,
+      "sha256": "1f9b4201de2ad0a858cbda590453a9ac29fe4531b34a391a4c0674bb739994d6"
+    },
+    {
+      "path": "evidence/jacoco-before-artifacts.json",
+      "bytes": 508,
+      "sha256": "29f02c84726e91bc6c5f641befa8efc625503616e815c136ece5e93b06af4083"
+    },
+    {
+      "path": "evidence/measurement-summary.json",
+      "bytes": 11447,
+      "sha256": "47ccab37bb680fb917a05e3d054374ed39faeb847dab7ee620ffb4fc728d5f0c"
+    },
+    {
+      "path": "evidence/pit-after-artifacts.json",
+      "bytes": 491,
+      "sha256": "f7e444027f65a635efabf85a43cd102339bcba79d93bba66826b8f907d72ef33"
+    },
+    {
+      "path": "evidence/pit-before-artifacts.json",
+      "bytes": 518,
+      "sha256": "280972b2694348a7a73440c7ab74300b1bb028e6e9a7f672b70fa922fbdab177"
+    },
+    {
+      "path": "evidence/preflight-artifacts.json",
+      "bytes": 1481,
+      "sha256": "10158a51855ffe6cece782fa996bb46240c8b14ce3f8ce61ee741c695cac5dc8"
+    },
+    {
+      "path": "evidence/prior-sealed-inventory.json",
+      "bytes": 50105,
+      "sha256": "a661742ae7abdd4caf3ca379f966f8812e297d6414f817161480884a8da11dc4"
+    },
+    {
+      "path": "evidence/recipe-equivalence.json",
+      "bytes": 3139,
+      "sha256": "8a07ab62f6bb9f87e036bdedf71a433d94c0437fbf5dcd5d163442b486579ea1"
+    },
+    {
+      "path": "evidence/reporting-validation.json",
+      "bytes": 521,
+      "sha256": "14175268dee1c629a24be87ffbcb96b09c9d86af69f2e1c5dd96f7f01ab005aa"
+    },
+    {
+      "path": "evidence/script-inventory.json",
+      "bytes": 2561,
+      "sha256": "06d369f7b616dee9a7e0bf735f3e40da9f830328652bbfb829261d252fd7a036"
+    },
+    {
+      "path": "evidence/scripts/consolidate-report.py",
+      "bytes": 28436,
+      "sha256": "8e97d1a760f2349c400e18002d879b907d8368dc296bdea90fc23d7ee13aa7cb"
+    },
+    {
+      "path": "evidence/scripts/jacoco-after.ps1",
+      "bytes": 1765,
+      "sha256": "379fd9ee11902acf26083af8231c66429c897c4bce9c738678f01e16b2c28ce9"
+    },
+    {
+      "path": "evidence/scripts/jacoco-before.ps1",
+      "bytes": 1791,
+      "sha256": "132d363c277537d8194cb9040d46f26ee390fa827aa08086045593b4d91b5b0f"
+    },
+    {
+      "path": "evidence/scripts/observe-environment.ps1",
+      "bytes": 1722,
+      "sha256": "796777105ecef2058a46afe2195ed523dd8448e9ade14783d44c9971b6b021fa"
+    },
+    {
+      "path": "evidence/scripts/pit-after.ps1",
+      "bytes": 2460,
+      "sha256": "2f8ad8e6081665ff2a37f7d9ceb156c17c86aeb7a4f21eff9100a113343e6d3f"
+    },
+    {
+      "path": "evidence/scripts/pit-before.ps1",
+      "bytes": 2488,
+      "sha256": "c20e8310aea80f0e152a11116f8277132e256822756afe5496eec880ea4f65ea"
+    },
+    {
+      "path": "evidence/scripts/preflight.ps1",
+      "bytes": 6781,
+      "sha256": "275b0f4efdeb8ecefb5f9ea1565a3fe1769bc94f62f32ef5864e612d8611ef40"
+    },
+    {
+      "path": "evidence/scripts/report-measurements.py",
+      "bytes": 23045,
+      "sha256": "00baca8e3b183f0255138e9904125085e7f5fb084340f214724983edb8ff7064"
+    },
+    {
+      "path": "evidence/scripts/run-phase.ps1",
+      "bytes": 2689,
+      "sha256": "e2afffeea1c0af37788379ccb2ea93589e0fcc88a10acce7d7bb3f5a5fe1d2f8"
+    },
+    {
+      "path": "evidence/source-pairing.json",
+      "bytes": 117033,
+      "sha256": "1f562e038da5269f414b73a65206d169a15c88c89353f611074537812fc70f90"
+    },
+    {
+      "path": "evidence/substitutions.json",
+      "bytes": 8896,
+      "sha256": "4b19b0146b85048e828747d9cf190ae2cdc2378e83018b6f6e8fc25912a02cf4"
+    },
+    {
+      "path": "evidence/support-tool-versions.json",
+      "bytes": 224,
+      "sha256": "98ff4c00305345a0cbe52406c5cad96f7443b38d11325c6097864f5b63ee6363"
+    },
+    {
+      "path": "evidence/test-source/PeekableInputStreamTest.java",
+      "bytes": 6356,
+      "sha256": "a29b1141af4aa61b9081d22e2056f69596e5ec602062773a4618b5567c3de926"
+    },
+    {
+      "path": "executions/001/artifacts/000-effective-pom.xml",
+      "bytes": 106627,
+      "sha256": "962b740771d27b23902b2df3043b7e01949c49d7d24416951acbd513c16b0b76"
+    },
+    {
+      "path": "executions/001/artifacts/001-dependencies.txt",
+      "bytes": 3529,
+      "sha256": "d583502237b2776136ae216cacfdfa193b1a0fe0e4b76d28e7135ae6ebd29491"
+    },
+    {
+      "path": "executions/001/artifacts/002-dependency-hashes.json",
+      "bytes": 4960,
+      "sha256": "16d0b24b304d42499426af76323dd2e4db80c8003344777e2c251ac6520e2981"
+    },
+    {
+      "path": "executions/001/artifacts/003-tool-classpath.txt",
+      "bytes": 1889,
+      "sha256": "9419f984e2a1b1b6420202903cd8101e000a77cdf3dd1226a2fadcb96627d4a1"
+    },
+    {
+      "path": "executions/001/artifacts/004-project-classpath.txt",
+      "bytes": 2681,
+      "sha256": "c6bdbebbbd26524a429f31ae279f451079de4639201f5e031faf20e9ff588e46"
+    },
+    {
+      "path": "executions/001/artifacts/005-launcher-effective-pom.xml",
+      "bytes": 9821,
+      "sha256": "170f19fc9bbafc5566d4b7d314e0531231979fb1e4ba923e821460d47f6a8b5c"
+    },
+    {
+      "path": "executions/001/artifacts/006-launcher-dependencies.txt",
+      "bytes": 2536,
+      "sha256": "dbee45bb8997c3c0d31ca61e19a99742064b273cca709570c395bc4a1cc19d98"
+    },
+    {
+      "path": "executions/001/artifacts/007-runtime-hashes.json",
+      "bytes": 7144,
+      "sha256": "12b84c3b581bce92f8e7ad008a13ec6bbcd3fbe5b9e7cbc75a831325ed630aa0"
+    },
+    {
+      "path": "executions/001/artifacts/008-pit-before-classpath.txt",
+      "bytes": 4141,
+      "sha256": "3f105d37629fefa15104af92672de5a2e1f1c5ba80987ac7c31012af8849eaef"
+    },
+    {
+      "path": "executions/001/artifacts/009-pit-after-classpath.txt",
+      "bytes": 4091,
+      "sha256": "f19bb545792183fff8d4b36b1b2c98aea65f249e0d48599ab347422b82a6601c"
+    },
+    {
+      "path": "executions/001/environment.json",
+      "bytes": 5492,
+      "sha256": "ad7cdf0045c44108a0ad2ecd9cd91873c236fe91190b1950d76b9f5d92d1c0c6"
+    },
+    {
+      "path": "executions/001/output.log",
+      "bytes": 15150,
+      "sha256": "3412130c10b7da7c9e0155411ff09b8b0700033dca8647bd69e4b0e4eb0716cc"
+    },
+    {
+      "path": "executions/001/request.json",
+      "bytes": 3514,
+      "sha256": "43734ca0e62ce843ad446216000e3a6720dad89f99c4499e2662bc01f1a90bbd"
+    },
+    {
+      "path": "executions/001/result.json",
+      "bytes": 6039,
+      "sha256": "6dffb4d0f377d7a8fedb258002401015e3b4fc54a584a691da288f0c85366f3a"
+    },
+    {
+      "path": "executions/002/artifacts/000-PeekableInputStream.class",
+      "bytes": 1829,
+      "sha256": "7ab6a91f3618ccf5949692f1fc5d39b97174deab23925f872f0e31cb5a2591a1"
+    },
+    {
+      "path": "executions/002/artifacts/001-jacoco.xml",
+      "bytes": 14692,
+      "sha256": "544879ed1acdcfa3f55d631ac9cc246b49607cf863d18c3e09fdc33afa1c0779"
+    },
+    {
+      "path": "executions/002/artifacts/002-jacoco.exec",
+      "bytes": 5973,
+      "sha256": "04a9b13bc2f44557c932378f397cdaf067dcb3a22bdd5feed8b4c05f9069ca62"
+    },
+    {
+      "path": "executions/002/environment.json",
+      "bytes": 5845,
+      "sha256": "d883fe05d731a56d44126bda036bea23e58e04451538f2ee67c0780460f67919"
+    },
+    {
+      "path": "executions/002/output.log",
+      "bytes": 379054,
+      "sha256": "6f3af1a8ada4b87c799dd3764165709c572db45e648ef876258bc3d020d3d6bb"
+    },
+    {
+      "path": "executions/002/request.json",
+      "bytes": 2652,
+      "sha256": "c341e3821422e35728ec4b84f1d10fae60fdaad5c007790ce60e2d9252b21b65"
+    },
+    {
+      "path": "executions/002/result.json",
+      "bytes": 54649,
+      "sha256": "c2ed3ce096cfd51a46c4384f7198c54650c6143a57afa4c3d63fd08e315b8105"
+    },
+    {
+      "path": "executions/002/surefire-reports.zip",
+      "bytes": 372098,
+      "sha256": "990cd21503565514687bb325be8f7863528e1eff0a68e54a7c7ab90b0229afce"
+    },
+    {
+      "path": "executions/003/artifacts/000-PeekableInputStream.class",
+      "bytes": 1829,
+      "sha256": "7ab6a91f3618ccf5949692f1fc5d39b97174deab23925f872f0e31cb5a2591a1"
+    },
+    {
+      "path": "executions/003/artifacts/001-mutations.xml",
+      "bytes": 8371,
+      "sha256": "ad74ddaa20424cf4cce8e6af003b3b6b0f46a2f15b44259aa02204d456fd361a"
+    },
+    {
+      "path": "executions/003/artifacts/002-linecoverage.xml",
+      "bytes": 62,
+      "sha256": "ac41648185a3832d420711a1278f735d754390a6fcafbdfbb171819b14c176ed"
+    },
+    {
+      "path": "executions/003/environment.json",
+      "bytes": 5492,
+      "sha256": "61f90661d1298dd7bed3209fea772742d8c11015f3de1ed668dbae75e368bfac"
+    },
+    {
+      "path": "executions/003/output.log",
+      "bytes": 22712,
+      "sha256": "492fa02780bdc83f3f7e237536f936ca71832d2a9226119db3de19858e3a419e"
+    },
+    {
+      "path": "executions/003/request.json",
+      "bytes": 2527,
+      "sha256": "10e37af060e454d19c43bf9a9b8b8f64621a064d4c625289c71e484f1859e9a4"
+    },
+    {
+      "path": "executions/003/result.json",
+      "bytes": 2438,
+      "sha256": "c153f80bded873470230a63f44ec29c4fee521a46001436f15f6d44880deefd3"
+    },
+    {
+      "path": "executions/004/artifacts/000-PeekableInputStream.class",
+      "bytes": 1829,
+      "sha256": "7ab6a91f3618ccf5949692f1fc5d39b97174deab23925f872f0e31cb5a2591a1"
+    },
+    {
+      "path": "executions/004/artifacts/001-jacoco.xml",
+      "bytes": 14780,
+      "sha256": "c9ccf68dcf1a3e6f97f1b8b40ca889ffca5ed1a875fad7cbe368e491c12d9f08"
+    },
+    {
+      "path": "executions/004/artifacts/002-jacoco.exec",
+      "bytes": 6085,
+      "sha256": "c9f6d872cc02887b658de366f3c552480360e78ddc8ac9bb3e8ba5419d2cf5e4"
+    },
+    {
+      "path": "executions/004/environment.json",
+      "bytes": 5844,
+      "sha256": "0881ea154a14d6ceff8c2c687f66ea8572c0231a7c5059550790e37f9d46f4e1"
+    },
+    {
+      "path": "executions/004/output.log",
+      "bytes": 40663,
+      "sha256": "eb3b1a1d252d2a9e0db046dc7e2ee26a866e1fbd80ebd69d982d1b507501ee43"
+    },
+    {
+      "path": "executions/004/request.json",
+      "bytes": 2597,
+      "sha256": "49555d8161c8fe0ffbb2afc6d3fb4bad135893c7dfbb6025a7996009dd267035"
+    },
+    {
+      "path": "executions/004/result.json",
+      "bytes": 51592,
+      "sha256": "ada661a1e55168f325a21e1b63f193818d03d974575c701f6ad5626c4a7c5713"
+    },
+    {
+      "path": "executions/004/surefire-reports.zip",
+      "bytes": 374112,
+      "sha256": "fe11b8c913907796ccf92c19b4a18133caecb41dbb7b08866a4b9afd01b1e8e0"
+    },
+    {
+      "path": "executions/005/artifacts/000-PeekableInputStream.class",
+      "bytes": 1829,
+      "sha256": "7ab6a91f3618ccf5949692f1fc5d39b97174deab23925f872f0e31cb5a2591a1"
+    },
+    {
+      "path": "executions/005/artifacts/001-mutations.xml",
+      "bytes": 8558,
+      "sha256": "f7aac032f4bce7b1b95824b01c5add4e400098fa3ba12be3707902249bdf49d7"
+    },
+    {
+      "path": "executions/005/artifacts/002-linecoverage.xml",
+      "bytes": 19240,
+      "sha256": "b0364637b575412827fa8061ae1639ed7b2dd0c01efeda19e7305082512836a4"
+    },
+    {
+      "path": "executions/005/environment.json",
+      "bytes": 5492,
+      "sha256": "3476f2655e49b6e79c9dc297a4b0510646c3d2923c46b6012f383d402138a7b7"
+    },
+    {
+      "path": "executions/005/output.log",
+      "bytes": 22687,
+      "sha256": "1a47c7c071c4a8cb5b30b394b0544d36a33e6d6c165d6fe3f28ea0acee2efc32"
+    },
+    {
+      "path": "executions/005/request.json",
+      "bytes": 2497,
+      "sha256": "561911181d7bc691b93f019b80e7963080f444c875253909406d7aceef7a86f4"
+    },
+    {
+      "path": "executions/005/result.json",
+      "bytes": 2413,
+      "sha256": "949a4069c56ff4e98a768fa02bf2372f0bc489b29484df69c117954d26db8706"
+    },
+    {
+      "path": "inputs/environment.json",
+      "bytes": 5418,
+      "sha256": "b91a40b9997e0de4ea4eec95aa515a4af16ac5e0e1f9171e92f9544d7e920412"
+    },
+    {
+      "path": "inputs/measurement-plan.json",
+      "bytes": 1696,
+      "sha256": "ce71fd6a1f7a42065fbf78baf9ebb88e58ad9b5a6495b00dc057ade735ed2751"
+    },
+    {
+      "path": "inputs/measurement-protocol.md",
+      "bytes": 10525,
+      "sha256": "1831c961c400c6078ff982b929ea3ccdf3d6e0bcea295d5d5889ae71c150e121"
+    },
+    {
+      "path": "inputs/note.md",
+      "bytes": 1142,
+      "sha256": "c0af7f05816df03a7f33268a067114dc91b855506c92eafef9652261c698911a"
+    },
+    {
+      "path": "inputs/pit-analysis-pom.xml",
+      "bytes": 3134,
+      "sha256": "b99de3bed145cdececbf24ef9e17b817c9990cccb1786a9580d81dce814c044e"
+    },
+    {
+      "path": "inputs/pit-cli-pom.xml",
+      "bytes": 887,
+      "sha256": "c020f2afc995cabda96c5ca7190a32b4ef557d35c96f3149e20d0056c74011b9"
+    },
+    {
+      "path": "inputs/preservation-manager.py",
+      "bytes": 53089,
+      "sha256": "76733ed1be3dfed82d57adee0cd3e9303157eed6b4aba015a4f08acf6d254a24"
+    },
+    {
+      "path": "report.md",
+      "bytes": 57837,
+      "sha256": "7bf4717306d3a2f8f4bdce773c4012815f699edfd3de1aacf2342c0bedfa2383"
+    },
+    {
+      "path": "run.json",
+      "bytes": 3774,
+      "sha256": "6a2e429edfbe830013cc5216c40638fff33a6489c74b24db211be989578b3283"
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< commons-io:commons-io >------------------------
+[INFO] Building Apache Commons IO 2.7-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- dependency:3.6.1:copy (default-cli) @ commons-io ---
+[INFO] Configured Artifact: org.jacoco:org.jacoco.agent:runtime:0.8.4:jar
+[INFO] Copying org.jacoco.agent-0.8.4-runtime.jar to D:\Projects\experiment-workspaces\peekable-input-stream\.working\json-001-evaluation-001\tools\org.jacoco.agent-0.8.4-runtime.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  11.731 s
+[INFO] Finished at: 2026-10-12T21:01:54-04:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< commons-io:commons-io >------------------------
+[INFO] Building Apache Commons IO 2.7-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- dependency:3.6.1:copy (default-cli) @ commons-io ---
+[INFO] Configured Artifact: org.jacoco:org.jacoco.cli:nodeps:0.8.4:jar
+[INFO] Copying org.jacoco.cli-0.8.4-nodeps.jar to D:\Projects\experiment-workspaces\peekable-input-stream\.working\json-001-evaluation-001\tools\org.jacoco.cli-0.8.4-nodeps.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.477 s
+[INFO] Finished at: 2026-10-12T21:01:56-04:00
+[INFO] ------------------------------------------------------------------------
+65de07ff32bcf2f945f18180d1d10cdf0e155eee2b508519bbc5f31904cd8288  D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/tools/org.jacoco.cli-0.8.4-nodeps.jar
+1a7c1dc7280e535b9b6f383915bac5afbb9208c1af2019b4e674ca590c925c22  D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/tools/org.jacoco.agent-0.8.4-runtime.jar
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< commons-io:commons-io >------------------------
+[INFO] Building Apache Commons IO 2.7-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- help:3.5.1:effective-pom (default-cli) @ commons-io ---
+[INFO] Effective-POM written to: D:\Projects\experiment-workspaces\peekable-input-stream\.working\json-001-evaluation-001\preflight\effective-pom.xml
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.332 s
+[INFO] Finished at: 2026-10-12T21:02:00-04:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< commons-io:commons-io >------------------------
+[INFO] Building Apache Commons IO 2.7-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- dependency:3.6.1:list (default-cli) @ commons-io ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.696 s
+[INFO] Finished at: 2026-10-12T21:02:04-04:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----< org.apache.commons:peekable-input-stream-mutation-launcher >-----
+[INFO] Building peekable-input-stream-mutation-launcher 1.0
+[INFO]   from pit-cli-pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- dependency:3.6.1:build-classpath (default-cli) @ peekable-input-stream-mutation-launcher ---
+[INFO] Wrote classpath file 'D:\Projects\experiment-workspaces\peekable-input-stream\.working\json-001-evaluation-001\preflight\tool-classpath.txt'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.913 s
+[INFO] Finished at: 2026-10-12T21:02:07-04:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< commons-io:commons-io >------------------------
+[INFO] Building Apache Commons IO 2.7-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- dependency:3.6.1:build-classpath (default-cli) @ commons-io ---
+[INFO] Wrote classpath file 'D:\Projects\experiment-workspaces\peekable-input-stream\.working\json-001-evaluation-001\preflight\project-classpath.txt'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.882 s
+[INFO] Finished at: 2026-10-12T21:02:09-04:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----< org.apache.commons:peekable-input-stream-mutation-launcher >-----
+[INFO] Building peekable-input-stream-mutation-launcher 1.0
+[INFO]   from pit-cli-pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- help:3.5.1:effective-pom (default-cli) @ peekable-input-stream-mutation-launcher ---
+[INFO] Effective-POM written to: D:\Projects\experiment-workspaces\peekable-input-stream\.working\json-001-evaluation-001\preflight\launcher-effective-pom.xml
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.388 s
+[INFO] Finished at: 2026-10-12T21:02:11-04:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----< org.apache.commons:peekable-input-stream-mutation-launcher >-----
+[INFO] Building peekable-input-stream-mutation-launcher 1.0
+[INFO]   from pit-cli-pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- dependency:3.6.1:list (default-cli) @ peekable-input-stream-mutation-launcher ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.997 s
+[INFO] Finished at: 2026-10-12T21:02:13-04:00
+[INFO] ------------------------------------------------------------------------
+Option (* = required)                   Description            
+---------------------                   -----------            
+-?, -h                                  show help              
+--argLine <argline for child JVMs>                             
+--avoidCallsTo <comma separated list                           
+  of packages to consider as                                   
+  untouchable logging calls>                                   
+--classPath <coma separated list of                            
+  additional classpath elements>                               
+--classPathFile <File: File with a                             
+  list of additional classpath                                 
+  elements (one per line)>                                     
+--coverageThreshold <Integer: Line      (default: 0)           
+  coverage below which to throw an                             
+  error>                                                       
+--detectInlinedCode [Boolean: whether   (default: true)        
+  or not to try and detect code                                
+  inlined from finally blocks]                                 
+--excludedClasses <comma separated                             
+  list of globs for classes to exclude                         
+  when mutating>                                               
+--excludedGroups <TestNG groups/JUnit                          
+  categories to include>                                       
+--excludedMethods <comma separated                             
+  list of filters to match against                             
+  methods to exclude from mutation                             
+  analysis>                                                    
+--excludedRunners <JUnit4 runners to                           
+  exclude>                                                     
+--excludedTestClasses <comma separated                         
+  list of globs of test classes to                             
+  exclude>                                                     
+--exportLineCoverage [Boolean: whether  (default: false)       
+  or not to dump per test line                                 
+  coverage data to disk]                                       
+--failWhenNoMutations [Boolean:         (default: true)        
+  whether to throw error if no                                 
+  mutations found]                                             
+--features <comma separated list of                            
+  features to enable/disable.>                                 
+--fullMutationMatrix [Boolean: Whether  (default: false)       
+  to create a full mutation matrix]                            
+--historyInputLocation <File: File to                          
+  read history from for incremental                            
+  analysis>                                                    
+--historyOutputLocation <File: File to                         
+  write history to for incremental                             
+  analysis>                                                    
+--includeLaunchClasspath [Boolean:      (default: true)        
+  whether or not to analyse launch                             
+  classpath]                                                   
+--includedGroups <TestNG groups/JUnit                          
+  categories to include>                                       
+--includedTestMethods <Test methods                            
+  that should be included for                                  
+  challenging the mutants>                                     
+--inputEncoding <input encoding>        (default: windows-1252)
+--jvmArgs <comma separated list of                             
+  child JVM args>                                              
+--jvmPath <path to java executable>                            
+--maxMutationsPerClass <Integer: No     (default: 0)           
+  longer supported. Use CLASSLIMIT                             
+  (limit[42]) feature instead>                                 
+--maxSurviving <Integer: Maximum        (default: -1)          
+  number of surviving mutants to allow                         
+  without throwing an error>                                   
+--mutableCodePaths <Globs identifying                          
+  classpath roots containing mutable                           
+  code>                                                        
+--mutationEngine <mutation engine to    (default: gregor)      
+  use>                                                         
+--mutationThreshold <Integer: Mutation  (default: 0)           
+  score below which to throw an error>                         
+--mutationUnitSize <Integer: Maximum    (default: 0)           
+  number of mutations to include                               
+  within a single unit of analysis>                            
+--mutators <comma separated list of                            
+  mutation operators>                                          
+--outputEncoding <output encoding>      (default: windows-1252)
+--outputFormats <comma separated list   (default: HTML)        
+  of listeners to receive mutation                             
+  results>                                                     
+--pluginConfiguration <KeyValuePair:                           
+  custom plugin properties>                                    
+--projectBase <File>                                           
+* --reportDir <directory to create                             
+  report folder in>                                            
+--skipFailingTests [Boolean: whether    (default: false)       
+  to ignore failing tests when                                 
+  computing coverage]                                          
+* --sourceDirs <File: comma separated                          
+  list of source directories>                                  
+* --targetClasses <comma separated                             
+  list of filters to match against                             
+  classes to test>                                             
+--targetTests <comma separated list of                         
+  filters to match against tests to                            
+  run>                                                         
+--testPlugin <this parameter is         (default: junit)       
+  ignored and will be removed in a                             
+  future release>                                              
+--testStrengthThreshold <Integer: Test  (default: 0)           
+  strength score below which to throw                          
+  an error>                                                    
+--threads <Integer: number of threads   (default: 1)           
+  to use for testing>                                          
+--timeoutConst [Long: constant to       (default: 4000)        
+  apply to calculate maximum test                              
+  duration]                                                    
+--timeoutFactor [Float: factor to       (default: 1.25)        
+  apply to calculate maximum test                              
+  duration]                                                    
+--timestampedReports [Boolean: whether  (default: false)       
+  or not to generated timestamped                              
+  directories]                                                 
+--useClasspathJar [Boolean: support     (default: false)       
+  large classpaths by creating a                               
+  classpath jar]                                               
+--verbose [Boolean: whether or not to   (default: false)       
+  generate verbose output]                                     
+--verbosity [the verbosity of output]   (default: DEFAULT)     
+>>>> Missing required option(s) [reportDir, sourceDirs, targetClasses]

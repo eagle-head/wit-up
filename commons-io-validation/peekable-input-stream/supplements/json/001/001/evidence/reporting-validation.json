@@ -1,0 +1,14 @@
+{
+  "scope": "New unsealed reporting scripts; no frozen Java, measurement recipe, or existing sealed record was changed.",
+  "checks": {
+    "ruffCheck": "passed",
+    "ruffFormatCheck": "passed",
+    "pyright": {
+      "errors": 0,
+      "warnings": 0,
+      "information": 0
+    }
+  },
+  "priorDiagnostic": "Ruff reported FURB167 for the re.S alias in the new report renderer. It was corrected to re.DOTALL without a suppression. The corrected scripts passed the checks.",
+  "generationContribution": 0
+}

@@ -1,0 +1,52 @@
+{
+  "sameClassBytesAcrossEightPhases": true,
+  "productionClassSHA256": "7ab6a91f3618ccf5949692f1fc5d39b97174deab23925f872f0e31cb5a2591a1",
+  "sameNativeMutantUniverseAcrossFourArtifacts": true,
+  "mutants": 14,
+  "generatedCaseCountsFromNativeAfterXml": [
+    10,
+    20
+  ],
+  "generatedCaseNamesFromNativeAfterXml": [
+    [
+      "testPeekSliceRejectsNullBuffer",
+      "testPeekSliceRejectsLengthLargerThanCapacity",
+      "testPeekSliceRejectsBufferLargerThanCapacity",
+      "testPeekArrayRejectsBufferLargerThanCapacity",
+      "testPeekArrayRejectsEmptyBuffer",
+      "testPeekSliceRejectsOffsetAtEmptyBufferEnd",
+      "testPeekSliceRejectsNegativeLength",
+      "testPeekSliceRejectsNegativeOffset",
+      "testPeekArrayRejectsNullBuffer",
+      "testConstructorRejectsZeroBufferSize"
+    ],
+    [
+      "peekSlicePropagatesArrayBoundsFailureAfterMatchingPrefix{int}[1]",
+      "peekSlicePropagatesArrayBoundsFailureAfterMatchingPrefix{int}[2]",
+      "sizedConstructorRejectsNonpositiveBufferSize{int}[1]",
+      "sizedConstructorRejectsNonpositiveBufferSize{int}[2]",
+      "peekSliceRejectsLengthLargerThanInternalBuffer",
+      "peekArrayRejectsNullBuffer",
+      "peekSliceRejectsOversizedArrayEvenForZeroLength",
+      "defaultConstructorRejectsNullInput",
+      "peekArrayRejectsArrayLargerThanInternalBuffer",
+      "peekSlicePropagatesReadFailureBeforeInvalidSlice{int}[1]",
+      "peekSlicePropagatesReadFailureBeforeInvalidSlice{int}[2]",
+      "peekArrayPropagatesReadFailureDuringRefill{int}[1]",
+      "peekArrayPropagatesReadFailureDuringRefill{int}[2]",
+      "peekArrayRejectsEmptyArrayAtDelegatedOffsetGuard",
+      "peekSliceRejectsInvalidOffsetBeforeInvalidLength{int}[1]",
+      "peekSliceRejectsInvalidOffsetBeforeInvalidLength{int}[2]",
+      "peekSliceRejectsNegativeLength",
+      "sizedConstructorRejectsNullInputBeforeInvalidBufferSize",
+      "peekSliceRejectsEmptyArrayAtDelegatedOffsetGuard",
+      "peekSliceRejectsNullBufferBeforeInvalidSlice"
+    ]
+  ],
+  "allExistingSealedFilesUnchanged": 355,
+  "allFiveJsonInvocationsSuccessful": true,
+  "measurementScriptsMatchPreparedHashes": true,
+  "observedToolchainMatchesAcrossInvocations": true,
+  "completeFrozenJavaInBothEvaluationReports": true,
+  "plansEqual": true
+}

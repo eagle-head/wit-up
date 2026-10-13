@@ -1,0 +1,54 @@
+{
+  "phase": "preflight",
+  "command": "pwsh -NoProfile -File \"D:/Projects/wit-up/commons-io-validation/peekable-input-stream/supplements/json/001/001/evidence/scripts/preflight.ps1\"",
+  "scope": "Fetch and verify pinned JaCoCo tools; preserve effective POM and exact resolved project dependencies; no test execution",
+  "reservedAt": "2026-10-13T01:01:41.056505+00:00",
+  "reservedAtNs": 1791853301055909800,
+  "reportsDirectory": null,
+  "artifacts": {
+    "effective-pom": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/preflight/effective-pom.xml",
+    "dependencies": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/preflight/dependencies.txt",
+    "dependency-hashes": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/preflight/dependency-hashes.json",
+    "launcher-classpath": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/preflight/tool-classpath.txt",
+    "project-classpath": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/preflight/project-classpath.txt",
+    "launcher-effective-pom": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/preflight/launcher-effective-pom.xml",
+    "launcher-dependencies": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/preflight/launcher-dependencies.txt",
+    "runtime-hashes": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/preflight/runtime-hashes.json",
+    "before-classpath": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/preflight/pit-before-classpath.txt",
+    "after-classpath": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/preflight/pit-after-classpath.txt"
+  },
+  "environment": {
+    "path": "environment.json",
+    "sha256": "ad7cdf0045c44108a0ad2ecd9cd91873c236fe91190b1950d76b9f5d92d1c0c6",
+    "originalPath": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/environments/preflight.json"
+  },
+  "checkout": "D:/Projects/experiment-workspaces/peekable-input-stream/json-001-evaluation-001",
+  "initialProblems": [],
+  "planSHA256": "ce71fd6a1f7a42065fbf78baf9ebb88e58ad9b5a6495b00dc057ade735ed2751",
+  "observedJava": {
+    "executable": "C:/Users/edyko/AppData/Local/mise/installs/java/temurin-8.0.504+1/bin\\java.exe",
+    "arguments": [
+      "-version"
+    ],
+    "exitCode": 0,
+    "output": [
+      "openjdk version \"1.8.0_504\"",
+      "OpenJDK Runtime Environment (Temurin)(build 1.8.0_504-b01)",
+      "OpenJDK 64-Bit Server VM (Temurin)(build 25.504-b01, mixed mode)"
+    ]
+  },
+  "observedMaven": {
+    "executable": "C:\\Users\\edyko\\AppData\\Local\\mise\\installs\\maven\\3.9.16\\apache-maven-3.9.16/bin\\mvn.cmd",
+    "arguments": [
+      "-version"
+    ],
+    "exitCode": 0,
+    "output": [
+      "Apache Maven 3.9.16 (2bdd9fddda4b155ebf8000e807eb73fd829a51d5)",
+      "Maven home: C:\\Users\\edyko\\AppData\\Local\\mise\\installs\\maven\\3.9.16\\apache-maven-3.9.16",
+      "Java version: 1.8.0_504, vendor: Temurin, runtime: C:\\Users\\edyko\\AppData\\Local\\mise\\installs\\java\\temurin-8.0.504+1\\jre",
+      "Default locale: en_US, platform encoding: Cp1252",
+      "OS name: \"windows 11\", version: \"10.0\", arch: \"amd64\", family: \"windows\""
+    ]
+  }
+}

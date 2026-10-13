@@ -1,0 +1,5 @@
+{
+  "production-class": "D:/Projects/experiment-workspaces/peekable-input-stream/json-001-evaluation-001/target/classes/org/apache/commons/io/input/buffer/PeekableInputStream.class",
+  "pit-mutations": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/measurements/pit-after/mutations.xml",
+  "pit-linecoverage": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/measurements/pit-after/linecoverage.xml"
+}

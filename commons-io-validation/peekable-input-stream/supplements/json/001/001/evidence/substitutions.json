@@ -1,0 +1,88 @@
+{
+  "evaluationRoot": "D:/Projects/wit-up/commons-io-validation/peekable-input-stream/supplements/json/001/001",
+  "workingDirectory": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001",
+  "javaHome": "C:/Users/edyko/AppData/Local/mise/installs/java/temurin-8.0.504+1",
+  "agentJar": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/tools/org.jacoco.agent-0.8.4-runtime.jar",
+  "cliJar": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/tools/org.jacoco.cli-0.8.4-nodeps.jar",
+  "phases": {
+    "jacoco-before": {
+      "checkout": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/before-checkout",
+      "output": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/measurements/jacoco-before",
+      "build": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/pit-build/jacoco-before",
+      "temp": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/temp",
+      "script": "D:/Projects/wit-up/commons-io-validation/peekable-input-stream/supplements/json/001/001/evidence/scripts/jacoco-before.ps1",
+      "scope": "Full existing project suite; frozen generated test present only after; target production class only",
+      "reports": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/before-checkout/target/surefire-reports",
+      "artifacts": {
+        "production-class": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/before-checkout/target/classes/org/apache/commons/io/input/buffer/PeekableInputStream.class",
+        "jacoco-xml": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/measurements/jacoco-before/jacoco.xml",
+        "jacoco-exec": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/measurements/jacoco-before/jacoco.exec"
+      }
+    },
+    "pit-before": {
+      "checkout": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/before-checkout",
+      "output": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/measurements/pit-before",
+      "build": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/pit-build/pit-before",
+      "temp": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/temp",
+      "script": "D:/Projects/wit-up/commons-io-validation/peekable-input-stream/supplements/json/001/001/evidence/scripts/pit-before.ps1",
+      "scope": "Full existing project suite; frozen generated test present only after; target production class only",
+      "reports": null,
+      "artifacts": {
+        "production-class": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/before-checkout/target/classes/org/apache/commons/io/input/buffer/PeekableInputStream.class",
+        "pit-mutations": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/measurements/pit-before/mutations.xml",
+        "pit-linecoverage": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/measurements/pit-before/linecoverage.xml"
+      },
+      "phaseClasspathFile": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/preflight/pit-before-classpath.txt",
+      "toolClasspathFile": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/preflight/tool-classpath.txt"
+    },
+    "jacoco-after": {
+      "checkout": "D:/Projects/experiment-workspaces/peekable-input-stream/json-001-evaluation-001",
+      "output": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/measurements/jacoco-after",
+      "build": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/pit-build/jacoco-after",
+      "temp": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/temp",
+      "script": "D:/Projects/wit-up/commons-io-validation/peekable-input-stream/supplements/json/001/001/evidence/scripts/jacoco-after.ps1",
+      "scope": "Full existing project suite; frozen generated test present only after; target production class only",
+      "reports": "D:/Projects/experiment-workspaces/peekable-input-stream/json-001-evaluation-001/target/surefire-reports",
+      "artifacts": {
+        "production-class": "D:/Projects/experiment-workspaces/peekable-input-stream/json-001-evaluation-001/target/classes/org/apache/commons/io/input/buffer/PeekableInputStream.class",
+        "jacoco-xml": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/measurements/jacoco-after/jacoco.xml",
+        "jacoco-exec": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/measurements/jacoco-after/jacoco.exec"
+      }
+    },
+    "pit-after": {
+      "checkout": "D:/Projects/experiment-workspaces/peekable-input-stream/json-001-evaluation-001",
+      "output": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/measurements/pit-after",
+      "build": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/pit-build/pit-after",
+      "temp": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/temp",
+      "script": "D:/Projects/wit-up/commons-io-validation/peekable-input-stream/supplements/json/001/001/evidence/scripts/pit-after.ps1",
+      "scope": "Full existing project suite; frozen generated test present only after; target production class only",
+      "reports": null,
+      "artifacts": {
+        "production-class": "D:/Projects/experiment-workspaces/peekable-input-stream/json-001-evaluation-001/target/classes/org/apache/commons/io/input/buffer/PeekableInputStream.class",
+        "pit-mutations": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/measurements/pit-after/mutations.xml",
+        "pit-linecoverage": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/measurements/pit-after/linecoverage.xml"
+      },
+      "phaseClasspathFile": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/preflight/pit-after-classpath.txt",
+      "toolClasspathFile": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/preflight/tool-classpath.txt"
+    },
+    "preflight": {
+      "checkout": "D:/Projects/experiment-workspaces/peekable-input-stream/json-001-evaluation-001",
+      "script": "D:/Projects/wit-up/commons-io-validation/peekable-input-stream/supplements/json/001/001/evidence/scripts/preflight.ps1",
+      "scope": "Fetch and verify pinned JaCoCo tools; preserve effective POM and exact resolved project dependencies; no test execution",
+      "reports": null,
+      "artifacts": {
+        "effective-pom": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/preflight/effective-pom.xml",
+        "dependencies": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/preflight/dependencies.txt",
+        "dependency-hashes": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/preflight/dependency-hashes.json",
+        "launcher-classpath": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/preflight/tool-classpath.txt",
+        "project-classpath": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/preflight/project-classpath.txt",
+        "launcher-effective-pom": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/preflight/launcher-effective-pom.xml",
+        "launcher-dependencies": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/preflight/launcher-dependencies.txt",
+        "runtime-hashes": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/preflight/runtime-hashes.json",
+        "before-classpath": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/preflight/pit-before-classpath.txt",
+        "after-classpath": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/json-001-evaluation-001/preflight/pit-after-classpath.txt"
+      }
+    }
+  },
+  "pitLauncherPom": "D:/Projects/wit-up/commons-io-validation/peekable-input-stream/supplements/json/001/001/inputs/pit-cli-pom.xml"
+}
