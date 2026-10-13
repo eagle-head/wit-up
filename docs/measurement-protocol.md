@@ -85,32 +85,61 @@ ZIP including genuine failures and existing intrinsic skips.
 
 ## PIT before and after
 
-Use [pit-analysis-pom.xml](pit-analysis-pom.xml), copied into the evaluation inputs.
-Both sides use that identical POM and the compiled outputs from their own preceding
-JaCoCo build. The POM has no compilation or test execution lifecycle shortcuts;
-PIT performs its unmutated-test baseline normally. Select every existing project
-test using `org.apache.commons.io.*` on both sides. Do not add failure suppressions,
-excluded tests, alternate selectors, or changed thresholds.
+Configuration revision 4 uses the same PIT 1.15.2 engine through its command-line
+launcher. The auxiliary Maven launcher used its own POM directory as the native
+worker directory, which broke existing relative resource fixtures. A Java
+`user.dir` override alone did not restore `java.io` operations. Earlier skipped
+and failed baseline attempts remain sealed incomplete. The CLI launches natively
+from the assigned phase checkout and preserves the full test selection and gates.
 
-Set `$analysisPom`, `$phaseCheckout`, `$phaseOutput`, `$phaseBuild`, and
-`$temporaryDirectory` to the recorded per-evaluation paths. Reserve an execution
-with no Surefire directory: PIT does not produce Surefire reports for its mutation
-execution. Declare `production-class`, `pit-mutations`, and `pit-linecoverage`
-artifact roles. The class file already exists from the corresponding JaCoCo phase.
+Resolve the launcher using [pit-cli-pom.xml](pit-cli-pom.xml), snapshotted into the
+evaluation inputs. It pins PIT CLI/core/entry 1.15.2, the JUnit 5 adapter 1.2.2,
+and JUnit Platform launcher 1.5.2 (the same version auto-added by the Maven plugin
+for the baseline JUnit stack). Preserve the effective POM, dependency list,
+classpath, and JAR hashes. Observe supported options from the pinned CLI's `-h`.
+The historical [auxiliary POM](pit-analysis-pom.xml) remains as a preserved recipe
+reference; revision 4 does not invoke its mutation goal.
+
+During preflight, resolve two classpaths with Maven dependency plugin 3.6.1:
+
+```powershell
+mvn -B -ntp -f $launcherPom org.apache.maven.plugins:maven-dependency-plugin:3.6.1:build-classpath "-Dmdep.outputFile=$toolClasspathFile"
+mvn -B -ntp '-P!jacoco,!cobertura,!travis-jacoco,!travis-cobertura' org.apache.maven.plugins:maven-dependency-plugin:3.6.1:build-classpath '-DincludeScope=test' "-Dmdep.outputFile=$projectClasspathFile"
+```
+
+Both before and after have the exact same resolved dependency bytes. Each side
+uses its own compiled production/test directories from the preceding JaCoCo
+build. Before the phase, write a classpath file containing one absolute path per
+line: those two directories, resolved project JARs, and the pinned launcher JARs.
+Preserve that rendered file and its hash. The exact target-class filter selects
+only the production target; its bytes come from that phase's compiled production
+directory. Keep the output directory absent before `begin`.
+
+Run from the assigned phase checkout. Preserve both streams at the reserved log:
 
 ```powershell
 $env:MAVEN_OPTS = '-DargLine='
-mvn -B -ntp -f $analysisPom "-Danalysis.checkout=$phaseCheckout" "-Danalysis.output=$phaseOutput" "-Danalysis.build=$phaseBuild" "-Danalysis.temp=$temporaryDirectory" org.pitest:pitest-maven:1.15.2:mutationCoverage
+Set-Location -LiteralPath $phaseCheckout
+$toolClasspath = (Get-Content -LiteralPath $toolClasspathFile -Raw).Trim()
+java "-Djava.io.tmpdir=$temporaryDirectory" -cp $toolClasspath org.pitest.mutationtest.commandline.MutationCoverageReport --reportDir $phaseOutput --targetClasses org.apache.commons.io.input.buffer.PeekableInputStream --targetTests 'org.apache.commons.io.*' --sourceDirs "$phaseCheckout/src/main/java" --classPathFile $phaseClasspathFile --includeLaunchClasspath false --mutationEngine gregor --mutators DEFAULTS --threads 1 --timeoutFactor 1.25 --timeoutConst 3000 --jvmArgs "-Xmx256m,-Djava.io.tmpdir=$temporaryDirectory" --outputFormats XML --timestampedReports false --exportLineCoverage true --failWhenNoMutations true --skipFailingTests false --projectBase $phaseCheckout --inputEncoding UTF-8 --outputEncoding UTF-8
 $pitExit = $LASTEXITCODE
 Write-Output "PIT exit code: $pitExit"
 exit $pitExit
 ```
 
-Never execute the after JaCoCo clean build before recording all artifacts needed
-by that side. A clean before checkout stays separate from the after checkout.
-The evaluator verifies both source inventories and target class hashes, plus the
-mutant identity tuples (class, method, descriptor, line, mutator, indexes, blocks).
-The manager checks target class and mutant equality at evaluation completion.
+Select every existing project test using `org.apache.commons.io.*` on both sides.
+Do not add excluded tests, skipped failing tests, alternate selectors, or changed
+thresholds. PIT performs unmutated baseline validation normally. Native mutation
+and line-coverage XML are required; exit zero alone never establishes a result.
+Register no Surefire directory for PIT. Declare `production-class`,
+`pit-mutations`, and `pit-linecoverage` artifact roles with `begin`.
+
+Record every native artifact before another clean build. Before and after use
+separate checkouts. Verify all tracked source/resource bytes, production class
+hashes, and mutant identity tuples (class, method, descriptor, line, mutator,
+indexes, blocks). The manager checks class and mutant equality at completion.
+The [official CLI documentation](https://pitest.org/quickstart/commandline/)
+describes the launcher; pinned local help and real executions govern its options.
 
 ## Reporting and acceptance
 

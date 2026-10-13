@@ -984,6 +984,7 @@ def supplement(
     if kind not in ("annotation", "evaluation") or not verify(parent)["sealed"]:
         raise PreservationError("A supplement must reference a sealed generation.")
     _, original = load_run(parent)
+    selected_plan = None
     if (
         original.get("recordKind", "generation") != "generation"
         or parent != study / "runs" / original["condition"] / original["sequence"]
@@ -1061,6 +1062,9 @@ def supplement(
                     run, plan, "inputs/measurement-plan.json"
                 )
                 data["preservedInputs"].append(
+                    snapshot(run, Path(__file__), "inputs/preservation-manager.py")
+                )
+                data["preservedInputs"].append(
                     snapshot(
                         run,
                         REPOSITORY / "docs/measurement-protocol.md",
@@ -1074,6 +1078,16 @@ def supplement(
                         "inputs/pit-analysis-pom.xml",
                     )
                 )
+                if selected_plan is None:
+                    raise PreservationError("Evaluation measurement plan is required.")
+                if selected_plan.get("configurationRevision", 1) >= 4:
+                    data["preservedInputs"].append(
+                        snapshot(
+                            run,
+                            REPOSITORY / "docs/pit-cli-pom.xml",
+                            "inputs/pit-cli-pom.xml",
+                        )
+                    )
                 data["frozenTest"] = snapshot(
                     run, parent / original["frozenTest"]["path"], FROZEN_PATH
                 )

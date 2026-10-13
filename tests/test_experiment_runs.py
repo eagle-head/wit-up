@@ -637,6 +637,24 @@ class ExperimentPreservationChecks(unittest.TestCase):
         with self.assertRaisesRegex(runs.PreservationError, "four successful"):
             runs.seal(evaluation, "report.md", outcome="evaluation-complete")
 
+    def givenPreservedLauncherPom_whenChanged_thenVerificationRejectsTheEvaluation(
+        self,
+    ):
+        # Arrange
+        _, evaluation = self.evaluation()
+        launcher = evaluation / "inputs/pit-cli-pom.xml"
+        self.assertEqual(
+            launcher.read_bytes(),
+            (runs.REPOSITORY / "docs/pit-cli-pom.xml").read_bytes(),
+        )
+        # Act
+        launcher.write_bytes(
+            launcher.read_bytes() + b"<!-- Changed launcher input. -->\n"
+        )
+        # Assert
+        with self.assertRaisesRegex(runs.PreservationError, "input|changed|hash"):
+            runs.verify(evaluation)
+
     def givenChangedMeasurementPlan_whenPreparingEvaluation_thenConfigurationIsRejected(
         self,
     ):

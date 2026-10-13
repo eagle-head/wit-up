@@ -20,8 +20,8 @@
   </dependencies>
   <build>
     <directory>${analysis.build}</directory>
-    <sourceDirectory>${analysis.build}/empty-sources</sourceDirectory>
-    <testSourceDirectory>${analysis.build}/empty-test-sources</testSourceDirectory>
+    <sourceDirectory>${analysis.checkout}/src/main/java</sourceDirectory>
+    <testSourceDirectory>${analysis.checkout}/src/test/java</testSourceDirectory>
     <outputDirectory>${analysis.checkout}/target/classes</outputDirectory>
     <testOutputDirectory>${analysis.checkout}/target/test-classes</testOutputDirectory>
     <plugins>
@@ -42,7 +42,7 @@
           <exportLineCoverage>true</exportLineCoverage>
           <failWhenNoMutations>true</failWhenNoMutations>
           <projectBase>${analysis.checkout}</projectBase>
-          <jvmArgs><jvmArg>-Xmx256m</jvmArg><jvmArg>-Djava.io.tmpdir=${analysis.temp}</jvmArg></jvmArgs>
+          <jvmArgs><jvmArg>-Xmx256m</jvmArg><jvmArg>-Djava.io.tmpdir=${analysis.temp}</jvmArg><jvmArg>-Duser.dir=${analysis.checkout}</jvmArg></jvmArgs>
         </configuration>
       </plugin>
     </plugins>

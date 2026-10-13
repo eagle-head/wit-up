@@ -242,7 +242,7 @@ the final seal. Changed or missing evidence blocks verification and completion.
 Close the generation first. Separately authorized JaCoCo/PIT work belongs in an
 evaluation supplement, using the exact frozen source and a distinct checkout.
 Use the [paired measurement protocol](measurement-protocol.md) and its canonical
-[configuration](measurement-plan.json) and [PIT POM](pit-analysis-pom.xml).
+[configuration](measurement-plan.json) and [PIT launcher POM](pit-cli-pom.xml).
 The four phases use the same existing full suite, adding only the frozen test
 after. Measure the baseline; never infer zero. Do not narrow scope or suppress an
 unmutated-test failure to get a successful pair.

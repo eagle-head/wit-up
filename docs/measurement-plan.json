@@ -1,6 +1,7 @@
 {
   "schemaVersion": 1,
   "protocol": "paired-full-suite",
+  "configurationRevision": 4,
   "baselineCommit": "11f0abe7a3fb6954b2985ca4ab0697b2fb489e84",
   "javaRuntime": "1.8.0_504-b01",
   "javac": "1.8.0_504",
@@ -13,6 +14,8 @@
   "targetClass": "org.apache.commons.io.input.buffer.PeekableInputStream",
   "jacocoTestSelection": "all existing project tests; add only the frozen generated file after",
   "pitTestSelection": "org.apache.commons.io.*",
+  "pitSourceDiscovery": "Use the assigned checkout's src/main/java and src/test/java, with compiled outputs from its own preceding JaCoCo build.",
+  "pitLauncher": "PIT 1.15.2 command-line launcher executed natively from the phase checkout; both native and Java relative fixture roots match Surefire.",
   "mutationEngine": "gregor",
   "mutators": ["DEFAULTS"],
   "threads": 1,
