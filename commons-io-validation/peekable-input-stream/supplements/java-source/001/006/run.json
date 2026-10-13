@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 2,
+  "recordKind": "annotation",
+  "runId": "java-source-001/annotation-006",
+  "condition": "java-source",
+  "sequence": "001",
+  "state": "annotation",
+  "origin": "supplement",
+  "createdAt": "2026-10-13T16:24:19.769619+00:00",
+  "sampleContribution": 0,
+  "baselineCommit": "11f0abe7a3fb6954b2985ca4ab0697b2fb489e84",
+  "parent": {
+    "path": "runs/java-source/001",
+    "sealSHA256": "28ac9b72af259f32261cb569e3ce65515007f3089213024d5065b60adcec9d5d"
+  },
+  "preservedInputs": [],
+  "frozenTest": null,
+  "executions": [],
+  "authorization": {
+    "path": "inputs/note.md",
+    "sha256": "b37b57362c21a2837f1d579808bd4589ae79d3723c55438563675b5b7847caba",
+    "originalPath": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/generation-provenance-review/generation-provenance.md"
+  }
+}

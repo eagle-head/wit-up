@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 2,
+  "runId": "java-source-001/annotation-006",
+  "sealedAt": "2026-10-13T16:24:19.792920+00:00",
+  "outcome": "annotation",
+  "reason": "Preserved linked annotation; see inputs/note.md.",
+  "evaluationStatus": "not-established-in-this-record",
+  "report": "report.md",
+  "files": [
+    {
+      "path": "inputs/note.md",
+      "bytes": 4803,
+      "sha256": "b37b57362c21a2837f1d579808bd4589ae79d3723c55438563675b5b7847caba"
+    },
+    {
+      "path": "report.md",
+      "bytes": 4803,
+      "sha256": "b37b57362c21a2837f1d579808bd4589ae79d3723c55438563675b5b7847caba"
+    },
+    {
+      "path": "run.json",
+      "bytes": 830,
+      "sha256": "00a8bc5acaca63bfc267e67ca3e35e6695f17436acfc20903de14d7134d5e60f"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 2,
+  "recordKind": "annotation",
+  "runId": "json-001/annotation-002",
+  "condition": "json",
+  "sequence": "001",
+  "state": "annotation",
+  "origin": "supplement",
+  "createdAt": "2026-10-13T16:24:19.145083+00:00",
+  "sampleContribution": 0,
+  "baselineCommit": "11f0abe7a3fb6954b2985ca4ab0697b2fb489e84",
+  "parent": {
+    "path": "runs/json/001",
+    "sealSHA256": "482c9deffe47d4fc69f8fee5e4380610991893d447a38fe0ca6973baece488fd"
+  },
+  "preservedInputs": [],
+  "frozenTest": null,
+  "executions": [],
+  "authorization": {
+    "path": "inputs/note.md",
+    "sha256": "b37b57362c21a2837f1d579808bd4589ae79d3723c55438563675b5b7847caba",
+    "originalPath": "D:/Projects/experiment-workspaces/peekable-input-stream/.working/generation-provenance-review/generation-provenance.md"
+  }
+}
